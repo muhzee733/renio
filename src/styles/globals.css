@@ -84,6 +84,11 @@ ul{
   -webkit-text-fill-color: transparent;
   font-family: var(--fontFamilyPoppins);
 }
+.mini-footer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 

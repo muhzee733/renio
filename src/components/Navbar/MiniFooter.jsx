@@ -24,7 +24,7 @@ const MiniFooter = () => {
         });
       } else {
         gsap.to(footerRef.current, {
-          y: 100, // Move the footer out of view
+          y: 100,
           opacity: 0,
           duration: 0.1,
           ease: "power2.out",
@@ -39,7 +39,7 @@ const MiniFooter = () => {
   return (
     <footer>
       <div ref={footerRef} className="mini-footer">
-        <div className="mini-footer-wrapper d-flex justify-content-between align-items-center">
+        <div className="mini-footer-wrapper">
           <p>Find out the cost of your waste today.</p>
           <Button title="Book a FREE demo" className="btn-1" />
         </div>

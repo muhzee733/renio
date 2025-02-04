@@ -1,16 +1,13 @@
-import React from 'react'
-import Navbar from '../Navbar/Navbar'
+import React from "react";
 
 const Banner = () => {
   return (
-    <section>
-      <div class="main-banner">
-        <div class="main-banenr-wrapper">
-          <Navbar />
-        </div>
+    <div class="main-banner">
+      <div class="main-banenr-wrapper">
+        <h1>Banner</h1>
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

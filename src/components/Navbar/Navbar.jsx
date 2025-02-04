@@ -27,7 +27,6 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isScrolled) {
-      // Shrink the navbar with GSAP
       gsap.to(".main-navbar", {
         width: "80px",
         height: "70px",
@@ -69,7 +68,6 @@ const Navbar = () => {
         width: "1094px",
         duration: 1,
         ease: "power2.inOut",
-        position: "relative",
       });
 
       // Show navbar items back
@@ -103,10 +101,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="main-navbar d-flex justify-content-between align-items-center fixed">
+      <div className="main-navbar">
         <Image src="/assets/logo.png" alt="renio logo" className="logo-image" />
-        <div className="navbar-items d-flex gap-4">
-          <ul className="d-flex gap-4">
+        <div className="navbar-items">
+          <ul className="nav-ul">
             <li>Renie Bin</li>
             <li>Renie Hub</li>
             <li>Renie App</li>
@@ -121,7 +119,6 @@ const Navbar = () => {
         />
         <Button title="Connect with an expert" className="btn" />
       </div>
-      <div>Dark/Light</div>
     </>
   );
 };

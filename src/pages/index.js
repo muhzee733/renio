@@ -1,21 +1,15 @@
 import Head from "next/head";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import Footer from "@/components/Navbar/Footer";
 import Banner from "@/components/Banner/Banner";
 import HowItWork from "@/components/HowItWorks/HowItWork";
 import MiniFooter from "@/components/Navbar/MiniFooter";
+import Navbar from "@/components/Navbar/Navbar";
+import Section3 from "@/components/Section3";
+import Section5 from "@/components/Section5";
+import Section6 from "@/components/Section6";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   return (
     <>
       <Head>
@@ -23,15 +17,43 @@ export default function Home() {
         <meta name="description" content="Transform your waste into income" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        />
       </Head>
-      <Banner />
-      <HowItWork />
-      <MiniFooter />
-      <Footer />
+      <section>
+        <Navbar />
+      </section>
+
+      <section className="section section-1">
+        <Banner />
+      </section>
+
+      <section className="section section-2">
+        <HowItWork />
+      </section>
+
+      <section className=" scroll-section-outer">
+        <Section3 />
+      </section>
+
+      <section className="section section-4">
+        <h1>Section 4</h1>
+      </section>
+
+      <section className=" scroll-section-outer">
+        <Section5 />
+      </section>
+
+      <section className=" scroll-section-outer">
+        <Section6 />
+      </section>
+
+      <section className="section section-7">
+        <h1>Bin</h1>
+      </section>
+
+      <section className="section section-8">
+        <MiniFooter />
+        <Footer />
+      </section>
     </>
   );
 }

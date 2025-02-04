@@ -1,10 +1,3 @@
-.main-banner {
-  min-height: 100vh;
-}
-
-/* .main-banenr-wrapper {
-  padding-top: 36px;
-} */
 
 .main-navbar {
   width: 1094px;
@@ -15,12 +8,18 @@
   overflow: hidden;
   background-color: var(--primary);
   transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1), height 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .main-navbar ul li {
   font-family: var(--fontFamilyPoppins);
   font-weight: 400;
   font-size: 16px;
   transition: 0.3s all ease-in-out;
+  color: var(--secondary);
+}
+.nav-ul{
+  display: flex;
+  gap: 20px;
 }
 
 .main-navbar ul li:hover {
@@ -58,7 +57,6 @@ footer{
 
 /* How It Work start */
 .how-it-work-main {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,4 +98,77 @@ footer{
 .logo-image {
   max-width: 12%;
   transition: all 0.3s ease;
+}
+.scroll-section-outer{
+  overflow: hidden;
+}
+.scroll-section-inner{
+ height: 100vh;
+ width: 400vw;
+ display: flex;
+ flex-direction: row;
+ position: relative;
+}
+.scroll-section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-section-outer{
+  background-color: #5e07ff;
+}
+.scroll-section-1{
+  background-color: green;
+}
+
+
+
+
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.section-1 {
+  background-color: #007bff;
+}
+
+.section-2 {
+  background-color: #28a745;
+}
+
+.section-3 {
+  background-color: #dc3545;
+}
+
+.section-4 {
+  background-color: #ffc107;
+}
+
+.section-5 {
+  background-color: #07ff83;
+}
+
+.section-6 {
+  background-color: #5e07ff;
+}
+
+.section-7 {
+  background-color: #ee07ff;
+}
+
+.section-8 {
+  background-color: #2cff07;
 }
