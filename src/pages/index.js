@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       <section className="section section-7">
-        <h1>Bin</h1>
+        <h1>Bins</h1>
       </section>
 
       <section className="section section-8">
