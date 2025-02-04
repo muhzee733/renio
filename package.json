@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.48",
     "@gsap/react": "^2.1.2",
     "gsap": "^3.12.7",
     "next": "15.1.6",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scroll": "^1.9.0",
     "reactstrap": "^9.2.3"
   },
   "devDependencies": {
