@@ -68,13 +68,22 @@ ul{
   font-family: var(--fontFamilyPoppins) !important;
 }
 
-.mini-footer{
+/* Base styles for the mini-footer */
+.mini-footer {
   width: 750px;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 3px;
   padding: 15px;
 }
+
+.mini-footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px; /* Add a gap between text and button */
+}
+
 .mini-footer-wrapper p {
   font-size: 22px;
   font-weight: 600;
@@ -84,11 +93,63 @@ ul{
   -webkit-text-fill-color: transparent;
   font-family: var(--fontFamilyPoppins);
 }
-.mini-footer-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.mini-footer-wrapper .btn-1 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
 }
+
+/* For mobile (below 768px) */
+@media (max-width: 768px) {
+  .mini-footer {
+    width: 80%; /* Set to 100% of the viewport width on mobile */
+    padding: 10px;
+    margin: 0 auto; /* Adjust padding for smaller screens */
+  }
+
+  .mini-footer-wrapper {
+    flex-direction: column; /* Stack text and button vertically */
+    gap: 10px; /* Adjust space between text and button */
+    align-items: center; /* Center content */
+  }
+
+  .mini-footer-wrapper p {
+    font-size: 18px; /* Adjust text size for mobile */
+    line-height: 2.5rem; /* Adjust line-height for mobile */
+  }
+
+  .mini-footer-wrapper .btn-1 {
+    font-size: 0.9rem; /* Adjust button font size for mobile */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+/* For tablet/medium screens (between 768px and 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .mini-footer {
+    width: 80%; /* Set width to 80% on tablet/medium screens */
+  }
+
+  .mini-footer-wrapper {
+    gap: 20px; /* Increase the gap between text and button */
+  }
+
+  .mini-footer-wrapper p {
+    font-size: 20px; /* Adjust font size for tablet */
+    line-height: 2.8rem; /* Adjust line-height */
+  }
+
+  .mini-footer-wrapper .btn-1 {
+    font-size: 1rem; /* Adjust button font size for tablet */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}
+
 
 
 

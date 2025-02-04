@@ -33,18 +33,18 @@ const Section6 = () => {
   }, []);
   return (
     <div ref={triggerRef}>
-      <div ref={sectionRef} className="scroll-section-inner section-6">
-        <div class="scroll-section ">
+      <div ref={sectionRef} className="scroll-section-inner">
+        <div class="scroll-section bg-info">
           <h1>Section 1</h1>
         </div>
-        <div class="scroll-section">
+        <div class="scroll-section bg-danger">
           <h1>Section 2</h1>
         </div>
-        <div class="scroll-section">
+        <div class="scroll-section bg-success">
           <h1>Section 3</h1>
         </div>
-        <div class="scroll-section">
-          <h1>Section 4</h1>
+        <div class="scroll-section bg-dark">
+          <h1 className="text-white">Section 4</h1>
         </div>
       </div>
     </div>
