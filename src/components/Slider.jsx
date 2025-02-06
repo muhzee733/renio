@@ -15,7 +15,29 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
   const cardTexts = [
     {
       title: "Step 1: Purchase Renie bins",
-      desc: "Renie Bins represent a revolutionary approach to waste management, transforming how you handle recyclable waste. These intelligent bins are designed to segregate waste at the source, utilizing advanced recognition technology to ensure precise waste stream separation.",
+      desc: (
+        <>
+          Renie Bins represent a revolutionary approach to waste management,
+          <br />
+          transforming how you handle recyclable waste. These intelligent bins
+          are
+          <br />
+          designed to segregate waste at the source, utilizing advanced
+          recognition
+          <br />
+          technology to ensure precise waste stream separation.
+          <br /><br />
+          Key Features:
+          <br />
+          1. Multiple compartments for different waste types
+          <br />
+          2. AI-powered recognition system
+          <br />
+          3. Real-time waste stream identification
+          <br />
+          4. Automated sorting capabilities
+        </>
+      ),
     },
     {
       title: "Step 2: Sort recyclables",
@@ -79,7 +101,7 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
               <div className="card-inner">
                 <div className="card-text">
                   <h3>{cardTexts[index].title}</h3>
-                  {/* <p>{cardTexts[index].desc}</p> */}
+                  <p>{cardTexts[index].desc}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -87,25 +109,12 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
         </Swiper>
       </div>
       <div className="swiper-navigation">
-        <button
-          className="swiper-prev"
-          onClick={goToPreviousStep}
-        >
+        <button className="swiper-prev" onClick={goToPreviousStep}>
           ❮
         </button>
-        <button
-          className="swiper-next"
-          onClick={goToNextStep}
-        >
+        <button className="swiper-next" onClick={goToNextStep}>
           ❯
         </button>
-        {/* <button
-          className={`reset-button ${nextStep > 0.25 ? "active" : ""}`}
-          onClick={resetSlider}
-          disabled={nextStep <= 0.25}
-        >
-          Reset
-        </button> */}
       </div>
     </div>
   );

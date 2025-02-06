@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-import Button from "../Button/Button";
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -13,36 +12,32 @@ const Navbar = () => {
 
   useEffect(() => {
     tl.current
-      .to(
-        [logoRef.current, linksRef.current, buttonRef.current],
-        {
-          opacity: 0,
-          scale: 0.8,
-          duration: 0.4,
-          ease: "power2.inOut",
-        },
-        "start"
-      )
+      .set([logoRef.current, linksRef.current, buttonRef.current], { opacity: 1 }) 
+      .set(menuImageRef.current, { opacity: 0 })
+      .to([logoRef.current, linksRef.current, buttonRef.current], {
+        opacity: 0,
+        display: "none",
+        duration: 0,
+      })
       .to(
         navRef.current,
         {
-          width: "100px",
+          width: "78px",
+          background: "white",
           height: "65px",
           borderRadius: "8px",
-          duration: 0.3, // Quick effect on navbar resizing
-          ease: "power2.inOut",
+          duration: 0,
         },
-        "start"
+        "<"
       )
       .to(
         menuImageRef.current,
         {
           opacity: 1,
-          scale: 1.1,
-          duration: 0.3,
-          ease: "power2.out",
+          display: "block",
+          duration: 0,
         },
-        "-=0.2"
+        "<"
       );
 
     const handleScroll = () => {
@@ -58,19 +53,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      ref={navRef}
-      className="main-navbar container"
-    >
+    <nav ref={navRef} className="main-navbar container">
+      {/* Main Logo */}
       <Image
         ref={logoRef}
         src="/assets/logo.png"
         alt="Renie Logo"
         width={140}
         height={50}
-        style={{ transition: "all 0.5s ease" }}
       />
 
+      {/* Navigation Links */}
       <ul
         ref={linksRef}
         className="d-flex gap-3 navbar-links"
@@ -87,13 +80,12 @@ const Navbar = () => {
         <li>Media Hub</li>
       </ul>
 
-      <button
-        ref={buttonRef}
-        className="btn"
-      >
+      {/* Call-to-Action Button */}
+      <button ref={buttonRef} className="btn">
         Connect with an expert
       </button>
 
+      {/* Small Menu Icon */}
       <Image
         ref={menuImageRef}
         src="/assets/small.png"
@@ -102,10 +94,10 @@ const Navbar = () => {
         height={40}
         style={{
           position: "absolute",
-          right: "30px",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
           opacity: 0,
-          transform: "scale(0.5)",
-          transition: "transform 0.3s ease-out",
         }}
       />
     </nav>

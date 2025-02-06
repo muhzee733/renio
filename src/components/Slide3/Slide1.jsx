@@ -1,9 +1,21 @@
 import React from "react";
 import "./slide.css";
 
-const Slide1 = ({img, title1, title2, price1, price2}) => {
+const Slide1 = ({ img, title1, title2, price1, price2 }) => {
   return (
-    <div className="slide-1">
+    <div
+      className={
+        title1 === "RENIE ONE"
+          ? "slide-1 renio-one"
+          : title1 === "RENIE Two"
+          ? "slide-1 renio-two"
+          : title1 === "RENIE Maxi"
+          ? "slide-1 renio-Maxi"
+          : title1 === "RENIE Mini"
+          ? "slide-1 renio-Mini"
+          : "slide-1"
+      }
+    >
       <div class="row">
         <div class="col-lg-6">
           <div className="left-box">
@@ -14,10 +26,18 @@ const Slide1 = ({img, title1, title2, price1, price2}) => {
         <div class="col-lg-6">
           <h2 className="text-right">{title2}</h2>
           <div className="renio-button">
-            <button className="active">Renie one</button>
-            <button>Renie Two</button>
-            <button>Renie Maxi</button>
-            <button>Renie Mini</button>
+            <button className={title1 === "RENIE ONE" ? "active" : ""}>
+              Renie one
+            </button>
+            <button className={title1 === "RENIE Two" ? "active" : ""}>
+              Renie Two
+            </button>
+            <button className={title1 === "RENIE Maxi" ? "active" : ""}>
+              Renie Maxi
+            </button>
+            <button className={title1 === "RENIE Mini" ? "active" : ""}>
+              Renie Mini
+            </button>
           </div>
           <div className="renio-grid">
             <h5>Available Waste Streams</h5>
@@ -53,11 +73,11 @@ const Slide1 = ({img, title1, title2, price1, price2}) => {
             <div class="renio-footer-div">
               <div>
                 <h6>Standard Design</h6>
-                <h5>{price1} AED</h5>
+                <h5 className="custom-price">{price1} AED</h5>
               </div>
               <div>
                 <h6>Custom Design</h6>
-                <h5>{price2} AED</h5>
+                <h5 className="custom-price">{price2} AED</h5>
               </div>
             </div>
           </div>

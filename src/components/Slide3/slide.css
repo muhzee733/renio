@@ -1,5 +1,4 @@
 .slide-1 {
-  background: linear-gradient(90deg, #4765e6 0%, #5c4099 100%);
   width: 100%;
   height: 100vh;
   padding: 50px 100px;
@@ -9,6 +8,18 @@
   font-size: 60px;
   font-weight: 800;
   color: white;
+}
+.renio-one{
+  background: linear-gradient(90deg, #5C4099 0%, #952E82 100%);
+}
+.renio-two{
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 100%);
+}
+.renio-Maxi{
+  background: linear-gradient(90deg, #5C4099 0%, #952E82 100%);
+}
+.renio-Mini{
+  background: linear-gradient(90deg, #5C4099 0%, #952E82 100%);
 }
 .text-right{
   text-align: right;

@@ -22,22 +22,17 @@ const BrandSlider = () => {
   //         allLogos[nextIndex % allLogos.length],
   //       ];
 
-  //       // Animate logos with sliding and fading effect
   //       const firstLogo = logoRefs.current[0];
   //       const lastLogo = logoRefs.current[logoRefs.current.length - 1];
 
-  //       // First logo: fade out and slide up
   //       gsap.to(firstLogo, {
   //         opacity: 0,
   //         y: -20,
   //         duration: 0.5,
   //         onComplete: () => {
-  //           // Reset its position and opacity after the animation
   //           gsap.set(firstLogo, { y: 0 });
   //         },
   //       });
-
-  //       // Last logo: slide in from bottom and fade in
   //       gsap.fromTo(
   //         lastLogo,
   //         { opacity: 0, y: 20 },
@@ -46,7 +41,6 @@ const BrandSlider = () => {
   //           y: 0,
   //           duration: 0.5,
   //           onComplete: () => {
-  //             // Reset position after animation
   //             gsap.set(lastLogo, { y: 0 });
   //           },
   //         }
@@ -71,8 +65,6 @@ const BrandSlider = () => {
             alt={`Brand ${index}`}
             className="brand-logo"
             style={{
-              width: "100%",
-              height: "auto",
               opacity: 1,
               transition: "opacity 0.5s ease-in-out",
             }}

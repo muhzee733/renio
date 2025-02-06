@@ -7,7 +7,7 @@ import MiniFooter from "@/components/Navbar/MiniFooter";
 import Navbar from "@/components/Navbar/Navbar";
 import Section3 from "@/components/Section3";
 import Section5 from "@/components/Section5";
-import Section6 from "@/components/Section6"; 
+import Section6 from "@/components/Section6";
 
 export default function Home() {
   return (
@@ -35,7 +35,9 @@ export default function Home() {
       </section>
 
       <section className="section section-4">
-        <h1>Section 4</h1>
+        <div className="section-4-wrapper">
+          <img src="/assets/bin-2.png" alt="bin" />
+        </div>
       </section>
 
       <section className=" scroll-section-outer">

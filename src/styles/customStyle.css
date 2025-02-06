@@ -33,7 +33,10 @@
 }
 .brand-slider-container {
   position: absolute;
-  bottom: 3%;
+  bottom: 0%;
+}
+.swiper{
+  display: unset !important;
 }
 .brand-slider img {
   max-width: 15%;
@@ -301,6 +304,13 @@ footer {
     border-style: solid;
     border-image: linear-gradient(90deg, #4765E6 0%, #5C4099 46%, #E31662 100%); */
 }
+.custom-price{
+  background: -webkit-linear-gradient(80deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 26px;
+}
 .section-1,
 .section-2 {
   background-color: var(--primary);
@@ -311,7 +321,10 @@ footer {
 }
 
 .section-4 {
-  background-color: #ffc107;
+  background-color: white;
+  background: url('/assets/bg-2.png'), url('/assets/bg-1.png');
+  background-repeat: no-repeat;
+  background-position: right center, left center;
 }
 
 .section-5 {
