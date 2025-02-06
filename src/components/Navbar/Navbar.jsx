@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="main-navbar"
+      className="main-navbar container"
     >
       <Image
         ref={logoRef}

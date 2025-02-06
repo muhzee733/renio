@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Slide1 from "./Slide3/Slide1";
 
 const Section3 = () => {
   const sectionRef = useRef(null);
@@ -34,8 +35,8 @@ const Section3 = () => {
   return (
     <div ref={triggerRef}>
       <div ref={sectionRef} className="scroll-section-inner">
-        <div class="scroll-section bg-info">
-          <h1>Section 1</h1>
+        <div class="scroll-section">
+          <Slide1 />
         </div>
         <div class="scroll-section bg-danger">
           <h1>Section 2</h1>
