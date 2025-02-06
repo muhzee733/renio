@@ -36,16 +36,16 @@ const Section3 = () => {
     <div ref={triggerRef}>
       <div ref={sectionRef} className="scroll-section-inner">
         <div class="scroll-section">
-          <Slide1 />
+          <Slide1 img="/assets/RENIE_ONE.png" title1='RENIE ONE' title2='MEET RENIE BINS' price1={750} price2={1000}/>
         </div>
         <div class="scroll-section bg-danger">
-          <h1>Section 2</h1>
+        <Slide1 img="/assets/RENIE_TWO.png" title1='RENIE Two' title2='MEET RENIE BINS' price1={1400} price2={1900}/>
         </div>
         <div class="scroll-section bg-success">
-          <h1>Section 3</h1>
+        <Slide1 img="/assets/RENIE_MAXI.png" title1='RENIE Maxi' title2='MEET RENIE BINS' price1={1990} price2={2540}/>
         </div>
         <div class="scroll-section bg-dark">
-          <h1 className="text-white">Section 4</h1>
+        <Slide1 img="/assets/RENIE_MINI.png" title1='RENIE Mini' title2='MEET RENIE BINS' price1={750} price2={1000}/>
         </div>
       </div>
     </div>
