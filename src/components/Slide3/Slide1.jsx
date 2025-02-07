@@ -1,5 +1,4 @@
 import React from "react";
-import "./slide.css";
 
 const Slide1 = ({ img, title1, title2, price1, price2 }) => {
   return (

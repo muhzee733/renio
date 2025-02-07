@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types"; 
-import "./slider.css";
+
 
 const Slider = ({ title1, title2, img, h6, p, customClass }) => {
   return (
