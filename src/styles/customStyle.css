@@ -373,7 +373,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 .blogs {
@@ -429,13 +429,13 @@ footer {
 }
 
 .footer-section {
-  width: 100%;
+  width: 94%;
   height: 87vh;
   background: url('/assets/footer.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 50px;
+  margin: 50px 50px 10px 50px;
   border-radius: 30px;
 }
 .footer-upper-section{
