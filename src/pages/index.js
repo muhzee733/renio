@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Section3 from "@/components/Section3";
 import Section5 from "@/components/Section5";
 import Section6 from "@/components/Section6";
+import RenieBin from "@/components/RenieBin";
 
 export default function Home() {
   return (
@@ -49,13 +50,13 @@ export default function Home() {
       </section>
 
       <section className="section section-7">
-        <h1>Bins</h1>
+        <RenieBin />
       </section>
 
       <section className="section section-8">
-        <MiniFooter />
         <Footer />
       </section>
+      <MiniFooter />
     </>
   );
 }
