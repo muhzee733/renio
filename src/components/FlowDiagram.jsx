@@ -9,17 +9,32 @@ const CustomFlowSVG = ({
   setNextStep,
   setAnimating,
 }) => {
-  const circleRef = useRef(null);
+  const imageRef = useRef(null);
   const pathRef = useRef(null);
   const [pathLength, setPathLength] = useState(0);
   const [progress, setProgress] = useState(0);
   const [highlightedButton, setHighlightedButton] = useState("Step 1");
+  const [currentImage, setCurrentImage] = useState(
+    "/assets/Watse_collection.png"
+  );
 
   const buttons = [
-    { step: 0.25, label: "Waste Collection" },
-    { step: 0.35, label: "Data Extraction" },
-    { step: 0.65, label: "Data Monetization" },
-    { step: 1, label: "You Payout" },
+    {
+      step: 0.25,
+      label: "Waste Collection",
+      image: "/assets/Watse_collection.png",
+    },
+    {
+      step: 0.35,
+      label: "Data Extraction",
+      image: "/assets/Data_monetization.svg",
+    },
+    {
+      step: 0.65,
+      label: "Data Monetization",
+      image: "/assets/Data_extratction.svg",
+    },
+    { step: 1, label: "You Payout", image: "/assets/Data_extratction.svg" },
   ];
 
   useEffect(() => {
@@ -29,7 +44,7 @@ const CustomFlowSVG = ({
   }, []);
 
   useEffect(() => {
-    const animateCircle = () => {
+    const animateObject = () => {
       if (!animating) return;
       setProgress((prevProgress) => {
         if (prevProgress < nextStep) {
@@ -43,25 +58,27 @@ const CustomFlowSVG = ({
       });
     };
 
-    const interval = setInterval(animateCircle, 50);
+    const interval = setInterval(animateObject, 50);
     return () => clearInterval(interval);
   }, [nextStep, animating]);
 
   useEffect(() => {
-    if (circleRef.current && pathRef.current) {
+    if (imageRef.current && pathRef.current) {
       const point = pathRef.current.getPointAtLength(progress * pathLength);
-      circleRef.current.setAttribute("cx", point.x);
-      circleRef.current.setAttribute("cy", point.y);
-
-      buttons.forEach((button) => {
-        const threshold = 0.02;
-        if (Math.abs(progress - button.step) < threshold) {
-          setHighlightedButton(button.label);
-          setStep(button.label);
-        }
-      });
+      imageRef.current.setAttribute("x", point.x - 10);
+      imageRef.current.setAttribute("y", point.y - 10);
     }
+
+    buttons.forEach((button) => {
+      const threshold = 0.02;
+      if (Math.abs(progress - button.step) < threshold) {
+        setHighlightedButton(button.label);
+        setStep(button.label);
+        setCurrentImage(button.image);
+      }
+    });
   }, [progress, pathLength]);
+
   return (
     <>
       <div style={{ position: "relative", width: "600px", margin: "auto" }}>
@@ -75,16 +92,11 @@ const CustomFlowSVG = ({
           <path
             ref={pathRef}
             d="M57.9231 1.02979H401.077C432.515 1.02979 458 26.5151 458 57.9529C458 89.3907 432.515 114.876 401.077 114.876L57.9231 114.069C26.4854 114.069 1 139.554 1 170.992C1 202.43 26.4854 227.915 57.9232 227.915L401.077 227.108C432.515 227.108 458 252.593 458 284.031C458 315.468 432.515 340.954 401.077 340.954H57.9232"
-            id="animated-path"
             stroke="url(#paint0_linear)"
             strokeWidth="1.61484"
           />
-          <circle
-            ref={circleRef}
-            r="10"
-            fill="blue"
-            style={{ transition: "all 0.1s linear" }}
-          />
+          {/* SVG Image that moves along the path */}
+          <image ref={imageRef} href={currentImage} width="25" height="25" />
           <defs>
             <linearGradient
               id="paint0_linear"
@@ -121,7 +133,7 @@ const CustomFlowSVG = ({
                   : index === 1
                   ? "48%"
                   : index === 2
-                  ? "14%"
+                  ? "22%"
                   : "20px",
               bottom: index === 3 ? "0px" : "auto",
               backgroundColor:
@@ -130,10 +142,7 @@ const CustomFlowSVG = ({
               padding: "20px 40px",
               borderRadius: "50px",
               cursor: "pointer",
-              border:
-                highlightedButton === button.label
-                  ? "2px solid #544eb8"
-                  : "2px solid #544eb8",
+              border: "2px solid #544eb8",
               fontSize: "16px",
               fontWeight: "bold",
               transition: "all 0.3s ease",
@@ -157,7 +166,9 @@ const CustomFlowSVG = ({
           </button>
         ))}
       </div>
-      <div className="idea">NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS</div>
+      <div className="idea">
+        NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
+      </div>
     </>
   );
 };

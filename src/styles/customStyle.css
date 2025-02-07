@@ -257,13 +257,22 @@ footer {
   background: linear-gradient(50deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   border: 0;
   padding: 30px;
-  border-radius: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  border-radius: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%) !important;
+  overflow: hidden;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 24px !important;
+  font-weight: 700 !important;
 }
 .swiper-container .card-text {
   font-family: var(--fontFamilyPoppins);
   font-size: 29px;
   font-weight: 500;
   color: #fff;
+  display: inline-block;
+}
+.card-inner{
+  display: inline-block;
 }
 .swiper-next,
 .swiper-prev {
@@ -278,6 +287,7 @@ footer {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
+  display: inline-block;
 }
 .swiper-navigation {
   position: absolute;
