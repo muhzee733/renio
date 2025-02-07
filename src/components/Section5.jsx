@@ -36,7 +36,7 @@ const Section5 = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-          <Slider5
+            <Slider5
               title1="Find the"
               title2="Renie Bins"
               img="/assets/mobile-2.png"
@@ -56,7 +56,7 @@ const Section5 = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-          <Slider5
+            <Slider5
               title1="Redeem "
               title2="Rewards"
               img="/assets/mobile-3.png"
@@ -76,7 +76,7 @@ const Section5 = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-          <Slider5
+            <Slider5
               title1="NO Download"
               title2="& NO Registration"
               img="/assets/mobile-4.png"

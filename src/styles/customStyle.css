@@ -251,7 +251,7 @@ footer {
   bottom: -2%;
   max-width: 30%;
 }
-.swiper-container .card {
+.custom-slider .card {
   height: 400px;
   border-radius: 30px;
   background: linear-gradient(50deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
@@ -265,17 +265,13 @@ footer {
   ) !important;
   overflow: hidden;
 }
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 24px !important;
-  font-weight: 700 !important;
-}
-.swiper-container .card-text {
+.custom-slider .card-text {
   font-family: var(--fontFamilyPoppins);
   font-size: 29px;
   font-weight: 500;
   color: #fff;
   display: inline-block;
+  text-align: left;
 }
 .card-inner {
   display: inline-block;
@@ -283,12 +279,28 @@ footer {
 .swiper-next,
 .swiper-prev {
   border: 0;
-  padding: 2px 15px;
+  padding: 2px 10px;
   border-radius: 30px;
-  font-size: 26px;
+  font-size: 17px;
   margin: 5px;
+  position: absolute;
+  z-index: 999;
+  right: 8%;
+  bottom: 6%;
 }
-.swiper-container p {
+.swiper-prev{
+  right: 2%;
+}
+.swiper-reset{
+  border: 0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  position: absolute;
+  left: 6%;
+  bottom: 8%;
+}
+.custom-slider p {
   font-family: var(--fontFamilyPoppins);
   font-size: 16px;
   font-weight: 300;
@@ -389,6 +401,7 @@ footer {
   border-radius: 8px;
   padding: 20px;
   cursor: pointer;
+  height: 430px;
 }
 .blogs img {
   margin-bottom: 20px;
@@ -466,6 +479,10 @@ footer {
   width: auto;
   scale: 1.1;
 }
+.custom-image{
+  margin: 0 auto;
+  text-align: center;
+}
 .newsletter{
   position: relative;
 }
@@ -517,6 +534,32 @@ footer {
   color: #5c419a;
   transition: 0.3s all ease-in-out;
 }
+
+
+.custom-slider {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 
 /* For screens below 992px (mobile/tablet) */
 @media (max-width: 992px) {

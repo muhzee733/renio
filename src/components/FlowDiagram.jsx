@@ -2,11 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 const CustomFlowSVG = ({
   setStep,
-  text,
   handleStepButtonClick,
   animating,
   nextStep,
-  setNextStep,
   setAnimating,
 }) => {
   const imageRef = useRef(null);
@@ -34,7 +32,7 @@ const CustomFlowSVG = ({
       label: "Data Monetization",
       image: "/assets/Money.svg",
     },
-    { step: 1, label: "You Payout", image: "/assets/Money.svg" },
+    { step: 1, label: "You Payout" },
   ];
 
   useEffect(() => {
@@ -46,11 +44,11 @@ const CustomFlowSVG = ({
   useEffect(() => {
     const animateObject = () => {
       if (!animating) return;
+
+      // Only move forward, no reverse-back animation
       setProgress((prevProgress) => {
         if (prevProgress < nextStep) {
           return Math.min(prevProgress + 0.005, nextStep);
-        } else if (prevProgress > nextStep) {
-          return Math.max(prevProgress - 0.005, nextStep);
         } else {
           setAnimating(false);
           return prevProgress;

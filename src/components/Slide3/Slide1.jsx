@@ -16,7 +16,7 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
       }
     >
       <div class="container">
-      <div class="row">
+      <div class="row " style={{alignItems: "center"}}>
         <div class="col-lg-6">
           <div className="left-box">
             <h2>{title1}</h2>
