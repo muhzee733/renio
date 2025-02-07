@@ -48,23 +48,23 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
               </div>
               <div>
                 <img src="/assets/Vector-2.png" />
-                <h6>Plastic Bottles</h6>
+                <h6>Plastic Cups</h6>
               </div>
               <div>
                 <img src="/assets/Vector-3.png" />
-                <h6>Plastic Bottles</h6>
+                <h6>Paper Cups</h6>
               </div>
               <div>
                 <img src="/assets/Vector-4.png" />
-                <h6>Plastic Bottles</h6>
+                <h6>Cans</h6>
               </div>
               <div>
                 <img src="/assets/Vector-5.png" />
-                <h6>Plastic Bottles</h6>
+                <h6>Tetra Pak</h6>
               </div>
               <div>
                 <img src="/assets/Vector-6.png" />
-                <h6>Plastic Bottles</h6>
+                <h6>Glass</h6>
               </div>
             </div>
           </div>

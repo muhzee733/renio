@@ -11,10 +11,9 @@ const CustomFlowSVG = ({
   const pathRef = useRef(null);
   const [pathLength, setPathLength] = useState(0);
   const [progress, setProgress] = useState(0);
-  const [highlightedButton, setHighlightedButton] = useState("Step 1");
-  const [currentImage, setCurrentImage] = useState(
-    "/assets/Waste_collection.svg"
-  );
+  const [highlightedButton, setHighlightedButton] = useState("Waste Collection");
+  const [currentImage, setCurrentImage] = useState("/assets/Waste_collection.svg");
+  const [animationDirection, setAnimationDirection] = useState("forward"); // Track animation direction
 
   const buttons = [
     {
@@ -35,30 +34,45 @@ const CustomFlowSVG = ({
     { step: 1, label: "You Payout" },
   ];
 
+  // Set default active button to the first one
+  useEffect(() => {
+    setStep(buttons[0].label);
+    setCurrentImage(buttons[0].image);
+  }, [setStep]);
+
   useEffect(() => {
     if (pathRef.current) {
       setPathLength(pathRef.current.getTotalLength());
     }
   }, []);
 
+  // Adjust the progress animation based on the direction (forward/backward)
   useEffect(() => {
     const animateObject = () => {
       if (!animating) return;
 
-      // Only move forward, no reverse-back animation
       setProgress((prevProgress) => {
-        if (prevProgress < nextStep) {
-          return Math.min(prevProgress + 0.005, nextStep);
+        if (animationDirection === "forward") {
+          if (prevProgress < nextStep) {
+            return Math.min(prevProgress + 0.005, nextStep);
+          } else {
+            setAnimating(false);
+            return prevProgress;
+          }
         } else {
-          setAnimating(false);
-          return prevProgress;
+          if (prevProgress > nextStep) {
+            return Math.max(prevProgress - 0.005, nextStep);
+          } else {
+            setAnimating(false);
+            return prevProgress;
+          }
         }
       });
     };
 
     const interval = setInterval(animateObject, 50);
     return () => clearInterval(interval);
-  }, [nextStep, animating]);
+  }, [nextStep, animating, animationDirection]);
 
   useEffect(() => {
     if (imageRef.current && pathRef.current) {
@@ -77,6 +91,12 @@ const CustomFlowSVG = ({
     });
   }, [progress, pathLength]);
 
+  // Function to handle the button click (next/prev)
+  const handleButtonClick = (step, direction) => {
+    setAnimationDirection(direction); // Set animation direction (forward or backward)
+    handleStepButtonClick(step); // Call the step button click handler
+  };
+
   return (
     <>
       <div style={{ position: "relative", width: "600px", margin: "auto" }}>
@@ -93,7 +113,6 @@ const CustomFlowSVG = ({
             stroke="url(#paint0_linear)"
             strokeWidth="1.61484"
           />
-          {/* SVG Image that moves along the path */}
           <image ref={imageRef} href={currentImage} width="25" height="25" />
           <defs>
             <linearGradient
@@ -114,7 +133,7 @@ const CustomFlowSVG = ({
         {buttons.map((button, index) => (
           <button
             key={index}
-            onClick={() => handleStepButtonClick(button.step)}
+            onClick={() => handleButtonClick(button.step, button.step > progress ? "forward" : "backward")}
             style={{
               position: "absolute",
               top:
@@ -135,7 +154,7 @@ const CustomFlowSVG = ({
                   : "20px",
               bottom: index === 3 ? "0px" : "auto",
               backgroundColor:
-                highlightedButton === button.label ? "#e31662" : "#e0e0e0",
+                highlightedButton === button.label ? "#e31662" : "#ffffff",
               color: highlightedButton === button.label ? "white" : "black",
               padding: "20px 40px",
               borderRadius: "50px",
@@ -165,7 +184,7 @@ const CustomFlowSVG = ({
         ))}
       </div>
       <div className="idea">
-        NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
+        <span style={{marginRight: "5px"}}><img src="/assets/icon.png" /></span>NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
       </div>
     </>
   );

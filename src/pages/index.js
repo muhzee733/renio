@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useTheme } from "next-themes";
 import Footer from "@/components/Navbar/Footer";
 import Banner from "@/components/Banner/Banner";
 import HowItWork from "@/components/HowItWorks/HowItWork";

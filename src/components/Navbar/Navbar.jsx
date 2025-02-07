@@ -26,7 +26,7 @@ const Navbar = () => {
           background: "white",
           height: "65px",
           borderRadius: "8px",
-          duration: 0,
+          duration: 0.3,
         },
         "<"
       )

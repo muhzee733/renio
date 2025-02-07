@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Slider = ({ handleStepButtonClick, nextStep }) => {
   const steps = [
@@ -70,6 +70,11 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
     steps.findIndex((stepObj) => stepObj.step === nextStep)
   );
 
+  useEffect(() => {
+    const updatedIndex = steps.findIndex((stepObj) => stepObj.step === nextStep);
+    setCurrentIndex(updatedIndex);
+  }, [nextStep]);
+
   const goToPreviousStep = () => {
     const prevIndex = currentIndex === 0 ? steps.length - 1 : currentIndex - 1;
     setCurrentIndex(prevIndex);
@@ -99,12 +104,6 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
         <button className="swiper-prev" onClick={goToNextStep}>
           ❯
         </button>
-        {/* <button
-        className={`swiper-reset ${nextStep > 0.25 ? "active" : ""}`}
-        onClick={resetSlider}
-        disabled={nextStep <= 0.25}>
-          Reset
-        </button> */}
       </div>
     </div>
   );
