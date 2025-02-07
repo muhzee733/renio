@@ -1,5 +1,5 @@
 .main-navbar {
-  height: "60px";
+  height: "78px" !important;
   color: "#fff";
   margin: 0 auto;
   border-radius: 10px;
@@ -442,7 +442,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 50px 50px 50px;
+  padding: 100px 0px 50px 0px;
 }
 .foolter-links{
   display: flex;
@@ -464,7 +464,7 @@ footer {
 }
 .footer-down-section img{
   width: auto;
-  scale: 1.2;
+  scale: 1.1;
 }
 .newsletter{
   position: relative;
@@ -488,7 +488,7 @@ footer {
   border: 0;
   font-weight: 300;
   position: absolute;
-  right: 37%;
+  right: 31%;
     top: 12%;
 }
 .footer-text{

@@ -4,7 +4,8 @@ import Blog from "./Blog/Blog";
 const RenieBin = () => {
   return (
     <div className="renie-bin">
-      <div className="renie-bin-wrapper">
+     <div class="container">
+     <div className="renie-bin-wrapper">
         <h2>Renie Bins are Everywhere</h2>
         <p>Transforming Waste for Every Space</p>
         <div className="blogs">
@@ -18,6 +19,7 @@ const RenieBin = () => {
         recycling solutions."/>
         </div>
       </div>
+     </div>
     </div>
   );
 };

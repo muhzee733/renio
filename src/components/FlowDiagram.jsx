@@ -15,14 +15,14 @@ const CustomFlowSVG = ({
   const [progress, setProgress] = useState(0);
   const [highlightedButton, setHighlightedButton] = useState("Step 1");
   const [currentImage, setCurrentImage] = useState(
-    "/assets/Watse_collection.png"
+    "/assets/Waste_collection.svg"
   );
 
   const buttons = [
     {
-      step: 0.25,
+      step: 0.35,
       label: "Waste Collection",
-      image: "/assets/Watse_collection.png",
+      image: "/assets/Data_extraction.svg",
     },
     {
       step: 0.35,
@@ -32,9 +32,9 @@ const CustomFlowSVG = ({
     {
       step: 0.65,
       label: "Data Monetization",
-      image: "/assets/Data_extratction.svg",
+      image: "/assets/Money.svg",
     },
-    { step: 1, label: "You Payout", image: "/assets/Data_extratction.svg" },
+    { step: 1, label: "You Payout", image: "/assets/Money.svg" },
   ];
 
   useEffect(() => {

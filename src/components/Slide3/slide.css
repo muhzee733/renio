@@ -25,10 +25,10 @@
   text-align: right;
 }
 .left-box img {
-  max-width: 70%;
+  max-width: 80%;
 }
 .renio-button button {
-  font-size: 21px;
+  font-size: 14px;
   font-family: var(--font-family);
   font-weight: 500;
   line-height: 36px;

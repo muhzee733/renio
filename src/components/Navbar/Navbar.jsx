@@ -45,6 +45,10 @@ const Navbar = () => {
         tl.current.play();
       } else {
         tl.current.reverse();
+        gsap.to(navRef.current, {
+          height: "70px", 
+          duration: 0.5,
+        });
       }
     };
 

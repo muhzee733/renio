@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <>
       <div className="footer-section">
-        <div className="footer-wrapper">
+       <div class="container">
+       <div className="footer-wrapper">
           <div className="footer-upper-section">
             <div className="footer-left-section">
               <h6>Sign up to receive the latest news and support articles</h6>
@@ -77,10 +78,11 @@ const Footer = () => {
             <img src="/assets/footer-text.png" alt="footer" />
           </div>
         </div>
+       </div>
       </div>
-      <div className="bootom-footer"> 
+      <div className="bootom-footer">
         <p>© 2024 All rights reserved. Renie Tech Trading LLC</p>
-        <p>Country : Qatar  | Saudi Arabia | United Arab Emirates</p>
+        <p>Country : Qatar | Saudi Arabia | United Arab Emirates</p>
       </div>
     </>
   );

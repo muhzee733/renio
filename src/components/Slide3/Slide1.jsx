@@ -15,6 +15,7 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
           : "slide-1"
       }
     >
+      <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div className="left-box">
@@ -81,6 +82,7 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
