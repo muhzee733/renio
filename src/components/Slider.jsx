@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Slider = ({ handleStepButtonClick, nextStep }) => {
   const steps = [
-    { step: 0.25, label: "Step 1" },
+    { step: 0, label: "Step 1" },
     { step: 0.35, label: "Step 2" },
     { step: 0.65, label: "Step 3" },
     { step: 1, label: "Step 4" },
@@ -73,6 +73,7 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
   useEffect(() => {
     const updatedIndex = steps.findIndex((stepObj) => stepObj.step === nextStep);
     setCurrentIndex(updatedIndex);
+    console.log("Updated Index:", updatedIndex); // Add logging to verify the index
   }, [nextStep]);
 
   const goToPreviousStep = () => {
@@ -87,13 +88,22 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
     handleStepButtonClick(steps[nextIndex].step);
   };
 
+  // Check if the current index exists in cardTexts
+  const currentCard = cardTexts[currentIndex];
+
   return (
     <div className="custom-slider">
       <div className="card">
         <div className="card-inner">
           <div className="card-text">
-            <h3>{cardTexts[currentIndex].title}</h3>
-            <p>{cardTexts[currentIndex].desc}</p>
+            {currentCard ? (
+              <>
+                <h3>{currentCard.title}</h3>
+                <p>{currentCard.desc}</p>
+              </>
+            ) : (
+              <p>Step not found</p>
+            )}
           </div>
         </div>
       </div>

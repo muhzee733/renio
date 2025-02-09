@@ -13,18 +13,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust based on mobile breakpoint
+      setIsMobile(window.innerWidth <= 768);
     };
 
     updateScreenSize();
     window.addEventListener("resize", updateScreenSize);
-
-    // GSAP Animation for Navbar Toggle
     tl.current
       .set([logoRef.current, linksRef.current, buttonRef.current], {
         opacity: 1,
       })
-      .set(menuImageRef.current, { opacity: 0, display: "none" }) // Initially hide small.png
+      .set(menuImageRef.current, { opacity: 0, display: "none" })
       .to([logoRef.current, linksRef.current, buttonRef.current], {
         opacity: 0,
         display: "none",
@@ -53,10 +51,10 @@ const Navbar = () => {
 
     const handleScroll = () => {
       if (window.scrollY > 1 || isMobile) {
-        gsap.to(menuImageRef.current, { opacity: 1, display: "block", duration: 0.3 }); // Show small.png
+        gsap.to(menuImageRef.current, { opacity: 1, display: "block", duration: 0.3 }); 
         tl.current.play();
       } else {
-        gsap.to(menuImageRef.current, { opacity: 0, display: "none", duration: 0.3 }); // Hide small.png
+        gsap.to(menuImageRef.current, { opacity: 0, display: "none", duration: 0.3 }); 
         tl.current.reverse();
         gsap.to(navRef.current, {
           height: "70px",
@@ -78,14 +76,14 @@ const Navbar = () => {
         width: "100%",
         height: "70px",
         borderRadius: "0px",
-        duration: 0.6, // Slower transition (increased from 0.3 to 0.6)
+        duration: 0.6,
       });
       gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
         opacity: 1,
         display: "flex",
-        duration: 0.6, // Slower transition (increased from 0.3 to 0.6)
+        duration: 0.6,
       });
-      gsap.to(menuImageRef.current, { opacity: 0, duration: 0.4 }); // Slower fade (increased from 0.2 to 0.4)
+      gsap.to(menuImageRef.current, { opacity: 0, duration: 0.6 });
     }
   };
   
@@ -94,15 +92,15 @@ const Navbar = () => {
       gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
         opacity: 0,
         display: "none",
-        duration: 0.6, // Slower transition (increased from 0.3 to 0.6)
+        duration: 0.6,
       });
       gsap.to(navRef.current, {
         width: "78px",
         height: "65px",
         borderRadius: "8px",
-        duration: 0.6, // Slower transition (increased from 0.3 to 0.6)
+        duration: 0.6,
       });
-      gsap.to(menuImageRef.current, { opacity: 1, duration: 0.4 }); // Slower fade (increased from 0.3 to 0.4)
+      gsap.to(menuImageRef.current, { opacity: 1, duration: 0.6 });
     }
   };
   

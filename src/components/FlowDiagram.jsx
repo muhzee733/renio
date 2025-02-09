@@ -1,23 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const CustomFlowSVG = ({
-  setStep,
-  handleStepButtonClick,
-  animating,
-  nextStep,
-  setAnimating,
-}) => {
+const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep, setNextStep, setAnimating }) => {
   const imageRef = useRef(null);
   const pathRef = useRef(null);
   const [pathLength, setPathLength] = useState(0);
   const [progress, setProgress] = useState(0);
   const [highlightedButton, setHighlightedButton] = useState("Waste Collection");
-  const [currentImage, setCurrentImage] = useState("/assets/Waste_collection.svg");
-  const [animationDirection, setAnimationDirection] = useState("forward");
-
   const buttons = [
     {
-      step: 0.25,
+      step: 0,
       label: "Waste Collection",
       image: "/assets/Waste_collection.svg",
     },
@@ -34,71 +25,50 @@ const CustomFlowSVG = ({
     { step: 1, label: "You Payout" },
   ];
 
-  // Set default active button to the first one
-  useEffect(() => {
-    setStep(buttons[0].label);
-    setCurrentImage(buttons[0].image);
-  }, [setStep]);
-
   useEffect(() => {
     if (pathRef.current) {
       setPathLength(pathRef.current.getTotalLength());
     }
   }, []);
 
-  // Adjust the progress animation based on the direction (forward/backward)
   useEffect(() => {
-    const animateObject = () => {
+    const animateImage = () => {
       if (!animating) return;
-
       setProgress((prevProgress) => {
-        if (animationDirection === "forward") {
-          if (prevProgress < nextStep) {
-            return Math.min(prevProgress + 0.005, nextStep);
-          } else {
-            setAnimating(false);
-            return prevProgress;
-          }
+        if (prevProgress < nextStep) {
+          return Math.min(prevProgress + 0.005, nextStep);
+        } else if (prevProgress > nextStep) {
+          return Math.max(prevProgress - 0.005, nextStep);
         } else {
-          if (prevProgress > nextStep) {
-            return Math.max(prevProgress - 0.005, nextStep);
-          } else {
-            setAnimating(false);
-            return prevProgress;
-          }
+          setAnimating(false);
+          return prevProgress;
         }
       });
     };
 
-    const interval = setInterval(animateObject, 50);
+    const interval = setInterval(animateImage, 50);
     return () => clearInterval(interval);
-  }, [nextStep, animating, animationDirection]);
+  }, [nextStep, animating]);
 
   useEffect(() => {
     if (imageRef.current && pathRef.current) {
       const point = pathRef.current.getPointAtLength(progress * pathLength);
-      imageRef.current.setAttribute("x", point.x - 10);
-      imageRef.current.setAttribute("y", point.y - 10);
-    }
+      imageRef.current.setAttribute("x", point.x - 12); 
+      imageRef.current.setAttribute("y", point.y - 12); 
 
-    buttons.forEach((button) => {
-      const threshold = 0.02;
-      if (Math.abs(progress - button.step) < threshold) {
-        setHighlightedButton(button.label);
-        setStep(button.label);
-        setCurrentImage(button.image);
-      }
-    });
+      buttons.forEach((button) => {
+        const threshold = 0.02;
+        if (Math.abs(progress - button.step) < threshold) {
+          setHighlightedButton(button.label);
+          setStep(button.label);
+        }
+      });
+    }
   }, [progress, pathLength]);
 
-  const handleButtonClick = (step, direction) => {
-    setAnimationDirection(direction);
-    handleStepButtonClick(step);
-  };
-
   return (
-    <>
-      <div className="diagram-wrapper">
+    <div>
+      <div style={{ position: "relative", width: "600px", margin: "auto" }}>
         <svg
           height="auto"
           viewBox="-10 -10 479 380"
@@ -109,10 +79,16 @@ const CustomFlowSVG = ({
           <path
             ref={pathRef}
             d="M57.9231 1.02979H401.077C432.515 1.02979 458 26.5151 458 57.9529C458 89.3907 432.515 114.876 401.077 114.876L57.9231 114.069C26.4854 114.069 1 139.554 1 170.992C1 202.43 26.4854 227.915 57.9232 227.915L401.077 227.108C432.515 227.108 458 252.593 458 284.031C458 315.468 432.515 340.954 401.077 340.954H57.9232"
+            id="animated-path"
             stroke="url(#paint0_linear)"
             strokeWidth="1.61484"
           />
-          <image ref={imageRef} href={currentImage} width="25" height="25" />
+          <image
+            ref={imageRef}
+            href={buttons[0].image}
+            width="25"
+            height="25"
+          />
           <defs>
             <linearGradient
               id="paint0_linear"
@@ -132,17 +108,12 @@ const CustomFlowSVG = ({
         {buttons.map((button, index) => (
           <button
             key={index}
-            onClick={() =>
-              handleButtonClick(
-                button.step,
-                button.step > progress ? "forward" : "backward"
-              )
-            }
+            onClick={() => handleStepButtonClick(button.step)}
             style={{
               position: "absolute",
               top:
                 index === 0
-                  ? "-20px"
+                  ? "-12px"
                   : index === 1
                   ? "26%"
                   : index === 2
@@ -154,16 +125,19 @@ const CustomFlowSVG = ({
                   : index === 1
                   ? "48%"
                   : index === 2
-                  ? "22%"
+                  ? "300px"
                   : "20px",
-              bottom: index === 3 ? "0px" : "auto",
+              bottom: index === 3 ? "20px" : "auto",
               backgroundColor:
-                highlightedButton === button.label ? "#e31662" : "#ffffff",
+                highlightedButton === button.label ? "#e31662" : "#e0e0e0",
               color: highlightedButton === button.label ? "white" : "black",
               padding: "20px 40px",
-              borderRadius: "50px",
+              borderRadius: "30px",
               cursor: "pointer",
-              border: "2px solid #544eb8",
+              border:
+                highlightedButton === button.label
+                  ? "2px solid #544eb8"
+                  : "2px solid #544eb8",
               fontSize: "16px",
               fontWeight: "bold",
               transition: "all 0.3s ease",
@@ -175,13 +149,11 @@ const CustomFlowSVG = ({
             onMouseEnter={(e) => {
               e.target.style.backgroundColor = "#d21552";
               e.target.style.borderColor = "#544eb8";
-              e.target.style.color = "white"
             }}
             onMouseLeave={(e) => {
               if (highlightedButton !== button.label) {
-                e.target.style.backgroundColor = "white";
+                e.target.style.backgroundColor = "#e0e0e0";
                 e.target.style.borderColor = "#544eb8";
-                e.target.style.color = "black"
               }
             }}
           >
@@ -189,14 +161,8 @@ const CustomFlowSVG = ({
           </button>
         ))}
       </div>
-      <div className="idea">
-        <span style={{ marginRight: "5px" }}>
-          <img src="/assets/icon.png" />
-        </span>
-        NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
-      </div>
-    </>
+    </div>
   );
 };
 
-export default CustomFlowSVG;
+export default FlowDiagram;
