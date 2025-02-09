@@ -746,26 +746,24 @@ footer {
   .how-it-work-main h2 {
     font-size: 134px;
     font-size: clamp(110px, 1.2vw, 134px);
-}
-.diagram-wrapper {
-  width: 500px;
-}
-.flow-diagram {
-  height: 83%;
-}
-.custom-column{
-  align-items: center;
-  display: flex;
-}
-.renio-button button {
-  font-size: 12px !important;
-  padding: 4px 12px !important;
-}
-.renio-button {
-  margin-bottom: 27px !important;
-}
-
-
+  }
+  .diagram-wrapper {
+    width: 500px;
+  }
+  .flow-diagram {
+    height: 83%;
+  }
+  .custom-column {
+    align-items: center;
+    display: flex;
+  }
+  .renio-button button {
+    font-size: 12px !important;
+    padding: 4px 12px !important;
+  }
+  .renio-button {
+    margin-bottom: 27px !important;
+  }
 }
 @media (max-width: 1024px) {
   .userfull-links ul li {
@@ -849,14 +847,14 @@ footer {
   }
   .diagram-wrapper {
     width: 430px !important;
-}
-.how-it-work-main h2 {
-  font-size: 113px;
-  line-height: 100px;
-}
-.section-2{
-  min-height: 100vh !important;
-}
+  }
+  .how-it-work-main h2 {
+    font-size: 113px;
+    line-height: 100px;
+  }
+  .section-2 {
+    min-height: 100vh !important;
+  }
 }
 @media (max-width: 992px) {
   .navbar-links,
@@ -882,6 +880,10 @@ footer {
 @media (max-width: 768px) {
   .footer-upper-section {
     flex-direction: column;
+  }
+  .main-navbar {
+    width: 150px !important;
+    background-color: white !important;
   }
   .main-slider .row > div {
     width: 100%;
@@ -987,92 +989,92 @@ footer {
   }
   .how-it-work-main h2 {
     font-size: 87px !important;
-}
-.main-banner h1 {
-  font-size: 54px !important;
-  line-height: 48px !important;
-}
-.section-1 {
-  height: 180vh;
-}
-.section-2 {
-  align-items: self-start;
+  }
+  .main-banner h1 {
+    font-size: 54px !important;
+    line-height: 48px !important;
+  }
+  .section-1 {
+    height: 180vh;
+  }
+  .section-2 {
+    align-items: self-start;
     min-height: 190vh !important;
-}
-.flow-diagram {
-  height: 110% !important;
-}
-.brand-slider img {
-  max-width: 100% !important;
-}
-.brand-slider-container h3 {
-  text-align: center;
-}
-.brand-slider {
-  max-width: 100%;
-}
-.brand-slider-container {
-  bottom: -4%;
-}
-.banner-img {
-  max-width: 50%;
-  transform: translate(50%, 5%);
-}
-.mobile-img {
-  right: 17%;
-  bottom: 12%;
-  max-width: 23%;
-}
-.banner-svg {
-  bottom: 14%;
-  left: 0%;
-  scale: 1;
-  height: 54%;
-}
-.tool {
-  width: 278px;
-  top: 25%;
-  left: 31%;
-  height: 43px;
-}
-.main-banner {
-  height: 170vh;
-}
-.custom-text{
-  text-align: center;
-}
-.slide-1 {
-  height: 100vh !important;
-  padding: 30px 30px !important;
-}
-.left-box img {
-  max-width: 90% !important;
-}
-.renio-grid-system img {
-  max-width: 30%;
-}
-.renio-button {
-  gap: 5px !important;
-  margin-bottom: 16px !important;
-}
-.slide-1 h2 {
-  font-size: 30px !important;
-}
-.renio-button button {
-  font-size: 10px !important;
-  padding: 4px 12px !important;
-  line-height: 16px !important;
-}
-.custom-price {
-  font-size: 16px !important;
-}
-.renio-footer-div div {
-  padding: 10px 16px !important;
-}
-.custom-heading{
-  font-size: 12px !important;
-}
-/* .left-box{
+  }
+  .flow-diagram {
+    height: 110% !important;
+  }
+  .brand-slider img {
+    max-width: 100% !important;
+  }
+  .brand-slider-container h3 {
+    text-align: center;
+  }
+  .brand-slider {
+    max-width: 100%;
+  }
+  .brand-slider-container {
+    bottom: -4%;
+  }
+  .banner-img {
+    max-width: 50%;
+    transform: translate(50%, 5%);
+  }
+  .mobile-img {
+    right: 17%;
+    bottom: 12%;
+    max-width: 23%;
+  }
+  .banner-svg {
+    bottom: 14%;
+    left: 0%;
+    scale: 1;
+    height: 54%;
+  }
+  .tool {
+    width: 278px;
+    top: 25%;
+    left: 31%;
+    height: 43px;
+  }
+  .main-banner {
+    height: 170vh;
+  }
+  .custom-text {
+    text-align: center;
+  }
+  .slide-1 {
+    height: 100vh !important;
+    padding: 30px 30px !important;
+  }
+  .left-box img {
+    max-width: 90% !important;
+  }
+  .renio-grid-system img {
+    max-width: 30%;
+  }
+  .renio-button {
+    gap: 5px !important;
+    margin-bottom: 16px !important;
+  }
+  .slide-1 h2 {
+    font-size: 30px !important;
+  }
+  .renio-button button {
+    font-size: 10px !important;
+    padding: 4px 12px !important;
+    line-height: 16px !important;
+  }
+  .custom-price {
+    font-size: 16px !important;
+  }
+  .renio-footer-div div {
+    padding: 10px 16px !important;
+  }
+  .custom-heading {
+    font-size: 12px !important;
+  }
+  /* .left-box{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1084,9 +1086,61 @@ footer {
   .mini-footer-wrapper {
     flex-direction: column;
   }
+  .main-banner {
+    height: 140vh !important;
+  }
+  .main-banner h1 {
+    font-size: 41px !important;
+    line-height: 42px !important;
+  }
+  .banner-img {
+    max-width: 56%;
+    transform: translate(38%, 5%);
+  }
+  .banner-svg {
+    bottom: -2%;
+    left: -14%;
+    scale: 1;
+    height: 73%;
+  }
+  .mobile-img {
+    right: -7%;
+    bottom: -1%;
+    max-width: 51%;
+  }
+  .tool {
+    width: 220px;
+    top: 5%;
+    left: 22%;
+    height: 35px;
+  }
+  .how-it-work-main h2 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+  .custom-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .custom-slider p {
+    font-size: 14px;
+  }
+  .custom-slider .card {
+    height: 380px !important;
+  }
+  .tool span {
+    font-size: 12px !important;
+  }
   .mini-footer-wrapper p {
     font-size: 16px;
     line-height: 24px !important;
+  }
+  .swiper-next {
+    right: 12%;
   }
   .btn-1 {
     height: 37px;
@@ -1165,4 +1219,34 @@ footer {
   .section-4-wrapper img {
     max-width: 80% !important;
   }
+  .flow-diagram {
+    display: none !important;
+  }
+  .section-2 {
+    min-height: 100vh !important;
+  }
+  .left-box img {
+    max-width: 60% !important;
+}
+.slide-1 {
+  height: 160vh !important;
+  padding: 30px !important;
+}
+.left-box{
+  text-align: center;
+}
+.slide-1 h2 {
+text-align: center !important;
+}
+.renio-grid-system div {
+  width: 30% !important;
+}
+.main-navbar {
+  width: 70px !important;
+}
+.section-1 {
+  height: 146vh;
+}
+
+
 }
