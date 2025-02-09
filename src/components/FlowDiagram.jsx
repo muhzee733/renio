@@ -13,13 +13,13 @@ const CustomFlowSVG = ({
   const [progress, setProgress] = useState(0);
   const [highlightedButton, setHighlightedButton] = useState("Waste Collection");
   const [currentImage, setCurrentImage] = useState("/assets/Waste_collection.svg");
-  const [animationDirection, setAnimationDirection] = useState("forward"); // Track animation direction
+  const [animationDirection, setAnimationDirection] = useState("forward");
 
   const buttons = [
     {
-      step: 0.35,
+      step: 0.25,
       label: "Waste Collection",
-      image: "/assets/Data_extraction.svg",
+      image: "/assets/Waste_collection.svg",
     },
     {
       step: 0.35,
@@ -91,15 +91,14 @@ const CustomFlowSVG = ({
     });
   }, [progress, pathLength]);
 
-  // Function to handle the button click (next/prev)
   const handleButtonClick = (step, direction) => {
-    setAnimationDirection(direction); // Set animation direction (forward or backward)
-    handleStepButtonClick(step); // Call the step button click handler
+    setAnimationDirection(direction);
+    handleStepButtonClick(step);
   };
 
   return (
     <>
-      <div style={{ position: "relative", width: "600px", margin: "auto" }}>
+      <div className="diagram-wrapper">
         <svg
           height="auto"
           viewBox="-10 -10 479 380"
@@ -133,7 +132,12 @@ const CustomFlowSVG = ({
         {buttons.map((button, index) => (
           <button
             key={index}
-            onClick={() => handleButtonClick(button.step, button.step > progress ? "forward" : "backward")}
+            onClick={() =>
+              handleButtonClick(
+                button.step,
+                button.step > progress ? "forward" : "backward"
+              )
+            }
             style={{
               position: "absolute",
               top:
@@ -171,11 +175,13 @@ const CustomFlowSVG = ({
             onMouseEnter={(e) => {
               e.target.style.backgroundColor = "#d21552";
               e.target.style.borderColor = "#544eb8";
+              e.target.style.color = "white"
             }}
             onMouseLeave={(e) => {
               if (highlightedButton !== button.label) {
-                e.target.style.backgroundColor = "#e0e0e0";
+                e.target.style.backgroundColor = "white";
                 e.target.style.borderColor = "#544eb8";
+                e.target.style.color = "black"
               }
             }}
           >
@@ -184,7 +190,10 @@ const CustomFlowSVG = ({
         ))}
       </div>
       <div className="idea">
-        <span style={{marginRight: "5px"}}><img src="/assets/icon.png" /></span>NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
+        <span style={{ marginRight: "5px" }}>
+          <img src="/assets/icon.png" />
+        </span>
+        NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
       </div>
     </>
   );

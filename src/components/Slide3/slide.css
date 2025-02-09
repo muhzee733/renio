@@ -35,6 +35,11 @@
 .left-box img {
   max-width: 80%;
 }
+.renio-button {
+  position: relative;
+  display: inline-block;
+}
+
 .renio-button button {
   font-size: 14px;
   font-family: var(--font-family);
@@ -43,11 +48,28 @@
   color: #000;
   background-color: #fff;
   padding: 4px 26px;
-  border-radius: 10px; 
-  border: 2px solid transparent;
-  border-image: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  border-image-slice: 1;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
+
+/* Pseudo-element for gradient border */
+.renio-button button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 8px; /* Make sure it matches button's border-radius */
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
 
 .active {
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);

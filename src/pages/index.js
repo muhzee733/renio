@@ -40,11 +40,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" scroll-section-outer">
+      <section>
         <Section5 />
       </section>
 
-      <section className=" scroll-section-outer">
+      <section>
         <Section6 />
       </section>
 

@@ -13,7 +13,7 @@ const HowItWork = () => {
     setAnimating(true);
   };
   return (
-    <div className="how-it-work-main h-100 w-100">
+    <div className="how-it-work-main">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 position-relative">

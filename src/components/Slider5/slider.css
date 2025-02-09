@@ -1,60 +1,57 @@
-.main-slider{
-  padding: 50px 100px;
+.main-slider {
   position: relative;
-}
-.main-slider div{
-  flex: 1;
-}
-.main-slider .div{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-.main-slider img{
+.main-slider div {
+  flex: 1;
+}
+.main-slider img {
   max-width: 60%;
   text-align: center;
   margin: 0 auto;
 }
-.main-slider h2{
+.main-slider h2 {
   font-size: 88px;
   color: white;
   font-weight: 700;
 }
-.main-slider h4{
+.main-slider h4 {
   font-size: 60px;
   color: white;
   font-weight: 500;
 }
-.main-slider p{
+.main-slider p {
   font-size: 18px;
   color: white;
 }
-.main-slider h6{
+.main-slider h6 {
   font-size: 24px;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 36px;
 }
-.swiper-button-next, 
+.swiper-button-next,
 .swiper-button-prev {
-    left: 50% !important;
-    transform: translateX(-50%);
-    top: 85% !important;
-    color: #e31662;
-    background: white;
-    padding: 30px 30px;
-    border-radius: 30px;
-    position: absolute;
+  left: 50% !important;
+  transform: translateX(-50%);
+  top: 90% !important;
+  color: #e31662;
+  background: white;
+  padding: 30px 30px;
+  border-radius: 30px;
+  position: absolute;
 }
 
 .swiper-button-prev {
-    margin-left: -50px;
+  margin-left: -50px;
 }
 
 .swiper-button-next {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .swiper-button-prev:after,

@@ -7,11 +7,9 @@ import "swiper/css/navigation";
 
 const Section5 = () => {
   return (
-    <div className="scroll-section-inner">
-      <div className="scroll-section">
-        <Swiper
+    <div className="scroll-section-inne">
+       <Swiper
           modules={[Navigation]}
-          spaceBetween={50}
           slidesPerView={1}
           navigation
         >
@@ -96,7 +94,6 @@ const Section5 = () => {
             />
           </SwiperSlide>
         </Swiper>
-      </div>
     </div>
   );
 };
