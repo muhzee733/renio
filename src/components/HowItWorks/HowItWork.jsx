@@ -16,7 +16,7 @@ const HowItWork = () => {
     <div className="how-it-work-main">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 position-relative">
+          <div className="col-lg-6 col-md-12 position-relative">
             <h2>HOW IT WORKS</h2>
             <Slider
               step={step}
@@ -25,7 +25,7 @@ const HowItWork = () => {
               nextStep={nextStep}
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12 custom-column">
             <div className="flow-diagram">
               <FlowDiagram
                 setStep={setStep}

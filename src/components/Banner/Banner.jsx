@@ -6,14 +6,14 @@ const Banner = () => {
     <div className="main-banner">
       <div className="container ">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12 custom-text">
             <h1>Turn your waste</h1>
             <h1>
               into <span className="purple">revenue</span>
             </h1>
             <button className="btn-2">How it works</button>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12">
             <div class="box-inner">
               <div className="tool">
                 <span>Recycled Waste Items</span>

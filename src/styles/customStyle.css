@@ -743,6 +743,29 @@ footer {
   .idea {
     font-size: 12px !important;
   }
+  .how-it-work-main h2 {
+    font-size: 134px;
+    font-size: clamp(110px, 1.2vw, 134px);
+}
+.diagram-wrapper {
+  width: 500px;
+}
+.flow-diagram {
+  height: 83%;
+}
+.custom-column{
+  align-items: center;
+  display: flex;
+}
+.renio-button button {
+  font-size: 12px !important;
+  padding: 4px 12px !important;
+}
+.renio-button {
+  margin-bottom: 27px !important;
+}
+
+
 }
 @media (max-width: 1024px) {
   .userfull-links ul li {
@@ -830,6 +853,9 @@ footer {
 .how-it-work-main h2 {
   font-size: 113px;
   line-height: 100px;
+}
+.section-2{
+  min-height: 100vh !important;
 }
 }
 @media (max-width: 992px) {
@@ -959,6 +985,99 @@ footer {
   .section-4-wrapper img {
     max-width: 60% !important;
   }
+  .how-it-work-main h2 {
+    font-size: 87px !important;
+}
+.main-banner h1 {
+  font-size: 54px !important;
+  line-height: 48px !important;
+}
+.section-1 {
+  height: 180vh;
+}
+.section-2 {
+  align-items: self-start;
+    min-height: 190vh !important;
+}
+.flow-diagram {
+  height: 110% !important;
+}
+.brand-slider img {
+  max-width: 100% !important;
+}
+.brand-slider-container h3 {
+  text-align: center;
+}
+.brand-slider {
+  max-width: 100%;
+}
+.brand-slider-container {
+  bottom: -4%;
+}
+.banner-img {
+  max-width: 50%;
+  transform: translate(50%, 5%);
+}
+.mobile-img {
+  right: 17%;
+  bottom: 12%;
+  max-width: 23%;
+}
+.banner-svg {
+  bottom: 14%;
+  left: 0%;
+  scale: 1;
+  height: 54%;
+}
+.tool {
+  width: 278px;
+  top: 25%;
+  left: 31%;
+  height: 43px;
+}
+.main-banner {
+  height: 170vh;
+}
+.custom-text{
+  text-align: center;
+}
+.slide-1 {
+  height: 100vh !important;
+  padding: 30px 30px !important;
+}
+.left-box img {
+  max-width: 90% !important;
+}
+.renio-grid-system img {
+  max-width: 30%;
+}
+.renio-button {
+  gap: 5px !important;
+  margin-bottom: 16px !important;
+}
+.slide-1 h2 {
+  font-size: 30px !important;
+}
+.renio-button button {
+  font-size: 10px !important;
+  padding: 4px 12px !important;
+  line-height: 16px !important;
+}
+.custom-price {
+  font-size: 16px !important;
+}
+.renio-footer-div div {
+  padding: 10px 16px !important;
+}
+.custom-heading{
+  font-size: 12px !important;
+}
+/* .left-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+} */
 }
 
 @media (max-width: 500px) {

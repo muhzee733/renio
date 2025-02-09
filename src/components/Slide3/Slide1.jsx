@@ -17,13 +17,13 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
     >
       <div class="container">
       <div class="row " style={{alignItems: "center"}}>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6">
           <div className="left-box">
             <h2>{title1}</h2>
             <img src={img} alt="RENIE_ONE" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6">
           <h2 className="text-right">{title2}</h2>
           <div className="renio-button">
             <button className={title1 === "RENIE ONE" ? "active" : ""}>
@@ -72,11 +72,11 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
             <h5 className="text-center text-white mt-5 mb-3">Pricing</h5>
             <div class="renio-footer-div">
               <div>
-                <h6>Standard Design</h6>
+                <h6 className="custom-heading">Standard Design</h6>
                 <h5 className="custom-price">{price1} AED</h5>
               </div>
               <div>
-                <h6>Custom Design</h6>
+                <h6 className="custom-heading">Custom Design</h6>
                 <h5 className="custom-price">{price2} AED</h5>
               </div>
             </div>
