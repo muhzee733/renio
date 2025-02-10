@@ -57,7 +57,7 @@ const Navbar = () => {
         gsap.to(menuImageRef.current, { opacity: 0, display: "none", duration: 0.3 }); 
         tl.current.reverse();
         gsap.to(navRef.current, {
-          height: "78px",
+          height: "100px",
           duration: 0.5,
         });
       }

@@ -44,8 +44,17 @@ const Section6 = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="software-right-container">
-                      <img src="/assets/renie-hub.png" />
-                      <span>Renie Admin</span>
+                      <img src="/assets/renie-hub-2.png" />
+                      <span>Renie Hub</span>
+                      <p>
+                      The core software that manages all the Renie bins in one place
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="software-right-container">
+                      <img src="/assets/renie-hub-3.png" />
+                      <span>Renie Rewards</span>
                       <p>
                         The core software that manages all the Renie bins in one
                         place
@@ -54,8 +63,8 @@ const Section6 = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="software-right-container">
-                      <img src="/assets/renie-hub.png" />
-                      <span>Renie Admin</span>
+                      <img src="/assets/renie-hub-4.png" />
+                      <span>Renie Ads</span>
                       <p>
                         The core software that manages all the Renie bins in one
                         place
