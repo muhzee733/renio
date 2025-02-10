@@ -1,11 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep, setNextStep, setAnimating }) => {
+const FlowDiagram = ({
+  setStep,
+  text,
+  handleStepButtonClick,
+  animating,
+  nextStep,
+  setNextStep,
+  setAnimating,
+}) => {
   const imageRef = useRef(null);
   const pathRef = useRef(null);
   const [pathLength, setPathLength] = useState(0);
   const [progress, setProgress] = useState(0);
-  const [highlightedButton, setHighlightedButton] = useState("Waste Collection");
+  const [highlightedButton, setHighlightedButton] =
+    useState("Waste Collection");
   const buttons = [
     {
       step: 0,
@@ -22,7 +31,7 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
       label: "Data Monetization",
       image: "/assets/Money.svg",
     },
-    { step: 1, label: "You Payout" },
+    { step: 1, label: "You Payout", image: "/assets/Money.svg" },
   ];
 
   useEffect(() => {
@@ -32,7 +41,7 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
   }, []);
 
   useEffect(() => {
-    const animateImage = () => {
+    const animateObject = () => {
       if (!animating) return;
       setProgress((prevProgress) => {
         if (prevProgress < nextStep) {
@@ -46,15 +55,15 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
       });
     };
 
-    const interval = setInterval(animateImage, 50);
+    const interval = setInterval(animateObject, 50);
     return () => clearInterval(interval);
   }, [nextStep, animating]);
 
   useEffect(() => {
     if (imageRef.current && pathRef.current) {
       const point = pathRef.current.getPointAtLength(progress * pathLength);
-      imageRef.current.setAttribute("x", point.x - 12); 
-      imageRef.current.setAttribute("y", point.y - 12); 
+      imageRef.current.setAttribute("x", point.x - 12);
+      imageRef.current.setAttribute("y", point.y - 12);
 
       buttons.forEach((button) => {
         const threshold = 0.02;
@@ -65,6 +74,20 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
       });
     }
   }, [progress, pathLength]);
+
+  useEffect(() => {
+    const selectedButton = buttons.find(
+      (btn) => btn.label === highlightedButton
+    );
+    if (imageRef.current && selectedButton?.image) {
+      imageRef.current.setAttribute("href", selectedButton.image);
+    }
+  }, [highlightedButton]);
+
+  const handleButtonClick = (step) => {
+    setNextStep(step);
+    setAnimating(true);
+  };
 
   return (
     <div>
@@ -83,12 +106,7 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
             stroke="url(#paint0_linear)"
             strokeWidth="1.61484"
           />
-          <image
-            ref={imageRef}
-            href={buttons[0].image}
-            width="25"
-            height="25"
-          />
+          <image ref={imageRef} width="25" height="25" />
           <defs>
             <linearGradient
               id="paint0_linear"
@@ -108,16 +126,16 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
         {buttons.map((button, index) => (
           <button
             key={index}
-            onClick={() => handleStepButtonClick(button.step)}
+            onClick={() => handleButtonClick(button.step)}
             style={{
               position: "absolute",
               top:
                 index === 0
                   ? "-12px"
                   : index === 1
-                  ? "26%"
+                  ? "27%"
                   : index === 2
-                  ? "55%"
+                  ? "57%"
                   : "auto",
               left:
                 index === 0
@@ -129,16 +147,13 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
                   : "20px",
               bottom: index === 3 ? "20px" : "auto",
               backgroundColor:
-                highlightedButton === button.label ? "#e31662" : "#e0e0e0",
-              color: highlightedButton === button.label ? "white" : "black",
-              padding: "20px 40px",
+                highlightedButton === button.label ? "#e31662" : "#ffffff",
+              color: highlightedButton === button.label ? "#ffffff" : "black",
+              padding: "14px 26px",
               borderRadius: "30px",
               cursor: "pointer",
-              border:
-                highlightedButton === button.label
-                  ? "2px solid #544eb8"
-                  : "2px solid #544eb8",
-              fontSize: "16px",
+              border: "2px solid #544eb8",
+              fontSize: "14px",
               fontWeight: "bold",
               transition: "all 0.3s ease",
               boxShadow:
@@ -149,17 +164,25 @@ const FlowDiagram = ({ setStep, text, handleStepButtonClick, animating, nextStep
             onMouseEnter={(e) => {
               e.target.style.backgroundColor = "#d21552";
               e.target.style.borderColor = "#544eb8";
+              e.target.style.color = "#ffffff";
             }}
             onMouseLeave={(e) => {
               if (highlightedButton !== button.label) {
-                e.target.style.backgroundColor = "#e0e0e0";
+                e.target.style.backgroundColor = "white";
                 e.target.style.borderColor = "#544eb8";
+                e.target.style.color = "black";
               }
             }}
           >
             {button.label}
           </button>
         ))}
+      </div>
+      <div className="idea">
+        <span style={{ marginRight: "5px" }}>
+          <img src="/assets/icon.png" />
+        </span>
+        NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
       </div>
     </div>
   );

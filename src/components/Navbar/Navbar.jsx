@@ -57,7 +57,7 @@ const Navbar = () => {
         gsap.to(menuImageRef.current, { opacity: 0, display: "none", duration: 0.3 }); 
         tl.current.reverse();
         gsap.to(navRef.current, {
-          height: "70px",
+          height: "78px",
           duration: 0.5,
         });
       }
@@ -103,7 +103,6 @@ const Navbar = () => {
       gsap.to(menuImageRef.current, { opacity: 1, duration: 0.6 });
     }
   };
-  
 
   return (
     <nav
@@ -118,7 +117,20 @@ const Navbar = () => {
         alt="Renie Logo"
         width={140}
         height={50}
+        style={{
+          display: isMobile ? 'none' : 'block',
+        }}
       />
+      <Image
+        src="/assets/small.png"
+        alt="Menu Icon"
+        width={40}
+        height={40}
+        className="mobile-menu"
+        style={{
+          display: isMobile ? 'block' : 'none',
+        }}
+        />
       <ul
         ref={linksRef}
         className="d-flex gap-3 navbar-links"
@@ -149,7 +161,6 @@ const Navbar = () => {
           top: "50%",
           transform: "translate(-50%, -50%)",
           opacity: 0,
-          display: "none", 
         }}
       />
     </nav>

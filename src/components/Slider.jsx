@@ -66,14 +66,15 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(
-    steps.findIndex((stepObj) => stepObj.step === nextStep)
-  );
+  const getValidIndex = (stepValue) => {
+    const index = steps.findIndex((stepObj) => stepObj.step === stepValue);
+    return index !== -1 ? index : 0;
+  };
+
+  const [currentIndex, setCurrentIndex] = useState(getValidIndex(nextStep));
 
   useEffect(() => {
-    const updatedIndex = steps.findIndex((stepObj) => stepObj.step === nextStep);
-    setCurrentIndex(updatedIndex);
-    console.log("Updated Index:", updatedIndex); // Add logging to verify the index
+    setCurrentIndex(getValidIndex(nextStep));
   }, [nextStep]);
 
   const goToPreviousStep = () => {
@@ -88,22 +89,13 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
     handleStepButtonClick(steps[nextIndex].step);
   };
 
-  // Check if the current index exists in cardTexts
-  const currentCard = cardTexts[currentIndex];
-
   return (
     <div className="custom-slider">
       <div className="card">
         <div className="card-inner">
           <div className="card-text">
-            {currentCard ? (
-              <>
-                <h3>{currentCard.title}</h3>
-                <p>{currentCard.desc}</p>
-              </>
-            ) : (
-              <p>Step not found</p>
-            )}
+            <h3>{cardTexts[currentIndex].title}</h3>
+            <p>{cardTexts[currentIndex].desc}</p>
           </div>
         </div>
       </div>

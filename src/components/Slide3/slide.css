@@ -47,7 +47,7 @@
   line-height: 24px;
   color: #000;
   background-color: #fff;
-  padding: 7px 34px;
+  padding: 7px 27px;
   border-radius: 8px;
   border: none;
   position: relative;
@@ -102,6 +102,7 @@
   border-radius: 8px;
   padding: 10px 0;
   text-align: center;
+  min-height: 96px !important;
 }
 .renio-grid-system h6{
   font-weight: 400;

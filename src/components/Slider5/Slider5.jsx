@@ -13,14 +13,18 @@ const Slider = ({ title1, title2, img, h6, p, customClass }) => {
       }
     };
 
-    checkScreenSize(); // Run once when component mounts
+    checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
     <>
-      <div className={`main-slider`} style={{ background: `#${customClass}` }}>
+      <div
+        id="derktop-version"
+        className={`main-slider`}
+        style={{ background: `#${customClass}` }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4 col-md-12 col-sm-12">
@@ -46,6 +50,23 @@ const Slider = ({ title1, title2, img, h6, p, customClass }) => {
                 </button>
               )}
             </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-version"
+        className={`main-slider`}
+        style={{ background: `#${customClass}` }}
+      >
+        <div className="container">
+          <div className="row align-items-center pt-5 mb-2">
+            <h2 className="text-center">{title1}</h2>
+            <h4 className="text-center">{title2}</h4>
+            <div className="custom-image">
+              <img src={img} alt="mobile-1" />
+            </div>
+            <h6>{h6}</h6>
+            <p>{p}</p>
           </div>
         </div>
       </div>

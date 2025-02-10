@@ -7,12 +7,9 @@ import "swiper/css/navigation";
 
 const Section5 = () => {
   return (
-    <div className="scroll-section-inne">
-       <Swiper
-          modules={[Navigation]}
-          slidesPerView={1}
-          navigation
-        >
+    <>
+      <div className="scroll-section-inne">
+        <Swiper modules={[Navigation]} slidesPerView={1} navigation>
           <SwiperSlide>
             <Slider5
               title1="Renie"
@@ -94,7 +91,8 @@ const Section5 = () => {
             />
           </SwiperSlide>
         </Swiper>
-    </div>
+      </div>
+    </>
   );
 };
 

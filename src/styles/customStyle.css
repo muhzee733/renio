@@ -277,6 +277,7 @@ footer {
   z-index: 999;
   right: 8%;
   bottom: 6%;
+  background-color: white !important;
 }
 .swiper-prev {
   right: 2%;
@@ -319,12 +320,12 @@ footer {
 }
 .idea {
   position: relative;
-  display: inline-block;
   font-size: 14px;
   background: #fff;
   padding: 6px 20px;
-  border-radius: 10px; /* Increased for smoother corners */
-  margin-top: 30px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
   color: #000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -568,7 +569,7 @@ footer {
   height: 250px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .slider-navigation {
@@ -664,6 +665,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 501px) {
+  .derktop-version {
+    display: block !important;
+  }
+  #mobile-version {
+    display: none !important;
+  }
+  .lottie-animation {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -876,7 +888,6 @@ footer {
     transform: scale(1); /* Restore size */
   }
 }
-
 @media (max-width: 768px) {
   .footer-upper-section {
     flex-direction: column;
@@ -1081,45 +1092,90 @@ footer {
 
 } */
 }
-
 @media (max-width: 500px) {
   .mini-footer-wrapper {
     flex-direction: column;
   }
   .main-banner {
-    height: 140vh !important;
+    height: 90vh !important;
   }
   .main-banner h1 {
-    font-size: 41px !important;
-    line-height: 42px !important;
+    font-size: 32px !important;
+    line-height: 28px !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 13px 23px !important;
+  }
+  .main-slider {
+    height: 108vh !important;
+  }
+  .btn-2 {
+    height: 44px !important;
+    margin-top: 10px;
+    font-size: 14px !important;
+    width: 180px !important;
   }
   .banner-img {
-    max-width: 56%;
-    transform: translate(38%, 5%);
+    max-width: 50%;
+    transform: translate(47%, 5%);
   }
+  .main-slider img {
+    max-width: 37% !important;
+  }
+  .main-slider h6 {
+    font-size: 14px !important;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 50px;
+  }
+  .main-slider p {
+    font-size: 12px !important;
+    padding: 0px 15px;
+    text-align: center;
+}
   .banner-svg {
-    bottom: -2%;
-    left: -14%;
+    bottom: 0%;
+    left: -17%;
     scale: 1;
-    height: 73%;
+    height: 58%;
+  }
+  .brand-slider-container {
+    bottom: 3%;
+  }
+  .lottie-animation {
+    display: inline;
+    position: absolute;
+    bottom: -2%;
+    left: 0;
+    right: 0;
+    transform: translate(36%, -4%);
+  }
+  .lottie-animation canvas {
+    width: 30% !important;
+  }
+  .brand-slider-container h3 {
+    margin-bottom: 0px;
+    font-size: 16px !important;
   }
   .mobile-img {
-    right: -7%;
-    bottom: -1%;
-    max-width: 51%;
+    right: 7%;
+    bottom: 0%;
+    max-width: 37%;
   }
   .tool {
-    width: 220px;
-    top: 5%;
-    left: 22%;
-    height: 35px;
+    width: 210px;
+    top: 9%;
+    left: 20%;
+    height: 25px;
+    display: none;
   }
   .how-it-work-main h2 {
     font-size: 40px !important;
     text-align: center !important;
   }
   .custom-slider {
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
   }
   .card-text h3 {
@@ -1131,12 +1187,16 @@ footer {
   }
   .custom-slider .card {
     height: 380px !important;
+    padding: 20px !important;
+  }
+  .idea {
+    display: none;
   }
   .tool span {
     font-size: 12px !important;
   }
   .mini-footer-wrapper p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px !important;
   }
   .swiper-next {
@@ -1185,7 +1245,7 @@ footer {
     width: 90%;
   }
   .section-7 {
-    height: 160vh;
+    height: 120vh;
   }
   .software-left {
     flex-direction: column;
@@ -1219,34 +1279,87 @@ footer {
   .section-4-wrapper img {
     max-width: 80% !important;
   }
+  .flow-diagram div div {
+    width: 340px !important;
+  }
+  .flow-diagram button {
+    padding: 7px 16px !important;
+    font-size: 12px !important;
+  }
+  .section-4 {
+    height: 70vh;
+  }
+  .software {
+    height: 100vh;
+  }
   .flow-diagram {
-    display: none !important;
+    height: 110% !important;
+    margin-left: 0px !important;
+  }
+  .flow-diagram button:nth-child(4) {
+    left: 33% !important;
+  }
+  .flow-diagram button:nth-child(5) {
+    bottom: 5px !important;
+  }
+  .idea {
+    font-size: 10px;
+    padding: 4px 14px;
+    line-height: 12px;
   }
   .section-2 {
-    min-height: 100vh !important;
+    min-height: 128vh !important;
+    padding: 0px 15px;
+  }
+  .main-slider h4 {
+    font-size: 34px !important;
+  }
+  .swiper-button-prev {
+    margin-left: -10px !important;
+    left: 45% !important;
+  }
+  .swiper-button-next {
+    margin-left: 45px !important;
   }
   .left-box img {
     max-width: 60% !important;
+  }
+  .slide-1 {
+    height: 100vh !important;
+    padding: 10px !important;
+  }
+  .left-box {
+    text-align: center;
+  }
+  .slide-1 h2 {
+    text-align: center !important;
+  }
+  .renio-button button {
+    padding: 2px 9px !important;
+    line-height: 16px !important;
 }
-.slide-1 {
-  height: 160vh !important;
-  padding: 30px !important;
+.renio-button{
+  display: flex !important;
+  justify-content: center !important;
 }
-.left-box{
-  text-align: center;
+.renio-footer h5{
+  margin-top: 0px !important;
 }
-.slide-1 h2 {
-text-align: center !important;
-}
-.renio-grid-system div {
-  width: 30% !important;
-}
-.main-navbar {
-  width: 60px !important;
-}
-.section-1 {
-  height: 146vh;
-}
+  .renio-grid-system div {
+    width: 27% !important;
+  }
+  .main-navbar {
+    width: 60px !important;
+  }
+  .section-1 {
+    height: 100vh;
+  }
+  #derktop-version {
+    display: none !important;
+  }
+  #mobile-version {
+    display: block;
+  }
 
 
 }

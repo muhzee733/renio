@@ -1,5 +1,6 @@
 import React from "react";
 import BrandSlider from "../BrandSlider";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Banner = () => {
   return (
@@ -18,7 +19,7 @@ const Banner = () => {
               <div className="tool">
                 <span>Recycled Waste Items</span>
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{color: "#5C4099"}}>432</span>
+                  <span style={{ color: "#5C4099" }}>432</span>
                   <img src="/assets/arrow.png" alt="arrow" />
                 </div>
               </div>
@@ -28,12 +29,15 @@ const Banner = () => {
                 alt="mobile"
                 className="mobile-img"
               />
-              <iframe src="/assets/Waste_income.svg" className="banner-svg"></iframe>
-
+              <iframe
+                src="/assets/Waste_income.svg"
+                className="banner-svg"
+              ></iframe>
             </div>
           </div>
         </div>
         <BrandSlider />
+        <DotLottieReact src="/assets/downarrow.json" loop autoplay className="lottie-animation" />
       </div>
     </div>
   );
