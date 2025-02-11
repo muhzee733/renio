@@ -14,25 +14,27 @@
   margin: 0 auto;
 }
 .main-slider h2 {
-  font-size: 88px;
+  font-size: 80px;
   color: white;
-  font-weight: 700;
+  font-weight: 800;
+  margin-bottom: -23px;
 }
 .main-slider h4 {
   font-size: 80px;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 .main-slider p {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 24px;
   color: white;
 }
 .main-slider h6 {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
-  line-height: 36px;
+  line-height: 28px;
 }
 .swiper-button-next {
   transform: translateX(-50%);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Slider = ({ title1, title2, img, h6, p, customClass }) => {
+const Slider = ({ title1, title2, img, img2, h6, p, customClass }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -30,6 +30,9 @@ const Slider = ({ title1, title2, img, h6, p, customClass }) => {
             <div className="col-lg-4 col-md-12 col-sm-12">
               <h2>{title1}</h2>
               <h4>{title2}</h4>
+              {
+                img2 ? <img src={img2} alt="mobile-1" /> : ""
+              }
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12">
               <div className="custom-image">
@@ -38,17 +41,17 @@ const Slider = ({ title1, title2, img, h6, p, customClass }) => {
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12">
               <h6>{h6}</h6>
-              <p className={`collapsible-text ${isExpanded ? "expanded" : ""}`}>
+              <p className={`collapsible-tex`}>
                 {p}
               </p>
-              {isMobile && (
+              {/* {isMobile && (
                 <button
                   className="expanded-button"
                   onClick={() => setIsExpanded(!isExpanded)}
                 >
                   {isExpanded ? "Show Less" : "Show More"}
                 </button>
-              )}
+              )} */}
             </div>
           </div>
         </div>

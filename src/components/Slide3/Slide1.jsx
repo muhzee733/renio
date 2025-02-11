@@ -77,7 +77,7 @@ const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
                   className="threed-image"
                   src="/assets/360-icon.png"
                   alt="360"
-                  style={{cursor: "pointer", position: "absolute", bottom: "0" }}
+                  style={{cursor: "pointer", position: "absolute", bottom: "0", left: "0" }}
                 />
               <div
                 className="image-container"
@@ -174,10 +174,11 @@ const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
                 <button type="button" className="close" onClick={togglePopup}>
                   <span>&times;</span>
                 </button>
+              
                 <Canvas>
                   <ambientLight intensity={1.2} />
                   <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                  <Model modelPath={model}/>
+                  <Model modelPath={model} />
                   <OrbitControls
                     enableZoom={true}
                     minDistance={1}

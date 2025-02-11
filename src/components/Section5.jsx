@@ -8,26 +8,19 @@ import "swiper/css/navigation";
 const Section5 = () => {
   return (
     <>
-      <div className="scroll-section-inne">
+      <div className="scroll-section-inne" id="custom-slider">
         <Swiper modules={[Navigation]} slidesPerView={1} navigation>
           <SwiperSlide>
             <Slider5
               title1="Renie"
-              title2="Rewards"
+              title2="Nexus"
               img="/assets/mobile-1.png"
+              img2="/assets/no-download.png"
               customClass="E31662"
               h6={`No downloads, no registration just 
                 straight money in your wallet.`}
-              p={`In today's fast-paced world, nobody has time for complicated loyalty
-                programs. Renie gets it. That's why we've stripped away everything
-                that stands between you and your rewards. No apps to download. No
-                forms to fill. No cards to carry. Just pure, instant gratification.
-                <br /> <br />
-                Your smartphone is all you need – it's your digital wallet, ready to
-                collect and redeem rewards at a moment's notice. We've eliminated the
-                traditional barriers that make loyalty programs feel like work. No
-                more searching through app stores, waiting for downloads, or creating
-                yet another account you'll forget about.`}
+              p={`In today’s fast-paced world, nobody has time for complicated loyalty programs. Renie understands, so we’ve removed all the barriers. No apps to download, no forms to fill, and no cards to carry. Just instant rewards, straight to your digital wallet.
+Your smartphone is all you need to collect and redeem rewards instantly—no more waiting or extra accounts to manage. It's loyalty made simple.`}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -38,16 +31,9 @@ const Section5 = () => {
               customClass="4765E6"
               h6={`No downloads, no registration just 
                 straight money in your wallet.`}
-              p={`In today's fast-paced world, nobody has time for complicated loyalty
-                programs. Renie gets it. That's why we've stripped away everything
-                that stands between you and your rewards. No apps to download. No
-                forms to fill. No cards to carry. Just pure, instant gratification.
-                <br /> <br />
-                Your smartphone is all you need – it's your digital wallet, ready to
-                collect and redeem rewards at a moment's notice. We've eliminated the
-                traditional barriers that make loyalty programs feel like work. No
-                more searching through app stores, waiting for downloads, or creating
-                yet another account you'll forget about.`}
+              p={`Easily find the nearest Renie Bin with just a few taps and navigate to it effortlessly. Our intuitive system guides you directly to the closest bin, ensuring a smooth, hassle-free experience.
+
+Whether you're at home, work, or on the go, locating a Renie Bin is quick and simple. Real-time directions help you reach it efficiently, making waste disposal easier than ever.`}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -58,36 +44,8 @@ const Section5 = () => {
               customClass="5C4099"
               h6={`No downloads, no registration just 
                 straight money in your wallet.`}
-              p={`In today's fast-paced world, nobody has time for complicated loyalty
-                programs. Renie gets it. That's why we've stripped away everything
-                that stands between you and your rewards. No apps to download. No
-                forms to fill. No cards to carry. Just pure, instant gratification.
-                <br /> <br />
-                Your smartphone is all you need – it's your digital wallet, ready to
-                collect and redeem rewards at a moment's notice. We've eliminated the
-                traditional barriers that make loyalty programs feel like work. No
-                more searching through app stores, waiting for downloads, or creating
-                yet another account you'll forget about.`}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Slider5
-              title1="NO Download"
-              title2="& NO Registration"
-              img="/assets/mobile-4.png"
-              customClass="4765E6"
-              h6={`No downloads, no registration just 
-                straight money in your wallet.`}
-              p={`In today's fast-paced world, nobody has time for complicated loyalty
-                programs. Renie gets it. That's why we've stripped away everything
-                that stands between you and your rewards. No apps to download. No
-                forms to fill. No cards to carry. Just pure, instant gratification.
-                <br /> <br />
-                Your smartphone is all you need – it's your digital wallet, ready to
-                collect and redeem rewards at a moment's notice. We've eliminated the
-                traditional barriers that make loyalty programs feel like work. No
-                more searching through app stores, waiting for downloads, or creating
-                yet another account you'll forget about.`}
+              p={`Say goodbye to vouchers and temporary discounts. With our system, you get real, valuable rewards—no hidden conditions or expiry dates. Whether it’s points, cashback, or incentives, each reward provides lasting value.
+Enjoy instant, meaningful rewards with every transaction. No coupons, no waiting—just straightforward, transparent benefits.`}
             />
           </SwiperSlide>
         </Swiper>
