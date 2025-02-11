@@ -1,19 +1,41 @@
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
+import React, { useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
+import { gsap } from "gsap";
 import { useGLTF, OrbitControls } from "@react-three/drei";
+import Model from "../Model";
 
-const Slide1 = ({ img, title1, title2, price1, price2 }) => {
+const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
   const [open, setOpen] = useState(false);
+  const iconRef = useRef(null);
 
   const togglePopup = () => {
     setOpen(!open);
   };
+  const handleMouseEnter = (e) => {
+    gsap.to(iconRef.current, {
+      opacity: 1,
+      scale: 1,
+      duration: 0.3,
+      x: e.nativeEvent.offsetX - 20, 
+      y: e.nativeEvent.offsetY - 20, 
+    });
+  };
 
-  function Model() {
-    const { scene } = useGLTF("/assets/onemodel.glb");
-    return <primitive object={scene} />;
-  }
+  const handleMouseMove = (e) => {
+    gsap.to(iconRef.current, {
+      x: e.nativeEvent.offsetX - 20,
+      y: e.nativeEvent.offsetY - 20,
+      duration: 0.1,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(iconRef.current, {
+      opacity: 0,
+      scale: 0.5,
+      duration: 0.3,
+    });
+  };
 
   return (
     <div
@@ -52,13 +74,35 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
             <div className="left-box">
               <h2>{title1}</h2>
               <img
-                className="threed-image"
+                  className="threed-image"
+                  src="/assets/360-icon.png"
+                  alt="360"
+                  style={{cursor: "pointer", position: "absolute", bottom: "0" }}
+                />
+              <div
+                className="image-container"
+                onMouseEnter={handleMouseEnter}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
                 onClick={togglePopup}
-                src="/assets/360-icon.png"
-                alt="360"
-                style={{ cursor: "pointer" }}
-              />
-              <img src={img} alt="RENIE_ONE" />
+                style={{ position: "relative", display: "inline-block" }}
+              >
+                <img src={img} alt="RENIE_ONE" style={{ cursor: "pointer" }} />
+                <img
+                  ref={iconRef}
+                  className="threed-image"
+                  src="/assets/360-icon.png"
+                  alt="360"
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    opacity: 0,
+                    transform: "scale(0.5)",
+                    pointerEvents: "none",
+                  }}
+                />
+              </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-6">
@@ -123,25 +167,74 @@ const Slide1 = ({ img, title1, title2, price1, price2 }) => {
             </div>
           </div>
         </div>
-
-        {open && (
+        {title1 === "RENIE ONE" ? (
           <>
-            <div className="popup">
-              <button type="button" className="close" onClick={togglePopup}>
-                <span>&times;</span>
-              </button>
-              <Canvas>
-                <ambientLight intensity={1.2} />
-                <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                <Model />
-                <OrbitControls
-                  enableZoom={true}
-                  minDistance={1}
-                  maxDistance={2}
-                />
-              </Canvas>
-            </div>
+            {open && (
+              <div className="popup">
+                <button type="button" className="close" onClick={togglePopup}>
+                  <span>&times;</span>
+                </button>
+                <Canvas>
+                  <ambientLight intensity={1.2} />
+                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                  <Model modelPath={model}/>
+                  <OrbitControls
+                    enableZoom={true}
+                    minDistance={1}
+                    maxDistance={3}
+                  />
+                </Canvas>
+              </div>
+            )}
           </>
+        ) : (
+          ""
+        )}
+        {title1 === "RENIE Two" ? (
+          <>
+            {open && (
+              <div className="popup popup-2">
+                <button type="button" className="close" onClick={togglePopup}>
+                  <span>&times;</span>
+                </button>
+                <Canvas>
+                  <ambientLight intensity={1.2} />
+                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                  <Model modelPath={model} />
+                  <OrbitControls
+                    enableZoom={true}
+                    minDistance={1}
+                    maxDistance={3}
+                  />
+                </Canvas>
+              </div>
+            )}
+          </>
+        ) : (
+          ""
+        )}
+        {title1 === "RENIE Maxi" ? (
+          <>
+            {open && (
+              <div className="popup popup-3">
+                <button type="button" className="close" onClick={togglePopup}>
+                  <span>&times;</span>
+                </button>
+                <Canvas>
+                  <ambientLight intensity={1.2} />
+                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                  <Model modelPath={model} />
+                  <OrbitControls
+                    enableZoom={true}
+                    minDistance={1}
+                    maxDistance={3}
+                  />
+                </Canvas>
+              </div>
+            )}
+          </>
+        ) : (
+          ""
         )}
       </div>
     </div>

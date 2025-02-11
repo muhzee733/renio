@@ -9,23 +9,47 @@
   transition: "all 0.3s ease";
   background-color: transparent;
 }
-.popup{
-  background: white;
-    width: 10%;
-    text-align: center;
-    position: absolute;
-    top: 18%;
-    height: 30vh;
-    z-index: 999;
+.popup {
+  background: #fff;
+  width: 12%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(54%, 31%);
+  height: 48%;
+  z-index: 999;
+  border-radius: 8px;
+}
+.popup-2{
+  transform: translate(262%, 50%) !important;
+}
+.popup-3{
+  transform: translate(470%, 50%) !important;
+}
+.close {
+  border: 0;
+  padding: 3px 10px;
+  position: absolute;
+  right: 0;
+  background: #adb5bd;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 99;
+}
+.popup canvas{
+  position: absolute;
+  top: 100px;
+  transform: scale(2);
 }
 .custom-heading {
   color: #000;
 }
-.threed-image{
+.threed-image {
   position: absolute;
   bottom: 16%;
 }
-.left-box{
+.left-box {
   position: relative;
 }
 
@@ -156,9 +180,6 @@ footer {
 .scroll-section {
   height: 100vh;
   width: 100vw;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .scroll-section-1 {
   background-color: green;
@@ -262,6 +283,23 @@ footer {
   right: -6%;
   bottom: -2%;
   max-width: 30%;
+}
+.blogs .swiper {
+  padding: 30px;
+}
+.blogs .swiper-pagination {
+  bottom: -2%;
+}
+.blogs .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.new-section {
+  background: linear-gradient(50deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .custom-slider .card {
   height: 400px;
@@ -440,7 +478,7 @@ footer {
   cursor: pointer;
   height: 420px;
 }
-.blogs .swiper-button-next{
+.blogs .swiper-button-next {
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
@@ -850,15 +888,12 @@ footer {
   }
   .blogs .swiper-slide {
     height: 340px;
-}
+  }
   .renie-bin-wrapper h2 {
     font-size: 36px;
   }
   .renie-bin-wrapper p {
     font-size: 34px;
-  }
-  .section-7 {
-    height: 100vh;
   }
   .collapsible-text {
     display: -webkit-box;
@@ -956,21 +991,18 @@ footer {
   }
   .blogs div h3 {
     font-size: 15px;
-}
-.blogs .swiper-slide {
-  padding: 7px;
-}
-.blogs div p {
-  font-size: 13px;
-}
-.blogs .swiper-slide {
-  height: 280px;
-}
+  }
+  .blogs .swiper-slide {
+    padding: 7px;
+  }
+  .blogs div p {
+    font-size: 13px;
+  }
+  .blogs .swiper-slide {
+    height: 280px;
+  }
   .blogs {
     margin-top: 15px;
-  }
-  .section-7 {
-    height: 100vh;
   }
   .software-right-container p {
     font-size: 16px;
@@ -1121,6 +1153,18 @@ footer {
   .mini-footer-wrapper {
     flex-direction: column;
   }
+  .popup {
+    width: 18% !important;
+    top: 11% !important;
+    left: -6% !important;
+    height: 40% !important;
+}
+.popup-2 {
+  transform: translate(190%, 50%) !important;
+}
+.popup-3 {
+  transform: translate(330%, 50%) !important;
+}
   .main-banner {
     height: 90vh !important;
   }
@@ -1158,7 +1202,7 @@ footer {
     font-size: 12px !important;
     padding: 0px 15px;
     text-align: center;
-}
+  }
   .banner-svg {
     bottom: 0%;
     left: -17%;
@@ -1266,9 +1310,6 @@ footer {
   .renie-bin-wrapper p {
     font-size: 17px;
   }
-  .section-7 {
-    height: 100vh;
-  }
   .software-left {
     flex-direction: column;
     align-items: center !important;
@@ -1359,14 +1400,14 @@ footer {
   .renio-button button {
     padding: 2px 9px !important;
     line-height: 16px !important;
-}
-.renio-button{
-  display: flex !important;
-  justify-content: center !important;
-}
-.renio-footer h5{
-  margin-top: 0px !important;
-}
+  }
+  .renio-button {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .renio-footer h5 {
+    margin-top: 0px !important;
+  }
   .renio-grid-system div {
     width: 27% !important;
   }
@@ -1382,13 +1423,13 @@ footer {
   #mobile-version {
     display: block;
   }
-  .blogs .swiper-wrapper .swiper-slide:nth-child(2), .blogs .swiper-wrapper .swiper-slide:nth-child(3), .blogs .swiper-wrapper .swiper-slide:nth-child(4){
+  .blogs .swiper-wrapper .swiper-slide:nth-child(2),
+  .blogs .swiper-wrapper .swiper-slide:nth-child(3),
+  .blogs .swiper-wrapper .swiper-slide:nth-child(4) {
     display: none;
   }
   .blogs .swiper-slide {
     width: 94% !important;
     height: 350px !important;
-}
-
-
+  }
 }

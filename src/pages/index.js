@@ -48,7 +48,7 @@ export default function Home() {
         <Section6 />
       </section>
 
-      <section className="section section-7">
+      <section className="new-section">
         <RenieBin />
       </section>
 

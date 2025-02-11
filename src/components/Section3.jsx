@@ -42,6 +42,7 @@ const Section3 = () => {
             title2="MEET RENIE BINS"
             price1={750}
             price2={1000}
+            model= "/assets/onemodel.glb"
           />
         </div>
         <div class="scroll-section bg-danger">
@@ -51,6 +52,7 @@ const Section3 = () => {
             title2="MEET RENIE BINS"
             price1={1400}
             price2={1900}
+            model= "/assets/twomodel.glb"
           />
         </div>
         <div class="scroll-section bg-success">
@@ -60,6 +62,7 @@ const Section3 = () => {
             title2="MEET RENIE BINS"
             price1={1990}
             price2={2540}
+            model= "/assets/threemodel.glb"
           />
         </div>
         <div class="scroll-section bg-dark">
