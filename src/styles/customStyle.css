@@ -9,6 +9,10 @@
   transition: "all 0.3s ease";
   background-color: transparent;
 }
+.renio-grid-system img{
+  max-width: 58%;
+  margin: 0 auto;
+}
 .popup {
   background: #fff;
   width: 12%;
@@ -948,6 +952,10 @@ footer {
   .footer-upper-section {
     flex-direction: column;
   }
+  .renio-grid-system div {
+    width: 30% !important;
+    min-height: 76px !important;
+}
   .main-navbar {
     width: 150px !important;
     background-color: white !important;
@@ -1119,7 +1127,7 @@ footer {
     max-width: 90% !important;
   }
   .renio-grid-system img {
-    max-width: 30%;
+    max-width: 50%;
   }
   .renio-button {
     gap: 5px !important;

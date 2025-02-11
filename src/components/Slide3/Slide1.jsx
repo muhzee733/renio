@@ -127,27 +127,27 @@ const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
               <h5>Available Waste Streams</h5>
               <div className="renio-grid-system">
                 <div>
-                  <img src="/assets/Vector.png" alt="Plastic Bottles" />
+                  <img src="/assets/Vector.webp" alt="Plastic Bottles" />
                   <h6>Plastic Bottles</h6>
                 </div>
                 <div>
-                  <img src="/assets/Vector-2.png" alt="Plastic Cups" />
+                  <img src="/assets/Vector-2.webp" alt="Plastic Cups" />
                   <h6>Plastic Cups</h6>
                 </div>
                 <div>
-                  <img src="/assets/Vector-3.png" alt="Paper Cups" />
+                  <img src="/assets/Vector-3.webp" alt="Paper Cups" />
                   <h6>Paper Cups</h6>
                 </div>
                 <div>
-                  <img src="/assets/Vector-4.png" alt="Cans" />
+                  <img src="/assets/Vector-4.webp" alt="Cans" />
                   <h6>Cans</h6>
                 </div>
                 <div>
-                  <img src="/assets/Vector-5.png" alt="Tetra Pak" />
+                  <img src="/assets/Vector-5.webp" alt="Tetra Pak" />
                   <h6>Tetra Pak</h6>
                 </div>
                 <div>
-                  <img src="/assets/Vector-6.png" alt="Glass" />
+                  <img src="/assets/Vector-6.webp" alt="Glass" />
                   <h6>Glass</h6>
                 </div>
               </div>
