@@ -7,6 +7,9 @@
   height: 74px !important;
   background-color: transparent;
 }
+p{
+  color: #000;
+}
 #custom-slider .swiper-button-next {
   right: 43%;
   top: 87%;
