@@ -1,12 +1,10 @@
 .main-navbar {
-  height: "78px" !important;
-  color: "#fff";
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
   padding: 10px;
   overflow: hidden;
-  transition: "all 0.3s ease";
+  height: 74px !important;
   background-color: transparent;
 }
 #custom-slider .swiper-button-next {
@@ -98,12 +96,6 @@
 }
 .brand-slider {
   max-width: 72%;
-}
-.main-navbar {
-  position: fixed;
-  top: 36px;
-  left: 0;
-  right: 0;
 }
 .software {
   height: 100vh;

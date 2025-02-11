@@ -12,12 +12,12 @@ const blogData = [
     p: "Renie transforms offices and residential communities with tailored recycling solutions.",
   },
   {
-    img: "/assets/blog-2.png",
+    img: "/assets/blog-3.png",
     h3: "Educational Institutions",
     p: "Renie Bins improve educational environment, rewarding eco-friendly actions.",
   },
   {
-    img: "/assets/blog-3.png",
+    img: "/assets/blog-2.png",
     h3: "Retail and Malls",
     p: "Renie enhances shopping experience by creating clean and more rewarding space.",
   },

@@ -29,6 +29,7 @@ const Section6 = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                   }}
+                  gap={30}
                   modules={[Autoplay, Pagination]}
                   pagination={{ clickable: true }}
                 >
@@ -37,8 +38,7 @@ const Section6 = () => {
                       <img src="/assets/renie-hub.png" />
                       <span>Renie Admin</span>
                       <p>
-                        The core software that manages all the Renie bins in one
-                        place
+                      Renie Admin centralizes all management tasks, providing seamless control over operations, data, and user interactions.
                       </p>
                     </div>
                   </SwiperSlide>
@@ -47,7 +47,7 @@ const Section6 = () => {
                       <img src="/assets/renie-hub-2.png" />
                       <span>Renie Hub</span>
                       <p>
-                      The core software that manages all the Renie bins in one place
+                      Our innovative platform makes it possible to generate a passive income from data monetization of plastic waste
                       </p>
                     </div>
                   </SwiperSlide>
@@ -56,8 +56,7 @@ const Section6 = () => {
                       <img src="/assets/renie-hub-3.png" />
                       <span>Renie Rewards</span>
                       <p>
-                        The core software that manages all the Renie bins in one
-                        place
+                      Renie Nexus makes recycling easy with instant access and prize rewards, boosting sustainability.
                       </p>
                     </div>
                   </SwiperSlide>
@@ -66,8 +65,7 @@ const Section6 = () => {
                       <img src="/assets/renie-hub-4.png" />
                       <span>Renie Ads</span>
                       <p>
-                        The core software that manages all the Renie bins in one
-                        place
+                      Our AI platform uses Renie Bin data to deliver targeted ads, driving eco-friendly engagement.
                       </p>
                     </div>
                   </SwiperSlide>

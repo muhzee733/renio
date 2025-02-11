@@ -56,10 +56,7 @@ const Navbar = () => {
       } else {
         gsap.to(menuImageRef.current, { opacity: 0, display: "none", duration: 0.3 }); 
         tl.current.reverse();
-        gsap.to(navRef.current, {
-          height: "100px",
-          duration: 0.5,
-        });
+        
       }
     };
 
@@ -75,7 +72,7 @@ const Navbar = () => {
       gsap.to(navRef.current, {
         width: "100%",
         height: "70px",
-        borderRadius: "0px",
+        borderRadius: "8px",
         duration: 0.6,
       });
       gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
