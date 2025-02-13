@@ -303,3 +303,18 @@
 .product-renie-height{
   min-height: 60vh !important;
 }
+
+.canvas-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bin-canvas {
+  width: 100%;
+  height: auto;
+}
