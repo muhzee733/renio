@@ -7,7 +7,7 @@
   height: 74px !important;
   background-color: transparent;
 }
-p{
+p {
   color: #000;
 }
 #custom-slider .swiper-button-next {
@@ -146,7 +146,7 @@ footer {
   top: 30px;
   left: 0;
   right: 0;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -232,7 +232,7 @@ footer {
 .purple {
   color: #e31662;
 }
-.btn-2 {
+.btn-2, .btn-3 {
   border-radius: 100px !important;
   background: linear-gradient(
     90deg,
@@ -466,6 +466,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  margin: 0 auto;
 }
 
 .blogs {
@@ -511,7 +512,7 @@ footer {
   font-weight: 400;
   text-align: left;
 }
-.new-section .swiper-wrapper .swiper-slide{
+.new-section .swiper-wrapper .swiper-slide {
   height: 380px;
 }
 
@@ -581,7 +582,7 @@ footer {
 }
 .newsletter input {
   border: 0;
-  padding: 0px 10px 10px 20px;
+  padding: 10px 10px 10px 20px;
   border-radius: 12px;
   width: 100%;
   background-color: white;
@@ -595,8 +596,8 @@ footer {
   background-color: #4765e6;
   color: white;
   border-radius: 8px;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 5px 20px;
   border: 0;
   font-weight: 300;
   position: absolute;
@@ -765,7 +766,7 @@ footer {
   }
   .renio-button button {
     padding: 7px 28px !important;
-}
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .main-navbar {
@@ -1039,12 +1040,12 @@ footer {
     right: 40%;
     top: 75% !important;
     padding: 20px 22px !important;
-}
-#custom-slider .swiper-button-prev {
-  left: 40%;
-  top: 75% !important;
-  padding: 20px 22px !important;
-}
+  }
+  #custom-slider .swiper-button-prev {
+    left: 40%;
+    top: 75% !important;
+    padding: 20px 22px !important;
+  }
   .main-slider h4 {
     font-size: 40px !important;
   }
@@ -1189,18 +1190,18 @@ footer {
   }
   .blogs .swiper {
     padding: 30px !important;
-}
-.blogs .swiper-pagination {
-  bottom: 0% !important;
-}
+  }
+  .blogs .swiper-pagination {
+    bottom: 0% !important;
+  }
   #custom-slider .swiper-button-next {
-    right:0%;
+    right: 0%;
     top: 30% !important;
-}
-#custom-slider .swiper-button-prev {
-  left: 7% !important;
-  top: 30% !important;
-}
+  }
+  #custom-slider .swiper-button-prev {
+    left: 7% !important;
+    top: 30% !important;
+  }
   .popup {
     width: 18% !important;
     top: 11% !important;
@@ -1229,8 +1230,8 @@ footer {
   }
   .blogs {
     margin-top: 0px;
-}
-  #mobile-version .container .row{
+  }
+  #mobile-version .container .row {
     margin-top: 0px !important;
     padding-top: 0px !important;
   }
@@ -1364,9 +1365,9 @@ footer {
     margin-bottom: 10px;
   }
   .renie-bin-wrapper p {
-    font-size: 14px
+    font-size: 14px;
   }
-  .desktop-paragraph{
+  .desktop-paragraph {
     width: 70%;
     margin: 0 auto;
   }
@@ -1480,8 +1481,23 @@ footer {
   #derktop-version {
     display: none !important;
   }
+  .derktop-version {
+    display: none !important;
+  }
   #mobile-version {
     display: block;
+  }
+  #mobile-version img {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 18%);
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
   }
   .blogs .swiper-slide {
     width: 97% !important;
@@ -1489,5 +1505,23 @@ footer {
   }
   .new-section {
     min-height: 90vh !important;
+  }
+  .custom-mobile-menu{
+    width: 50%;
+    margin: 0 auto;
+    transform: translateY(30%);
+    text-align: center;
+  }
+  .custom-open {
+    border-radius: .375rem;
+    backdrop-filter: blur(12px);
+    background-color: rgb(255 255 255 / 70%);
+    overflow: hidden;
+    width: calc(100% - 3rem) !important;
+    height: 28rem !important;
+    position: fixed;
+    z-index: 999999;
+    margin: 0 auto;
+    transform: translate(26px, 0px);
   }
 }
