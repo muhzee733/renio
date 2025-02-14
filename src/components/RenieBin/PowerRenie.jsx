@@ -2,10 +2,10 @@ import React from "react";
 
 const PowerRenie = () => {
   return (
-    <div clasName="PowerRenie">
+    <div className="PowerRenie">
       <div className="power-wrapper py-5">
         <div className="container">
-          <div clasName="row">
+          <div className="row">
             <div className="col-lg-12">
               <div className="power">
                 <h2>The Power of Data Monetization</h2>

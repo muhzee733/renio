@@ -53,10 +53,10 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
 
   return (
     <>
-      <div clasName="PowerRenie">
+      <div className="PowerRenie ground-section">
         <div className="power-wrapper py-5">
           <div className="container">
-            <div clasName="row">
+            <div className="row">
               <div className="col-lg-12">
                 <div className="power">
                   <h2 className="build-pin" ref={contentRef}>Build from the ground up</h2>

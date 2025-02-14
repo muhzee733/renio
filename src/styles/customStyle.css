@@ -986,7 +986,7 @@ footer {
     padding: 0px 24px;
   }
   .footer-section {
-    height: 100vh !important;
+    height: 76vh !important;
   }
   .section-8 {
     height: unset !important;
@@ -1485,7 +1485,7 @@ footer {
     display: none !important;
   }
   #mobile-version {
-    display: block;
+    display: none;
   }
   #mobile-version img {
     position: absolute;

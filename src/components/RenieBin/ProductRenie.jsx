@@ -8,8 +8,8 @@ const ProductRenie = () => {
           <div className="row">
             <h2>Product Specifications</h2>
           </div>
-          <div className="row">
-            <div className="col-lg-4">
+          <div className="row custom-row">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-1.png" alt="icon-1" />
                 <div className="product-box">
@@ -21,7 +21,7 @@ const ProductRenie = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-2.png" alt="icon-1" />
                 <div className="product-box">
@@ -33,7 +33,7 @@ const ProductRenie = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-3.png" alt="icon-1" />
                 <div className="product-box">
@@ -47,8 +47,8 @@ const ProductRenie = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-4">
+          <div className="row custom-row">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-4.png" alt="icon-1" />
                 <div className="product-box">
@@ -57,7 +57,7 @@ const ProductRenie = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-6.png" alt="icon-1" />
                 <div className="product-box">
@@ -66,7 +66,7 @@ const ProductRenie = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-5.png" alt="icon-1" />
                 <div className="product-box">

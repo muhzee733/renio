@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const MeetRenieBin = () => {
   return (
@@ -11,10 +16,36 @@ const MeetRenieBin = () => {
               <p>Collect Multiple Waste Type in One Bin</p>
             </div>
             <div className="meet-image">
-              <img src="/assets/bin.png" alt="bin" />
-              <img src="/assets/RENIE_TWO.png" alt="bin" />
-              <img src="/assets/RENIE_MAXI.png" alt="bin" />
-              <img src="/assets/RENIE_MINI.png" alt="bin" />
+              <Swiper
+                modules={[Pagination]}
+                spaceBetween={30}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  300: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <img src="/assets/bin.png" alt="bin" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/assets/RENIE_TWO.png" alt="bin" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/assets/RENIE_MAXI.png" alt="bin" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/assets/RENIE_MINI.png" alt="bin" />
+                </SwiperSlide>
+              </Swiper>
             </div>
             <p className="meet-para">
               Renie Bins are equipped with special sensors that mimic a
