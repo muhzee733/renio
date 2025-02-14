@@ -12,12 +12,9 @@ const Banner = ({ canvasRef }) => {
                   Your waste <br /> supercharged with data
                 </h1>
                 <p>Renie Bins turn waste into a valuable asset for your business</p>
-
-                {/* 3D Animated Bin Image (Canvas) */}
                 <div className="canvas-container">
                   <canvas ref={canvasRef} className="bin-canvas"></canvas>
                 </div>
-
                 <div className="banner-boxes">
                   <div className="d-flex align-items-center gap-3">
                     <h6>

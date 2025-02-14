@@ -16,7 +16,7 @@ import RenieSection from "@/components/RenieBin/RenieSection2";
 const RenieBin = () => {
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
-  const frameCount = 147;
+  const frameCount = 114;
   const airpods = { frame: 0 };
 
   useEffect(() => {
@@ -71,7 +71,11 @@ const RenieBin = () => {
       <RenieSection />
       <MeetRenieBin />
       <PowerRenie />
-      <GroundRenie />
+      <GroundRenie
+        imagePath="/assets/bin3/0001.png"
+        frameCount={65}
+        containerClass="canvas-container-1"
+      />
       <CraftedRenie />
       <ProductRenie />
       <Discover />
