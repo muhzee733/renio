@@ -14,16 +14,25 @@ const RenieSection = () => {
         </div>
         <div className="renie-card-parent">
           <div className="renie-card">
-            <img src="/assets/card-1.png" alt="card-1" />
-            <p className="text-dark mt-4 ">Smart <br />Barcode Reader</p>
+            <iframe src="/assets/icon-6.svg" className="banner-sv"></iframe>
+            <p className="text-dark mt-4 ">
+              Smart <br />
+              Barcode Reader
+            </p>
           </div>
           <div className="renie-card">
-            <img src="/assets/card-2.png" alt="card-1" />
-            <p className="text-dark mt-4 ">Smart Light <br />Indication</p>
+          <iframe src="/assets/icon-7.svg" className="banner-sv"></iframe>
+            <p className="text-dark mt-4 ">
+              Smart Light <br />
+              Indication
+            </p>
           </div>
           <div className="renie-card">
-            <img src="/assets/card-1.png" alt="card-1" />
-            <p className="text-dark mt-4 ">Smart <br />Barcode Reader</p>
+          <iframe src="/assets/icon-8.svg" className="banner-sv"></iframe>
+            <p className="text-dark mt-4 ">
+              LID <br />
+              Automation
+            </p>
           </div>
         </div>
       </div>

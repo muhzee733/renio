@@ -53,7 +53,7 @@
   min-height: 100vh;
   width: 100%;
 }
-.RenieSection2 iframe {
+.RenieSection2 .banner-svg-renie {
   width: 100%;
   height: 100vh;
 }
@@ -70,10 +70,14 @@
   position: absolute;
   top: 30%;
   text-align: center;
-  padding: 60px 30px;
+  width: 17%;
+  padding: 60px 0px;
   border-radius: 90px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-left: 30px;
+}
+.renie-card iframe{
+  margin-left: -30px;
 }
 .renie-card p {
   font-weight: 600;
@@ -204,18 +208,29 @@
 }
 .crafted-card {
   background-image: url("/assets/card-background.png");
-  background-size: auto;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
   padding: 40px;
   border-radius: 20px;
-  transition: background-size 5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
+
 .crafted-card:hover {
-  background-size: 120%;
+  animation: backgroundZoom 1s infinite alternate ease-in-out;
 }
+
+@keyframes backgroundZoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 130%;
+  }
+}
+
 .crafted-card-1 {
   background: linear-gradient(150deg, #952e82 5%, #5c4099 100%);
   color: white;
@@ -327,13 +342,17 @@
     width: 50%;
   }
 }
-
 @media (max-width: 1199px) {
+  .renie-card iframe{
+    margin-left: -60px;
+  }
 }
-
 @media (max-width: 991px) {
   .renie-main-content h1 {
     font-size: 30px;
+  }
+  .renie-card iframe{
+    margin-left: -90px;
   }
   .renie-main-content p {
     font-size: 16px;
@@ -438,8 +457,17 @@
   .foolter-links {
     width: 100%;
   }
+  .renie-card iframe{
+    width: 100%;
+    margin: unset;
+  }
+  .renie-card{
+    padding: 20px 24px;
+  }
+  .renie-card p{
+    margin-top: -20px !important;
+  }
 }
-
 @media (max-width: 574px) {
   .renie-main-content {
     padding-top: 10%;
@@ -463,14 +491,15 @@
     max-width: 26%;
   }
   .renie-card img {
-    max-width: 30%;
+    max-width: 60%;
   }
   .renie-card p {
-    font-size: 8px;
+    font-size: 10px;
   }
   .renie-card {
-    padding: 25px 0px;
-    border-radius: 34px;
+    padding: 54px 0px;
+    border-radius: 67px;
+    width: 30% !important;
   }
   .meet-image img {
     max-width: 46%;
@@ -566,8 +595,11 @@
     text-align: center;
     margin-top: 10px !important;
   }
+  .custom-footer-section {
+    padding: 20px 0px 20px 20px;
+  }
   .footer-section {
-    margin: 12px;
+    margin: 0px;
   }
   .footer-text {
     width: 100%;
@@ -578,5 +610,8 @@
   }
   .ground-section {
     display: none !important;
+  }
+  .userfull-links ul li {
+    font-size: 12px;
   }
 }

@@ -541,6 +541,7 @@ footer {
   border-radius: 30px;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 .footer-upper-section {
   display: flex;
@@ -1354,7 +1355,7 @@ footer {
     font-size: 14px;
   }
   .footer-section {
-    height: 100vh !important;
+    height: 82vh !important;
   }
   .newsletter button {
     font-size: 13px;
