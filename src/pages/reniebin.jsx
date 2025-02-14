@@ -50,7 +50,7 @@ const RenieBin = () => {
       snap: "frame",
       ease: "none",
       scrollTrigger: {
-        trigger: ".canvas-container",
+        trigger: ".reniebin-wrapper",
         start: "top top",
         end: "+=1000",
         scrub: 0.5,

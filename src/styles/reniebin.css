@@ -70,7 +70,7 @@
   position: absolute;
   top: 30%;
   text-align: center;
-  width: 17%;
+  width: 12%;
   padding: 60px 0px;
   border-radius: 90px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -484,11 +484,11 @@
     flex-wrap: wrap;
   }
   .banner-boxes h6 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .banner-boxes img {
-    max-width: 26%;
+    max-width: 20%;
   }
   .renie-card img {
     max-width: 60%;
@@ -497,7 +497,7 @@
     font-size: 10px;
   }
   .renie-card {
-    padding: 54px 0px;
+    padding: 36px 0px;
     border-radius: 67px;
     width: 30% !important;
   }
@@ -614,4 +614,11 @@
   .userfull-links ul li {
     font-size: 12px;
   }
+  .banner-boxes {
+    gap: 10px;
+}
+.banner-boxes div{
+  width: 30%;
+  text-align: center;
+}
 }
