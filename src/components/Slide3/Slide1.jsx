@@ -1,23 +1,30 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { gsap } from "gsap";
 import { useGLTF, OrbitControls } from "@react-three/drei";
-import Model from "../Model";
 
-const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
-  const [open, setOpen] = useState(false);
+const Slide1 = ({ title1, title2, price1, price2 }) => {
   const iconRef = useRef(null);
+  function Model() {
+    const { scene } = useGLTF("/assets/onemodel.glb");
+    return <primitive object={scene} />;
+  }
+  function ModelTwo() {
+    const { scene } = useGLTF("/assets/twomodel.glb");
+    return <primitive object={scene} />;
+  }
+  function ModelThree() {
+    const { scene } = useGLTF("/assets/threemodel.glb");
+    return <primitive object={scene} />;
+  }
 
-  const togglePopup = () => {
-    setOpen(!open);
-  };
   const handleMouseEnter = (e) => {
     gsap.to(iconRef.current, {
       opacity: 1,
       scale: 1,
       duration: 0.3,
-      x: e.nativeEvent.offsetX - 20, 
-      y: e.nativeEvent.offsetY - 20, 
+      x: e.nativeEvent.offsetX - 20,
+      y: e.nativeEvent.offsetY - 20,
     });
   };
 
@@ -74,20 +81,71 @@ const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
             <div className="left-box">
               <h2>{title1}</h2>
               <img
-                  className="threed-image"
-                  src="/assets/360-icon.png"
-                  alt="360"
-                  style={{cursor: "pointer", position: "absolute", bottom: "0", left: "0" }}
-                />
+                className="threed-image"
+                src="/assets/360-icon.png"
+                alt="360"
+                style={{
+                  cursor: "pointer",
+                  position: "absolute",
+                  bottom: "0",
+                  left: "0",
+                }}
+              />
               <div
                 className="image-container"
                 onMouseEnter={handleMouseEnter}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                onClick={togglePopup}
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <img src={img} alt="RENIE_ONE" style={{ cursor: "pointer" }} />
+                {title1 === "RENIE ONE" ? (
+                  <>
+                    <Canvas>
+                      <ambientLight intensity={1.2} />
+                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                      <Model />
+                      <OrbitControls
+                        enableZoom={true}
+                        minDistance={1}
+                        maxDistance={3}
+                      />
+                    </Canvas>
+                  </>
+                ) : (
+                  ""
+                )}
+                {title1 === "RENIE Two" ? (
+                  <>
+                    <Canvas>
+                      <ambientLight intensity={1.2} />
+                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                      <ModelTwo />
+                      <OrbitControls
+                        enableZoom={true}
+                        minDistance={1}
+                        maxDistance={3}
+                      />
+                    </Canvas>
+                  </>
+                ) : (
+                  ""
+                )}
+                {title1 === "RENIE Maxi" ? (
+                  <>
+                    <Canvas>
+                      <ambientLight intensity={1.2} />
+                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                      <ModelThree />
+                      <OrbitControls
+                        enableZoom={true}
+                        minDistance={1}
+                        maxDistance={3}
+                      />
+                    </Canvas>
+                  </>
+                ) : (
+                  ""
+                )}
                 <img
                   ref={iconRef}
                   className="threed-image"
@@ -167,76 +225,6 @@ const Slide1 = ({ img, title1, title2, price1, price2, model }) => {
             </div>
           </div>
         </div>
-        {title1 === "RENIE ONE" ? (
-          <>
-            {open && (
-              <div className="popup">
-                <button type="button" className="close" onClick={togglePopup}>
-                  <span>&times;</span>
-                </button>
-              
-                <Canvas>
-                  <ambientLight intensity={1.2} />
-                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                  <Model modelPath={model} />
-                  <OrbitControls
-                    enableZoom={true}
-                    minDistance={1}
-                    maxDistance={3}
-                  />
-                </Canvas>
-              </div>
-            )}
-          </>
-        ) : (
-          ""
-        )}
-        {title1 === "RENIE Two" ? (
-          <>
-            {open && (
-              <div className="popup popup-2">
-                <button type="button" className="close" onClick={togglePopup}>
-                  <span>&times;</span>
-                </button>
-                <Canvas>
-                  <ambientLight intensity={1.2} />
-                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                  <Model modelPath={model} />
-                  <OrbitControls
-                    enableZoom={true}
-                    minDistance={1}
-                    maxDistance={3}
-                  />
-                </Canvas>
-              </div>
-            )}
-          </>
-        ) : (
-          ""
-        )}
-        {title1 === "RENIE Maxi" ? (
-          <>
-            {open && (
-              <div className="popup popup-3">
-                <button type="button" className="close" onClick={togglePopup}>
-                  <span>&times;</span>
-                </button>
-                <Canvas>
-                  <ambientLight intensity={1.2} />
-                  <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                  <Model modelPath={model} />
-                  <OrbitControls
-                    enableZoom={true}
-                    minDistance={1}
-                    maxDistance={3}
-                  />
-                </Canvas>
-              </div>
-            )}
-          </>
-        ) : (
-          ""
-        )}
       </div>
     </div>
   );

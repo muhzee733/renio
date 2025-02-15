@@ -23,7 +23,7 @@ const Section3 = () => {
           trigger: triggerRef.current,
           start: "top top",
           end: "2000 top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }
