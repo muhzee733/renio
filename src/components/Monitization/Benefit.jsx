@@ -33,16 +33,12 @@ const Benefit = () => {
     <div className="benefits">
       <div className="benefit-wrapper">
         <div className="container">
-          <div className="row">
+          <div className="row blogs">
             <h2>Industries That Benefit from Data Monetization</h2>
             <Swiper
-              spaceBetween={10}
+              spaceBetween={20}
               pagination={{ clickable: true }}
-              modules={[Pagination, Autoplay]}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
+              modules={[Pagination]}
               loop={true}
               breakpoints={{
                 320: { slidesPerView: 1 },
@@ -50,7 +46,6 @@ const Benefit = () => {
                 1024: { slidesPerView: 3 },
                 1200: { slidesPerView: 4 },
               }}
-              className="mySwiper"
             >
               {blogData.map((item, index) => (
                 <SwiperSlide key={index}>
