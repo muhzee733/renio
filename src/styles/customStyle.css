@@ -344,6 +344,7 @@ footer {
   z-index: 999;
   right: 8%;
   bottom: 6%;
+  color: black;
   background-color: white !important;
 }
 .swiper-prev {
@@ -392,6 +393,7 @@ footer {
   padding: 6px 20px;
   border-radius: 10px;
   width: 90%;
+  display: flex;
   margin: 0 auto;
   color: #000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -583,7 +585,7 @@ footer {
 }
 .newsletter input {
   border: 0;
-  padding: 10px 10px 10px 20px;
+  padding: 0px 0px 7px 20px;
   border-radius: 12px;
   width: 100%;
   background-color: white;
@@ -603,7 +605,7 @@ footer {
   font-weight: 300;
   position: absolute;
   right: 2%;
-  top: 12%;
+  top: 20%;
 }
 .footer-text {
   font-size: 15px;
@@ -759,6 +761,9 @@ footer {
   .tool {
     top: 14%;
     left: 0%;
+  }
+  .renio-button button {
+    padding: 7px 30px !important;
   }
 }
 @media (max-width: 1439px) {

@@ -6,16 +6,20 @@ import { useGLTF, OrbitControls } from "@react-three/drei";
 const Slide1 = ({ title1, title2, price1, price2 }) => {
   const iconRef = useRef(null);
   function Model() {
-    const { scene } = useGLTF("/assets/onemodel.glb");
-    return <primitive object={scene} />;
+    const { scene } = useGLTF("/assets/test.glb");
+    return <primitive object={scene} position={[-7, 0, 0]}/>;
   }
   function ModelTwo() {
-    const { scene } = useGLTF("/assets/twomodel.glb");
-    return <primitive object={scene} />;
+    const { scene } = useGLTF("/assets/two-way.glb");
+    return <primitive object={scene} position={[-7, 0, 0]}/>;
   }
   function ModelThree() {
-    const { scene } = useGLTF("/assets/threemodel.glb");
-    return <primitive object={scene} />;
+    const { scene } = useGLTF("/assets/threee-way.glb");
+    return <primitive object={scene} position={[-7, 0, 0]}/>;
+  }
+  function ModelFour() {
+    const { scene } = useGLTF("/assets/four-way.glb");
+    return <primitive object={scene} position={[-3, 0, 0]}/>;
   }
 
   const handleMouseEnter = (e) => {
@@ -100,13 +104,13 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
               >
                 {title1 === "RENIE ONE" ? (
                   <>
-                    <Canvas>
+                    <Canvas style={{height: "500px", width: "500px"}}>
                       <ambientLight intensity={1.2} />
-                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                      <directionalLight position={[1, 1, 1]} intensity={1.5} />
                       <Model />
                       <OrbitControls
-                        enableZoom={true}
-                        minDistance={1}
+                        enableZoom={false}
+                        minDistance={30}
                         maxDistance={3}
                       />
                     </Canvas>
@@ -116,14 +120,14 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 )}
                 {title1 === "RENIE Two" ? (
                   <>
-                    <Canvas>
+                    <Canvas style={{height: "500px", width: "500px"}}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={1.5} />
                       <ModelTwo />
                       <OrbitControls
-                        enableZoom={true}
-                        minDistance={1}
-                        maxDistance={3}
+                         enableZoom={false}
+                         minDistance={30}
+                         maxDistance={3}
                       />
                     </Canvas>
                   </>
@@ -132,13 +136,29 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 )}
                 {title1 === "RENIE Maxi" ? (
                   <>
-                    <Canvas>
+                    <Canvas style={{height: "500px", width: "500px"}}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={1.5} />
                       <ModelThree />
                       <OrbitControls
-                        enableZoom={true}
-                        minDistance={1}
+                        enableZoom={false}
+                        minDistance={40}
+                        maxDistance={3}
+                      />
+                    </Canvas>
+                  </>
+                ) : (
+                  ""
+                )}
+                {title1 === "RENIE Mini" ? (
+                  <>
+                    <Canvas style={{height: "500px", width: "500px"}}>
+                      <ambientLight intensity={1.2} />
+                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
+                      <ModelFour />
+                      <OrbitControls
+                        enableZoom={false}
+                        minDistance={25}
                         maxDistance={3}
                       />
                     </Canvas>
