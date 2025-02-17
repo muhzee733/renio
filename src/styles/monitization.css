@@ -1,0 +1,99 @@
+.monitization-section {
+  background: radial-gradient(
+    circle,
+    rgba(230, 0, 92, 0.3) 20%,
+    rgba(230, 0, 92, 0) 50%
+  );
+  background-color: white;
+}
+.moni-wrapper {
+  padding: 100px 0px;
+}
+.moni-wrapper h2 {
+  color: #e31662;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+}
+.moni-wrapper p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+.moni-wrapper video {
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.why-choose h2{
+  color: #e31662;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.why-choose h5{
+  font-size: 20px;
+  font-weight: 500;
+}
+.benefits{
+  padding: 30px 0px;
+  height: 70vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits h2{
+  color: white;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  font-weight: 700;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.benefits h3{
+  color: white;
+
+}
+.benefits p{
+  color: white;
+}
+.custom-rows .col-lg-12{
+  border-bottom: 1px solid #383C4E;
+  padding-bottom: 15px;
+}
+.custom-rows .col-lg-12:nth-child(5){
+  border-bottom: 0px;
+}
+.why-choose{
+  background-color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RenieData{
+  background-color: transparent;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
