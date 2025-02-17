@@ -1,18 +1,115 @@
-import React from "react";
 import Monitization from "@/components/Monitization/MonitizationDiv";
 import WhyChoose from "@/components/Monitization/WhyChoose";
 import Benefit from "@/components/Monitization/Benefit";
-import Banner from '@/components/Monitization/Banner';
+import Banner from "@/components/Monitization/Banner";
 import RenieData from "@/components/Monitization/RenieData";
+
+import { useState, useEffect } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useGLTF, OrbitControls } from "@react-three/drei";
+
+const Model = () => {
+  const { scene } = useGLTF("/assets/lightstrates.glb");
+  const [scrollPos, setScrollPos] = useState(0);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const x = (event.clientX / window.innerWidth) * 2 - 1;
+      const y = -(event.clientY / window.innerHeight) * 2 + 1;
+      setMousePos({ x, y });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  useFrame(({ camera }) => {
+    if (scene) {
+      const maxRotation = Math.PI / 2; // Maximum rotation of 90 degrees
+      const minRotation = -Math.PI / 2; // Minimum rotation of -90 degrees
+
+      scene.rotation.x = Math.max(
+        minRotation,
+        Math.min(maxRotation, mousePos.y * Math.PI)
+      ); // Limit rotation on X
+      scene.rotation.y = Math.max(
+        minRotation,
+        Math.min(maxRotation, mousePos.x * Math.PI)
+      ); // Limit rotation on Y
+
+      // Restrict zoom-in by setting a minimum zoom level
+      const minZoom = 0; // Prevent zooming in too close
+      const maxZoom = 30; // Allow zooming out more
+
+      camera.position.z = Math.max(
+        minZoom,
+        Math.min(maxZoom, 5 + scrollPos * 0.02)
+      ); // Zoom in/out within limits
+    }
+  });
+
+  return <primitive object={scene} />;
+};
 
 const MonitizationSection = () => {
   return (
-    <div className="monitization">
-      <Banner />
-      <RenieData />
-      <Monitization />
-      <WhyChoose />
-      <Benefit />
+    <div className="monitization" style={{ position: "relative", height: "100vh" }}>
+      {/* Overlay image */}
+      <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: 1 }}>
+        <img
+          src="/assets/overlay.png"
+          alt="Overlay"
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "100%",
+            height: "100%",
+            opacity: 0.5,
+          }}
+        />
+      </div>
+
+      {/* 3D Canvas */}
+      <Canvas
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          background: "black",
+          zIndex: 0,  // Put it behind the overlay and content
+        }}
+        camera={{ position: [0, 5, 5] }}
+      >
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <Model />
+        <OrbitControls minDistance={3} maxDistance={10} />
+      </Canvas>
+
+      {/* Content */}
+      <div style={{ position: "relative", zIndex: 2 }}>
+        <Banner />
+        <Monitization />
+        <RenieData />
+        <WhyChoose />
+        <Benefit />
+      </div>
     </div>
   );
 };

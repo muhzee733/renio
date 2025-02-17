@@ -2,9 +2,7 @@ import React from "react";
 
 const RenieData = () => {
   return (
-    <div className="RenieData">
-      <h2>RenieData Monitization</h2>
-    </div>
+    <div style={{minHeight: "100vh", background: "transparent", display: "flex", alignItems: "center", justifyContent: "center", color: "white"}}>Data Monitization</div>
   );
 };
 
