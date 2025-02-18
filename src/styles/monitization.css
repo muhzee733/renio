@@ -172,11 +172,7 @@
 .software-right-data h1 {
   font-size: 100px;
   font-weight: 800;
-  background: -webkit-linear-gradient(
-    250deg,
-    #FFFFFF 0%,
-    #4765E6 100%
-  );
+  background: -webkit-linear-gradient(250deg, #ffffff 0%, #4765e6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -217,18 +213,222 @@
   border-radius: 60px;
 }
 
-
-@media (max-width: 575.98px) {
-}
-
-@media (max-width: 767.98px) {
-}
-
-@media (max-width: 991.98px) {
-}
-
-@media (max-width: 1199.98px) {
-}
-
 @media (max-width: 1399.98px) {
+}
+@media (max-width: 1200px) {
+  .data-banner h1 {
+    font-size: 40px;
+  }
+  .data-banner p {
+    font-size: 16px;
+  }
+  .moni-wrapper h2 {
+    font-size: 40px;
+  }
+  .moni-wrapper p {
+    font-size: 16px;
+  }
+  .software-left-data h2 {
+    font-size: 35px;
+  }
+  .software-left-data p {
+    font-size: 16px;
+  }
+  .why-choose {
+    height: 83vh;
+  }
+  .why-choose h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .why-choose h5 {
+    font-size: 16px;
+  }
+  .custom-cursure p {
+    font-size: 14px;
+  }
+  .benefits h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .blogs div p {
+    font-size: 14px;
+  }
+  .futuredata p {
+    font-size: 14px;
+    line-height: 1.4rem;
+  }
+  .futuredata h2 {
+    font-size: 35px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 992px) {
+  .data-banner h1 {
+    font-size: 30px;
+  }
+  .data-banner {
+    min-height: 58vh;
+    align-items: self-end;
+    padding-bottom: 30px;
+  }
+  .software-right-data {
+    width: 100%;
+  }
+  .software-right-data h6 {
+    line-height: 30px;
+  }
+  .software-left-data h2 {
+    font-size: 26px;
+  }
+  .software-left-data p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .why-choose h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .benefits h2 {
+    font-size: 36px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .JoinNow h3 {
+    font-size: 22px;
+  }
+  .blogs .swiper {
+    padding-bottom: 50px;
+  }
+  .footer-left-section h6 {
+    font-size: 20px !important;
+  }
+  .newsletter button {
+    font-size: 9px;
+    padding: 5px 16px;
+    right: 2%;
+    top: 24%;
+  }
+}
+@media (max-width: 768px) {
+  .software-right-data {
+    width: 60% !important;
+  }
+  .why-choose {
+    height: 100vh;
+    padding: 0px 20px;
+  }
+  .custom-cursure .col-lg-8 {
+    padding-left: 0px !important;
+  }
+  .benefits h2 {
+    font-size: 29px;
+    line-height: 35px;
+    width: 50%;
+  }
+  .futuredata,
+  .JoinNow {
+    padding: 50px 30px;
+    text-align: center;
+  }
+  .futuredata h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .futuredata p {
+    text-align: center;
+  }
+  .benefits {
+    height: 100vh;
+  }
+  .custom-software-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .software-left-data {
+    text-align: center;
+    padding-right: 0px !important;
+  }
+}
+@media (max-width: 576px) {
+  .data-banner .row {
+    flex-direction: column-reverse;
+  }
+  .data-banner {
+    min-height: 75vh;
+    text-align: center;
+  }
+  .moni-wrapper {
+    padding: 50px 0;
+  }
+  .moni-wrapper h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .moni-wrapper p {
+    font-size: 14px;
+  }
+  .software-right-data {
+    width: 90% !important;
+  }
+  .software-right-data h1 {
+    font-size: 70px;
+    top: -44px;
+  }
+  .software-right-data h6 {
+    font-size: 20px;
+    width: 78%;
+    line-height: 26px !important;
+  }
+  .software-right-data img {
+    padding: 12px 15px;
+    max-width: 24% !important;
+  }
+  .m-data {
+    transform: translateX(-50px);
+  }
+  .custom-rows .col-lg-12 {
+    padding-bottom: 0px;
+  }
+  .why-choose h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+  .custom-cursure p {
+    font-size: 13px;
+}
+.benefits h2 {
+  font-size: 26px;
+  line-height: 32px;
+}
+.benefits {
+  height: 70vh;
+}
+.futuredata h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.blogs div h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.blogs div p {
+  text-align: center;
+}
+.blogs img {
+  width: 100%;
+  margin: 0 auto;
+}
+.blogs .swiper-slide {
+  width: 63% !important;
+  transform: translateX(101px) !important;
+}
+.blogs .swiper {
+  margin-top: 0px;
+}
 }

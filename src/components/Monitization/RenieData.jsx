@@ -43,7 +43,7 @@ const RenieData = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 custom-software-data">
             <div class="software-right-data">
               <h1>Step1</h1>
               <div className="m-data">

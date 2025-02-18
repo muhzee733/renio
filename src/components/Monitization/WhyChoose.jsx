@@ -26,13 +26,12 @@ const DataMonetizationSection = () => {
     <div className="why-choose">
       <section className="container my-5">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-12 p-0">
             <h2>
               Why Choose <br /> Renie for Data <br /> Monetization?
             </h2>
           </div>
-
-          <div className="col-md-8">
+          <div className="col-lg-8 col-md-12">
             <div className="row custom-rows">
               {[
                 {
