@@ -9,14 +9,6 @@ function Section6() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      import("lenis").then(({ default: Lenis }) => {
-        const lenis = new Lenis();
-        function raf(time) {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-      });
 
       let tl = gsap.timeline({
         scrollTrigger: {
