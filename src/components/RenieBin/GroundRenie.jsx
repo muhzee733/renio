@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
+
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
   const animationRef = useRef({ frame: 0 });
@@ -17,12 +18,12 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
     if (!canvas) return;
 
     const context = canvas.getContext("2d");
-    canvas.width = 1358;
-    canvas.height = 770;
+    canvas.width = 1158;
+    canvas.height = 651;
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `${imagePath}${(i + 1).toString().padStart(4, "0")}.png`;
+      img.src = `${imagePath}${(i + 1).toString().padStart(4, "0")}.webp`;
       imagesRef.current.push(img);
     }
 
@@ -54,17 +55,15 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
   return (
     <>
       <div className="PowerRenie ground-section">
-        <div className="power-wrapper py-5">
+        <div className="power-wrapper">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div className="power-2">
-                  <h2 className="build-pin" ref={contentRef}>
-                    Build from the ground up
-                  </h2>
+                <div className="power">
+                  <h2 className="build-pin" ref={contentRef}>Build from the ground up</h2>
                   <div className="canvas-wrapper1">
                     <div className={containerClass}>
-                      <canvas style={{ marginLeft: "-17%" }} ref={canvasRef} />
+                      <canvas ref={canvasRef} />
                     </div>
                   </div>
                 </div>

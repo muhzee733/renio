@@ -226,7 +226,7 @@
 }
 .crafted-card {
   background-image: url("/assets/card-background.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 500px;
@@ -363,17 +363,30 @@
     width: 50%;
   }
 }
-@media (max-width: 1199px) {
-  .renie-card iframe {
-    margin-left: -60px;
+@media (max-width: 1200px) {
+  .renie-main-content {
+    padding-top: 15%;
+  }
+  .meet-image canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .MeetRenieBin {
+    height: 74vh;
+  }
+  .power-wrapper {
+    min-height: 76vh;
+  }
+  .crafted-renie h2 {
+    font-size: 30px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .renie-main-content h1 {
     font-size: 30px;
   }
-  .renie-card iframe {
-    margin-left: -90px;
+  .banner-sv {
+    width: 123px;
   }
   .renie-main-content p {
     font-size: 16px;
@@ -382,25 +395,30 @@
     padding-top: 16%;
   }
   .renie-card {
-    padding: 45px 24px;
+    padding: 20px 10px;
+    width: 140px;
   }
   .renie-card img {
     max-width: 50%;
   }
   .renie-card p {
     font-size: 14px;
+    margin-top: 0px !important;
   }
   .crafted-card {
-    height: 430px;
-    padding: 20px;
+    height: 400px;
   }
   .crafted-card h3 {
     width: 80%;
     font-size: 22px;
   }
   .crafted-card-1 {
-    padding: 20px;
-    height: 203px;
+    padding: 16px;
+    height: 190px;
+  }
+  .power-wrapper {
+    min-height: 50vh;
+    padding: 50px 0px;
   }
   .crafted-card-1 h3:nth-child(2) {
     font-size: 14px;
@@ -469,6 +487,12 @@
   .meet-mini-box p {
     font-size: 12px;
   }
+  .power p {
+    width: 100%;
+  }
+  .crafted-card-1 ul li {
+    font-size: 12px;
+  }
 }
 @media (max-width: 787px) {
   .foolter-links {
@@ -489,6 +513,12 @@
   .renie-main-content {
     padding-top: 10%;
   }
+  .ProductRenie h2 {
+    font-size: 30px;
+  }
+  .discover-image {
+    justify-content: center;
+}
   .renie-main-content p {
     font-size: 14px;
     text-align: center;

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Head from "next/head";
@@ -15,10 +15,22 @@ import ProductRenie from "@/components/RenieBin/ProductRenie";
 import RenieSection from "@/components/RenieBin/RenieSection2";
 
 const RenieBin = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
   const frameCount = 158;
   const airpods = { frame: 0 };
+
+  // Detect screen size and adjust for mobile
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 992); // Set 768px as the mobile breakpoint
+
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth < 992);
+    });
+
+    return () => window.removeEventListener("resize", () => {});
+  }, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -27,8 +39,10 @@ const RenieBin = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const context = canvas.getContext("2d");
-    canvas.width = 1158;
-    canvas.height = 770;
+
+    // Adjust canvas size for mobile
+    canvas.width = isMobile ? window.innerWidth : 1158;  // Mobile size adjustment
+    canvas.height = isMobile ? (window.innerWidth * 470) / 1158 : 770; // Adjust height to maintain aspect ratio
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
@@ -63,12 +77,12 @@ const RenieBin = () => {
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [isMobile]); // Re-run effect when isMobile changes
 
   return (
     <>
       <Head>
-        <title>Renie Bin: Smart Waste Management Soluctions</title>
+        <title>Renie Bin: Smart Waste Management Solutions</title>
         <meta
           name="description"
           content="Renie Bin, the smart solution for efficient waste segregation and recycling. Track your impact and earn from deposited waste."
@@ -80,8 +94,8 @@ const RenieBin = () => {
       <MeetRenieBin />
       <PowerRenie />
       <GroundRenie
-        imagePath="/assets/bin3/0001.png"
-        frameCount={65}
+        imagePath="/assets/bin3/bin/M"
+        frameCount={104}
         containerClass="canvas-container-1"
       />
       <CraftedRenie />

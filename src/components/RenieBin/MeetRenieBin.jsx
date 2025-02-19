@@ -20,7 +20,7 @@ const MeetRenieBin = () => {
   ];
 
   return (
-    <div className="MeetRenieBin position-relative">
+    <div className="MeetRenieBin">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -36,7 +36,7 @@ const MeetRenieBin = () => {
                 pagination={{ clickable: true }}
                 breakpoints={{
                   300: { slidesPerView: 1 },
-                  768: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
                   1024: { slidesPerView: 4 },
                 }}
               >
