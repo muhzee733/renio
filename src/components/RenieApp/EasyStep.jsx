@@ -19,7 +19,7 @@ const EasyStep = () => {
           <div className="row">
             {/* Left Column Animation */}
             <motion.div
-              className="col-lg-6 p-0 position-relative animated-left-column"
+              className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-left-column"
               initial={{ x: -200, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut" }}
@@ -38,7 +38,7 @@ const EasyStep = () => {
 
             {/* Right Column Animation */}
             <motion.div
-              className="col-lg-6 p-0 position-relative animated-right-column"
+              className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-right-column"
               initial={{ x: 200, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }} // Delay right column for a staggered effect

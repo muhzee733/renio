@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Head from "next/head";
 
 import Footer from "@/components/Navbar/Footer";
 import Navbar from "@/components/Navbar/Navbar";
@@ -66,6 +67,13 @@ const RenieBin = () => {
 
   return (
     <>
+      <Head>
+        <title>Renie Bin: Smart Waste Management Soluctions</title>
+        <meta
+          name="description"
+          content="Renie Bin, the smart solution for efficient waste segregation and recycling. Track your impact and earn from deposited waste."
+        />
+      </Head>
       <Navbar white={true} />
       <Banner canvasRef={canvasRef} />
       <RenieSection />

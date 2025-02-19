@@ -51,7 +51,7 @@ const LoveRenie = () => {
                 Why You’ll Love <span style={{color: "#e31662"}}>❤︎</span> Renie Nexus
               </h2>
             </div>
-            <main className="overflow-x-hidden mt-5">
+            <main className="overflow-x-hidden mt-5 custom-love-images">
               <div
                 className="flex flex-nowrap items-center space-x-20"
                 style={{ width: "calc(100vw * 4)" }} // Set the width of the container

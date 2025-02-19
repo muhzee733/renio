@@ -209,8 +209,7 @@
   border-radius: 60px;
 }
 
-@media (max-width: 1399.98px) {
-}
+
 @media (max-width: 1200px) {
   .data-banner h1 {
     font-size: 40px;
