@@ -42,11 +42,54 @@ const Banner = () => {
         delay: 1.5, // Delay slightly more for the secondary text
       }
     );
+
+    // IntersectionObserver to start animation when SVG comes into view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Start SVG animation when it comes into view
+            gsap.to(".banner-svg-renie", {
+              opacity: 1, // Start showing the SVG when in view
+              duration: 1, // Smooth transition to make it fade in
+              ease: "power1.inOut", // Smooth transition
+            });
+          }
+        });
+      },
+      { threshold: 0.5 } // Start the animation when 50% of the element is visible
+    );
+
+    // Target the SVG iframe element
+    const svgElement = document.querySelector(".banner-svg-renie");
+    observer.observe(svgElement);
+
+    // Clean up observer when component is unmounted
+    return () => {
+      if (svgElement) {
+        observer.unobserve(svgElement);
+      }
+    };
   }, []);
 
   return (
     <div className="rene-banner">
       <div className="renie-banner">
+        <div className="banner-svg-bin">
+          <iframe
+            src="/assets/Website-Wave.svg"
+            className="banner-svg-renie"
+            title="Website Wave SVG"
+            style={{
+              border: "none",
+              width: "100%",
+              height: "100%",
+              opacity: 0, // Start hidden, will fade in when in view
+              transition: "opacity 1s ease", // Smooth fade transition
+            }}
+          ></iframe>
+        </div>
+        
         <div className="container">
           <div className="main-renie-banner">
             <img src="/assets/app-1.png" alt="renie app" />
