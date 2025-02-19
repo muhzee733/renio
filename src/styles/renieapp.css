@@ -1,0 +1,179 @@
+.rene-banner {
+  background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-renie-banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  width: 100%;
+  padding-top: 24%;
+}
+.main-renie-banner img {
+  max-width: 100%;
+  height: auto;
+}
+.main-renie-banner h1 {
+  font-size: 36px;
+  font-weight: bold;
+  width: 70%;
+}
+.main-renie-banner h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.main-renie-nexus h2 {
+  color: #4765e6;
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 800;
+  width: 70%;
+}
+.main-renie-nexus p {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  margin: 10px 0px;
+  width: 80%;
+  margin: 20px 0px;
+}
+.main-renie-nexus button {
+  font-size: 14px;
+  background-color: #e31662;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.renie-love {
+  background: linear-gradient(120deg, #4765e6 0%, #4765e6 46%, #283880 100%);
+  min-height: 80vh;
+  padding: 80px 10px;
+}
+.renie-love h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+.races {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.races img {
+  max-width: 30%;
+}
+.easystep {
+  background-image: url("/assets/easybg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.easystep-wrapper {
+  height: 100vh;
+  padding: 120px 10px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.easystep-wrapper h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+.left-track h3 {
+  font-size: 60px;
+  color: white;
+  font-weight: 800;
+}
+.left-track p {
+  font-size: 18px;
+  color: white;
+  width: 60%;
+}
+
+.vertical-box div {
+  width: 150px;
+  background-color: #e31662;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  top: 12vh;
+}
+.vertical-box-right div{
+  width: 150px;
+  background-color: #5C4099;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  top: 12vh;
+}
+
+.white-box{
+  position: absolute;
+  right: 10%;
+  top: 25rem;
+}
+.scan-title-2{
+  top: 22rem !important;
+  left: 25%;
+}
+.custom-scan-height{
+  min-height: 66vh;
+}
+.scan-title{
+  position: absolute;
+  top: 20vh;
+}
+.white-box-2{
+  top: 20% !important;
+  left: 15%;
+}
+.animatedsection{
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green{
+  background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green h2{
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 110px;
+  margin-bottom: 10px;
+}
+.green p{
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.green button{
+  background-color: #e31662;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+}
+.main-renie-banner img{
+  max-width: 65%;
+}

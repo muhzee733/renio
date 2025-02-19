@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 
-const Navbar = ({white}) => {
+const Navbar = ({ white }) => {
   const navRef = useRef(null);
   const menuImageRef = useRef(null);
   const logoRef = useRef(null);
@@ -125,7 +126,10 @@ const Navbar = ({white}) => {
         className="main-navbar container"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{display: "flex !important", backgroundColor: white ? "white" : "",}}
+        style={{
+          display: "flex !important",
+          backgroundColor: white ? "white" : "",
+        }}
       >
         <Image
           ref={logoRef}
@@ -156,8 +160,12 @@ const Navbar = ({white}) => {
             flexWrap: "nowrap",
           }}
         >
-          <li>Renie Bin</li>
-          <li>Renie Hub</li>
+          <li>
+            <Link href="/renieapp"> Renie Bin</Link>
+          </li>
+          <li>
+            <Link href="/monitization">Renie Hub</Link>
+          </li>
           <li>Renie App</li>
           <li>Ads that Matter</li>
           <li>Media Hub</li>
@@ -181,36 +189,37 @@ const Navbar = ({white}) => {
         />
       </nav>
       <nav
-      id="mobile-version"
-      className={`mobile-nav ${isNavOpen ? "custom-open" : ""}`}
-      style={{
-        transition: "width 0.6s cubic-bezier(0.4, 0, 0.2, 1), height 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
-      }}
-    >
-      {/* Menu Icon */}
-      <Image
-        src="/assets/small.png"
-        alt="Menu Icon"
-        width={40}
-        height={40}
-        className="mobile-menu"
-        onClick={toggleNav}
-      />
+        id="mobile-version"
+        className={`mobile-nav ${isNavOpen ? "custom-open" : ""}`}
+        style={{
+          transition:
+            "width 0.6s cubic-bezier(0.4, 0, 0.2, 1), height 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        }}
+      >
+        {/* Menu Icon */}
+        <Image
+          src="/assets/small.png"
+          alt="Menu Icon"
+          width={40}
+          height={40}
+          className="mobile-menu"
+          onClick={toggleNav}
+        />
 
-      {/* Navbar Content */}
-      {isNavOpen && (
-        <div className="custom-mobile-menu">
-          <ul className="d-flex gap-3 navbar-link flex-column">
-            <li>Renie Bin</li>
-            <li>Renie Hub</li>
-            <li>Renie App</li>
-            <li>Ads that Matter</li>
-            <li>Media Hub</li>
-          </ul>
-          <button className="btn-3">Connect with an expert</button>
-        </div>
-      )}
-    </nav>
+        {/* Navbar Content */}
+        {isNavOpen && (
+          <div className="custom-mobile-menu">
+            <ul className="d-flex gap-3 navbar-link flex-column">
+              <li>Renie Bin</li>
+              <li>Renie Hub</li>
+              <li>Renie App</li>
+              <li>Ads that Matter</li>
+              <li>Media Hub</li>
+            </ul>
+            <button className="btn-3">Connect with an expert</button>
+          </div>
+        )}
+      </nav>
     </>
   );
 };

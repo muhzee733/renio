@@ -29,8 +29,10 @@
     "react-owl-carousel": "^2.3.3",
     "reactstrap": "^9.2.3",
     "sass": "^1.84.0",
+    "split-type": "^0.3.4",
     "swiper": "^11.2.2",
-    "three": "^0.173.0"
+    "three": "^0.173.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -4,6 +4,7 @@ import '@/components/Slider5/slider.css';
 import '@/components/Slide3/slide.css';
 import '@/styles/reniebin.css'
 import "@/styles/monitization.css"
+import "@/styles/renieapp.css"
 
 import { ThemeProvider } from "next-themes";
 
