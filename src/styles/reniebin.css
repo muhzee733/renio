@@ -8,6 +8,11 @@
   min-height: 100vh;
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
 }
+.discover-image {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px !important;
+}
 .reniebin-wrapper .bin-image {
   max-width: 38%;
 }
@@ -70,14 +75,15 @@
   position: absolute;
   top: 30%;
   text-align: center;
-  width: 12%;
   padding: 60px 0px;
   border-radius: 90px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-left: 30px;
+  width: 170px;
+  max-width: 100%;
+  margin-left: 2.5%;
 }
-.renie-card iframe{
-  margin-left: -30px;
+.banner-sv {
+  width: 170px;
 }
 .renie-card p {
   font-weight: 600;
@@ -150,13 +156,24 @@
   text-align: center;
   margin-top: 30px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .power-wrapper {
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.power-2 h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: left;
+  width: 50%;
+  line-height: 60px;
 }
 .power {
   width: 100%;
@@ -165,15 +182,14 @@
   color: white;
   font-size: 36px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
 }
 .power p {
   color: white;
   font-weight: 300;
   font-size: 16px;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
+  text-align: left;
+  width: 60%;
 }
 .power-youtube {
   display: flex;
@@ -197,7 +213,9 @@
 .crafted-renie h2 {
   color: white;
   text-align: left;
-  width: 34%;
+  font-size: 40px;
+  width: 50%;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 .crafted-card h3 {
@@ -281,14 +299,17 @@
 .discover h2 {
   color: white !important;
   text-align: left !important;
+  font-size: 40px;
 }
 .discover img {
   max-width: 30%;
 }
 .ProductRenie h2 {
-  color: white !important;
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
+  color: #fff !important;
+  font-size: 40px;
+  font-weight: 400;
 }
 .product-box {
   padding-right: 30px;
@@ -343,7 +364,7 @@
   }
 }
 @media (max-width: 1199px) {
-  .renie-card iframe{
+  .renie-card iframe {
     margin-left: -60px;
   }
 }
@@ -351,7 +372,7 @@
   .renie-main-content h1 {
     font-size: 30px;
   }
-  .renie-card iframe{
+  .renie-card iframe {
     margin-left: -90px;
   }
   .renie-main-content p {
@@ -453,14 +474,14 @@
   .foolter-links {
     width: 100%;
   }
-  .renie-card iframe{
+  .renie-card iframe {
     width: 100%;
     margin: unset;
   }
-  .renie-card{
+  .renie-card {
     padding: 20px 24px;
   }
-  .renie-card p{
+  .renie-card p {
     margin-top: -20px !important;
   }
 }
@@ -587,10 +608,7 @@
     text-align: center !important;
     margin: 0 auto;
   }
-  .discover-image {
-    text-align: center;
-    margin-top: 10px !important;
-  }
+
   .custom-footer-section {
     padding: 20px 0px 20px 20px;
   }
@@ -612,9 +630,9 @@
   }
   .banner-boxes {
     gap: 10px;
-}
-.banner-boxes div{
-  width: 30%;
-  text-align: center;
-}
+  }
+  .banner-boxes div {
+    width: 30%;
+    text-align: center;
+  }
 }

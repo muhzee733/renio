@@ -68,10 +68,7 @@ const Model = () => {
 
 const MonitizationSection = () => {
   return (
-    <div
-      className="monitization"
-      style={{ position: "relative", height: "100vh" }}
-    >
+    <div className="monitization">
       <div
         style={{
           position: "fixed",

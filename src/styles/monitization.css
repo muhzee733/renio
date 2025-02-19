@@ -162,8 +162,9 @@
   background: white;
   padding: 50px 30px 30px 30px;
   border-radius: 12px;
-  width: 75%;
-  position: relative;
+  margin-left: 4%;
+  width: 558px;
+
 }
 .software-right-data h1 {
   font-size: 100px;
@@ -207,7 +208,10 @@
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 10px 15px;
   border-radius: 60px;
+  max-width: 12%;
 }
+
+/* testing */
 
 
 @media (max-width: 1200px) {
@@ -396,34 +400,34 @@
   }
   .custom-cursure p {
     font-size: 13px;
-}
-.benefits h2 {
-  font-size: 26px;
-  line-height: 32px;
-}
-.benefits {
-  height: 70vh;
-}
-.futuredata h2 {
-  font-size: 24px;
-  line-height: 30px;
-}
-.blogs div h3 {
-  text-align: center;
-  margin-top: 10px;
-}
-.blogs div p {
-  text-align: center;
-}
-.blogs img {
-  width: 100%;
-  margin: 0 auto;
-}
-.blogs .swiper-slide {
-  width: 63% !important;
-  transform: translateX(101px) !important;
-}
-.blogs .swiper {
-  margin-top: 0px;
-}
+  }
+  .benefits h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .benefits {
+    height: 70vh;
+  }
+  .futuredata h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .blogs div h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .blogs div p {
+    text-align: center;
+  }
+  .blogs img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blogs .swiper-slide {
+    width: 63% !important;
+    transform: translateX(101px) !important;
+  }
+  .blogs .swiper {
+    margin-top: 0px;
+  }
 }

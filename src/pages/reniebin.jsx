@@ -17,7 +17,7 @@ import RenieSection from "@/components/RenieBin/RenieSection2";
 const RenieBin = () => {
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
-  const frameCount = 114;
+  const frameCount = 158;
   const airpods = { frame: 0 };
 
   useEffect(() => {
@@ -32,9 +32,9 @@ const RenieBin = () => {
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/assets/bin2/Video1_004_${(i + 1)
+      img.src = `/assets/bin-4/Renie_bin${(i + 1)
         .toString()
-        .padStart(5, "0")}.png`;
+        .padStart(4, "0")}.png`;
       imagesRef.current.push(img);
     }
 

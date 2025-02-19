@@ -58,8 +58,10 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div className="power">
-                  <h2 className="build-pin" ref={contentRef}>Build from the ground up</h2>
+                <div className="power-2">
+                  <h2 className="build-pin" ref={contentRef}>
+                    Build from the ground up
+                  </h2>
                   <div className="canvas-wrapper1">
                     <div className={containerClass}>
                       <canvas style={{ marginLeft: "-17%" }} ref={canvasRef} />

@@ -1,66 +1,92 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const ExpandingTextGrid = () => {
-  const containerRef = useRef(null);
-  const textWrapperRef = useRef(null);
-  const [rows, setRows] = useState(1); // Start with 1 row
-
+const RenieData = () => {
   useEffect(() => {
-    gsap.to(textWrapperRef.current, {
-      width: "100%", // Expands row left to right
-      ease: "power2.out",
+    // Register the plugins
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    // Create the timeline for the animation
+    const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center",
-        end: "bottom top",
-        scrub: 1,
-        onUpdate: (self) => {
-          const progress = self.progress;
-          const newRows = Math.floor(progress * 10) + 1;
-          setRows(newRows); // Increase rows dynamically
-        },
+        trigger: ".cards",
+        pin: true,
+        pinSpacing: true,
+        start: "left-=120px left", // Start when the left of the trigger reaches the left of the viewport
+        end: "+=2000", // Duration of the scroll animation
+        scrub: 1, // Smooth scrubbing effect
       },
     });
+
+    // Card animation timeline
+    timeline
+      .addLabel("card1")
+      .to(".card-1", {
+        xPercent: 0,
+        opacity: 1,
+      })
+      .from(".card-2", {
+        xPercent: 75,
+        opacity: 0,
+      })
+      .addLabel("card2")
+      .to(
+        ".card-1",
+        {
+          scale: 0.95,
+          xPercent: -0.5,
+          opacity: 0.5,
+        },
+        "-=0.3"
+      )
+      .to(".card-2", {
+        xPercent: 0,
+        opacity: 1,
+      })
+      .from(".card-3", {
+        xPercent: 75,
+        opacity: 0,
+      })
+      .addLabel("card3")
+      .to(
+        ".card-2",
+        {
+          scale: 0.98,
+          xPercent: -0.4,
+          opacity: 0.6,
+        },
+        "-=0.3"
+      )
+      .to(".card-3", {
+        xPercent: 0,
+        opacity: 1,
+      })
+      .to(".card-3", {});
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // Cleanup the scrollTrigger
+    };
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
-      {/* 100vh Section Above */}
-      <div className="h-[100vh] bg-gray-200 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Scroll Down</h2>
-      </div>
-
-      {/* Expanding Text Section */}
-      <div
-        ref={containerRef}
-        className="relative h-[200vh] bg-lime-400 flex flex-col justify-center items-center"
-      >
-        <div ref={textWrapperRef} className="overflow-hidden flex flex-col items-center">
-          {[...Array(rows)].map((_, rowIndex) => (
-            <div key={rowIndex} className="flex justify-center space-x-2 my-1">
-              {[...Array(10)].map((_, i) => (
-                <div
-                  key={i}
-                  className="border-2 border-black px-4 py-2 text-lg font-bold rounded-full bg-lime-300"
-                >
-                  {i % 2 === 0 ? "Let's Make" : "Stryds"}
-                </div>
-              ))}
-            </div>
-          ))}
+    <div className="renie-dat">
+      <div class="container">
+        <div class="cards">
+          <div class="card card-1">
+            <h2>01</h2>
+          </div>
+          <div class="card card-2">
+            <h2>02</h2>
+          </div>
+          <div class="card card-3">
+            <h2>03</h2>
+          </div>
         </div>
-      </div>
-
-      {/* 100vh Section Below */}
-      <div className="h-[100vh] bg-gray-200 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Keep Scrolling</h2>
       </div>
     </div>
   );
 };
 
-export default ExpandingTextGrid;
+export default RenieData;
