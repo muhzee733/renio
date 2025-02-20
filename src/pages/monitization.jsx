@@ -120,7 +120,7 @@ const MonitizationSection = () => {
         <Benefit />
         <FutureData />
         <JoinNow />
-        {/* <Footer /> */}
+        <Footer />
         <MiniFooter />
       </div>
     </div>
