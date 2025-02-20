@@ -31,10 +31,10 @@ function Section6() {
   }, []);
 
   return (
-    <main className="w-100">
+    <main className="w-100 reee">
       <div className="container">
-        <section ref={sectionRef} className="d-flex min-vh-100 w-100">
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
+        <section ref={sectionRef} className="d-flex min-vh-100 w-100 custom-renie-card">
+          <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
             <div className="software-left-data text-center">
               <h2>How Does Renie’s Data Monetization Work?</h2>
               <p>
@@ -46,7 +46,7 @@ function Section6() {
             </div>
           </div>
 
-          <div className="col-md-6 d-flex align-items-center overflow-hidden position-relative">
+          <div className="col-lg-6 col-md-12 d-flex align-items-center overflow-hidden position-relative">
             <div className="d-flex flex-nowrap gap-4">
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="software-right-container software-right-data p-4 bg-white rounded shadow">

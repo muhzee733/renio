@@ -8,7 +8,10 @@ const DataMonetizationSection = () => {
 
     rows.forEach((row) => {
       row.addEventListener("mouseenter", () => {
-        gsap.to("body", { cursor: "url('/assets/cusure.png'), auto", duration: 0.3 });
+        gsap.to("body", {
+          cursor: "url('/assets/cusure.png'), auto",
+          duration: 0.3,
+        });
       });
       row.addEventListener("mouseleave", () => {
         gsap.to("body", { cursor: "default", duration: 0.3 });
@@ -73,8 +76,8 @@ const DataMonetizationSection = () => {
                     <div className="col-lg-8">
                       <p className="text-muted">{item.description}</p>
                     </div>
-                    <div className="col-lg-1 text-right">
-                      <span>&#8599;</span>
+                    <div className="col-lg-1 text-right custom-arrow">
+                      <img src="/assets/arrow-2.png" width={15} />
                     </div>
                   </div>
                 </div>

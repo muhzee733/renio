@@ -58,9 +58,9 @@ export default function Home() {
         <RenieBin />
       </section>
 
-      {/* <section className=" section-8">
+      <section className=" section-8">
         <Footer />
-      </section> */}
+      </section>
       <MiniFooter />
     </>
   );

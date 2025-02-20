@@ -18,7 +18,7 @@ const RenieBin = () => {
   const [isMobile, setIsMobile] = useState(false);
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
-  const frameCount = 158;
+  const frameCount = 120;
   const airpods = { frame: 0 };
 
   // Detect screen size and adjust for mobile
@@ -40,15 +40,14 @@ const RenieBin = () => {
     if (!canvas) return;
     const context = canvas.getContext("2d");
 
-    // Adjust canvas size for mobile
-    canvas.width = isMobile ? window.innerWidth : 1158;  // Mobile size adjustment
-    canvas.height = isMobile ? (window.innerWidth * 470) / 1158 : 770; // Adjust height to maintain aspect ratio
+    canvas.width = 1158;
+    canvas.height = 770;
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/assets/bin-4/Renie_bin${(i + 1)
+      img.src = `/assets/bin-5/Anim${(i + 1)
         .toString()
-        .padStart(4, "0")}.png`;
+        .padStart(4, "0")}.webp`;
       imagesRef.current.push(img);
     }
 

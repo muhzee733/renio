@@ -70,7 +70,7 @@
 }
 .why-choose {
   background-color: white;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,6 +82,9 @@
   align-items: center;
   justify-content: center;
 }
+.moni-blog .swiper-slide{
+  min-height: 400px !important;
+}
 .futuredata {
   background-color: white;
   padding: 50px 0px;
@@ -90,7 +93,7 @@
   font-size: 40px;
   line-height: 45px;
   color: #5c4099;
-  font-weight: 600;
+  font-weight: 700;
 }
 .futuredata p {
   color: #383c4e;
@@ -100,6 +103,11 @@
 .JoinNow {
   background-color: #4765e6;
   padding: 50px 0px;
+}
+.renieeee{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .JoinNow h3 {
   color: white;
@@ -140,11 +148,13 @@
   color: white;
   font-size: 50px;
   font-weight: 900;
+  text-align: left;
 }
 .software-left-data p {
   color: white;
   font-size: 18px;
   font-weight: 300;
+  text-align: left;
 }
 .software-left-data {
   display: flex;
@@ -208,7 +218,7 @@
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 10px 15px;
   border-radius: 60px;
-  max-width: 12%;
+  max-width: 22%;
 }
 
 /* testing */
@@ -272,7 +282,8 @@
     padding-bottom: 30px;
   }
   .software-right-data {
-    width: 100%;
+    width: 750px;
+    margin-left: 5%;
   }
   .software-right-data h6 {
     line-height: 30px;
@@ -283,6 +294,7 @@
   .software-left-data p {
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
   }
   .why-choose h2 {
     font-size: 30px;
@@ -309,11 +321,39 @@
     right: 2%;
     top: 24%;
   }
+  .custom-renie-card .col-md-12{
+    width: 100% !important;
+  }
+  .custom-renie-card{
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
   .software-right-data {
-    width: 60% !important;
+    width: 670px !important;
   }
+  .moni-blog .swiper-slide{
+    min-height: 280px !important;
+  }
+  .m-data {
+    transform: translateX(-154px);
+}
+.software-right-data img {
+  max-width: 34%;
+}
+.m-data{
+  width: 74%;
+}
+.benefits {
+  height: 70vh !important;
+  padding: 0px 20px;
+}
+.software-right-container p {
+  text-align: left;
+}
+.software-right-data h6 {
+  text-align: left;
+}
   .why-choose {
     height: 100vh;
     padding: 0px 20px;
@@ -357,10 +397,28 @@
   .data-banner .row {
     flex-direction: column-reverse;
   }
+  .data-banner h1 {
+    font-size: 34px !important;
+}
   .data-banner {
-    min-height: 75vh;
+    min-height: 88vh;
     text-align: center;
   }
+  .data-banner p {
+    font-size: 14px;
+    width: 70%;
+    margin: 0 auto;
+}
+.reee{
+  padding: 50px 0px;
+}
+.reee .software-right-container {
+  height: 315px !important;
+}
+.software-right-data p {
+  font-size: 14px;
+  padding-right: 20px;
+}
   .moni-wrapper {
     padding: 50px 0;
   }
@@ -376,7 +434,7 @@
   }
   .software-right-data h1 {
     font-size: 70px;
-    top: -44px;
+    top: -57px;
   }
   .software-right-data h6 {
     font-size: 20px;
@@ -385,8 +443,15 @@
   }
   .software-right-data img {
     padding: 12px 15px;
-    max-width: 24% !important;
+    max-width: 30% !important;
   }
+  .m-data {
+    width: 100%;
+}
+.custom-arrow {
+  width: auto;
+  margin: 10px 0px;
+}
   .m-data {
     transform: translateX(-50px);
   }
@@ -398,12 +463,28 @@
     line-height: 28px;
     margin-bottom: 14px;
   }
+  .why-choose {
+    height: 136vh;
+    padding: 0 20px;
+}
+.mobile-nav {
+  display: none ;
+}
+.renieeee{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.renieeee .renie-bin-wrapper h2 {
+  font-size: 28px;
+}
   .custom-cursure p {
     font-size: 13px;
   }
   .benefits h2 {
     font-size: 26px;
     line-height: 32px;
+    width: 100%;
   }
   .benefits {
     height: 70vh;
@@ -423,11 +504,17 @@
     width: 100%;
     margin: 0 auto;
   }
-  /* .blogs .swiper-slide {
-    width: 63% !important;
-    transform: translateX(101px) !important;
-  } */
   .blogs .swiper {
     margin-top: 0px;
   }
+  .software-left-data h2 {
+    text-align: center;
+}
+.software-right-data {
+  width: 300px !important;
+  margin-left: 26px !important;
+}
+.benefits{
+  min-height: 100vh;
+}
 }
