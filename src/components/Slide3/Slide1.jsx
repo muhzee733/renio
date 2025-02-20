@@ -7,19 +7,19 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
   const iconRef = useRef(null);
   function Model() {
     const { scene } = useGLTF("/assets/test.glb");
-    return <primitive object={scene} position={[-7, 0, 0]}/>;
+    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
   }
   function ModelTwo() {
     const { scene } = useGLTF("/assets/two-way.glb");
-    return <primitive object={scene} position={[-7, 0, 0]}/>;
+    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
   }
   function ModelThree() {
     const { scene } = useGLTF("/assets/threee-way.glb");
-    return <primitive object={scene} position={[-7, 0, 0]}/>;
+    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
   }
   function ModelFour() {
     const { scene } = useGLTF("/assets/four-way.glb");
-    return <primitive object={scene} position={[-3, 0, 0]}/>;
+    return <primitive object={scene} position={[-3, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
   }
 
   const handleMouseEnter = (e) => {
@@ -91,7 +91,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 style={{
                   cursor: "pointer",
                   position: "absolute",
-                  bottom: "0",
+                  bottom: "-80px",
                   left: "0",
                 }}
               />

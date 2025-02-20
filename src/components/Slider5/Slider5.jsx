@@ -44,14 +44,6 @@ const Slider = ({ title1, title2, img, img2, h6, p, customClass }) => {
               <p className={`collapsible-tex`}>
                 {p}
               </p>
-              {/* {isMobile && (
-                <button
-                  className="expanded-button"
-                  onClick={() => setIsExpanded(!isExpanded)}
-                >
-                  {isExpanded ? "Show Less" : "Show More"}
-                </button>
-              )} */}
             </div>
           </div>
         </div>

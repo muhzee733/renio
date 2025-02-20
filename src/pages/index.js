@@ -26,7 +26,7 @@ export default function Home() {
         <Banner />
       </section>
 
-      <section className="section section-2">
+      <section id="how-it-works" className="section section-2">
         <HowItWork />
       </section>
 

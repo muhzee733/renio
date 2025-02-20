@@ -423,10 +423,10 @@
     width: 100%;
     margin: 0 auto;
   }
-  .blogs .swiper-slide {
+  /* .blogs .swiper-slide {
     width: 63% !important;
     transform: translateX(101px) !important;
-  }
+  } */
   .blogs .swiper {
     margin-top: 0px;
   }

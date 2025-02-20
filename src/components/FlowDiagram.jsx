@@ -91,7 +91,7 @@ const FlowDiagram = ({
 
   return (
     <div>
-      <div style={{ position: "relative", width: "600px", margin: "auto" }}>
+      <div className="custom-diagram" style={{ position: "relative", width: "600px", margin: "auto" }}>
         <svg
           height="auto"
           viewBox="-10 -10 479 380"

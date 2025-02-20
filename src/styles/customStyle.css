@@ -14,7 +14,10 @@ p {
   right: 43%;
   top: 87%;
 }
-.custom-center img{
+.software-left img {
+  margin-right: 10px;
+}
+.custom-center img {
   margin: 0 auto;
   text-align: center !important;
 }
@@ -236,7 +239,8 @@ footer {
 .purple {
   color: #e31662;
 }
-.btn-2, .btn-3 {
+.btn-2,
+.btn-3 {
   border-radius: 100px !important;
   background: linear-gradient(
     90deg,
@@ -435,6 +439,9 @@ footer {
 .section-3 {
   background-color: #dc3545;
 }
+.swiper-pagination-bullet-active {
+  background: #f9f9f9 !important;
+}
 
 .section-4 {
   background-color: white;
@@ -458,7 +465,7 @@ footer {
 .section-8 {
   background-color: white;
 }
-.bootom-footer{
+.bootom-footer {
   margin: 10px 0px;
 }
 
@@ -518,12 +525,12 @@ footer {
   text-align: center;
   color: white;
 }
-.footer-wrapper{
+.footer-wrapper {
   background-color: white;
   padding: 80px 0px 0px 0px;
 }
 
-.container-wrapper{
+.container-wrapper {
   background: url("/assets/footer.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -562,8 +569,9 @@ footer {
   margin: 0 auto;
 }
 .custom-image {
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .newsletter {
   position: relative;
@@ -619,7 +627,7 @@ footer {
   color: #5c419a;
   transition: 0.3s all ease-in-out;
 }
-.userfull-links img{
+.userfull-links img {
   width: 20px;
   height: 20px;
 }
@@ -688,12 +696,13 @@ footer {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .software-right-container {
   border: 1px solid #dcdcdc;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 20px;
-  padding: 50px;
-  width: 800px;
+  padding: 25px;
+  width: 500px;
 }
 .software-right-container span {
   font-size: 22px;
@@ -752,16 +761,10 @@ footer {
     top: 14%;
     left: 0%;
   }
-  .renio-button button {
-    padding: 7px 30px !important;
-  }
 }
 @media (max-width: 1439px) {
   .main-slider img {
     max-width: 72% !important;
-  }
-  .renio-button button {
-    padding: 7px 28px !important;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -780,8 +783,33 @@ footer {
   .footer-left-section h6 {
     width: 90%;
   }
+  .main-banner h1 {
+    font-size: 40px;
+  }
+  .custom-diagram {
+    width: 520px;
+  }
+  .tool span {
+    font-size: 14px;
+  }
+  .tool {
+    width: 212px;
+    height: 38px;
+  }
+  .custom-diagram button:nth-child(3) {
+    left: 210px;
+  }
+  .software-right-container img {
+    height: auto;
+  }
+  .software-right-container.jsx-61b0980993655515 {
+    height: 573px;
+  }
   .blogs div h3 {
     font-size: 22px;
+  }
+  .new-section .swiper-wrapper .swiper-slide {
+    height: 348px;
   }
   .blogs div p {
     font-size: 17px;
@@ -843,7 +871,7 @@ footer {
   }
   .renio-button button {
     font-size: 12px !important;
-    padding: 4px 12px !important;
+    padding: 4px 0px !important;
   }
   .renio-button {
     margin-bottom: 27px !important;
@@ -854,9 +882,30 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
   }
+  .software-right-container.jsx-61b0980993655515 img.jsx-61b0980993655515 {
+    height: auto !important;
+  }
+  .software-right-container.jsx-61b0980993655515 {
+    height: 467px;
+    top: 200px !important;
+  }
+  .software-left img {
+    margin-right: 10px;
+    max-width: 23%;
+  }
+  .software-left h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .software-left p {
+    font-size: 11px;
+  }
+  .software-left h6 {
+    font-size: 40px;
+  }
   .bootom-footer p {
     font-size: 10px;
-}
+  }
   .left-box img {
     max-width: 70% !important;
   }
@@ -890,10 +939,11 @@ footer {
     gap: 15px;
   }
   .blogs div h3 {
-    font-size: 20px;
+    font-size: 16px !important;
+    margin-bottom: 10px;
   }
   .blogs div p {
-    font-size: 15px;
+    font-size: 12px !important;
   }
   .blogs .swiper-slide {
     height: auto !important;
@@ -936,11 +986,31 @@ footer {
     width: 430px !important;
   }
   .how-it-work-main h2 {
-    font-size: 113px;
-    line-height: 100px;
+    font-size: 90px;
+    line-height: 95px;
   }
   .section-2 {
     min-height: 100vh !important;
+  }
+  .custom-slider p {
+    font-size: 12px;
+  }
+  .custom-diagram {
+    width: 390px !important;
+  }
+  .custom-diagram button {
+    padding: 10px 16px !important;
+    font-size: 9px !important;
+  }
+  .custom-diagram button:nth-child(4) {
+    left: 190px !important;
+  }
+  .idea {
+    font-size: 8px !important;
+    align-items: center;
+  }
+  .how-it-work-main .swiper-next {
+    right: 13% !important;
   }
 }
 @media (max-width: 992px) {
@@ -967,9 +1037,15 @@ footer {
   .footer-upper-section {
     flex-direction: column;
   }
+  .software-right-container.jsx-61b0980993655515 {
+    height: 440px !important;
+  }
   .footer-wrapper {
     padding: 0px;
-}
+  }
+  .new-section {
+    min-height: 62vh;
+  }
   .renio-grid-system div {
     width: 30% !important;
     min-height: 76px !important;
@@ -1098,11 +1174,11 @@ footer {
     line-height: 48px !important;
   }
   .section-1 {
-    height: 180vh;
+    height: 120vh;
   }
   .section-2 {
     align-items: self-start;
-    min-height: 190vh !important;
+    min-height: 110vh !important;
   }
   .flow-diagram {
     height: 110% !important;
@@ -1113,11 +1189,15 @@ footer {
   .brand-slider-container h3 {
     text-align: center;
   }
+  .image-container canvas {
+    height: 400px !important;
+    width: 440px !important;
+  }
   .brand-slider {
     max-width: 100%;
   }
   .brand-slider-container {
-    bottom: -4%;
+    bottom: -8%;
   }
   .banner-img {
     max-width: 50%;
@@ -1141,7 +1221,7 @@ footer {
     height: 43px;
   }
   .main-banner {
-    height: 170vh;
+    height: 110vh;
   }
   .custom-text {
     text-align: center;
@@ -1179,10 +1259,10 @@ footer {
   }
   .footer-left-section h6 {
     width: 80%;
-}
-.newsletter {
-  width: 80%;
-}
+  }
+  .newsletter {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .mini-footer-wrapper {
@@ -1359,11 +1439,11 @@ footer {
     top: 14%;
   }
   .renie-bin-wrapper h2 {
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .renie-bin-wrapper p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .desktop-paragraph {
     width: 70%;
@@ -1430,7 +1510,7 @@ footer {
     line-height: 12px;
   }
   .section-2 {
-    min-height: 112vh !important;
+    min-height: 126vh !important;
     padding: 0px 15px;
   }
   .main-slider h4 {
@@ -1444,7 +1524,8 @@ footer {
     margin-left: 140px !important;
   }
   .left-box img {
-    max-width: 60% !important;
+    max-width: 10% !important;
+    bottom: -28px !important;
   }
   .slide-1 {
     height: 100vh !important;
@@ -1482,36 +1563,21 @@ footer {
   .derktop-version {
     display: none !important;
   }
-  #mobile-version {
-    display: none;
-  }
-  #mobile-version img {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999999;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 18%);
-    background: white;
-    padding: 8px;
-    border-radius: 8px;
-  }
   .blogs .swiper-slide {
-    width: 97% !important;
-    height: unset !important;
+    width: 100% !important;
+    height: 320 !important;
   }
   .new-section {
     min-height: 90vh !important;
   }
-  .custom-mobile-menu{
+  .custom-mobile-menu {
     width: 50%;
     margin: 0 auto;
     transform: translateY(30%);
     text-align: center;
   }
   .custom-open {
-    border-radius: .375rem;
+    border-radius: 0.375rem;
     backdrop-filter: blur(12px);
     background-color: rgb(255 255 255 / 70%);
     overflow: hidden;
@@ -1524,9 +1590,50 @@ footer {
   }
   .container-wrapper {
     padding: 32px 30px;
+  }
+  .footer-left-section {
+    margin-bottom: 20px;
+  }
+  .userfull-links h6 {
+    font-size: 14px !important;
+  }
+  .new-section {
+    min-height: 90vh !important;
+  }
+  .custom-flex {
+    flex-direction: column;
+  }
+  .software-right-container.jsx-61b0980993655515 {
+    top: 107px !important;
+  }
+  .software-left{
+    display: none !important;
+  }
+  .blogs .swiper-pagination-bullet {
+    width: 10px ;
+    height: 10px;
 }
-.footer-left-section{margin-bottom: 20px;}
-.userfull-links h6 {
-  font-size: 14px !important;
+
+  .software-left,
+  .col-md-6 {
+    flex: 1 100%;
+    width: 100%;
+  }
+  .software-right-container {
+    position: relative;
+    top: 0;
+    height: 426px !important;
+    opacity: 1; /* Make all visible on mobile */
+  }
+  .image-container div{
+    width: auto !important;
+    height: auto !important;
+  }
+.section-1 {
+  background-position: center;
+  background-size: cover;
+}
+.main-banner {
+  height: 100vh !important;
 }
 }
