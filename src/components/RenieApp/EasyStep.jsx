@@ -17,7 +17,6 @@ const EasyStep = () => {
             </div>
           </div>
           <div className="row">
-            {/* Left Column Animation */}
             <motion.div
               className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-left-column"
               initial={{ x: -200, opacity: 0 }}
@@ -33,15 +32,14 @@ const EasyStep = () => {
                   <div></div>
                 </div>
               </div>
-              <img className="white-box" src="/assets/white-box.png" alt="renie-box" />
+              <img className="white-box" src="/assets/step-1.png" alt="renie-box" />
             </motion.div>
 
-            {/* Right Column Animation */}
             <motion.div
               className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-right-column"
               initial={{ x: 200, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }} // Delay right column for a staggered effect
+              transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             >
               <div className="left-track position-relative custom-scan-height">
                 <div className="scan-title scan-title-2">
@@ -52,7 +50,7 @@ const EasyStep = () => {
                   <div></div>
                 </div>
               </div>
-              <img className="white-box white-box-2" src="/assets/white-box.png" alt="renie-box" />
+              <img className="white-box white-box-2" src="/assets/step-2.png" alt="renie-box" />
             </motion.div>
           </div>
         </div>

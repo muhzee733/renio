@@ -1,56 +1,47 @@
-import React, { useState, useEffect } from "react";
-
-const words = ["Impact", "Recycled", "Rewards"];
+import React from "react";
 
 const AnimatedSection = () => {
-  const [rows, setRows] = useState(20); // Default number of rows
-  const [height, setHeight] = useState("5vh"); // Default height of rows
-
-  // Adjust the rows and height based on the screen size
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 786) {
-        setRows(10); // Reduce rows for smaller screens
-        setHeight("8vh"); // Adjust height for smaller screens
-      } else {
-        setRows(20); // Default rows for larger screens
-        setHeight("5vh"); // Default height for larger screens
-      }
-    };
-
-    // Initial check
-    handleResize();
-
-    // Add event listener on resize
-    window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <div className="relative h-screen overflow-hidden flex items-center justify-center">
-      <div className="grid grid-cols-8 gap-0 w-full h-full">
-        {[...Array(rows * 8)].map((_, i) => {
-          return (
-            <div
-              key={i}
-              className="animated-row flex items-center justify-center rounded-full font-semibold w-[12.5vw]"
-              style={{
-                fontSize: "12px",
-                height: height, // Dynamically set the height
-                color: i % 2 === 0 ? "#4765E6" : "#E31662",
-                border: "1px solid transparent",
-                backgroundImage:
-                  "linear-gradient(white, white), linear-gradient(90deg, #4765E6 0%, #5C4099 46%, #E31662 100%)",
-                backgroundOrigin: "border-box",
-                backgroundClip: "padding-box, border-box",
-              }}
-            >
-              {words[i % 3]}
+    <div className="animatedsection">
+      <div class="animated-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="animated-h2">
+                <h2>consumers get 0,05 fills per packaging they drop</h2>
+              </div>
             </div>
-          );
-        })}
+          </div>
+          <div class="row custom-margin-top">
+            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
+              <div className="animated-left-section ">
+                <div className="d-flex align-items-center justify-content-end text-right gap-4">
+                  <h4>
+                    Rewards is our loyalty system to reward users for their
+                    sustainable choice
+                  </h4>
+                  <img src="/assets/animated-1.png" alt="renie" />
+                </div>
+                <div className="d-flex align-items-center justify-content-end text-right gap-4">
+                  <h4>Users can redeem currency directly in the Renie App</h4>
+                  <img src="/assets/animated-2.png" alt="renie" />
+                </div>
+                <div className="d-flex align-items-center justify-content-end text-right gap-4">
+                  <h4>
+                    Currency cannot be bought - users have to recycle to
+                    participate
+                  </h4>
+                  <img src="/assets/animated-3.png" alt="renie" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div className="animated-main-image">
+                <img src="/assets/animated-4.png" alt="renie" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

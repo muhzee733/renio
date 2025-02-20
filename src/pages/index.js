@@ -35,9 +35,15 @@ export default function Home() {
       </section>
 
       <section className="section section-4">
-        <div className="section-4-wrapper">
-          <img src="/assets/bin-2.png" alt="bin" />
-        </div>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/aAoVks4P7dU"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </section>
 
       <section>
@@ -52,9 +58,9 @@ export default function Home() {
         <RenieBin />
       </section>
 
-      <section className=" section-8">
+      {/* <section className=" section-8">
         <Footer />
-      </section>
+      </section> */}
       <MiniFooter />
     </>
   );

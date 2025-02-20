@@ -27,7 +27,7 @@ const RenieApp = () => {
       <EasyStep />
       <AnimatedSection />
       <Green />
-      <Footer />
+      {/* <Footer /> */}
       <MiniFooter />
     </>
   );
