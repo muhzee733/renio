@@ -36,7 +36,7 @@ const SecondSection = () => {
               </div>
               <div class="col-lg-4">
                 <div className="waste-div">
-                  <img src="/assets/reniehub/icon-2.png" />
+                  <img src="/assets/reniehub/icon-3.png" />
                   <p>
                     See real time verified data about waste diverted from
                     landfills

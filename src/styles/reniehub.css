@@ -128,8 +128,56 @@
   color: white;
   font-weight: 300;
   padding-right: 100px;
-
 }
+.management{
+  background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  padding: 200px 0px;
+}
+.management h2{
+  color: white;
+  font-size: 34px;
+  line-height: 46px;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.management-test{
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  width: 30%;
+  margin: 0 auto;
+}
+.managment-title{
+  background: -webkit-linear-gradient(80deg, #4765E6 0%, #5C4099 46%, #E31662 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.managemnt-paragraph{
+  font-size: 14px;
+  font-weight: 300;
+  width: 30%;
+  margin: 0 auto;
+}
+.car p{
+  font-size: 14px;
+}
+.faqs h2{
+  font-size: 24px;
+  font-weight: 400;
+}
+.faqs h3{
+  font-size: 40px;
+  font-weight: 600;
+}
+.faqs{
+  padding: 120px 0px;
+}
+.faqs .accordion-item{
+  border: 1px solid black !important;
+}
+
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {

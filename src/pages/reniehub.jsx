@@ -4,6 +4,7 @@ import SecondSection from "@/components/RenieHub/SecondSection";
 import ThirdSection from "@/components/RenieHub/ThirdSection";
 import FourthSection from "@/components/RenieHub/FourthSection";
 import React from "react";
+import FifthSection from "@/components/RenieHub/FifthSection";
 
 const reniehub = () => {
   return (
@@ -13,6 +14,7 @@ const reniehub = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </>
   );
 };
