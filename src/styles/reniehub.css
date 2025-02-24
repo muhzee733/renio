@@ -45,8 +45,8 @@
 .reniehub .brand-slider-container h3 {
   margin-bottom: 0px !important;
 }
-.renie-waste{
-  background-image: url('/assets/reniehub/bg.png');
+.renie-waste {
+  background-image: url("/assets/reniehub/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -107,15 +107,15 @@
   line-height: 1.6rem;
   font-weight: 300;
 }
-.control-upper-section{
+.control-upper-section {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
-.mb-100{
+.mb-100 {
   margin-bottom: 100px;
 }
-.control-below-section h2{
+.control-below-section h2 {
   font-size: 36px;
   color: white;
   font-weight: 600;
@@ -123,17 +123,17 @@
   margin-bottom: 20px;
   padding-right: 100px;
 }
-.control-below-section p{
+.control-below-section p {
   font-size: 16px;
   color: white;
   font-weight: 300;
   padding-right: 100px;
 }
-.management{
+.management {
   background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 200px 0px;
 }
-.management h2{
+.management h2 {
   color: white;
   font-size: 34px;
   line-height: 46px;
@@ -141,46 +141,166 @@
   margin: 0 auto;
   padding-bottom: 15px;
 }
-.management-test{
+.management-test {
   font-size: 14px;
   color: white;
   font-weight: 300;
   width: 30%;
   margin: 0 auto;
 }
-.managment-title{
-  background: -webkit-linear-gradient(80deg, #4765E6 0%, #5C4099 46%, #E31662 100%);
+.managment-title {
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
-.managemnt-paragraph{
+.managemnt-paragraph {
   font-size: 14px;
   font-weight: 300;
   width: 30%;
   margin: 0 auto;
 }
-.car p{
+.car p {
   font-size: 14px;
 }
-.faqs h2{
+.faqs h2 {
   font-size: 24px;
   font-weight: 400;
 }
-.faqs h3{
+.faqs h3 {
   font-size: 40px;
   font-weight: 600;
 }
-.faqs{
+.faqs {
   padding: 120px 0px;
 }
-.faqs .accordion-item{
+/* .faqs .accordion-item{
   border: 1px solid black !important;
+} */
+
+.faqs .accordion-button {
+  font-weight: 500 !important;
 }
 
+.faqs .border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #000000 !important;
+}
+
+.designed {
+  background: linear-gradient(100deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  padding: 100px 0px;
+}
+.designed .container {
+  text-align: center;
+}
+.designed h2 {
+  font-size: 70px;
+  line-height: 76px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  width: 90%;
+  margin: 0 auto;
+}
+.designed button {
+  background-color: #e31662;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.faqs {
+  padding: 120px 0px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-items {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0px 20px 0px;
+  background-color: white;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+.accordion-header h4 {
+  font-weight: 400 !important;
+}
+
+.accordion-body {
+  padding: 10px;
+  display: none;
+  background-color: white;
+}
+
+.accordion-body.open {
+  display: block;
+}
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {
-    height: 100vh;
+    height: 130vh;
+    background-size: 100% 60vh;
   }
+}
+
+@media (max-width: 1200px) {
+  .renie-box-wrapper h1 {
+    width: 56%;
+  }
+  .renie-mobile-banner {
+    position: absolute;
+    right: -6%;
+    bottom: 12%;
+    max-width: 24%;
+  }
+  .renie-waste-wrapper {
+    padding: 100px 0;
+  }
+  .renie-waste-box h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .waste-div {
+    padding: 0 50px;
+  }
+  .control-upper-section h2 {
+    font-size: 40px;
+  }
+  .control-upper-section p {
+    font-size: 14px;
+}
+.control-below-section h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 17px;
+  padding-right: 55px;
+}
+.management h2 {
+  font-size: 28px;
+  line-height: 38px;
+  width: 44%;
+}
+.designed h2 {
+  font-size: 51px;
+  line-height: 60px;
+}
+.reniehub-wrapper {
+  background-size: 100% 60vh;
+}
 }
