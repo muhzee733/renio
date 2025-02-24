@@ -1,12 +1,48 @@
 .main-navbar {
   background-color: white !important;
 }
+.renie-bin-custom{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.renie-bin-custom div{
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.renie-bin-custom p{
+  color: black !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+.renie-bin-custom div{
+  text-align: center;
+}
+.renie-bin-custom div img{
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.reniebin-paragraph p{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
 .reniebin-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+}
+.canvas-container-1{
+  display: flex;
+  justify-content: center;
 }
 .discover-image {
   display: flex;
@@ -160,12 +196,15 @@
   flex-direction: column;
   align-items: center;
 }
+.padding-top-100{
+  padding: 100px 0px
+}
 .power-wrapper {
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .power-2 h2 {
   color: #fff;
@@ -336,10 +375,6 @@
 .ProductRenie .container .row:nth-child(2) {
   margin-bottom: 50px;
 }
-.product-renie-height {
-  min-height: 60vh !important;
-}
-
 .canvas-container {
   width: 100%;
   height: auto;
@@ -372,7 +407,7 @@
     height: 300px !important;
   }
   .MeetRenieBin {
-    height: 74vh;
+    height: 100vh;
   }
   .power-wrapper {
     min-height: 76vh;
@@ -380,6 +415,10 @@
   .crafted-renie h2 {
     font-size: 30px;
   }
+  .renie-bin-custom div {
+    margin: 10px;
+    padding: 8px;
+}
 }
 @media (max-width: 992px) {
   .renie-main-content h1 {
@@ -498,10 +537,26 @@
   .foolter-links {
     width: 100%;
   }
+  .reniebin-paragraph p {
+    font-size: 14px;
+}
   .renie-card iframe {
     width: 100%;
     margin: unset;
   }
+  .renie-bin-custom div img {
+    max-width: 50%;
+}
+  .renie-bin-custom{
+    flex-wrap: wrap;
+  }
+  .MeetRenieBin {
+    height: 125vh;
+}
+  .renie-bin-custom div {
+    margin: 5px;
+    padding: 5px;
+}
   .renie-card {
     padding: 20px 24px;
   }
@@ -590,9 +645,11 @@
   }
   .power h2 {
     font-size: 26px;
+    text-align: center;
   }
   .power p {
     font-size: 12px;
+    text-align: center
   }
   .power-youtube iframe {
     width: 100%;
@@ -601,7 +658,7 @@
     display: none;
   }
   .crafted-renie h2 {
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     text-align: center;
     line-height: 28px;

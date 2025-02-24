@@ -4,7 +4,7 @@ const CraftedRenie = () => {
   return (
     <>
       <div className="PowerRenie">
-        <div className="power-wrapper">
+        <div className="power-wrapper  padding-top-100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

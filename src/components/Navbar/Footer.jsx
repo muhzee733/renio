@@ -71,7 +71,7 @@ const Footer = () => {
                             <span>Tiktok</span>
                           </li>
                           <li className="d-flex gap-2">
-                            <img src="/assets/youtube.png" />
+                            <img src="/assets/youtube.svg" />
                             <span>Youtube</span>
                           </li>
                         </ul>

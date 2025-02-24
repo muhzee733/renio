@@ -131,26 +131,33 @@ const Navbar = ({ white }) => {
           backgroundColor: white ? "white" : "",
         }}
       >
-        <Image
-          ref={logoRef}
-          src="/assets/logo.png"
-          alt="Renie Logo"
-          width={140}
-          height={50}
-          style={{
-            display: isMobile ? "none" : "block",
-          }}
-        />
-        <Image
-          src="/assets/small.png"
-          alt="Menu Icon"
-          width={40}
-          height={40}
-          className="mobile-menu"
-          style={{
-            display: isMobile ? "block" : "none",
-          }}
-        />
+        <Link href="/" passHref>
+          <Image
+            ref={logoRef}
+            src="/assets/logo.png"
+            alt="Renie Logo"
+            width={140}
+            height={50}
+            style={{
+              display: isMobile ? "none" : "block",
+              cursor: "pointer",
+            }}
+          />
+        </Link>
+
+        <Link href="/" passHref>
+          <Image
+            src="/assets/small.png"
+            alt="Menu Icon"
+            width={40}
+            height={40}
+            className="mobile-menu"
+            style={{
+              display: isMobile ? "block" : "none",
+              cursor: "pointer",
+            }}
+          />
+        </Link>
         <ul
           ref={linksRef}
           className="d-flex gap-3 navbar-links"
@@ -161,12 +168,14 @@ const Navbar = ({ white }) => {
           }}
         >
           <li>
-            <Link href="/renieapp"> Renie Bin</Link>
+            <Link href="/reniebin"> Renie Bin</Link>
           </li>
           <li>
-            <Link href="/monitization">Renie Hub</Link>
+            <Link href="/reniehub">Renie Hub</Link>
           </li>
-          <li>Renie App</li>
+          <li>
+            <Link href="/renieapp">Renie App</Link>
+          </li>
           <li>Ads that Matter</li>
           <li>Media Hub</li>
         </ul>

@@ -9,17 +9,25 @@
 .moni-wrapper {
   padding: 100px 0px;
 }
+.custom-renie-moni-image img {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
 .moni-wrapper h2 {
   color: #e31662;
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
+  line-height: 60px;
+  margin-bottom: 10px;
 }
 .moni-wrapper p {
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
+  padding-right: 15%;
 }
 .moni-wrapper video {
   border-radius: 20px;
@@ -82,7 +90,7 @@
   align-items: center;
   justify-content: center;
 }
-.moni-blog .swiper-slide{
+.moni-blog .swiper-slide {
   min-height: 400px !important;
 }
 .futuredata {
@@ -104,7 +112,7 @@
   background-color: #4765e6;
   padding: 50px 0px;
 }
-.renieeee{
+.renieeee {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -125,10 +133,23 @@
   border-radius: 30px;
   font-size: 16px;
 }
+.monitization-custom-data{
+  display: flex;
+  align-items: center;
+}
+.downarrow-image img {
+  position: absolute;
+  bottom: 7%;
+  right: 6%;
+}                               
 .data-banner {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  position: relative;
+}
+.data-banner .container{
+  display: flex;
+  align-items: center
 }
 .data-banner h1 {
   color: white;
@@ -174,7 +195,6 @@
   border-radius: 12px;
   margin-left: 4%;
   width: 558px;
-
 }
 .software-right-data h1 {
   font-size: 100px;
@@ -199,8 +219,8 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 50%;
-  line-height: 36px;
+  width: 58%;
+  line-height: 30px;
 }
 .software-right-data p {
   font-size: 16px;
@@ -217,11 +237,9 @@
 .software-right-data img {
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 10px 15px;
-  border-radius: 60px;
+  border-radius: 15px;
   max-width: 22%;
 }
-
-/* testing */
 
 
 @media (max-width: 1200px) {
@@ -321,10 +339,10 @@
     right: 2%;
     top: 24%;
   }
-  .custom-renie-card .col-md-12{
+  .custom-renie-card .col-md-12 {
     width: 100% !important;
   }
-  .custom-renie-card{
+  .custom-renie-card {
     flex-wrap: wrap;
   }
 }
@@ -332,28 +350,28 @@
   .software-right-data {
     width: 670px !important;
   }
-  .moni-blog .swiper-slide{
+  .moni-blog .swiper-slide {
     min-height: 280px !important;
   }
   .m-data {
     transform: translateX(-154px);
-}
-.software-right-data img {
-  max-width: 34%;
-}
-.m-data{
-  width: 74%;
-}
-.benefits {
-  height: 70vh !important;
-  padding: 0px 20px;
-}
-.software-right-container p {
-  text-align: left;
-}
-.software-right-data h6 {
-  text-align: left;
-}
+  }
+  .software-right-data img {
+    max-width: 34%;
+  }
+  .m-data {
+    width: 74%;
+  }
+  .benefits {
+    height: 70vh !important;
+    padding: 0px 20px;
+  }
+  .software-right-container p {
+    text-align: left;
+  }
+  .software-right-data h6 {
+    text-align: left;
+  }
   .why-choose {
     height: 100vh;
     padding: 0px 20px;
@@ -399,7 +417,7 @@
   }
   .data-banner h1 {
     font-size: 34px !important;
-}
+  }
   .data-banner {
     min-height: 88vh;
     text-align: center;
@@ -408,17 +426,17 @@
     font-size: 14px;
     width: 70%;
     margin: 0 auto;
-}
-.reee{
-  padding: 50px 0px;
-}
-.reee .software-right-container {
-  height: 315px !important;
-}
-.software-right-data p {
-  font-size: 14px;
-  padding-right: 20px;
-}
+  }
+  .reee {
+    padding: 50px 0px;
+  }
+  .reee .software-right-container {
+    height: 315px !important;
+  }
+  .software-right-data p {
+    font-size: 14px;
+    padding-right: 20px;
+  }
   .moni-wrapper {
     padding: 50px 0;
   }
@@ -447,11 +465,11 @@
   }
   .m-data {
     width: 100%;
-}
-.custom-arrow {
-  width: auto;
-  margin: 10px 0px;
-}
+  }
+  .custom-arrow {
+    width: auto;
+    margin: 10px 0px;
+  }
   .m-data {
     transform: translateX(-50px);
   }
@@ -466,18 +484,18 @@
   .why-choose {
     height: 136vh;
     padding: 0 20px;
-}
-.mobile-nav {
-  display: none ;
-}
-.renieeee{
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-}
-.renieeee .renie-bin-wrapper h2 {
-  font-size: 28px;
-}
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .renieeee {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  .renieeee .renie-bin-wrapper h2 {
+    font-size: 28px;
+  }
   .custom-cursure p {
     font-size: 13px;
   }
@@ -509,12 +527,12 @@
   }
   .software-left-data h2 {
     text-align: center;
-}
-.software-right-data {
-  width: 300px !important;
-  margin-left: 26px !important;
-}
-.benefits{
-  min-height: 100vh;
-}
+  }
+  .software-right-data {
+    width: 300px !important;
+    margin-left: 26px !important;
+  }
+  .benefits {
+    min-height: 100vh;
+  }
 }

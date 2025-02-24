@@ -3,7 +3,7 @@ import React from "react";
 const PowerRenie = () => {
   return (
     <div className="PowerRenie">
-      <div className="power-wrapper py-5">
+      <div className="power-wrapper padding-top-100">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

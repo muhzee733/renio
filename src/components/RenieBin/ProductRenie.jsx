@@ -3,7 +3,7 @@ import React from "react";
 const ProductRenie = () => {
   return (
     <div className="ProductRenie">
-      <div className="power-wrapper product-renie-height">
+      <div className="power-wrapper  padding-top-100">
         <div className="container">
           <div className="row">
             <h2>Product Specifications</h2>

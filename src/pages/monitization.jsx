@@ -108,7 +108,7 @@ const MonitizationSection = () => {
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Model />
-        <OrbitControls minDistance={3} maxDistance={10} />
+        <OrbitControls minDistance={6} maxDistance={16} zoom={false} />
       </Canvas>
 
       <div style={{ position: "relative", zIndex: 2 }}>

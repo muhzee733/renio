@@ -21,9 +21,8 @@ const RenieBin = () => {
   const frameCount = 120;
   const airpods = { frame: 0 };
 
-  // Detect screen size and adjust for mobile
   useEffect(() => {
-    setIsMobile(window.innerWidth < 992); // Set 768px as the mobile breakpoint
+    setIsMobile(window.innerWidth < 992);
 
     window.addEventListener("resize", () => {
       setIsMobile(window.innerWidth < 992);
@@ -45,9 +44,7 @@ const RenieBin = () => {
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/assets/bin-5/Anim${(i + 1)
-        .toString()
-        .padStart(4, "0")}.webp`;
+      img.src = `/assets/bin-5/Anim${(i + 1).toString().padStart(4, "0")}.webp`;
       imagesRef.current.push(img);
     }
 
@@ -66,7 +63,7 @@ const RenieBin = () => {
       scrollTrigger: {
         trigger: ".reniebin-wrapper",
         start: "top top",
-        end: "+=1000",
+        end: "+=1150",
         scrub: 0.5,
         pin: ".canvas-container",
         onUpdate: render,
@@ -76,7 +73,7 @@ const RenieBin = () => {
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [isMobile]); // Re-run effect when isMobile changes
+  }, [isMobile]);
 
   return (
     <>
