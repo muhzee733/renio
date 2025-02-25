@@ -1,81 +1,25 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = ({ white }) => {
   const navRef = useRef(null);
-  const menuImageRef = useRef(null);
-  const logoRef = useRef(null);
-  const linksRef = useRef(null);
   const buttonRef = useRef(null);
-  const tl = useRef(gsap.timeline({ paused: true }));
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLogoClick = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
 
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    updateScreenSize();
-    window.addEventListener("resize", updateScreenSize);
-    tl.current
-      .set([logoRef.current, linksRef.current, buttonRef.current], {
-        opacity: 1,
-      })
-      .set(menuImageRef.current, { opacity: 0, display: "none" })
-      .to([logoRef.current, linksRef.current, buttonRef.current], {
-        opacity: 0,
-        display: "none",
-        duration: 0,
-      })
-      .to(
-        navRef.current,
-        {
-          width: "78px",
-          background: "white",
-          height: "65px",
-          borderRadius: "8px",
-          duration: 0.4,
-        },
-        "<"
-      )
-      .to(
-        menuImageRef.current,
-        {
-          opacity: 1,
-          display: "block",
-          duration: 0,
-        },
-        "<"
-      );
-
-    const handleScroll = () => {
-      if (window.scrollY > 1 || isMobile) {
-        gsap.to(menuImageRef.current, {
-          opacity: 1,
-          display: "block",
-          duration: 0.3,
-        });
-        tl.current.play();
-      } else {
-        gsap.to(menuImageRef.current, {
-          opacity: 0,
-          display: "none",
-          duration: 0.3,
-        });
-        tl.current.reverse();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", updateScreenSize);
-    };
-  }, [isMobile]);
-
+  // Navigation links array
+  const navLinks = [
+    { name: "Renie Bin", path: "/reniebin" },
+    { name: "Renie Hub", path: "/reniehub" },
+    { name: "Renie App", path: "/renieapp" },
+    { name: "Ads that Matter", path: "/ads-that-matter" },
+    { name: "Media Hub", path: "/media-hub" },
+  ];
 
   return (
     <>
@@ -87,67 +31,51 @@ const Navbar = ({ white }) => {
           backgroundColor: white ? "white" : "",
         }}
       >
-        <Link href="/" passHref>
-          <Image
-            ref={logoRef}
-            src="/assets/logo.png"
-            alt="Renie Logo"
-            width={140}
-            height={50}
-            style={{
-              display: isMobile ? "none" : "block",
-              cursor: "pointer",
-            }}
-          />
-        </Link>
+        <div onClick={handleLogoClick}>
+          <Link href="/">
+            <Image
+              src="/assets/logo.png"
+              alt="Renie Logo"
+              width={140}
+              height={50}
+            />
+          </Link>
+        </div>
 
-        <Link href="/" passHref>
-          <Image
-            src="/assets/small.png"
-            alt="Menu Icon"
-            width={40}
-            height={40}
-            className="mobile-menu"
-          />
-        </Link>
-        <ul
-          ref={linksRef}
-          className="d-flex gap-3 navbar-links"
-          style={{
-            listStyle: "none",
-            display: "flex",
-            flexWrap: "nowrap",
-          }}
-        >
-          <li>
-            <Link href="/reniebin"> Renie Bin</Link>
-          </li>
-          <li>
-            <Link href="/reniehub">Renie Hub</Link>
-          </li>
-          <li>
-            <Link href="/renieapp">Renie App</Link>
-          </li>
-          <li>Ads that Matter</li>
-          <li>Media Hub</li>
+        {/* Desktop Menu */}
+        <ul className="d-flex gap-3 navbar-links">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.path}>{link.name}</Link>
+            </li>
+          ))}
         </ul>
+
         <button ref={buttonRef} className="btn">
           Connect with an expert
         </button>
-        <Image
-          ref={menuImageRef}
-          src="/assets/small.png"
-          alt="Menu Icon"
-          width={40}
-          height={40}
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate(-50%, -50%)",
-            opacity: 0,
-          }}
-        />
+
+        <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+          <Link href="/">
+            <Image
+              src="/assets/logo.png"
+              alt="Renie Logo"
+              width={100}
+              height={50}
+            />
+          </Link>
+          <button onClick={handleLogoClick} className="close-btn">
+            ✖
+          </button>
+          <ul className="mobile-nav-links">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.path}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
+          <button className="mobile-btn">Connect with an expert</button>
+        </div>
       </nav>
     </>
   );

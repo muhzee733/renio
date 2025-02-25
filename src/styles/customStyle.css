@@ -744,6 +744,66 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0px 0px 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav-links li {
+  margin: 15px 0;
+}
+
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-btn {
+  border-radius: 100px !important;
+  background: linear-gradient(
+    90deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  ) !important;
+  color: var(--accent) !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  width: 150px !important;
+  height: 30px;
+  font-family: var(--fontFamilyPoppins) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
 @media (min-width: 501px) {
   .derktop-version {
     display: block !important;
@@ -755,7 +815,6 @@ footer {
     display: none;
   }
 }
-
 @media (min-width: 1440px) {
   .tool {
     top: 14%;
@@ -1274,6 +1333,10 @@ footer {
   .mini-footer-wrapper {
     flex-direction: column;
   }
+  .main-navbar {
+    height: 55px;
+  }
+  
   .blogs .swiper {
     padding: 30px !important;
   }
@@ -1558,7 +1621,7 @@ footer {
     width: 27% !important;
   }
   .main-navbar {
-    width: 60px !important;
+    width: 100px !important;
   }
   .section-1 {
     height: 100vh;
@@ -1642,4 +1705,6 @@ footer {
 .main-banner {
   height: 100vh !important;
 }
+
+
 }
