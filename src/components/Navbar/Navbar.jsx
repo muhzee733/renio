@@ -6,13 +6,12 @@ import Link from "next/link";
 const Navbar = ({ white }) => {
   const navRef = useRef(null);
   const buttonRef = useRef(null);
+  const tl = useRef(gsap.timeline({ paused: true }));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLogoClick = () => {
     setIsMenuOpen((prev) => !prev);
   };
-
-  // Navigation links array
   const navLinks = [
     { name: "Renie Bin", path: "/reniebin" },
     { name: "Renie Hub", path: "/reniehub" },

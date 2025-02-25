@@ -1085,7 +1085,7 @@ footer {
   }
 
   .main-navbar {
-    width: 150px; /* Ensure navbar is smaller */
+    width: 150px !important; /* Ensure navbar is smaller */
     height: 65px;
   }
 
