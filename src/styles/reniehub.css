@@ -243,9 +243,10 @@
 }
 
 .accordion-body {
-  padding: 10px;
+  padding: 20px 0px 20px 0px;
   display: none;
   background-color: white;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .accordion-body.open {

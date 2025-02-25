@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const CraftedRenie = () => {
@@ -14,9 +15,11 @@ const CraftedRenie = () => {
               </div>
               <div className="row">
                 <div className="col-lg-6 col-md-6">
-                  <div className="crafted-card">
-                    <h3>Data Monitization Technology</h3>
-                  </div>
+                  <Link href="/monitization">
+                    <div className="crafted-card">
+                      <h3>Data Monitization Technology</h3>
+                    </div>
+                  </Link>
                 </div>
                 <div className="col-lg-6 col-md-6 custom-boxes">
                   <div className="crafted-card-1">
