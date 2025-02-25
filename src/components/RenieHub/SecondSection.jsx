@@ -21,20 +21,20 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4">
+            <div class="row custom-disposal-row">
+              <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-1.png" />
                   <p>Tracks generated revenue streams</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-2.png" />
                   <p>Track waste from source to waste management facility</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-3.png" />
                   <p>

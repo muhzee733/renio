@@ -21,8 +21,8 @@ const ThirdSection = () => {
               </div>
             </div>
             <div class="row control-below-section mb-100">
-              <div class="col-lg-6 d-flex align-items-center">
-                <div>
+              <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                <div className="revolution">
                   <h2>
                     Revolutionizing Waste Management with Smart Bin Control
                   </h2>
@@ -35,20 +35,20 @@ const ThirdSection = () => {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div className="d-flex justify-content-end">
+              <div class="col-lg-6 col-md-12">
+                <div className="d-flex justify-content-end justify-content-center-md">
                   <img src="/assets/reniehub/imag.png" />
                 </div>
               </div>
             </div>
-            <div class="row control-below-section">
+            <div class="row control-below-section m-below-section">
               <div class="col-lg-6">
                 <div>
                   <img src="/assets/reniehub/imag.png" />
                 </div>
               </div>
               <div class="col-lg-6 d-flex align-items-center">
-                <div>
+                <div className="track-data">
                   <h2>Track Impact and Waste</h2>
                   <p>
                     Monitor the difference you are making by tracking the waste

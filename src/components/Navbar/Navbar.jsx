@@ -11,11 +11,7 @@ const Navbar = ({ white }) => {
   const buttonRef = useRef(null);
   const tl = useRef(gsap.timeline({ paused: true }));
   const [isMobile, setIsMobile] = useState(false);
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
 
   useEffect(() => {
     const updateScreenSize = () => {
@@ -80,52 +76,12 @@ const Navbar = ({ white }) => {
     };
   }, [isMobile]);
 
-  const handleMouseEnter = () => {
-    if (window.scrollY > 1 || isMobile) {
-      gsap.to(navRef.current, {
-        width: "100%",
-        height: "70px",
-        borderRadius: "8px",
-        duration: 0.6,
-      });
-      gsap.to([logoRef.current, linksRef.current], {
-        opacity: 1,
-        display: "flex",
-        duration: 0.6,
-      });
-      gsap.to(buttonRef.current, {
-        opacity: 1,
-        display: "block",
-        duration: 0.6,
-      });
-      gsap.to(menuImageRef.current, { opacity: 0, duration: 0.6 });
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (window.scrollY > 1 || isMobile) {
-      gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
-        opacity: 0,
-        display: "none",
-        duration: 0.6,
-      });
-      gsap.to(navRef.current, {
-        width: "78px",
-        height: "65px",
-        borderRadius: "8px",
-        duration: 0.6,
-      });
-      gsap.to(menuImageRef.current, { opacity: 1, duration: 0.6 });
-    }
-  };
 
   return (
     <>
       <nav
         ref={navRef}
         className="main-navbar container"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         style={{
           display: "flex !important",
           backgroundColor: white ? "white" : "",
@@ -152,10 +108,6 @@ const Navbar = ({ white }) => {
             width={40}
             height={40}
             className="mobile-menu"
-            style={{
-              display: isMobile ? "block" : "none",
-              cursor: "pointer",
-            }}
           />
         </Link>
         <ul
@@ -196,38 +148,6 @@ const Navbar = ({ white }) => {
             opacity: 0,
           }}
         />
-      </nav>
-      <nav
-        id="mobile-version"
-        className={`mobile-nav ${isNavOpen ? "custom-open" : ""}`}
-        style={{
-          transition:
-            "width 0.6s cubic-bezier(0.4, 0, 0.2, 1), height 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
-        }}
-      >
-        {/* Menu Icon */}
-        <Image
-          src="/assets/small.png"
-          alt="Menu Icon"
-          width={40}
-          height={40}
-          className="mobile-menu"
-          onClick={toggleNav}
-        />
-
-        {/* Navbar Content */}
-        {isNavOpen && (
-          <div className="custom-mobile-menu">
-            <ul className="d-flex gap-3 navbar-link flex-column">
-              <li>Renie Bin</li>
-              <li>Renie Hub</li>
-              <li>Renie App</li>
-              <li>Ads that Matter</li>
-              <li>Media Hub</li>
-            </ul>
-            <button className="btn-3">Connect with an expert</button>
-          </div>
-        )}
       </nav>
     </>
   );

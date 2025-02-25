@@ -13,7 +13,7 @@ const LoveRenie = () => {
     "/assets/animate-svg-3.svg",
     "/assets/animate-svg-2.svg",
     "/assets/animate-svg-1.svg",
-    "/assets/animate-svg-4.png",
+    "/assets/animate-svg-5.svg",
   ];
 
   return (
