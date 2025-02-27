@@ -7,6 +7,7 @@ import "@/styles/monitization.css"
 import "@/styles/renieapp.css"
 import "@/styles/reniehub.css"
 import "@/styles/renieadmin.css"
+import "@/styles/renie-ads.css"
 
 import { ThemeProvider } from "next-themes";
 

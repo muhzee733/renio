@@ -1,0 +1,79 @@
+.renie-ads {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.renie-ads {
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  background-size: 100% 30%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.renie-ads h2 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.custom-padding {
+  padding-top: 80px;
+}
+.custom-ads-text {
+  position: absolute;
+  bottom: 11%;
+  width: 65%;
+}
+.ads-delivery h3{
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 600;
+  width: 90%;
+  text-transform: uppercase;
+}
+.ads-delivery p{
+  font-size: 16px;
+  text-align: justify;
+  width: 90%;
+  margin-top: 10px;
+}
+.custom-color{
+  color: #E31662 !important;
+}
+.gradient-color{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-bg {
+  background-image: url(/assets/renieads/bg-layer.png);
+  padding: 180px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gradient-bg h3{
+  font-size: 26px;
+  width: 60%;
+  margin: 0 auto;
+}
+.custom-ads-column .col-md-5{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
