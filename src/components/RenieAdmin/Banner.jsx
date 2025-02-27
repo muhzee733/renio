@@ -19,12 +19,12 @@ const Banner = () => {
               <img
                 src="/assets/renieadmin/banner-image.png"
                 alt="Admin Panel"
-                className="img-fluid"
+                className="img-fluid renieadmin-image"
               />
             </div>
           </div>
           <figure>
-            <img src="/assets/renieadmin/scroll-down.png" alt="renie-admin"/>
+            <img className="scroll-down"  src="/assets/renieadmin/scroll-down.png" alt="renie-admin "/>
           </figure>
         </div>
       </header>

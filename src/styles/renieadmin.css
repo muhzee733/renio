@@ -1,5 +1,5 @@
 .renie-admin {
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,39 +48,39 @@
   width: 50%;
   margin: 0 auto;
 }
-.feature-h4{
+.feature-h4 {
   margin-top: 40px;
 }
-.feature-h4 h4{
+.feature-h4 h4 {
   font-size: 28px;
   text-align: left;
   width: 43%;
   font-weight: 600;
   margin: 10px 0px;
 }
-.feature-h4 p{
+.feature-h4 p {
   color: white;
   font-size: 12px;
   margin-top: 15px;
   width: 80%;
 }
-.feature-h4 h5{
+.feature-h4 h5 {
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
 }
-.renie-admin-img{
+.renie-admin-img {
   margin-bottom: 40px;
 }
-.dashboard-preview{
+.dashboard-preview {
   padding: 100px 0px 0px 0px;
 }
-.dashboard-preview figure{
+.dashboard-preview figure {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dashboard-preview h2{
+.dashboard-preview h2 {
   font-size: 40px;
   font-weight: 700;
   width: 40%;
@@ -96,13 +96,123 @@
   -webkit-text-fill-color: transparent;
 }
 
-.dashboard-preview p{
+.dashboard-preview p {
   width: 60%;
   margin: 0 auto;
 }
 
-.renie-admin figure{
+.renie-admin figure {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .renie-admin h1 {
+    font-size: 74px;
+  }
+  .renie-admin p {
+    width: 97%;
+  }
+  .feature-h4 h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .renie-admin {
+    min-height: 90vh;
+  }
+  .renie-admin h2 {
+    font-size: 26px;
+  }
+  .renie-admin h1 {
+    font-size: 60px;
+  }
+  .renie-admin p {
+    width: 94%;
+  }
+  .dashboard-preview h2 {
+    font-size: 36px;
+    font-weight: 700;
+    width: 70%;
+  }
+  .dashboard-preview p {
+    width: 80%;
+  }
+  .feature-h4 h4 {
+    width: 60%;
+  }
+}
+@media (max-width: 786px) {
+  .renie-admin {
+    min-height: 80vh;
+  }
+  .renie-admin h2 {
+    font-size: 20px;
+  }
+  .renie-admin h1 {
+    font-size: 46px;
+  }
+  .renie-admin p {
+    width: 94%;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 576px) {
+  .renie-admin {
+    min-height: 90vh;
+    padding-top: 142px !important;
+  }
+  .renie-admin h2 {
+    font-size: 16px;
+  }
+  .renie-admin h1 {
+    font-size: 40px;
+  }
+  .renieadmin-image {
+    max-width: 80% !important;
+  }
+  .renie-admin img {
+    transform: translateX(12px);
+  }
+  .scroll-down {
+    max-width: 30%;
+  }
+  .feature-text {
+    font-size: 14px;
+    width: 90%;
+  }
+  .feature-h4 {
+    text-align: center !important;
+  }
+  .feature-h4 h4 {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .feature-h4 p {
+    margin: 0 auto;
+  }
+  .admin-icon {
+    display: flex;
+    justify-content: center;
+  }
+  .admin-icon img {
+    margin-bottom: 20px;
+    max-width: 25%;
+  }
+  .dashboard-preview {
+    padding: 50px 0 0;
+  }
+  .dashboard-preview h2 {
+    font-size: 23px;
+    width: 80%;
+  }
+  .dashboard-preview p {
+    width: 90%;
+    font-size: 12px;
+  }
+  .features {
+    padding: 50px 0;
+}
 }

@@ -20,7 +20,7 @@ const secondSection = () => {
             <div className="renie-admin-img">
               <img src="/assets/renieadmin/group-1.png" alt="renie-admin" />
             </div>
-            <div>
+            <div className="admin-icon">
               <img src="/assets/renieadmin/icon-1.png" alt="renie-icon" />
             </div>
             <h4>Seamless Partner Management</h4>
@@ -36,7 +36,7 @@ const secondSection = () => {
             <div className="renie-admin-img">
               <img src="/assets/renieadmin/group-2.png" alt="renie-admin" />
             </div>
-            <div>
+            <div className="admin-icon">
               <img src="/assets/renieadmin/icon-2.png" alt="renie-icon" />
             </div>
             <h4>Efficient Waste Tracking</h4>
@@ -50,7 +50,7 @@ const secondSection = () => {
             <div className="renie-admin-img">
               <img src="/assets/renieadmin/group-3.png" alt="renie-admin" />
             </div>
-            <div>
+            <div className="admin-icon">
               <img src="/assets/renieadmin/icon-3.png" alt="renie-icon" />
             </div>
             <h4>Maximize Revenue</h4>
@@ -64,7 +64,7 @@ const secondSection = () => {
             <div className="renie-admin-img">
               <img src="/assets/renieadmin/group-4.png" alt="renie-admin" />
             </div>
-            <div>
+            <div className="admin-icon">
               <img src="/assets/renieadmin/icon-4.png" alt="renie-icon" />
             </div>
             <h4>User Engagement & Growth Insights</h4>

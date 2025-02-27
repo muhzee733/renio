@@ -29,7 +29,7 @@ const AdsSection = () => {
             <img
               src="/assets/renieads/renie-phone.png"
               alt="Mobile UI"
-              className="img-fluid rounded"
+              className="img-fluid rounded "
             />
           </div>
         </div>

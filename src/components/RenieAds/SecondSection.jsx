@@ -22,7 +22,7 @@ const sections = [
     image: "/assets/renieads/Layer_4.png",
   },
   {
-    title: `<span class="gradient-color">Visible in </span> <br/> <span class="custom-color">Thousands of Locations </span><span class="gradient-color">Every Day</span`,
+    title: `<span class="gradient-color">Visible in </span> <br/> <span class="custom-color">Thousands of Locations </span><span class="gradient-color">Every Day</span>`,
     text: "Maximize your brand’s reach with Ads That Matter, displaying your ads across thousands of locations every day. Engage diverse audiences through strategically placed Renie Bins, ensuring high visibility and meaningful connections.",
     image: "/assets/renieads/Layer_2.png",
   },
