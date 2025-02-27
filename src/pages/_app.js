@@ -6,6 +6,7 @@ import '@/styles/reniebin.css'
 import "@/styles/monitization.css"
 import "@/styles/renieapp.css"
 import "@/styles/reniehub.css"
+import "@/styles/renieadmin.css"
 
 import { ThemeProvider } from "next-themes";
 
