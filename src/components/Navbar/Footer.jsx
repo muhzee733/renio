@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -44,9 +45,15 @@ const Footer = () => {
                       <div className="userfull-links">
                         <h6>Legals</h6>
                         <ul>
-                          <li>Privacy policy</li>
-                          <li>Platform terms</li>
-                          <li>Terms of use</li>
+                          <Link href="/privacypolicy">
+                            <li>Privacy policy</li>
+                          </Link>
+                          <Link href="/platform-terms">
+                            <li>Platform terms</li>
+                          </Link>
+                          <Link href="/term-of-services">
+                            <li>Terms of services</li>
+                          </Link>
                         </ul>
                       </div>
                     </div>

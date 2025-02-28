@@ -103,6 +103,20 @@ ul{
   color: white;
   border-radius: 5px;
 }
+.privacy-policy{
+  background: linear-gradient(90deg, #4765E6 0%, #5C4099 46%, #E31662 100%);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.privacy-policy h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.privacy-body{
+  padding: 100px 0px;
+}
 
 
 /* For mobile (below 768px) */
