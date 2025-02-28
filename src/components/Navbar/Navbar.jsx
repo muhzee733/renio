@@ -21,7 +21,7 @@ const Navbar = ({ white }) => {
     { name: "Renie Hub", path: "/reniehub" },
     { name: "Renie App", path: "/renieapp" },
     { name: "Ads that Matter", path: "/ads-that-matter" },
-    { name: "Media Hub", path: "/media-hub" },
+    { name: "Media Hub", path: "/mediahub" },
   ];
 
   useEffect(() => {
