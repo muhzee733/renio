@@ -20,7 +20,7 @@ const Navbar = ({ white }) => {
     { name: "Renie Bin", path: "/reniebin" },
     { name: "Renie Hub", path: "/reniehub" },
     { name: "Renie App", path: "/renieapp" },
-    { name: "Ads that Matter", path: "/ads-that-matter" },
+    { name: "Ads that Matter", path: "/renieads" },
     { name: "Media Hub", path: "/mediahub" },
   ];
 

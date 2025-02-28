@@ -7,6 +7,23 @@
   background-repeat: no-repeat;
   background-position: top right;
 }
+.dashboard-preview{
+  background-image: url('/assets/renieadmin/Layer_1.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.admin-icon{
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+}
+.admin-icon img{
+  max-width: 20%;
+}
+.renie-admin-img{
+  margin-bottom: -108px;
+}
 .renie-admin h1 {
   font-size: 80px;
   font-weight: bold;
@@ -68,9 +85,6 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
-}
-.renie-admin-img {
-  margin-bottom: 40px;
 }
 .dashboard-preview {
   padding: 100px 0px 0px 0px;

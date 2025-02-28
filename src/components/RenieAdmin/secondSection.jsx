@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const secondSection = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".feature-h4 .col-lg-3", // Targeting the columns
+      {
+        opacity: 0, // Start with invisible columns
+        y: 50, // Start from the bottom
+      },
+      {
+        opacity: 1, // Fade in to full opacity
+        y: 0, // Move to original position
+        stagger: 0, // Stagger the animations for each column
+        scrollTrigger: {
+          trigger: ".features", // Trigger when the .features section enters the viewport
+          start: "top 80%", // Trigger when the top of the section is 80% from the top of the viewport
+          end: "bottom top", // End when the bottom of the section reaches the top of the viewport
+          scrub: true, // Makes the animation smooth with scrolling
+        },
+      }
+    );
+  }, []);
   return (
     <section
       className="features text-white"
@@ -22,12 +45,12 @@ const secondSection = () => {
             </div>
             <div className="admin-icon">
               <img src="/assets/renieadmin/icon-1.png" alt="renie-icon" />
+              <h4>Seamless Partner Management</h4>
             </div>
-            <h4>Seamless Partner Management</h4>
-            <h5>
+            <h5 className="pl-3">
               Manage relations with WMCs and service providers effortlessly.
             </h5>
-            <p>
+            <p className="pl-3">
               Easily coordinate with Waste Management Companies (WMCs), service
               areas, and bin providers to ensure smooth operations.
             </p>
@@ -38,10 +61,11 @@ const secondSection = () => {
             </div>
             <div className="admin-icon">
               <img src="/assets/renieadmin/icon-2.png" alt="renie-icon" />
+              <h4>Efficient Waste Tracking</h4>
             </div>
-            <h4>Efficient Waste Tracking</h4>
-            <h5>Streamline waste management and tracking</h5>
-            <p>
+
+            <h5 className="pl-3">Streamline waste management and tracking</h5>
+            <p className="pl-3">
               Monitor waste collection, disposal, and recycling processes in
               real time for better resource allocation.
             </p>
@@ -52,12 +76,13 @@ const secondSection = () => {
             </div>
             <div className="admin-icon">
               <img src="/assets/renieadmin/icon-3.png" alt="renie-icon" />
+              <h4>Maximize Revenue</h4>
             </div>
-            <h4>Maximize Revenue</h4>
-            <h5>Get full revenue</h5>
-            <p>
-              Gain full control over revenue streams with <br /> transparent financial
-              tracking and automated <br /> reporting.
+
+            <h5 className="pl-3">Get full revenue</h5>
+            <p className="pl-3">
+              Gain full control over revenue streams with <br /> transparent
+              financial tracking and automated <br /> reporting.
             </p>
           </div>
           <div className="col-lg-6 col-md-6 col-lg-3">
@@ -66,12 +91,13 @@ const secondSection = () => {
             </div>
             <div className="admin-icon">
               <img src="/assets/renieadmin/icon-4.png" alt="renie-icon" />
+              <h4>User Engagement & Growth Insights</h4>
             </div>
-            <h4>User Engagement & Growth Insights</h4>
-            <h5>Track user engagement and growth</h5>
-            <p>
-              Track user activity, measure engagement, and <br /> analyze growth trends
-              to make data-driven <br /> decisions.
+
+            <h5 className="pl-3">Track user engagement and growth</h5>
+            <p className="pl-3">
+              Track user activity, measure engagement, and <br /> analyze growth
+              trends to make data-driven <br /> decisions.
             </p>
           </div>
         </div>

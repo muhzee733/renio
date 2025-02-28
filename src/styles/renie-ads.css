@@ -1,8 +1,4 @@
 .renie-ads {
-  min-height: 110vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -10,6 +6,16 @@
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   background-size: 100% 30%;
   background-position: bottom;
+  background-repeat: no-repeat;
+}
+.renie-ads-wrapper{
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/renieads/bg.png');
+  background-position: top center;
+  background-size: 100% 70%;
   background-repeat: no-repeat;
 }
 

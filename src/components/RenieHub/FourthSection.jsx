@@ -4,48 +4,48 @@ const WasteManagement = () => {
       title: "Save Time & Costs",
       description:
         "Reduce operational inefficiencies and automate waste tracking.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_1.png",
     },
     {
       title: "Always Connected",
       description: "24/7 real-time monitoring for seamless waste tracking.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_2.png",
     },
     {
       title: "Smart Diagnostics",
       description:
         "Gain clear, data-driven reports on waste levels and disposal status.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_3.png",
     },
     {
       title: "Clear Communication",
       description:
         "Eliminate miscommunication with precise tracking and reporting.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_4.png",
     },
     {
       title: "Proactive Maintenance",
       description:
         "Stay ahead with scheduled bin servicing and predictive maintenance.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_5.png",
     },
     {
       title: "Historical Insights",
       description:
         "Access detailed records for better waste analytics and optimization.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_6.png",
     },
     {
       title: "New Opportunities",
       description:
         "Optimize waste collection, reduce costs, and unlock new revenue streams.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_7.png",
     },
     {
       title: "Sustainable Impact",
       description:
         "Minimize environmental footprint with data-driven waste reduction.",
-      icon: "/assets/reniehub/clock-icon.png",
+      icon: "/assets/reniehub/Layer_8.png",
     },
   ];
 
@@ -69,10 +69,11 @@ const WasteManagement = () => {
                     src={feature.icon}
                     alt={feature.title}
                     className="mb-3"
-                    style={{ width: "50px", height: "50px" }}
                   />
                 </div>
-                <h5 className="fw-bold text-left managment-title">{feature.title}</h5>
+                <h5 className="fw-bold text-left managment-title">
+                  {feature.title}
+                </h5>
                 <p className="text-muted text-left">{feature.description}</p>
               </div>
             </div>
