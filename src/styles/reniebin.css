@@ -671,7 +671,7 @@ justify-content: center;
     flex-direction: column;
   }
   .meet-image canvas {
-    width: 250px !important;
+    width: 300px !important;
     height: 300px !important;
 }
 .model-title {
