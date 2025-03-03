@@ -443,9 +443,9 @@ justify-content: center;
     padding-top: 15%;
   }
   .meet-image canvas {
-    width: 300px !important;
+    width: 200px !important;
     height: 300px !important;
-  }
+}
   .MeetRenieBin {
     height: 100vh;
   }
@@ -608,6 +608,9 @@ justify-content: center;
   .renie-main-content {
     padding-top: 10%;
   }
+  .renie-bin-custom{
+    display: none;
+  }
   .renie-card p {
     margin-top: -32px !important;
   }
@@ -665,7 +668,18 @@ justify-content: center;
   .meet-image .swiper-slide {
     justify-content: center;
     display: flex;
+    flex-direction: column;
   }
+  .meet-image canvas {
+    width: 250px !important;
+    height: 300px !important;
+}
+.model-title {
+  margin-top: 0px;
+  position: absolute;
+  bottom: 10%;
+  transform: translateX(100%);
+}
   .meet-mini-box {
     gap: 10px;
     flex-wrap: wrap;

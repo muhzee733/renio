@@ -5,10 +5,14 @@ import SecondSection from "@/components/RenieAdmin/secondSection";
 import ThirdSection from "@/components/RenieAdmin/ThirdSection";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
+import Head from "next/head";
 
 const RenieAdmin = () => {
   return (
     <>
+    <Head>
+      <title>Renie Admin</title>
+    </Head>
       <Navbar />
       <Banner />
       <SecondSection />

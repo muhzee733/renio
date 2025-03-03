@@ -39,8 +39,18 @@ const RenieBin = () => {
     if (!canvas) return;
     const context = canvas.getContext("2d");
 
-    canvas.width = 1158;
-    canvas.height = 770;
+    // Function to set canvas size dynamically
+    const setCanvasSize = () => {
+      const aspectRatio = 1158 / 770;
+      let width = isMobile ? window.innerWidth * 0.9 : 1158;
+      let height = width / aspectRatio;
+
+      canvas.width = width;
+      canvas.height = height;
+    };
+
+    setCanvasSize();
+    window.addEventListener("resize", setCanvasSize);
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
@@ -51,10 +61,15 @@ const RenieBin = () => {
     const render = () => {
       if (!context || imagesRef.current.length === 0) return;
       context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(imagesRef.current[airpods.frame], 0, 0);
+      const img = imagesRef.current[airpods.frame];
+
+      context.drawImage(img, 0, 0, canvas.width, canvas.height);
     };
 
     imagesRef.current[0].onload = render;
+
+    // Set different animation ending positions based on screen size
+    const scrollEnd = isMobile ? window.innerHeight * 0.9 : 1150;
 
     gsap.to(airpods, {
       frame: frameCount - 1,
@@ -63,7 +78,7 @@ const RenieBin = () => {
       scrollTrigger: {
         trigger: ".reniebin-wrapper",
         start: "top top",
-        end: "+=1150",
+        end: `+=${scrollEnd}`,
         scrub: 0.5,
         pin: ".canvas-container",
         onUpdate: render,
@@ -71,6 +86,7 @@ const RenieBin = () => {
     });
 
     return () => {
+      window.removeEventListener("resize", setCanvasSize);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [isMobile]);
