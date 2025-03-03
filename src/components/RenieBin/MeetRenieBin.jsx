@@ -8,7 +8,7 @@ import { useGLTF, OrbitControls } from "@react-three/drei";
 
 const Model = ({ path }) => {
   const { scene } = useGLTF(path);
-  return <primitive object={scene} position={[0, -1, 0]}/>;
+  return <primitive object={scene} position={[0, -1, 0]} />;
 };
 
 const MeetRenieBin = () => {
@@ -42,7 +42,7 @@ const MeetRenieBin = () => {
               >
                 {models.map((model, index) => (
                   <SwiperSlide key={index}>
-                    <Canvas style={{ height: "400px", width: "400px" }}>
+                    <Canvas style={{ height: "400px", width: "350px" }}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={2} />
                       <Model path={model} />
@@ -52,6 +52,16 @@ const MeetRenieBin = () => {
                         maxDistance={3}
                       />
                     </Canvas>
+                    <h3 className="model-title">
+                      {
+                        [
+                          "RENIE ONE",
+                          "RENIE TWO",
+                          "RENIE MAXI",
+                          "RENIE MINI",
+                        ][index]
+                      }
+                    </h3>
                   </SwiperSlide>
                 ))}
               </Swiper>

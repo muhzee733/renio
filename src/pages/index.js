@@ -50,7 +50,7 @@ export default function Home() {
         <Section5 />
       </section>
 
-      <section>
+      <section className="renie-software-section">
         <Section6 />
       </section>
 

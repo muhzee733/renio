@@ -5,17 +5,17 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
-
   const canvasRef = useRef(null);
+  const h2Ref = useRef(null);
   const imagesRef = useRef([]);
   const animationRef = useRef({ frame: 0 });
-  const contentRef = useRef(null);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    const h2 = h2Ref.current;
+    if (!canvas || !h2) return;
 
     const context = canvas.getContext("2d");
     canvas.width = 1158;
@@ -35,6 +35,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
 
     imagesRef.current[0].onload = render;
 
+    // Animate canvas scrolling
     gsap.to(animationRef.current, {
       frame: frameCount - 1,
       snap: "frame",
@@ -49,6 +50,17 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
       },
     });
 
+    // Pin the <h2> while scrolling
+    gsap.to(h2, {
+      scrollTrigger: {
+        trigger: h2,
+        start: "top 15%",
+        end: `+=13000`, // Adjust this value based on how long you want the pin effect
+        pin: true,
+        pinSpacing: false, // Prevents adding extra space
+      },
+    });
+
     return () => ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   }, [imagePath, frameCount, containerClass]);
 
@@ -60,7 +72,10 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="power">
-                  <h2 className="build-pin" ref={contentRef}>Build from the ground up</h2>
+                  {/* Add ref to h2 */}
+                  <h2 ref={h2Ref} className="build-pin pt-5 text-center">
+                    Build from the ground up
+                  </h2>
                   <div className="canvas-wrapper1">
                     <div className={containerClass}>
                       <canvas ref={canvasRef} />

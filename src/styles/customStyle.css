@@ -7,6 +7,10 @@
   height: 74px !important;
   background-color: transparent;
 }
+.renie-software-section{
+  background-image: url('/assets/bg.png');
+  background-repeat: no-repeat;
+}
 p {
   color: #000;
 }
@@ -715,6 +719,7 @@ footer {
 .software-right-container p {
   margin-top: 30px;
   font-size: 20px;
+  text-align: left;
 }
 
 .brand-slider-container {

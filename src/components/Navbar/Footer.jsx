@@ -61,26 +61,37 @@ const Footer = () => {
                       <div className="userfull-links">
                         <h6>Follow us</h6>
                         <ul>
-                          <li className="d-flex gap-2">
-                            <img src="/assets/facebook.png" />
-                            <span>Facebook</span>
-                          </li>
+                          <Link href="https://www.facebook.com/wearerenie">
+                            <li className="d-flex gap-2">
+                              <img src="/assets/facebook.png" />
+                              <span>Facebook</span>
+                            </li>
+                          </Link>
+                          <Link href="https://www.linkedin.com/company/renietech">
                           <li className="d-flex gap-2">
                             <img src="/assets/linkedin.png" />
                             <span>Linkedin</span>
                           </li>
+                          </Link>
+                          <Link href="https://www.instagram.com/wearerenie/">
                           <li className="d-flex gap-2">
                             <img src="/assets/instragram.png" />
                             <span>Instagram</span>
                           </li>
+                          </Link>
+                          
+                          <Link href="https://www.tiktok.com/@wearerenie">
                           <li className="d-flex gap-2">
                             <img src="/assets/tiktok.png" />
                             <span>Tiktok</span>
-                          </li>
+                          </li></Link>
+                          
+                          <Link href="https://www.youtube.com/@wearerenie">
                           <li className="d-flex gap-2">
                             <img src="/assets/youtube.svg" />
                             <span>Youtube</span>
-                          </li>
+                          </li></Link>
+                         
                         </ul>
                       </div>
                     </div>

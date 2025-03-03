@@ -32,6 +32,7 @@ justify-content: center;
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  padding-top: 30px;
 }
 .reniebin-wrapper {
   display: flex;
@@ -219,7 +220,7 @@ justify-content: center;
 }
 .power h2 {
   color: white;
-  font-size: 36px;
+  font-size: 55px;
   font-weight: 600;
   text-align: left;
 }
@@ -392,6 +393,45 @@ justify-content: center;
 .meet-image .swiper-wrapper {
   align-items: center;
 }
+
+.model-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+/* .canvas-wrapper1{
+  display: flex;
+  justify-content: center;
+} */
+
+
+.scroll-headings {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.scroll-heading {
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0; /* Initially hidden */
+  position: absolute;
+  width: 50%;
+}
+
+.scroll-heading.left {
+  left: 5%;
+  text-align: left;
+}
+
+.scroll-heading.right {
+  right: 5%;
+  text-align: right;
+}
+
+
 
 @media (min-width: 1024px) and (max-width: 1400px) {
   .crafted-renie h2 {

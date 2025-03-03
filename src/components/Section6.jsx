@@ -46,7 +46,7 @@ function Section6() {
   }, []);
 
   return (
-    <main className="bg-white w-100 overflow-hidden">
+    <main className="bg-white w-100 overflow-hidden ">
       <div className="container">
         <section ref={sectionRef} className="d-flex min-vh-100 w-100 custom-flex">
           <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center software-left">
@@ -109,7 +109,7 @@ function Section6() {
           text-align: center;
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: self-start;
           justify-content: center;
           height: 650px;
           opacity: 0;
@@ -123,8 +123,8 @@ function Section6() {
           opacity: 1 !important; /* Ensures the first section is always visible */
         }
         .software-right-container img {
-          max-width: 90%;
-          height: 45vh;
+          max-width: 100%;
+          height: auto;
         }
       `}</style>
     </main>
