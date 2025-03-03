@@ -2,7 +2,7 @@ import React from "react";
 
 const ThirdSection = () => {
   return (
-    <section className="dashboard-preview text-center">
+    <section className="dashboard-preview text-center bg-white">
       <div className="container">
         <figure>
           <img

@@ -8,10 +8,14 @@ import FifthSection from "@/components/RenieHub/FifthSection";
 import SixSection from "@/components/RenieHub/SixSection";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
+import Head from "next/head";
 
 const reniehub = () => {
   return (
     <>
+      <Head>
+        <title>Renie Hub</title>
+      </Head>
       <Navbar />
       <Banner />
       <SecondSection />

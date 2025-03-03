@@ -180,6 +180,10 @@
   .renie-admin h2 {
     font-size: 16px;
   }
+  .renie-admin{
+    background-image: none;
+    background-color: white !important;
+  }
   .renie-admin h1 {
     font-size: 40px;
   }

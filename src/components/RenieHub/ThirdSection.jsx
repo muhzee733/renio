@@ -44,7 +44,7 @@ const ThirdSection = () => {
             <div class="row control-below-section m-below-section">
               <div class="col-lg-6">
                 <div>
-                  <img src="/assets/reniehub/imag.png" />
+                  <img src="/assets/reniehub/imag-2.png" />
                 </div>
               </div>
               <div class="col-lg-6 d-flex align-items-center">

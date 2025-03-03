@@ -1,6 +1,9 @@
 .renie-ads {
   position: relative;
 }
+.ads-delivery{
+  background-color: white;
+}
 
 .renie-ads {
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
@@ -160,6 +163,7 @@
   }
   .renie-ads-wrapper {
     min-height: 100vh;
+    background: none !important;
 }
   .custom-padding p {
     font-size: 10px;
@@ -179,7 +183,7 @@
   }
   .renie-ads img {
     max-width: 70%;
-    transform: translate(10px, 52px);
+    transform: translate(10px, 10px);
   }
   .ads-delivery img {
     max-width: 60%;
