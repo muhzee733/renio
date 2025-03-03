@@ -31,7 +31,7 @@ export default function BlogDetail() {
         </div>
 
         {/* Blog Layout */}
-        <div className="mt-6 space-y-6">
+        <div className="Media-Hub-detail mt-6 space-y-6">
           {blog.content.map((block, index) => {
             switch (block.type) {
               case "heading":

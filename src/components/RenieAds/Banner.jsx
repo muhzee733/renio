@@ -26,11 +26,11 @@ const AdsSection = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 d-flex justify-content-center">
+            <div className="col-lg-6 d-flex justify-content-center renie-ads-img">
               <img
                 src="/assets/renieads/renie-phone.png"
                 alt="Mobile UI"
-                className="img-fluid rounded "
+                className="rounded "
               />
             </div>
           </div>

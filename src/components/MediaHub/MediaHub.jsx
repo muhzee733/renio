@@ -12,25 +12,30 @@ const MediaHub = () => {
 
       <div className="container mt-5">
         {/* Blog Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="Media-Hub grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {blogData.map((blog) => (
             <div
               key={blog.id}
-              className="max-w-sm w-full bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className=" w-full bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
             >
               {/* Featured Image */}
-              <Image
-                className="rounded-t-lg object-cover w-full h-48"
-                src={blog.featured}
-                alt={blog.title}
-                width={400}
-                height={300}
-              />
+              <Link href={`/mediahub/${blog.slug}`}>
+                <Image
+                  className="rounded-t-lg object-cover w-full h-48"
+                  src={blog.featured}
+                  alt={blog.title}
+                  width={400}
+                  height={300}
+                />
+              </Link>
+
               <div className="p-6 blog-data">
                 {/* Blog Title */}
-                <h2 className="text-xl font-semibold text-gray-800">
-                  {blog.title}
-                </h2>
+                <Link href={`/mediahub/${blog.slug}`}>
+                  <h2 className="text-xl font-semibold text-gray-800">
+                    {blog.title}
+                  </h2>
+                </Link>
 
                 {/* Blog Small Description with 3-line truncation */}
                 <p className="text-gray-600 mt-2 line-clamp-3">

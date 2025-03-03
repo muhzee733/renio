@@ -112,13 +112,13 @@ const Navbar = ({ white }) => {
           />
         </Link>
 
-        <Link href="/" passHref>
+        <Link className="mobile-menu" href="/" passHref>
           <Image
             src="/assets/small.png"
             alt="Menu Icon"
             width={40}
             height={40}
-            className="mobile-menu"
+            
             style={{
               display: isMobile ? "block" : "none",
               cursor: "pointer",
