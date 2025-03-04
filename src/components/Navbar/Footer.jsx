@@ -27,7 +27,7 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 mobile-none">
                   <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 col">
                       <div className="userfull-links">
@@ -45,27 +45,54 @@ const Footer = () => {
                       <div className="userfull-links">
                         <h6>Legals</h6>
                         <ul>
-                          <li>
-                            <Link href="/privacypolicy">Privacy policy</Link>
-                          </li>
-
-                          <li>
-                            <Link href="/platform-terms">Platform terms</Link>
-                          </li>
-
-                          <li>
-                            {" "}
-                            <Link href="/term-of-services">
-                              Terms of services
-                            </Link>
-                          </li>
+                          <Link href="/privacypolicy">
+                            <li>Privacy policy</li>
+                          </Link>
+                          <Link href="/platform-terms">
+                            <li>Platform terms</li>
+                          </Link>
+                          <Link href="/term-of-services">
+                            <li>Terms of services</li>
+                          </Link>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col">
                       <div className="userfull-links">
                         <h6>Follow us</h6>
-                      
+                        <ul>
+                          <Link href="https://www.facebook.com/wearerenie">
+                            <li className="d-flex gap-2">
+                              <img src="/assets/facebook.png" />
+                              <span>Facebook</span>
+                            </li>
+                          </Link>
+                          <Link href="https://www.linkedin.com/company/renietech">
+                          <li className="d-flex gap-2">
+                            <img src="/assets/linkedin.png" />
+                            <span>Linkedin</span>
+                          </li>
+                          </Link>
+                          <Link href="https://www.instagram.com/wearerenie/">
+                          <li className="d-flex gap-2">
+                            <img src="/assets/instragram.png" />
+                            <span>Instagram</span>
+                          </li>
+                          </Link>
+                          
+                          <Link href="https://www.tiktok.com/@wearerenie">
+                          <li className="d-flex gap-2">
+                            <img src="/assets/tiktok.png" />
+                            <span>Tiktok</span>
+                          </li></Link>
+                          
+                          <Link href="https://www.youtube.com/@wearerenie">
+                          <li className="d-flex gap-2">
+                            <img src="/assets/youtube.svg" />
+                            <span>Youtube</span>
+                          </li></Link>
+                         
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -79,7 +106,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            {/* <div class="row bootom-footer">
+            <div class="row bootom-footer">
               <div class="col-lg-6 col-md-6">
                 <p className="text-left">
                   © 2024 All rights reserved. Renie Tech Trading LLC
@@ -90,7 +117,7 @@ const Footer = () => {
                   Country : Qatar | Saudi Arabia | United Arab Emirates
                 </p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

@@ -1699,12 +1699,9 @@ footer {
     width: 10px ;
     height: 10px;
 }
-
-  .software-left,
-  .col-md-6 {
-    flex: 1 100%;
-    width: 100%;
-  }
+.mobile-none{
+  display: none !important;
+}
   .software-right-container {
     position: relative;
     top: 0;
