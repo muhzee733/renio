@@ -13,6 +13,11 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
+.custom-ads-image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .admin-icon{
   display: flex;
   gap: 20px;
@@ -139,6 +144,9 @@
   .renie-admin h2 {
     font-size: 26px;
   }
+  .custom-ads-image{
+    max-width: 15%;
+  }
   .renie-admin h1 {
     font-size: 60px;
   }
@@ -160,6 +168,9 @@
 @media (max-width: 786px) {
   .renie-admin {
     min-height: 80vh;
+  }
+  .custom-ads-image{
+    max-width: 15%;
   }
   .renie-admin h2 {
     font-size: 20px;
