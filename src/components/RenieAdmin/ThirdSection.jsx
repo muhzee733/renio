@@ -4,6 +4,7 @@ const ThirdSection = () => {
   return (
     <section className="dashboard-preview text-center bg-white">
       <div className="container">
+        <h2 className="text-primary">Powerful Admin Panel</h2>
         <figure>
           <img
             src="/assets/renieadmin/image.png"
@@ -11,9 +12,7 @@ const ThirdSection = () => {
             className="img-fluid mb-4"
           />
         </figure>
-        <h2 className="text-primary">
-          Powerful Admin Panel for Franchise Success
-        </h2>
+        <h2 className="text-primary">For Franchise Success!</h2>
         <p className="mb-4">
           Simplify operations, enhance communication, and track performance—all
           in one place. Efficiently manage your franchise network with seamless

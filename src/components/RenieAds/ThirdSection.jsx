@@ -2,29 +2,54 @@
 
 import React from "react";
 
-const AdImpactSection = () => {
+export default function AdsSection() {
   return (
-    <div className="container-fluid gradient-bg text-center">
-      <div className="row justify-content-center custom-ads-column">
-        <div className="col-md-5">
-          <h3 className="fw-bold text-white">The Ads That Matter Platform</h3>
-          <p className="text-dark">
-            Gain valuable insights into your campaign’s performance with a dedicated advertising
-            dashboard, allowing you to track engagement, measure impact, and optimize your strategy
-            in real time.
-          </p>
-        </div>
-        <div className="col-md-5">
-          <h3 className="fw-bold text-white">Turn Ad Impressions into Real Sustainability Impact</h3>
-          <p className="text-dark">
-            Your marketing spend now drives measurable environmental benefits—real, verifiable
-            reductions in landfill waste and CO2 emissions. Track your impact live through your Ads
-            That Matter account, ensuring true sustainability beyond just greenwashing.
-          </p>
+    <section className="adsmetter" style={sectionStyle}>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6 d-flex">
+            <div
+              className="ads-card text-center h-100 d-flex flex-column"
+            >
+              <img
+                src="/assets/renieads/icon-1.png"
+                alt="Platform Icon"
+                className="mb-3 mx-auto"
+              />
+              <h4>The Ads That Matter Platform</h4>
+              <p className="flex-grow-1">
+                Gain valuable insights into your campaign’s performance with a
+                dedicated advertising dashboard, allowing you to track
+                engagement, measure impact, and optimize your strategy in
+                real-time.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-6 d-flex">
+            <div
+              className="ads-card text-center h-100 d-flex flex-column"
+            >
+              <img
+                src="/assets/renieads/icon-2.png"
+                alt="Sustainability Icon"
+                className="mb-3 mx-auto"
+              />
+              <h4>Turn Ad Impressions into Real Sustainability Impact</h4>
+              <p className="flex-grow-1">
+                Your marketing spend now drives measurable environmental
+                benefits—real, verifiable reductions in landfill waste and CO2
+                emissions. Track your impact live through your Ads That Matter
+                account.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
+}
+
+const sectionStyle = {
+  background: "linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%)",
 };
 
-export default AdImpactSection;

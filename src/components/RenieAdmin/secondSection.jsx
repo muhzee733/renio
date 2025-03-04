@@ -16,7 +16,7 @@ const secondSection = () => {
           growth.
         </p>
         <div className="row text-left feature-h4">
-          <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
+          <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-top justify-content-center">
             <div>
               <div className="renie-admin-img">
                 <img src="/assets/renieadmin/group-1.png" alt="renie-admin" />
