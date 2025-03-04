@@ -25,6 +25,9 @@ justify-content: center;
   margin: 0 auto;
   margin-bottom: 10px;
 }
+.reniebin-paragraph{
+  margin-top: 30px;
+}
 .reniebin-paragraph p{
   color: white;
   font-size: 18px;
@@ -32,7 +35,6 @@ justify-content: center;
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  padding-top: 30px;
 }
 .reniebin-wrapper {
   display: flex;
