@@ -2,6 +2,13 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const navLinks = [
+    { name: "Renie Bin", path: "/reniebin" },
+    { name: "Renie Hub", path: "/reniehub" },
+    { name: "Renie App", path: "/renieapp" },
+    { name: "Ads that Matter", path: "/renieads" },
+    { name: "Media Hub", path: "/mediahub" },
+  ];
   return (
     <div className="footer-section">
       <div class="footer-main-section">
@@ -33,11 +40,11 @@ const Footer = () => {
                       <div className="userfull-links">
                         <h6>Pages</h6>
                         <ul>
-                          <li>Renie Bin</li>
-                          <li>Renie Hub </li>
-                          <li>Renie App </li>
-                          <li>Ads that matter</li>
-                          <li>Media Hub</li>
+                          {navLinks.map((link, index) => (
+                            <li key={index}>
+                              <Link href={link.path}>{link.name}</Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
