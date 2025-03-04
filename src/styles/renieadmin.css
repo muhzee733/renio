@@ -125,6 +125,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1536px){
+  .custom-ads-image {
+    transform: translateX(-70%);
+}
+}
 
 @media (max-width: 1200px) {
   .renie-admin h1 {
