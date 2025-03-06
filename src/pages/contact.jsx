@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Meta from "@/components/Meta";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -29,9 +30,10 @@ const ContactUs = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact Renie | Get in Touch</title>
-      </Head>
+      <Meta
+          title="Contact Renie | Get in Touch"
+          description="Contact Renie | Get in Touch"
+        />
       <Navbar />
 
       {/* Contact Banner */}

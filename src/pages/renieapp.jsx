@@ -9,17 +9,15 @@ import LoveRenie from "@/components/RenieApp/LoveRenie";
 import RenieNexus from "@/components/RenieApp/RenieNexus";
 import React from "react";
 import Head from "next/head";
+import Meta from "@/components/Meta";
 
 const RenieApp = () => {
   return (
     <>
-    <Head>
-        <title>Renie App: Track Your Recycling Impact anytime, Anywhere</title>
-        <meta
-          name="description"
-          content="Download the Renie App to easily track your recycling impact, find nearby bins, and earn rewards for your sustainable efforts."
+ <Meta
+          title="Renie App: Track Your Recycling Impact Anytime, Anywhere"
+          description="Download the Renie App to easily track your recycling impact, find nearby bins, and earn rewards for your sustainable efforts."
         />
-      </Head>
       <Navbar />
       <Banner />
       <RenieNexus />

@@ -1,3 +1,4 @@
+import Meta from "@/components/Meta";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import Navbar from "@/components/Navbar/Navbar";
@@ -7,9 +8,7 @@ import React from "react";
 const PlatformTerms = () => {
   return (
     <>
-      <Head>
-        <title>Platform Terms & Conditions Renie</title>
-      </Head>
+      <Meta title="Platform Terms & Conditions Renie" description="Review the terms and conditions governing the use of Renie’s platform" />
       <Navbar />
       <div className="privacy-policy">
         <div className="container">
@@ -19,7 +18,7 @@ const PlatformTerms = () => {
       <div className="privacy-body">
         <div class="container">
           <b>Platform Terms & Conditions Update version – October 10, 2022</b>
-          <br/>
+          <br />
           <br />
           <p>
             Please read these Platform Terms & Conditions (hereinafter referred

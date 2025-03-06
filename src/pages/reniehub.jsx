@@ -9,13 +9,15 @@ import SixSection from "@/components/RenieHub/SixSection";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import Head from "next/head";
+import Meta from "@/components/Meta";
 
 const reniehub = () => {
   return (
     <>
-      <Head>
-        <title>Renie Hub</title>
-      </Head>
+       <Meta
+          title="Renie Hub: Your Central Resource for Recycling and Sustainability"
+          description="Access resources, tools, and information at Renie Hub. Empower your sustainability journey with the latest insights and support."
+        />
       <Navbar />
       <Banner />
       <SecondSection />

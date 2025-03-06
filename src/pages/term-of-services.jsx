@@ -1,3 +1,4 @@
+import Meta from "@/components/Meta";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import Navbar from "@/components/Navbar/Navbar";
@@ -7,9 +8,10 @@ import React from "react";
 const TermOfServices = () => {
   return (
     <>
-      <Head>
-        <title>Terms of service - Renie</title>
-      </Head>
+       <Meta
+          title="Terms of Service | Renie"
+          description="Read Renie’s terms of service to understand the guidelines for using our platform and services. Your compliance ensures a better experience."
+        />
       <Navbar />
       <div className="privacy-policy">
         <div className="container">

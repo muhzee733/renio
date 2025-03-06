@@ -13,6 +13,7 @@ import MeetRenieBin from "@/components/RenieBin/MeetRenieBin";
 import PowerRenie from "@/components/RenieBin/PowerRenie";
 import ProductRenie from "@/components/RenieBin/ProductRenie";
 import RenieSection from "@/components/RenieBin/RenieSection2";
+import Meta from "@/components/Meta";
 
 const RenieBin = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -93,13 +94,10 @@ const RenieBin = () => {
 
   return (
     <>
-      <Head>
-        <title>Renie Bin: Smart Waste Management Solutions</title>
-        <meta
-          name="description"
-          content="Renie Bin, the smart solution for efficient waste segregation and recycling. Track your impact and earn from deposited waste."
-        />
-      </Head>
+      <Meta
+        title="Renie Bin: Smart Waste Management Solutions"
+        description="Renie Bin, the smart solution for efficient waste segregation and recycling. Track your impact and earn from deposited waste."
+      />
       <Navbar white={true} />
       <Banner canvasRef={canvasRef} />
       <RenieSection />

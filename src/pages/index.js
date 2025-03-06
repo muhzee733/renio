@@ -8,16 +8,15 @@ import Section3 from "@/components/Section3";
 import Section5 from "@/components/Section5";
 import Section6 from "@/components/Section6";
 import RenieBin from "@/components/RenieBin";
+import Meta from "@/components/Meta";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Transform your waste into income</title>
-        <meta name="description" content="Transform your waste into income" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta
+        title="Transform your waste into income"
+        description="Discover Renie’s solutions to transform your waste into income by recycling and sustainable waste management. Help us divert waste from landfills."
+      />
       <section>
         <Navbar />
       </section>

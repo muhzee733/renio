@@ -7,9 +7,10 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <>
-      <Head>
-        <title>Renie | Privacy Policy</title>
-      </Head>
+      <Meta
+          title="Renie | Privacy Policy"
+          description="Learn how Renie protects your personal data and ensures privacy. Transparency and security are our top priorities."
+        />
       <Navbar />
 
       <div className="privacy-policy">
@@ -41,7 +42,8 @@ const PrivacyPolicy = () => {
             the Platform, whether or not such person registers with the
             Platform. Any term not defined herein shall have the meaning
             ascribed to it in the Terms of Service. Content & Purpose
-          </p><br />
+          </p>
+          <br />
           <p>
             The Platform is owned and operated by Renie Tech FZ-LLC, company
             incorporated in the United Arab Emirates with its primary place of
@@ -51,7 +53,8 @@ const PrivacyPolicy = () => {
             explains how we use and share your personal information and how you
             can exercise your rights in relation to your personal information.
             Information collected from you
-          </p><br />
+          </p>
+          <br />
           <ul>
             <li>
               As part of the registration process, or when you contact us, we
@@ -148,13 +151,15 @@ const PrivacyPolicy = () => {
             stored or disclosed is specifically mentioned in this Privacy
             Policy. We do not knowingly collect Personal Information from
             children. Purposes for which we may use the Information
-          </p><br />
+          </p>
+          <br />
           <p>
             We will retain User Information only to the extent it is necessary
             to provide services to the users. The information, which we collect
             from you, may be utilized for various business and/or regulatory
             purposes including for the following purposes:
-          </p><br />
+          </p>
+          <br />
           <ul>
             <li>Registration of the User on the Platform</li>
             <li>Completing transactions with Users effectively and billing</li>
@@ -278,7 +283,8 @@ const PrivacyPolicy = () => {
             Privacy Policy is intended to limit any legal defenses or objections
             that you may have to a third party’s, including a government’s,
             request to disclose your personal data.
-          </p><br />
+          </p>
+          <br />
           <p>
             Renie adopts reasonable security practices and procedures to
             include, technical, operational, managerial and physical security
@@ -293,7 +299,8 @@ const PrivacyPolicy = () => {
             release us from any and all claims arising out of or related to the
             use of intercepted information in any unauthorised manner. User’s
             rights in relation to their personal information collected
-          </p><br />
+          </p>
+          <br />
           <p>
             All the information provided to Renie by a User, including sensitive
             personal data or information, is voluntary. User has the right to
@@ -314,7 +321,8 @@ const PrivacyPolicy = () => {
             usage of the personal information so collected, Renie reserves the
             right to discontinue the services for which the said information was
             sought. Third party websites
-          </p><br />
+          </p>
+          <br />
           <p>
             The Platform may contain links to other websites. Any personal
             information about you collected whilst visiting such websites is not
@@ -343,7 +351,8 @@ const PrivacyPolicy = () => {
             complaints or feedback about such third party services with the
             respective developers or publishers as may be the case. Service
             providers
-          </p><br />
+          </p>
+          <br />
           <p>
             We engage service providers to perform functions and provide
             services to us on the Platform. We may share your private personal
@@ -370,7 +379,8 @@ const PrivacyPolicy = () => {
             and or comment or breach of these terms shall be immediately
             informed to the designated Grievance Officer as mentioned below via
             in writing or through email signed with the electronic signature.
-          </p><br />
+          </p>
+          <br />
           <ul>
             <li>Renie Tech FZ-LLC</li>
             <li>Corporate Office:</li>
