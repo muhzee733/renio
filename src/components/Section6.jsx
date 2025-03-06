@@ -56,7 +56,7 @@ function Section6() {
           className="d-flex min-vh-100 w-100 custom-flex"
         >
           <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center software-left">
-            <img src="/assets/re-logo.png" alt="logo" />
+            <img src="/assets/re-logo.webp" alt="logo" />
             <div>
               <h2>Renie</h2>
               <h6>Software</h6>
@@ -71,7 +71,7 @@ function Section6() {
               }`}
             >
               <div className="software-right-container">
-                <img src="/assets/renie-hub.png" alt="Renie Admin" />
+                <img src="/assets/renie-hub.webp" alt="Renie Admin" />
                 <span>Renie Admin</span>
                 <p>
                   Renie Admin centralizes all management tasks, providing
@@ -79,7 +79,7 @@ function Section6() {
                 </p>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-2.png" alt="Renie Hub" />
+                <img src="/assets/renie-hub-2.webp" alt="Renie Hub" />
                 <span>Renie Hub</span>
                 <p>
                   Our innovative platform makes it possible to generate a
@@ -87,7 +87,7 @@ function Section6() {
                 </p>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-3.png" alt="Renie Rewards" />
+                <img src="/assets/renie-hub-3.webp" alt="Renie Rewards" />
                 <span>Renie Rewards</span>
                 <p>
                   Renie Nexus makes recycling easy with instant access and prize
@@ -95,7 +95,7 @@ function Section6() {
                 </p>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-4.png" alt="Renie Ads" />
+                <img src="/assets/renie-hub-4.webp" alt="Renie Ads" />
                 <span>Renie Ads</span>
                 <p>
                   Our AI platform uses Renie Bin data to deliver targeted ads,

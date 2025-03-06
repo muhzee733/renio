@@ -11,7 +11,7 @@ const ProductRenie = () => {
           <div className="row custom-row">
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-1.png" alt="icon-1" />
+                <img src="/assets/icon-1.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Barcode Reader: </h3>
                   <p>
@@ -23,7 +23,7 @@ const ProductRenie = () => {
             </div>
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-2.png" alt="icon-1" />
+                <img src="/assets/icon-2.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Movement Lids: </h3>
                   <p>
@@ -35,7 +35,7 @@ const ProductRenie = () => {
             </div>
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-3.png" alt="icon-1" />
+                <img src="/assets/icon-3.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Connectivity: </h3>
                   <p>
@@ -50,7 +50,7 @@ const ProductRenie = () => {
           <div className="row custom-row">
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-4.png" alt="icon-1" />
+                <img src="/assets/icon-4.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Power Supply: </h3>
                   <p>1. Input: DC 5V <br /> 2. Current: 5A</p>
@@ -59,7 +59,7 @@ const ProductRenie = () => {
             </div>
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-6.png" alt="icon-1" />
+                <img src="/assets/icon-6.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Material Composition: </h3>
                   <p>MDF-PETG-ABS</p>
@@ -68,7 +68,7 @@ const ProductRenie = () => {
             </div>
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-5.png" alt="icon-1" />
+                <img src="/assets/icon-5.webp" alt="icon-1" />
                 <div className="product-box">
                   <h3>Fullness Indicator: </h3>
                   <p>

@@ -19,10 +19,10 @@ const secondSection = () => {
           <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-top justify-content-center">
             <div>
               <div className="renie-admin-img">
-                <img src="/assets/renieadmin/group-1.png" alt="renie-admin" />
+                <img src="/assets/renieadmin/group-1.webp" alt="renie-admin" />
               </div>
               <div className="admin-icon">
-                <img src="/assets/renieadmin/icon-1.png" alt="renie-icon" />
+                <img src="/assets/renieadmin/icon-1.webp" alt="renie-icon" />
                 <h4>Seamless Partner <br /> Management</h4>
               </div>
 
@@ -36,10 +36,10 @@ const secondSection = () => {
           <div className="col-lg-6 col-md-6 col-lg-3 mb-5">
             <div>
               <div className="renie-admin-img">
-                <img src="/assets/renieadmin/group-2.png" alt="renie-admin" />
+                <img src="/assets/renieadmin/group-2.webp" alt="renie-admin" />
               </div>
               <div className="admin-icon">
-                <img src="/assets/renieadmin/icon-2.png" alt="renie-icon" />
+                <img src="/assets/renieadmin/icon-2.webp" alt="renie-icon" />
                 <h4>Efficient Waste <br />Tracking</h4>
               </div>
 
@@ -53,10 +53,10 @@ const secondSection = () => {
           <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
             <div>
               <div className="renie-admin-img">
-                <img src="/assets/renieadmin/group-3.png" alt="renie-admin" />
+                <img src="/assets/renieadmin/group-3.webp" alt="renie-admin" />
               </div>
               <div className="admin-icon">
-                <img src="/assets/renieadmin/icon-3.png" alt="renie-icon" />
+                <img src="/assets/renieadmin/icon-3.webp" alt="renie-icon" />
                 <h4>Maximize <br />Revenue</h4>
               </div>
 
@@ -70,10 +70,10 @@ const secondSection = () => {
           <div className="col-lg-6 col-md-6 col-lg-3">
             <div>
               <div className="renie-admin-img">
-                <img src="/assets/renieadmin/group-4.png" alt="renie-admin" />
+                <img src="/assets/renieadmin/group-4.webp" alt="renie-admin" />
               </div>
               <div className="admin-icon">
-                <img src="/assets/renieadmin/icon-4.png" alt="renie-icon" />
+                <img src="/assets/renieadmin/icon-4.webp" alt="renie-icon" />
                 <h4>User Engagement & <br />Growth Insights</h4>
               </div>
 

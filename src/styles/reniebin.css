@@ -267,7 +267,7 @@ justify-content: center;
   font-weight: 400;
 }
 .crafted-card {
-  background-image: url("/assets/card-background.png");
+  background-image: url("/assets/card-background.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ justify-content: center;
   bottom: 10%;
 }
 .custom-boxes .crafted-card-1:nth-child(2) {
-  background-image: url("/assets/card-image.png");
+  background-image: url("/assets/card-image.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

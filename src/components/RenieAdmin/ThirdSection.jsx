@@ -7,12 +7,12 @@ const ThirdSection = () => {
         <h2 className="text-primary">Powerful Admin Panel</h2>
         <figure className="position-relative">
           <img
-            src="/assets/renieadmin/image.png"
+            src="/assets/renieadmin/image.webp"
             alt="Dashboard Preview"
             className="img-fluid mb-4"
           />
           <img
-            src="/assets/renieadmin/logo.png"
+            src="/assets/renieadmin/logo.webp"
             alt="Dashboard Preview"
             className="img-fluid custom-ads-image"
           />

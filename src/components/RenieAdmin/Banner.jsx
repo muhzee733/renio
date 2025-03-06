@@ -17,14 +17,14 @@ const Banner = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-end">
               <img
-                src="/assets/renieadmin/banner-image.png"
+                src="/assets/renieadmin/banner-image.webp"
                 alt="Admin Panel"
                 className="img-fluid renieadmin-image"
               />
             </div>
           </div>
           <figure>
-            <img className="scroll-down"  src="/assets/renieadmin/scroll-down.png" alt="renie-admin "/>
+            <img className="scroll-down"  src="/assets/renieadmin/scroll-down.webp" alt="renie-admin "/>
           </figure>
         </div>
       </header>

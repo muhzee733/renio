@@ -4,48 +4,48 @@ const WasteManagement = () => {
       title: "Save Time & Costs",
       description:
         "Reduce operational inefficiencies and automate waste tracking.",
-      icon: "/assets/reniehub/Layer_1.png",
+      icon: "/assets/reniehub/Layer_1.webp",
     },
     {
       title: "Always Connected",
       description: "24/7 real-time monitoring for seamless waste tracking.",
-      icon: "/assets/reniehub/Layer_2.png",
+      icon: "/assets/reniehub/Layer_2.webp",
     },
     {
       title: "Smart Diagnostics",
       description:
         "Gain clear, data-driven reports on waste levels and disposal status.",
-      icon: "/assets/reniehub/Layer_3.png",
+      icon: "/assets/reniehub/Layer_3.webp",
     },
     {
       title: "Clear Communication",
       description:
         "Eliminate miscommunication with precise tracking and reporting.",
-      icon: "/assets/reniehub/Layer_4.png",
+      icon: "/assets/reniehub/Layer_4.webp",
     },
     {
       title: "Proactive Maintenance",
       description:
         "Stay ahead with scheduled bin servicing and predictive maintenance.",
-      icon: "/assets/reniehub/Layer_5.png",
+      icon: "/assets/reniehub/Layer_5.webp",
     },
     {
       title: "Historical Insights",
       description:
         "Access detailed records for better waste analytics and optimization.",
-      icon: "/assets/reniehub/Layer_6.png",
+      icon: "/assets/reniehub/Layer_6.webp",
     },
     {
       title: "New Opportunities",
       description:
         "Optimize waste collection, reduce costs, and unlock new revenue streams.",
-      icon: "/assets/reniehub/Layer_7.png",
+      icon: "/assets/reniehub/Layer_7.webp",
     },
     {
       title: "Sustainable Impact",
       description:
         "Minimize environmental footprint with data-driven waste reduction.",
-      icon: "/assets/reniehub/Layer_8.png",
+      icon: "/assets/reniehub/Layer_8.webp",
     },
   ];
 

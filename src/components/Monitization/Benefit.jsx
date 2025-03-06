@@ -7,22 +7,22 @@ import { Pagination } from "swiper/modules";
 
 const blogData = [
   {
-    img: "/assets/blog-6.png",
+    img: "/assets/blog-6.webp",
     h3: <>Retail & <br />E-Commerce </>,
     p: "Gain insights into packaging disposal, customer behavior, and recycling trends.",
   },
   {
-    img: "/assets/blog-8.png",
+    img: "/assets/blog-8.webp",
     h3: "Hospitality & Food Services",
     p: "Track food waste patterns, optimize inventory, and minimize losses.",
   },
   {
-    img: "/assets/blog-7.png",
+    img: "/assets/blog-7.webp",
     h3: "Manufacturing & Production",
     p: "Understand material waste, optimize supply chains, and enhance sustainability goals.",
   },
   {
-    img: "/assets/blog-9.png",
+    img: "/assets/blog-9.webp",
     h3: "Smart Cities & Municipalities",
     p: "Improve urban waste management, enhance recycling programs, and promote greener cities.",
   },

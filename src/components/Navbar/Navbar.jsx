@@ -105,7 +105,7 @@ const Navbar = ({ white }) => {
         <Link href="/" passHref>
           <Image
             ref={logoRef}
-            src="/assets/logo.png"
+            src="/assets/logo.webp"
             alt="Renie Logo"
             width={140}
             height={50}
@@ -118,7 +118,7 @@ const Navbar = ({ white }) => {
 
         <Link className="mobile-menu" href="/" passHref>
           <Image
-            src="/assets/small.png"
+            src="/assets/small.webp"
             alt="Menu Icon"
             width={40}
             height={40}
@@ -140,7 +140,7 @@ const Navbar = ({ white }) => {
         </button>
         <Image
           ref={menuImageRef}
-          src="/assets/small.png"
+          src="/assets/small.webp"
           alt="Menu Icon"
           width={40}
           height={40}
@@ -153,7 +153,7 @@ const Navbar = ({ white }) => {
           }}
         />
         <Image
-          src="/assets/small.png"
+          src="/assets/small.webp"
           alt="Menu Icon"
           width={40}
           height={40}
@@ -169,7 +169,7 @@ const Navbar = ({ white }) => {
         <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <Link href="/">
             <Image
-              src="/assets/logo.png"
+              src="/assets/logo.webp"
               alt="Renie Logo"
               width={100}
               height={50}

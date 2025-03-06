@@ -7,7 +7,7 @@ const RenieNexus = () => {
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <img src="/assets/main-hand-mobile.png" alt="renie-app" />
+              <img src="/assets/main-hand-mobile.webp" alt="renie-app" />
             </div>
             <div class="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">

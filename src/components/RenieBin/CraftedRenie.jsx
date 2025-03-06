@@ -31,7 +31,7 @@ const CraftedRenie = () => {
                       <li>Battery</li>
                       <li>DC Power</li>
                     </ul>
-                    <img src="/assets/card-bg-light.png" />
+                    <img src="/assets/card-bg-light.webp" />
                   </div>
                   <div className="crafted-card-1">
                     <h3>Customize Designs</h3>

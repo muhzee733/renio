@@ -28,7 +28,7 @@ const AdsSection = () => {
             </div>
             <div className="col-lg-6 d-flex justify-content-center renie-ads-img">
               <img
-                src="/assets/renieads/renie-phone.png"
+                src="/assets/renieads/renie-phone.webp"
                 alt="Mobile UI"
                 className="rounded "
               />

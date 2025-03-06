@@ -29,7 +29,7 @@
 .adsmetter .ads-card {
   padding: 80px 20px 80px 20px;
   color: white;
-  background-image: url("/assets/renieads/border.png");
+  background-image: url("/assets/renieads/border.webp");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/assets/renieads/bg.png");
+  background-image: url("/assets/renieads/bg.webp");
   background-position: top center;
   background-size: 100% 70%;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@
   -webkit-text-fill-color: transparent;
 }
 .gradient-bg {
-  background-image: url(/assets/renieads/bg-layer.png);
+  background-image: url(/assets/renieads/bg-layer.webp);
   padding: 180px 0;
   background-position: center;
   background-repeat: no-repeat;

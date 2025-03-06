@@ -86,7 +86,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
               <h2>{title1}</h2>
               <img
                 className="threed-image"
-                src="/assets/360-icon.png"
+                src="/assets/360-icon.webp"
                 alt="360"
                 style={{
                   cursor: "pointer",
@@ -169,7 +169,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 <img
                   ref={iconRef}
                   className="threed-image"
-                  src="/assets/360-icon.png"
+                  src="/assets/360-icon.webp"
                   alt="360"
                   style={{
                     position: "absolute",

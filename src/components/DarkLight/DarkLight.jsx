@@ -7,8 +7,8 @@ const DarkLight = () => {
   };
   return (
     <>
-      <Image src="/assets/dark_mode.png" alt="dark mode" className="darkLight" />
-      {/* <Image src="/assets/light_mode.png" alt="light mode" className="darkLight" /> */}
+      <Image src="/assets/dark_mode.webp" alt="dark mode" className="darkLight" />
+      {/* <Image src="/assets/light_mode.webp" alt="light mode" className="darkLight" /> */}
     </>
   )
 }

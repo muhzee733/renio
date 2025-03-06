@@ -70,26 +70,26 @@ const Footer = () => {
                         <ul>
                           <Link href="https://www.facebook.com/wearerenie">
                             <li className="d-flex gap-2">
-                              <img src="/assets/facebook.png" />
+                              <img src="/assets/facebook.webp" />
                               <span>Facebook</span>
                             </li>
                           </Link>
                           <Link href="https://www.linkedin.com/company/renietech">
                           <li className="d-flex gap-2">
-                            <img src="/assets/linkedin.png" />
+                            <img src="/assets/linkedin.webp" />
                             <span>Linkedin</span>
                           </li>
                           </Link>
                           <Link href="https://www.instagram.com/wearerenie/">
                           <li className="d-flex gap-2">
-                            <img src="/assets/instragram.png" />
+                            <img src="/assets/instragram.webp" />
                             <span>Instagram</span>
                           </li>
                           </Link>
                           
                           <Link href="https://www.tiktok.com/@wearerenie">
                           <li className="d-flex gap-2">
-                            <img src="/assets/tiktok.png" />
+                            <img src="/assets/tiktok.webp" />
                             <span>Tiktok</span>
                           </li></Link>
                           
@@ -108,7 +108,7 @@ const Footer = () => {
               <div class="row">
                 <div class="col-lg-12">
                   <div className="custom-center">
-                    <img src="/assets/footer-text.png" alt="renio" />
+                    <img src="/assets/footer-text.webp" alt="renio" />
                   </div>
                 </div>
               </div>

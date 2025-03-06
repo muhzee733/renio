@@ -83,7 +83,7 @@ const MonitizationSection = () => {
         }}
       >
         <img
-          src="/assets/overlay.png"
+          src="/assets/overlay.webp"
           alt="Overlay"
           style={{
             position: "fixed",

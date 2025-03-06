@@ -8,28 +8,28 @@ const data = [
     title1: "Step 1",
     title2: "Smart Waste Collection",
     para: "Our intelligent Renie Bins are equipped with advanced sensors that collect valuable data from disposed items. Data points include material types, brand recognition, and consumer behavior insights.",
-    icon: "/assets/cup-icon.png",
+    icon: "/assets/cup-icon.webp",
   },
   {
     id: 2,
     title1: "Step 2",
     title2: "Data Extraction & Analysis",
     para: "The collected waste data is processed through our AI-powered platform. Our system extracts key insights, such as consumer preferences, recycling trends, and product lifecycle data.",
-    icon: "/assets/monitize.png",
+    icon: "/assets/monitize.webp",
   },
   {
     id: 3,
     title1: "Step 3",
     title2: "Data Monetization & Revenue Generation",
     para: "The extracted data is fed into Renie’s monetization algorithms, converting it into actionable insights. Businesses can monetize this data by partnering with brands, sustainability initiatives, and market research firms.",
-    icon: "/assets/monitization-2.png",
+    icon: "/assets/monitization-2.webp",
   },
   {
     id: 4,
     title1: "Step 4",
     title2: "Earn & Optimize Sustainability Goals",
     para: "Companies receive monetized payouts for their waste data contributions. Real-time sustainability impact tracking improves ESG (Environmental, Social, and Governance) reporting.",
-    icon: "/assets/monitization-3.png",
+    icon: "/assets/monitization-3.webp",
   },
 ];
 

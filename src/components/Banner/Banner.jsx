@@ -26,12 +26,12 @@ const Banner = () => {
                 <span>Recycled Waste Items</span>
                 <div className="d-flex align-items-center gap-2">
                   <span style={{ color: "#5C4099" }}>432</span>
-                  {/* <img src="/assets/arrow.png" alt="arrow" /> */}
+                  {/* <img src="/assets/arrow.webp" alt="arrow" /> */}
                 </div>
               </div>
-              <img src="/assets/bin.png" alt="banner" className="banner-img" />
+              <img src="/assets/bin.webp" alt="banner" className="banner-img" />
               <img
-                src="/assets/mobile.png"
+                src="/assets/mobile.webp"
                 alt="mobile"
                 className="mobile-img"
               />

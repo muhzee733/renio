@@ -16,7 +16,7 @@ const Discover = () => {
           </div>
           <div className="col-lg-6 col-md-6">
             <div className="discover-image">
-              <img src="/assets/discover.png" />
+              <img src="/assets/discover.webp" />
             </div>
           </div>
         </div>

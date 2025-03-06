@@ -19,12 +19,12 @@ const Banner = () => {
                   </div>
                   <div className="d-flex justify-content-center">
                     <img
-                      src="/assets/reniehub/reniehub-banner.png"
+                      src="/assets/reniehub/reniehub-banner.webp"
                       alt="renie-hub"
                       className="mb-5"
                     />
                     <img
-                      src="/assets/reniehub/renie-mobile.png"
+                      src="/assets/reniehub/renie-mobile.webp"
                       alt="renie-hub"
                       className="renie-mobile-banner"
                     />

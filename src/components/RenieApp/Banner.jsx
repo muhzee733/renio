@@ -92,7 +92,7 @@ const Banner = () => {
         
         <div className="container">
           <div className="main-renie-banner">
-            <img src="/assets/app-1.png" alt="renie app" />
+            <img src="/assets/app-1.webp" alt="renie app" />
             <h1>Renie Nexus – Smart Waste, Smarter World</h1>
             <h5>Track. Recycle. Reward.</h5>
           </div>

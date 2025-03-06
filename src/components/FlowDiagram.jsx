@@ -180,7 +180,7 @@ const FlowDiagram = ({
       </div>
       <div className="idea">
         <span style={{ marginRight: "5px" }}>
-          <img src="/assets/icon.png" />
+          <img src="/assets/icon.webp" />
         </span>
         NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
       </div>

@@ -7,22 +7,22 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const blogData = [
   {
-    img: "/assets/blog-1.png",
+    img: "/assets/blog-1.webp",
     h3: "Governments & Municipalities",
     p: "Renie transforms offices and residential communities with tailored recycling solutions.",
   },
   {
-    img: "/assets/blog-3.png",
+    img: "/assets/blog-3.webp",
     h3: "Educational Institutions",
     p: "Renie Bins improve educational environment, rewarding eco-friendly actions.",
   },
   {
-    img: "/assets/blog-2.png",
+    img: "/assets/blog-2.webp",
     h3: "Retail and Malls",
     p: "Renie enhances shopping experience by creating clean and more rewarding space.",
   },
   {
-    img: "/assets/blog-4.png",
+    img: "/assets/blog-4.webp",
     h3: "Commercial and Residential",
     p: "Renie enhances shopping experience by creating clean and more rewarding space.",
   },

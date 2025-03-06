@@ -9,7 +9,7 @@ const DataMonetizationSection = () => {
     rows.forEach((row) => {
       row.addEventListener("mouseenter", () => {
         gsap.to("body", {
-          cursor: "url('/assets/cusure.png'), auto",
+          cursor: "url('/assets/cusure.webp'), auto",
           duration: 0.3,
         });
       });
@@ -51,13 +51,13 @@ const DataMonetizationSection = () => {
                   title: "Real-Time Data Insights",
                   description:
                     "Businesses gain access to valuable insights on consumer behavior, waste patterns, and sustainability performance, helping them make data-driven decisions.",
-                  icon: "/images/icon1.png",
+                  icon: "/images/icon1.webp",
                 },
                 {
                   title: "Seamless Integration",
                   description:
                     "Our smart Renie bins integrate with existing waste management systems, making it effortless for companies to start monetizing their waste data.",
-                  icon: "/images/icon2.png",
+                  icon: "/images/icon2.webp",
                 },
                 {
                   title: "A Competitive Edge",
@@ -77,7 +77,7 @@ const DataMonetizationSection = () => {
                       <p className="text-muted">{item.description}</p>
                     </div>
                     <div className="col-lg-1 text-right custom-arrow">
-                      <img src="/assets/arrow-2.png" width={15} />
+                      <img src="/assets/arrow-2.webp" width={15} />
                     </div>
                   </div>
                 </div>

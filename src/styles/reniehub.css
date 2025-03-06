@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   padding-top: 10%;
-  background-image: url("/assets/footer.png");
+  background-image: url("/assets/footer.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 70vh;
@@ -47,7 +47,7 @@
   margin-bottom: 0px !important;
 }
 .renie-waste {
-  background-image: url("/assets/reniehub/bg.png");
+  background-image: url("/assets/reniehub/bg.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;

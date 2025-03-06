@@ -37,7 +37,7 @@ const Section3 = () => {
       <div ref={sectionRef} className="scroll-section-inner">
         <div class="scroll-section">
           <Slide1
-            img="/assets/RENIE_ONE.png"
+            img="/assets/RENIE_ONE.webp"
             title1="RENIE ONE"
             title2="MEET RENIE BINS"
             price1={750}
@@ -47,7 +47,7 @@ const Section3 = () => {
         </div>
         <div class="scroll-section bg-danger">
           <Slide1
-            img="/assets/RENIE_TWO.png"
+            img="/assets/RENIE_TWO.webp"
             title1="RENIE Two"
             title2="MEET RENIE BINS"
             price1={1400}
@@ -57,7 +57,7 @@ const Section3 = () => {
         </div>
         <div class="scroll-section bg-success">
           <Slide1
-            img="/assets/RENIE_MAXI.png"
+            img="/assets/RENIE_MAXI.webp"
             title1="RENIE Maxi"
             title2="MEET RENIE BINS"
             price1={1990}
@@ -67,7 +67,7 @@ const Section3 = () => {
         </div>
         <div class="scroll-section bg-dark">
           <Slide1
-            img="/assets/RENIE_MINI.png"
+            img="/assets/RENIE_MINI.webp"
             title1="RENIE Mini"
             title2="MEET RENIE BINS"
             price1={750}

@@ -12,7 +12,7 @@ export default function AdsSection() {
               className="ads-card text-center h-100 d-flex flex-column"
             >
               <img
-                src="/assets/renieads/icon-1.png"
+                src="/assets/renieads/icon-1.webp"
                 alt="Platform Icon"
                 className="mb-3 mx-auto"
               />
@@ -30,7 +30,7 @@ export default function AdsSection() {
               className="ads-card text-center h-100 d-flex flex-column"
             >
               <img
-                src="/assets/renieads/icon-2.png"
+                src="/assets/renieads/icon-2.webp"
                 alt="Sustainability Icon"
                 className="mb-3 mx-auto"
               />

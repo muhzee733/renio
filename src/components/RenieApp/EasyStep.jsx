@@ -32,7 +32,7 @@ const EasyStep = () => {
                   <div></div>
                 </div>
               </div>
-              <img className="white-box" src="/assets/step-1.png" alt="renie-box" />
+              <img className="white-box" src="/assets/step-1.webp" alt="renie-box" />
             </motion.div>
 
             <motion.div
@@ -50,7 +50,7 @@ const EasyStep = () => {
                   <div></div>
                 </div>
               </div>
-              <img className="white-box white-box-2" src="/assets/step-2.png" alt="renie-box" />
+              <img className="white-box white-box-2" src="/assets/step-2.webp" alt="renie-box" />
             </motion.div>
           </div>
         </div>

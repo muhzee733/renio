@@ -3,12 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/assets/renieadmin/bg.png");
+  background-image: url("/assets/renieadmin/bg.webp");
   background-repeat: no-repeat;
   background-position: top right;
 }
 .dashboard-preview{
-  background-image: url('/assets/renieadmin/Layer_1.png');
+  background-image: url('/assets/renieadmin/Layer_1.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto;

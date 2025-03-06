@@ -14,8 +14,8 @@ const Section5 = () => {
             <Slider5
               title1="Renie"
               title2="Nexus"
-              img="/assets/mobile-1.png"
-              img2="/assets/no-download.png"
+              img="/assets/mobile-1.webp"
+              img2="/assets/no-download.webp"
               customClass="E31662"
               h6={`No downloads, no registration just 
                 straight money in your wallet.`}
@@ -27,7 +27,7 @@ Your smartphone is all you need to collect and redeem rewards instantly—no mor
             <Slider5
               title1="Find the"
               title2="Renie Bins"
-              img="/assets/mobile-3.png"
+              img="/assets/mobile-3.webp"
               customClass="4765E6"
               h6={`Easily locate the nearest Renie Bin and navigate to it.`}
               p={`Easily find the nearest Renie Bin with just a few taps and navigate to it effortlessly. Our intuitive system guides you directly to the closest bin, ensuring a smooth, hassle-free experience.
@@ -39,7 +39,7 @@ Whether you're at home, work, or on the go, locating a Renie Bin is quick and si
             <Slider5
               title1="Redeem "
               title2="Rewards"
-              img="/assets/mobile-2.png"
+              img="/assets/mobile-2.webp"
               customClass="5C4099"
               h6={`No vouchers or discounts—just real, valuable rewards!`}
               p={`Say goodbye to vouchers and temporary discounts. With our system, you get real, valuable rewards—no hidden conditions or expiry dates. Whether it’s points, cashback, or incentives, each reward provides lasting value.

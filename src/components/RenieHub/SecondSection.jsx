@@ -24,19 +24,19 @@ const SecondSection = () => {
             <div class="row custom-disposal-row">
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
-                  <img src="/assets/reniehub/icon-1.png" />
+                  <img src="/assets/reniehub/icon-1.webp" />
                   <p>Tracks generated revenue streams</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
-                  <img src="/assets/reniehub/icon-2.png" />
+                  <img src="/assets/reniehub/icon-2.webp" />
                   <p>Track waste from source to waste management facility</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
-                  <img src="/assets/reniehub/icon-3.png" />
+                  <img src="/assets/reniehub/icon-3.webp" />
                   <p>
                     See real time verified data about waste diverted from
                     landfills
