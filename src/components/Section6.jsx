@@ -1,15 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 function Section6() {
   const sectionRef = useRef();
   const containerRef = useRef();
+  const [isMobile, setIsMobile] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    setIsMobile(window.innerWidth <= 768);
+
+    if (typeof window !== "undefined" && window.innerWidth > 768) {
       let sections = gsap.utils.toArray(".software-right-container");
 
       let tl = gsap.timeline({
@@ -29,8 +32,8 @@ function Section6() {
           ease: "power1.inOut",
         })
           .to(section, {
-            autoAlpha: 1, // Keep it visible for LONGER (2 seconds)
-            duration: 3, // Increased visibility time
+            autoAlpha: 1, // Keep it visible for longer
+            duration: 3,
           })
           .to(section, {
             autoAlpha: 0, // Fade out before next
@@ -46,9 +49,12 @@ function Section6() {
   }, []);
 
   return (
-    <main className="bg-white w-100 overflow-hidden ">
+    <main className="bg-white w-100 overflow-hidden">
       <div className="container">
-        <section ref={sectionRef} className="d-flex min-vh-100 w-100 custom-flex">
+        <section
+          ref={sectionRef}
+          className="d-flex min-vh-100 w-100 custom-flex"
+        >
           <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center software-left">
             <img src="/assets/re-logo.png" alt="logo" />
             <div>
@@ -58,7 +64,12 @@ function Section6() {
             </div>
           </div>
           <div className="col-md-6 overflow-hidden position-relative">
-            <div ref={containerRef} className="d-flex renie-custom-software">
+            <div
+              ref={containerRef}
+              className={`renie-custom-software ${
+                isMobile ? "vertical-layout" : ""
+              }`}
+            >
               <div className="software-right-container">
                 <img src="/assets/renie-hub.png" alt="Renie Admin" />
                 <span>Renie Admin</span>
@@ -109,7 +120,7 @@ function Section6() {
           text-align: center;
           display: flex;
           flex-direction: column;
-          align-items: self-start;
+          align-items: center;
           justify-content: center;
           height: 650px;
           opacity: 0;
@@ -120,11 +131,25 @@ function Section6() {
           transition: opacity 0.3s ease-in-out;
         }
         .software-right-container:first-child {
-          opacity: 1 !important; /* Ensures the first section is always visible */
+          opacity: 1 !important;
         }
         .software-right-container img {
           max-width: 100%;
-          height: auto;
+          height: 45vh;
+        }
+
+        /* Mobile (Stacked) Layout */
+        @media (max-width: 768px) {
+          .renie-custom-software {
+            flex-direction: column;
+            gap: 20px;
+          }
+          .software-right-container {
+            position: static;
+            opacity: 1;
+            width: 100%;
+            height: auto;
+          }
         }
       `}</style>
     </main>

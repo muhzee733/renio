@@ -30,11 +30,10 @@
 .adsmetter .ads-card {
   padding: 80px 20px 80px 20px;
   color: white;
-  background-image: url('/assets/renieads/border.png');
+  background-image: url("/assets/renieads/border.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  
 }
 
 .renie-ads {
@@ -129,7 +128,7 @@
   .adsmetter h4 {
     font-size: 24px;
     width: 70%;
-}
+  }
   .ads-delivery h3 {
     font-size: 30px;
     line-height: 34px;
@@ -142,13 +141,13 @@
   }
   .adsmetter p {
     font-size: 15px;
-}
-.adsmetter .ads-card {
-  padding: 40px 20px;
-}
-.adsmetter {
-  padding: 80px 0;
-}
+  }
+  .adsmetter .ads-card {
+    padding: 40px 20px;
+  }
+  .adsmetter {
+    padding: 80px 0;
+  }
 }
 @media (max-width: 992px) {
   .renie-ads {
@@ -156,11 +155,11 @@
   }
   .adsmetter p {
     font-size: 14px;
-}
+  }
   .adsmetter h4 {
     font-size: 22px;
     width: 86%;
-}
+  }
   .renie-ads-wrapper {
     min-height: 85vh;
   }
@@ -185,7 +184,7 @@
   .renie-ads img {
     max-width: 50%;
   }
-  .JoinNow{
+  .JoinNow {
     text-align: center;
   }
   .renie-ads-wrapper {
@@ -216,19 +215,29 @@
   .renie-ads h2 {
     font-size: 22px;
   }
+  .adsmetter .ads-card {
+    padding: 80px 20px;
+}
+.JoinNow h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.JoinNow p {
+  margin-bottom: 10px !important;
+}
   .adsmetter h4 {
     font-size: 18px;
-    width: 50%;
+    width: 100%;
     margin: 0px auto 20px;
-}
-.adsmetter p {
-  font-size: 12px;
-  width: 70%;
-  line-height: 18px;
-}
-.adsmetter {
-  padding: 50px 0px;
-}
+  }
+  .adsmetter p {
+    font-size: 12px;
+    width: 100%;
+    line-height: 18px;
+  }
+  .adsmetter {
+    padding: 50px 0px;
+  }
   .renie-ads-wrapper {
     min-height: 100vh;
     background: none !important;
