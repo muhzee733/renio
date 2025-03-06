@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = ({ white }) => {
   const navRef = useRef(null);
   const menuImageRef = useRef(null);
   const logoRef = useRef(null);
+  const router = useRouter();
   const linksRef = useRef(null);
   const buttonRef = useRef(null);
   const tl = useRef(gsap.timeline({ paused: true }));
@@ -23,6 +25,9 @@ const Navbar = ({ white }) => {
     { name: "Ads that Matter", path: "/renieads" },
     { name: "Media Hub", path: "/mediahub" },
   ];
+  const handleClick = () => {
+    router.push("/contact");
+  };
 
   useEffect(() => {
     const updateScreenSize = () => {
@@ -87,7 +92,6 @@ const Navbar = ({ white }) => {
     };
   }, [isMobile]);
 
-
   return (
     <>
       <nav
@@ -118,7 +122,6 @@ const Navbar = ({ white }) => {
             alt="Menu Icon"
             width={40}
             height={40}
-            
             style={{
               display: isMobile ? "block" : "none",
               cursor: "pointer",
@@ -132,7 +135,7 @@ const Navbar = ({ white }) => {
             </li>
           ))}
         </ul>
-        <button ref={buttonRef} className="btn">
+        <button ref={buttonRef} className="btn" onClick={handleClick}>
           Connect with an expert
         </button>
         <Image
@@ -163,7 +166,7 @@ const Navbar = ({ white }) => {
             transform: "translate(-50%, -50%)",
           }}
         />
-          <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <Link href="/">
             <Image
               src="/assets/logo.png"

@@ -20,7 +20,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  width: 80%;
   margin: 0 auto;
 }
 .adsmetter img {
@@ -120,11 +119,18 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+@media (min-width: 1200px) and (max-width: 1440px){
+  .adsmetter p {
+    width: 80%;
+}
+}
 @media (max-width: 1200px) {
   .renie-ads h2 {
     font-size: 36px;
   }
+  .adsmetter p {
+    width: 80%;
+}
   .adsmetter h4 {
     font-size: 24px;
     width: 70%;
@@ -216,7 +222,7 @@
     font-size: 22px;
   }
   .adsmetter .ads-card {
-    padding: 80px 20px;
+    padding: 80px 45px;
 }
 .JoinNow h3 {
   font-size: 22px;

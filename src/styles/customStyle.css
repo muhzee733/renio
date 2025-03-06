@@ -828,6 +828,9 @@ footer {
     top: 14%;
     left: 0%;
   }
+  .adsmetter p {
+    width: 60%;
+}
   .new-section .swiper-wrapper .swiper-slide {
     height: 420px;
   }
