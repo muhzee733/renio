@@ -1,3 +1,4 @@
+import Meta from "@/components/Meta";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import Navbar from "@/components/Navbar/Navbar";
