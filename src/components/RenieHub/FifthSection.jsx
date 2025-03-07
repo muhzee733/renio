@@ -53,7 +53,7 @@ const FaqAccordion = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <h4>{faq.question}</h4>
-                <span><img src="/assets/reniehub/down-arrow.svg" alt="faqs"/></span>
+                <span><img src="/assets/reniehub/down-arrow.webp" alt="faqs"/></span>
               </div>
               <div
                 className={`accordion-body ${
