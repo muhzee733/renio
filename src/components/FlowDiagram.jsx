@@ -19,19 +19,19 @@ const FlowDiagram = ({
     {
       step: 0,
       label: "Waste Collection",
-      image: "/assets/Waste_collection.svg",
+      image: "/assets/Waste_collection.webp",
     },
     {
       step: 0.35,
       label: "Data Extraction",
-      image: "/assets/Data_monetization.svg",
+      image: "/assets/Data_monetization.webp",
     },
     {
       step: 0.65,
       label: "Data Monetization",
-      image: "/assets/Money.svg",
+      image: "/assets/Money.webp",
     },
-    { step: 1, label: "You Payout", image: "/assets/Money.svg" },
+    { step: 1, label: "You Payout", image: "/assets/Money.webp" },
   ];
 
   useEffect(() => {
@@ -91,7 +91,10 @@ const FlowDiagram = ({
 
   return (
     <div>
-      <div className="custom-diagram" style={{ position: "relative", width: "600px", margin: "auto" }}>
+      <div
+        className="custom-diagram"
+        style={{ position: "relative", width: "600px", margin: "auto" }}
+      >
         <svg
           height="auto"
           viewBox="-10 -10 479 380"

@@ -59,7 +59,7 @@ const ProductRenie = () => {
             </div>
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
-                <img src="/assets/icon-6.webp" alt="icon-1" />
+                <img src="/assets/new-icon.png" alt="icon-1" />
                 <div className="product-box">
                   <h3>Material Composition: </h3>
                   <p>MDF-PETG-ABS</p>
