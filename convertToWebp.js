@@ -2,8 +2,8 @@ const sharp = require("sharp");
 const fs = require("fs-extra");
 const path = require("path");
 
-const inputFolder = "./public/assets";
-const outputFolder = "./public/images-webp"; 
+const inputFolder = "./public/assets/reniehub";
+const outputFolder = "./public/reniehub"; 
 
 fs.ensureDirSync(outputFolder);
 

@@ -21,7 +21,7 @@ const Banner = ({ canvasRef }) => {
                       Accurate <br />
                       verification
                     </h6>
-                    <img src="/assets/double-check.svg" alt="verification" />
+                    <img src="/assets/double-check.webp" alt="verification" />
                   </div>
                   <div className="d-flex align-items-center gap-3">
                     <h6>
@@ -29,7 +29,7 @@ const Banner = ({ canvasRef }) => {
                       <br />
                       detection
                     </h6>
-                    <img src="/assets/double-check-1.svg" alt="fraud detection" />
+                    <img src="/assets/double-check-1.webp" alt="fraud detection" />
                   </div>
                   <div className="d-flex align-items-center gap-3">
                     <h6>
@@ -37,7 +37,7 @@ const Banner = ({ canvasRef }) => {
                       <br />
                       collection
                     </h6>
-                    <img src="/assets/double-check-3.svg" alt="data collection" />
+                    <img src="/assets/double-check-3.webp" alt="data collection" />
                   </div>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const Banner = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-end">
               <img
-                src="/assets/renieadmin/banner-image.webp"
+                src="/assets/renieadmin/banner-image.png"
                 alt="Admin Panel"
                 className="img-fluid renieadmin-image"
               />

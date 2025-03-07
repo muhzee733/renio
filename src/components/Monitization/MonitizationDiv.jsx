@@ -20,7 +20,7 @@ const MonitizationDiv = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div className="col-lg-6">
               <div className="text-center">
                 <video width="100%" height="30vh" loop muted autoPlay>
                   <source src="/assets/money1.mp4" type="video/mp4" />
