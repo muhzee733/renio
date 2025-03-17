@@ -9,6 +9,7 @@ import Section5 from "@/components/Section5";
 import Section6 from "@/components/Section6";
 import RenieBin from "@/components/RenieBin";
 import Meta from "@/components/Meta";
+import AnimatedSection from "@/components/RenieApp/AnimatedSection";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
       <section className="renie-software-section">
         <Section6 />
       </section>
+      <AnimatedSection />
 
       <section className="new-section">
         <RenieBin />
