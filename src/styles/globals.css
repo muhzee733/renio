@@ -84,6 +84,11 @@ ul {
   justify-content: space-between;
   gap: 15px; /* Add a gap between text and button */
 }
+.navbar-links li.actives a {
+  color: #e31662;
+  font-weight: bold;
+  border-bottom: 2px solid #e31662;
+}
 
 .mini-footer-wrapper p {
   font-size: 22px;
@@ -138,16 +143,14 @@ ul {
 .form-section {
   padding: 150px 30%;
 }
-.form-section input{
+.form-section input {
   border-radius: 3px !important;
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
-.form-section .form-select{
+.form-section .form-select {
   border-radius: 3px !important;
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
-
-
 
 /* For mobile (below 768px) */
 @media (max-width: 768px) {
@@ -198,5 +201,5 @@ ul {
   .contact-banner {
     min-height: 30vh;
     padding-top: 50px !important;
-}
+  }
 }

@@ -92,10 +92,46 @@ const Navbar = ({ white }) => {
     };
   }, [isMobile]);
 
+  const handleMouseEnter = () => {
+    if (window.scrollY > 1 || isMobile) {
+      gsap.to(navRef.current, {
+        width: "100%",
+        height: "70px",
+        borderRadius: "8px",
+        duration: 0.6,
+      });
+      gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
+        opacity: 1,
+        display: "flex",
+        duration: 0.6,
+      });
+      gsap.to(menuImageRef.current, { opacity: 0, duration: 0.8 });
+    }
+  };
+  const handleMouseLeave = () => {
+    if (window.scrollY > 1 || isMobile) {
+      gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
+        opacity: 0,
+        display: "none",
+        duration: 0.6,
+      });
+      gsap.to(navRef.current, {
+        width: "78px",
+        height: "65px",
+        borderRadius: "8px",
+        duration: 0.6,
+      });
+      gsap.to(menuImageRef.current, { opacity: 1, duration: 0.6 });
+    }
+  };
+
+
   return (
     <>
       <nav
         ref={navRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className="main-navbar container"
         style={{
           display: "flex !important",
@@ -130,12 +166,15 @@ const Navbar = ({ white }) => {
         </Link>
         <ul ref={linksRef} className="d-flex gap-3 navbar-links flex-nowrap">
           {navLinks.map((link, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className={router.pathname === link.path ? "actives" : ""}
+            >
               <Link href={link.path}>{link.name}</Link>
             </li>
           ))}
         </ul>
-        <button ref={buttonRef} className="btn" onClick={handleClick}>
+        <button ref={buttonRef} className="btn" onClick={handleClick} style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
           Connect with an expert
         </button>
         <Image
