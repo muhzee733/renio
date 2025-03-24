@@ -3,8 +3,8 @@ import React from "react";
 const Banner = () => {
   return (
     <div className="mediahub">
-      <div class="container">
-        <h1>Renie Media Hub</h1>
+      <div class="container-xl">
+        <h1>Media Hub</h1>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const MediaHub = () => {
         <title>Renie Media Hub</title>
       </Head>
 
-      <div className="container mt-5 bg-white">
+      <div className="container-xl mt-5 bg-white">
         {/* Blog Grid Layout */}
         <div className="Media-Hub grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {blogData.map((blog) => (
@@ -32,7 +32,7 @@ const MediaHub = () => {
               <div className="p-6 blog-data">
                 {/* Blog Title */}
                 <Link href={`/mediahub/${blog.slug}`}>
-                  <h2 className="text-xl font-semibold text-gray-800">
+                  <h2 className="font-semibold text-gray-800">
                     {blog.title}
                   </h2>
                 </Link>

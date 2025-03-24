@@ -23,7 +23,7 @@ export default function BlogDetail() {
       <title>{blog.title}</title>
     </Head>
       <Navbar />
-      <div className="container mx-auto p-6">
+      <div className="container-xl mx-auto">
         {/* Banner Section */}
         <div className="blog-banner">
           <h1 className="text-4xl font-bold">{blog.title}</h1>
