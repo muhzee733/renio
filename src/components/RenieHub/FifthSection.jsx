@@ -42,7 +42,7 @@ const FaqAccordion = () => {
 
   return (
     <section className="faqs">
-      <div className="container">
+      <div className="container-xl">
         <h2 className="text-center mb-3">FAQ</h2>
         <h3 className="text-center">Answers</h3>
         <div className="accordion mt-5">

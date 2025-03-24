@@ -51,7 +51,7 @@ const WasteManagement = () => {
 
   return (
     <section className={`text-center py-5 management`}>
-      <div className="container">
+      <div className="container-xl">
         <h2 className="fw-bold">
           Unlock the Full Potential of Your Waste Management with Renie Hub
         </h2>
@@ -60,7 +60,7 @@ const WasteManagement = () => {
           change.
         </p>
 
-        <div className="row mt-4">
+        <div className="row mt-5 mb-5">
           {features.map((feature, index) => (
             <div key={index} className="col-md-3 col-sm-6 p-2">
               <div className="car h-100 shadow-sm p-4 bg-white rounded-4">
@@ -74,7 +74,7 @@ const WasteManagement = () => {
                 <h5 className="fw-bold text-left managment-title">
                   {feature.title}
                 </h5>
-                <p className="text-muted text-left">{feature.description}</p>
+                <p className="text-left">{feature.description}</p>
               </div>
             </div>
           ))}

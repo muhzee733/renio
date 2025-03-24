@@ -5,7 +5,7 @@ const ThirdSection = () => {
     <>
       <div className="control">
         <div class="controll-wrapper">
-          <div class="container">
+          <div class="container-xl">
             <div class="row">
               <div class="col-lg-12">
                 <div className="control-upper-section">

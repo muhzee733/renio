@@ -6,7 +6,7 @@ const Banner = () => {
     <>
       <div class="reniehub position-relative">
         <div class="reniehub-wrapper">
-          <div class="container">
+          <div class="container-xl">
             <div class="row">
               <div class="col-lg-12">
                 <div className="renie-box-wrapper position-relative">
@@ -19,15 +19,15 @@ const Banner = () => {
                   </div>
                   <div className="d-flex justify-content-center">
                     <img
-                      src="/assets/reniehub/reniehub-banner.webp"
+                      src="/assets/hub.webp"
                       alt="renie-hub"
                       className="mb-5"
                     />
-                    <img
+                    {/* <img
                       src="/assets/reniehub/renie-mobile.webp"
                       alt="renie-hub"
                       className="renie-mobile-banner"
-                    />
+                    /> */}
                   </div>
                 </div>
                 <BrandSlider />

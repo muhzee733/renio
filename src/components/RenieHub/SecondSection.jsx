@@ -5,7 +5,7 @@ const SecondSection = () => {
     <>
       <div className="renie-waste">
         <div class="renie-waste-wrapper">
-          <div class="container">
+          <div class="container-xl">
             <div class="row">
               <div class="col-lg-12">
                 <div className="renie-waste-box">

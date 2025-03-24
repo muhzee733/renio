@@ -11,7 +11,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 45%;
+  width: 65%;
   margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -20,19 +20,23 @@
   background-color: white;
 }
 .renie-box-wrapper p {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 24px;
+  line-height: 36px;
   color: black;
   font-weight: 400;
   text-align: center;
-  width: 40%;
+  width: 65%;
   margin: 0 auto;
+}
+.reniehub .brand-slider-container {
+  position: absolute;
+  bottom: 3%;
 }
 
 .reniehub-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 5%;
   background-image: url("/assets/footer.webp");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -59,11 +63,11 @@
   margin-bottom: 8%;
 }
 .renie-waste-box h2 {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 60px;
+  line-height: 76px;
   font-weight: 700;
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   color: black;
 }
@@ -73,9 +77,9 @@
   padding: 0px 100px;
 }
 .waste-div p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .waste-div img {
   margin: 0 auto;
@@ -96,7 +100,7 @@
   padding: 120px 0px;
 }
 .control-upper-section h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   text-align: center;
   color: white;
@@ -110,7 +114,7 @@
   font-weight: 300;
 }
 .control-upper-section {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -144,10 +148,10 @@
   padding-bottom: 15px;
 }
 .management-test {
-  font-size: 14px;
+  font-size: 24px;
   color: white;
   font-weight: 300;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
 }
 .managment-title {
@@ -160,11 +164,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .managemnt-paragraph {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 .car p {
@@ -201,7 +206,7 @@
   text-align: center;
 }
 .designed h2 {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 76px;
   color: white;
   text-align: center;
@@ -242,8 +247,9 @@
   border-bottom: 1px solid #000000;
 }
 .accordion-header h4 {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   color: #000000;
+  font-size: 16px;
 }
 
 .accordion-body {
@@ -260,15 +266,15 @@
 @media (min-width: 1441px) {
   .reniehub-wrapper {
     height: 100vh;
-    background-size: 100% 60vh;
+    background-size: 100% 50vh;
   }
   .renie-box-wrapper h1 {
-    font-size: 52px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 52px;
   }
   .control-below-section h2 {
-    font-size: 46px;
+    font-size: 40px;
     color: #fff;
     font-weight: 600;
     line-height: 54px;
@@ -277,9 +283,9 @@
     padding: 200px 0px !important;
   }
   .management h2 {
-    font-size: 46px;
-    line-height: 56px;
-    width: 58%;
+    font-size: 60px;
+    line-height: 70px;
+    width: 90%;
   }
   .designed h2 {
     font-weight: 800;
