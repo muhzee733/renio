@@ -4,7 +4,7 @@ const AnimatedSection = () => {
   return (
     <div className="animatedsection">
       <div class="animated-wrapper">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
             <div class="col-lg-12">
               <div class="animated-h2">

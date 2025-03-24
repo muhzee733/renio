@@ -18,7 +18,11 @@ const blogData = [
   },
   {
     img: "/assets/blog-2.webp",
-    h3: "Retail and Malls",
+    h3: (
+      <>
+        Retail and <br /> Malls
+      </>
+    ),
     p: "Renie enhances shopping experience by creating clean and more rewarding space.",
   },
   {
@@ -30,12 +34,14 @@ const blogData = [
 
 export default function App() {
   return (
-    <div className="container">
+    <div className="container-xl">
       <div className="row">
         <div className="col-lg-12">
           <div className="renie-bin-wrapper">
-            <h2>Renie Bins are Everywhere</h2>
-            <p className="desktop-paragraph">Transforming Waste for Every Space</p>
+            <h2>Renie bins are everywhere</h2>
+            <p className="desktop-paragraph">
+              Transforming waste for every space
+            </p>
             <div id="derktop-version">
               <div className="blogs">
                 <Swiper
@@ -78,7 +84,6 @@ export default function App() {
                       p={blogData[1].p}
                     />
                   </SwiperSlide>
-
                 </Swiper>
               </div>
             </div>

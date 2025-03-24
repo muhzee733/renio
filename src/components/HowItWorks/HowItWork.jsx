@@ -14,7 +14,7 @@ const HowItWork = () => {
   };
   return (
     <div className="how-it-work-main">
-      <div className="container">
+      <div className="container-xl">
         <div className="row">
           <div className="col-lg-6 col-md-12 position-relative">
             <h2>HOW IT WORKS</h2>

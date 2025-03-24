@@ -79,7 +79,7 @@ p {
 
 .main-navbar ul li {
   font-family: var(--fontFamilyPoppins);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   transition: 0.3s all ease-in-out;
   color: var(--secondary);
@@ -97,19 +97,19 @@ p {
 .brand-slider-container h3 {
   font-family: var(--fontFamilyPoppins);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--secondary);
   margin-bottom: 30px;
 }
 .brand-slider-container {
   position: absolute;
-  bottom: 0%;
+  bottom: -2%;
 }
 .brand-slider img {
   max-width: 80%;
 }
 .brand-slider {
-  max-width: 72%;
+  max-width: 73%;
 }
 .software {
   height: 100vh;
@@ -289,7 +289,7 @@ footer {
 .banner-svg {
   position: absolute;
   bottom: 7%;
-  left: 0%;
+  left: 15%;
   scale: 1.8;
   height: 30%;
 }
@@ -475,7 +475,7 @@ footer {
 
 .bootom-footer p {
   color: #373743;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .blogs .swiper-slide {
@@ -517,7 +517,7 @@ footer {
 }
 
 .renie-bin-wrapper h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
   text-align: center;
   color: white;
@@ -606,7 +606,7 @@ footer {
   top: 16%;
 }
 .footer-text {
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 10px;
   font-weight: 500;
   color: #373743;
@@ -617,12 +617,12 @@ footer {
   cursor: pointer;
 }
 .userfull-links h6 {
-  font-size: 26px;
+  font-size: 24px;
   color: #373743;
   margin-bottom: 30px;
 }
 .userfull-links ul li {
-  font-size: 18px;
+  font-size: 16px;
   color: #373743;
   font-weight: 400;
   margin-bottom: 15px;
@@ -718,7 +718,7 @@ footer {
 }
 .software-right-container p {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -1427,7 +1427,7 @@ footer {
   }
   .banner-svg {
     bottom: 0%;
-    left: -17%;
+    left: 4%;
     scale: 1;
     height: 58%;
   }

@@ -132,7 +132,7 @@ const Navbar = ({ white }) => {
         ref={navRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="main-navbar container"
+        className="main-navbar container-xl"
         style={{
           display: "flex !important",
           backgroundColor: white ? "white" : "",
@@ -164,7 +164,7 @@ const Navbar = ({ white }) => {
             }}
           />
         </Link>
-        <ul ref={linksRef} className="d-flex gap-3 navbar-links flex-nowrap">
+        <ul ref={linksRef} className="d-flex gap-4 navbar-links flex-nowrap">
           {navLinks.map((link, index) => (
             <li
               key={index}

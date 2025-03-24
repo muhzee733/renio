@@ -25,7 +25,7 @@ const Slider = ({ title1, title2, img, img2, h6, p, customClass }) => {
         className={`main-slider`}
         style={{ background: `#${customClass}` }}
       >
-        <div className="container">
+        <div className="container-xl">
           <div className="row align-items-center">
             <div className="col-lg-4 col-md-12 col-sm-12">
               <h2>{title1}</h2>

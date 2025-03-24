@@ -24,16 +24,16 @@
   font-weight: 400;
 }
 .main-slider p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: white;
 }
 .main-slider h6 {
-  font-size: 20px;
+  font-size: 28px;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
-  line-height: 28px;
+  line-height: 36px;
 }
 .swiper-button-next {
   transform: translateX(-50%);

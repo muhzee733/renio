@@ -50,7 +50,7 @@ function Section6() {
 
   return (
     <main className="bg-white w-100 overflow-hidden">
-      <div className="container">
+      <div className="container-xl">
         <section
           ref={sectionRef}
           className="d-flex min-vh-100 w-100 custom-flex"
@@ -144,13 +144,19 @@ function Section6() {
         @media (max-width: 768px) {
           .renie-custom-software {
             flex-direction: column;
-            gap: 20px;
+            gap: 50px;
           }
           .software-right-container {
             position: static;
             opacity: 1;
             width: 100%;
             height: auto;
+          }
+          .renie-custom-software {
+            height: unset;
+          }
+          .software-right-container {
+            transform: translateY(0%);
           }
         }
       `}</style>

@@ -86,7 +86,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
           : "slide-1"
       }
     >
-      <div className="container">
+      <div className="container-xl">
         <div className="row" style={{ alignItems: "center" }}>
           <div className="col-lg-6 col-md-6">
             <h2 className="text-center" id="mobile-version">
