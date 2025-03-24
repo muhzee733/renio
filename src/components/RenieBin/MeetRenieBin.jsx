@@ -21,7 +21,7 @@ const MeetRenieBin = () => {
 
   return (
     <div className="MeetRenieBin">
-      <div className="container">
+      <div className="container-xl">
         <div className="row">
           <div className="col-lg-12">
             <div className="meet-main-banner">
@@ -67,7 +67,7 @@ const MeetRenieBin = () => {
               </Swiper>
             </div>
             <div className="reniebin-paragraph">
-              <p>
+              <p className="renie-bin-paragraph">
                 Renie Bins are equipped with special sensors that mimic a
                 vision-type experience, eliminating the need for expensive
                 processing power. This cutting-edge technology ensures the bins
@@ -96,8 +96,16 @@ const MeetRenieBin = () => {
                   <p>Tetra Pak</p>
                 </div>
                 <div>
-                  <img src="/assets/Vector-6.webp" />
-                  <p>Glass</p>
+                  <img src="/assets/Group-icon-1.png" />
+                  <p>Vape</p>
+                </div>
+                <div>
+                  <img src="/assets/Group-icon-2.png" />
+                  <p>Battery</p>
+                </div>
+                <div>
+                  <img src="/assets/Group-icon-3.png" />
+                  <p>E-Waste</p>
                 </div>
               </div>
             </div>

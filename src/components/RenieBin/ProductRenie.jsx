@@ -4,7 +4,7 @@ const ProductRenie = () => {
   return (
     <div className="ProductRenie">
       <div className="power-wrapper  padding-top-100">
-        <div className="container">
+        <div className="container-xl">
           <div className="row">
             <h2>Product Specifications</h2>
           </div>
@@ -33,7 +33,7 @@ const ProductRenie = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4">
+            <div className="col-lg-4 col-md-4 mb-5">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-3.webp" alt="icon-1" />
                 <div className="product-box">

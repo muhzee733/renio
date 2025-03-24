@@ -8,7 +8,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
   const canvasRef = useRef(null);
   const h2Ref = useRef(null);
   const imagesRef = useRef([]);
-  const animationRef = useRef({ frame: 0 });
+  const animationRef = useRef({ frame: 20 });
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -68,7 +68,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
     <>
       <div className="PowerRenie ground-section">
         <div className="power-wrapper">
-          <div className="container">
+          <div className="container-xl">
             <div className="row">
               <div className="col-lg-12">
                 <div className="power">

@@ -4,7 +4,7 @@ const Banner = ({ canvasRef }) => {
   return (
     <div className="reniebin">
       <div className="reniebin-wrapper">
-        <div className="container">
+        <div className="container-xl">
           <div className="row">
             <div className="col-lg-12">
               <div className="renie-main-content">

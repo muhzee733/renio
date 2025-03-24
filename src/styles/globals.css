@@ -85,7 +85,7 @@ ul {
   gap: 15px; /* Add a gap between text and button */
 }
 .navbar-links li.actives a {
-  color: #e31662;
+  color: #e31662 !important;
   font-weight: bold;
   border-bottom: 2px solid #e31662;
 }

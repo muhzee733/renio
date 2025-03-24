@@ -42,7 +42,7 @@ const RenieBin = () => {
 
     // Function to set canvas size dynamically
     const setCanvasSize = () => {
-      const aspectRatio = 1158 / 770;
+      const aspectRatio = 1158 / 651;
       let width = isMobile ? window.innerWidth * 0.9 : 1158;
       let height = width / aspectRatio;
 

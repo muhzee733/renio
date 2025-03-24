@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 const RenieSection = () => {
   return (
     <div className="RenieSection2">
-      <div className="RenieSection2-container">
+      <div className="RenieSection2-container"> 
         <div className="banner-svg-bin">
           <iframe
             src="/assets/Website-Wave.svg"
