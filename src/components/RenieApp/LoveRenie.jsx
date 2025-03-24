@@ -18,7 +18,7 @@ const LoveRenie = () => {
 
   return (
     <div className="renie-love">
-      <div className="container">
+      <div className="container-xl">
         <div className="row text-center">
           <div className="col-12">
             <h2>

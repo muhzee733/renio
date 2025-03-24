@@ -4,7 +4,7 @@ const MonitizationDiv = () => {
   return (
     <div className="monitization-section">
       <div className="moni-wrapper">
-        <div className="container">
+        <div className="container-xl">
           <div className="row">
             <div className="col-lg-6 monitization-custom-data">
               <div>

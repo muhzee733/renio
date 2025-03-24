@@ -63,7 +63,7 @@ function Section6() {
 
   return (
     <main className="w-100 reee">
-      <div className="container">
+      <div className="container-xl">
         <section
           ref={sectionRef}
           className="d-flex min-vh-100 w-100 custom-renie-card"

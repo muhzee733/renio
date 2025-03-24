@@ -4,7 +4,7 @@ const RenieNexus = () => {
   return (
     <div className="renie-nexus">
       <div class="renie-nexus-wrapper">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
             <div class="col-lg-6">
               <img src="/assets/main-hand-mobile.webp" alt="renie-app" />

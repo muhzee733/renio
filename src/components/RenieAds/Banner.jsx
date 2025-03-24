@@ -4,9 +4,9 @@ const AdsSection = () => {
   return (
     <section className="renie-ads">
       <div class="renie-ads-wrapper">
-        <div className="container">
+        <div className="container-xl">
           <div class="row">
-            <div className="col-lg-6 custom-padding ">
+            <div className="col-lg-7 custom-padding ">
               <div>
                 <h2 className="fw-bold">
                   Ads That Matter <br /> <span>Redefining Advertising</span>
@@ -26,7 +26,7 @@ const AdsSection = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 d-flex justify-content-center renie-ads-img">
+            <div className="col-lg-5 d-flex justify-content-center renie-ads-img">
               <img
                 src="/assets/renieads/renie-phone.webp"
                 alt="Mobile UI"

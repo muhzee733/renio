@@ -4,7 +4,7 @@ const FutureData = () => {
   return (
     <div className="futuredata">
       <div className="futuredata-wrapper">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
             <div class="col-lg-6">
               <h2>The Future of Data Monetization is Here</h2>

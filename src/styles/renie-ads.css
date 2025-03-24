@@ -3,13 +3,14 @@
 }
 .ads-delivery {
   background-color: white;
+  padding: 100px 0px;
 }
 .adsmetter {
   padding: 150px 0px;
 }
 .adsmetter h4 {
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   width: 60%;
   margin: 0 auto;
   font-weight: 600;
@@ -53,7 +54,7 @@
 }
 
 .renie-ads h2 {
-  font-size: 50px;
+  font-size: 60px;
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -64,16 +65,17 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
-.custom-padding {
+/* .custom-padding {
   padding-top: 10%;
-}
+} */
 .renie-ads-img img {
-  max-width: 90%;
+  max-width: 100%;
+  scale: 1.4;
 }
 .custom-ads-text {
   position: absolute;
   bottom: 11%;
-  width: 65%;
+  width: 50%;
 }
 .ads-delivery h3 {
   font-size: 40px;

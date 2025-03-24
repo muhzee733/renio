@@ -27,7 +27,7 @@ const DataMonetizationSection = () => {
 
   return (
     <div className="why-choose">
-      <section className="container my-5">
+      <section className="container-xl my-5">
         <div className="row">
           <div className="col-lg-4 col-md-12 p-0">
             <h2>

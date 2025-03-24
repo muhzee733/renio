@@ -32,7 +32,7 @@ const sections = [
 function App() {
   return (
     <section className="ads-delivery">
-      <div className="container">
+      <div className="container-xl">
         {sections.map((section, index) => (
           <div key={index} className="row align-items-center my-4">
             {index === 1 || index === 3 ? (

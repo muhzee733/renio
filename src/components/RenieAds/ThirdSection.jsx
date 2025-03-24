@@ -5,7 +5,7 @@ import React from "react";
 export default function AdsSection() {
   return (
     <section className="adsmetter" style={sectionStyle}>
-      <div className="container">
+      <div className="container-xl">
         <div className="row justify-content-center">
           <div className="col-md-6 d-flex">
             <div

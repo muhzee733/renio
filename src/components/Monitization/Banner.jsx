@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div className="data-banner">
-      <div class="container">
+      <div class="container-xl">
         <div class="row">
           <div class="col-lg-6 col-md-6">
             <img src="/assets/time.webp" alt="time" />

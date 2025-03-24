@@ -3,7 +3,7 @@ import React from "react";
 const JoinNow = () => {
   return (
     <div className="JoinNow">
-      <div class="container">
+      <div class="container-xl">
         <div class="row">
           <div class="col-lg-8">
             <h3>Are you ready to turn waste into wealth?</h3>

@@ -4,7 +4,7 @@
   width: 100%;
 }
 .animated-h2 {
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 45px;
@@ -16,7 +16,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -36,12 +36,12 @@
   left: 0;
 }
 .custom-svg-heading {
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   text-align: left;
-  padding: 0px 40px;
-  line-height: 24px;
-  font-weight: 600;
+  padding: 0px 20px;
+  line-height: 28px;
+  font-weight: 500;
 }
 .main-renie-banner img {
   max-width: 100%;
@@ -67,7 +67,7 @@
   width: 70%;
 }
 .main-renie-nexus p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
   margin: 10px 0px;
@@ -91,7 +91,7 @@
 }
 .renie-love h2 {
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
   font-weight: 600;
 }
@@ -110,7 +110,6 @@
   background-size: cover;
 }
 .easystep-wrapper {
-  height: 100vh;
   padding: 120px 10px;
   display: flex;
   align-items: start;
@@ -128,7 +127,7 @@
   font-weight: 800;
 }
 .left-track p {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   width: 60%;
 }
@@ -156,7 +155,7 @@
   top: 25rem;
 }
 .scan-title-2 {
-  top: 22rem !important;
+  top: 30rem !important;
   left: 25%;
 }
 .custom-scan-height {
@@ -179,7 +178,7 @@
 }
 .green {
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,15 +186,15 @@
 .green h2 {
   color: white;
   text-align: center;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 800;
-  line-height: 110px;
+  line-height: 70px;
   margin-bottom: 10px;
 }
 .green p {
   color: white;
   text-align: center;
-  width: 80%;
+  width: 64%;
   margin: 0 auto;
 }
 .green button {
@@ -221,11 +220,12 @@
 }
 @media (min-width: 1440px){
   .main-renie-banner {
-    top: 5%;
+    top: 4%;
 }
 .main-renie-banner h1{
   font-size: 60px;
   width: 50%;
+  margin-top: 30px;
 }
 }
 

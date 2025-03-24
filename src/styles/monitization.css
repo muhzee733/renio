@@ -119,17 +119,18 @@
 }
 .JoinNow h3 {
   color: white;
-  font-size: 28px;
+  font-size: 40px;
+  width: 70%;
 }
 .JoinNow p {
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   font-weight: 300;
 }
 .JoinNow button {
   background-color: #e31662;
   color: white;
-  padding: 10px 80px;
+  padding: 16px 80px;
   border-radius: 30px;
   font-size: 16px;
 }
@@ -147,7 +148,7 @@
   display: flex;
   position: relative;
 }
-.data-banner .container{
+.data-banner .container-xl{
   display: flex;
   align-items: center
 }

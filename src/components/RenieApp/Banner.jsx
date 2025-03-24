@@ -90,7 +90,7 @@ const Banner = () => {
           ></iframe>
         </div>
         
-        <div className="container">
+        <div className="container-lg">
           <div className="main-renie-banner">
             <img src="/assets/app-1.webp" alt="renie app" />
             <h1>Renie Nexus – Smart Waste, Smarter World</h1>
