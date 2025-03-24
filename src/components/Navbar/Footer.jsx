@@ -30,7 +30,10 @@ const Footer = () => {
                     </div>
                     <p className="footer-text">
                       by submitting this form, you agree to our{" "}
-                      <span className="text-bold">privacy policy</span>.
+                      <Link href={'/privacypolicy'}>
+                      <span className="text-bold">privacy policy</span>
+                      </Link>
+                      .
                     </p>
                   </div>
                 </div>
@@ -95,7 +98,7 @@ const Footer = () => {
                           
                           <Link href="https://www.youtube.com/@wearerenie">
                           <li className="d-flex gap-2">
-                            <img src="/assets/youtube.svg" />
+                            <img src="/assets/youtube.webp" />
                             <span>Youtube</span>
                           </li></Link>
                          

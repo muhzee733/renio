@@ -19,13 +19,13 @@ function Section6() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "+=500%", // Adjust based on section height
+          end: "+=300%", // Adjust based on section height
           scrub: 1,
           pin: true,
         },
       });
 
-      sections.forEach((section, index) => {
+      sections.forEach((section) => {
         tl.to(section, {
           autoAlpha: 1, // Fade in
           duration: 0.5,
@@ -33,7 +33,7 @@ function Section6() {
         })
           .to(section, {
             autoAlpha: 1, // Keep it visible for longer
-            duration: 3,
+            duration: 1,
           })
           .to(section, {
             autoAlpha: 0, // Fade out before next
@@ -71,7 +71,7 @@ function Section6() {
               }`}
             >
               <div className="software-right-container">
-                <img src="/assets/renie-hub.webp" alt="Renie Admin" />
+                <img src="/assets/admin.webp" alt="Renie Admin" />
                 <span>Renie Admin</span>
                 <p>
                   Renie Admin centralizes all management tasks, providing
@@ -79,7 +79,7 @@ function Section6() {
                 </p>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-2.webp" alt="Renie Hub" />
+                <img src="/assets/hub.webp" alt="Renie Hub" />
                 <span>Renie Hub</span>
                 <p>
                   Our innovative platform makes it possible to generate a
@@ -95,7 +95,7 @@ function Section6() {
                 </p>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-4.webp" alt="Renie Ads" />
+                <img src="/assets/ads.webp" alt="Renie Ads" />
                 <span>Renie Ads</span>
                 <p>
                   Our AI platform uses Renie Bin data to deliver targeted ads,
@@ -113,6 +113,8 @@ function Section6() {
           width: 100%;
           gap: 40px;
           position: relative;
+          align-items: center;
+          height: 100vh;
         }
         .software-right-container {
           flex: 1;
@@ -122,11 +124,12 @@ function Section6() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          height: 650px;
+          height: 750px;
           opacity: 0;
           position: absolute;
-          top: 120px;
+          top: 50%;
           left: 0;
+          transform: translateY(-50%);
           width: 100%;
           transition: opacity 0.3s ease-in-out;
         }
@@ -135,7 +138,6 @@ function Section6() {
         }
         .software-right-container img {
           max-width: 100%;
-          height: 45vh;
         }
 
         /* Mobile (Stacked) Layout */

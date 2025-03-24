@@ -7,19 +7,43 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
   const iconRef = useRef(null);
   function Model() {
     const { scene } = useGLTF("/assets/test.glb");
-    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
+    return (
+      <primitive
+        object={scene}
+        position={[-7, 0, 0]}
+        rotation={[0, (Math.PI / 180) * 50, 0]}
+      />
+    );
   }
   function ModelTwo() {
     const { scene } = useGLTF("/assets/two-way.glb");
-    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
+    return (
+      <primitive
+        object={scene}
+        position={[-7, 0, 0]}
+        rotation={[0, (Math.PI / 180) * 50, 0]}
+      />
+    );
   }
   function ModelThree() {
     const { scene } = useGLTF("/assets/threee-way.glb");
-    return <primitive object={scene} position={[-7, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
+    return (
+      <primitive
+        object={scene}
+        position={[-7, 0, 0]}
+        rotation={[0, (Math.PI / 180) * 50, 0]}
+      />
+    );
   }
   function ModelFour() {
     const { scene } = useGLTF("/assets/four-way.glb");
-    return <primitive object={scene} position={[-3, 0, 0]} rotation={[0, Math.PI / 180 * 50, 0]}/>;
+    return (
+      <primitive
+        object={scene}
+        position={[-3, 0, 0]}
+        rotation={[0, (Math.PI / 180) * 50, 0]}
+      />
+    );
   }
 
   const handleMouseEnter = (e) => {
@@ -104,7 +128,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
               >
                 {title1 === "RENIE ONE" ? (
                   <>
-                    <Canvas style={{height: "500px", width: "500px"}}>
+                    <Canvas style={{ height: "500px", width: "500px" }}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[1, 1, 1]} intensity={1.5} />
                       <Model />
@@ -120,14 +144,14 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 )}
                 {title1 === "RENIE Two" ? (
                   <>
-                    <Canvas style={{height: "500px", width: "500px"}}>
+                    <Canvas style={{ height: "500px", width: "500px" }}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={1.5} />
                       <ModelTwo />
                       <OrbitControls
-                         enableZoom={false}
-                         minDistance={30}
-                         maxDistance={3}
+                        enableZoom={false}
+                        minDistance={30}
+                        maxDistance={3}
                       />
                     </Canvas>
                   </>
@@ -136,7 +160,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 )}
                 {title1 === "RENIE Maxi" ? (
                   <>
-                    <Canvas style={{height: "500px", width: "500px"}}>
+                    <Canvas style={{ height: "500px", width: "500px" }}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={1.5} />
                       <ModelThree />
@@ -152,7 +176,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 )}
                 {title1 === "RENIE Mini" ? (
                   <>
-                    <Canvas style={{height: "500px", width: "500px"}}>
+                    <Canvas style={{ height: "500px", width: "500px" }}>
                       <ambientLight intensity={1.2} />
                       <directionalLight position={[2, 2, 2]} intensity={1.5} />
                       <ModelFour />
@@ -201,35 +225,55 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 Renie Mini
               </button>
             </div>
-            <div className="renio-grid" id="derktop-version">
-              <h5>Available Waste Streams</h5>
-              <div className="renio-grid-system">
-                <div>
-                  <img src="/assets/Vector.webp" alt="Plastic Bottles" />
-                  <h6>Plastic Bottles</h6>
-                </div>
-                <div>
-                  <img src="/assets/Vector-2.webp" alt="Plastic Cups" />
-                  <h6>Plastic Cups</h6>
-                </div>
-                <div>
-                  <img src="/assets/Vector-3.webp" alt="Paper Cups" />
-                  <h6>Paper Cups</h6>
-                </div>
-                <div>
-                  <img src="/assets/Vector-4.webp" alt="Cans" />
-                  <h6>Cans</h6>
-                </div>
-                <div>
-                  <img src="/assets/Vector-5.webp" alt="Tetra Pak" />
-                  <h6>Tetra Pak</h6>
-                </div>
-                <div>
-                  <img src="/assets/Vector-6.webp" alt="Glass" />
-                  <h6>Glass</h6>
+            {title1 === "RENIE Mini" ? (
+              <div className="renio-grid" id="derktop-version">
+                <h5>Available Waste Streams</h5>
+                <div className="renio-grid-system">
+                  <div>
+                    <img src="/assets/Group-icon-1.png" alt="Plastic Bottles" />
+                    <h6>Vape</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Group-icon-2.png" alt="Plastic Cups" />
+                    <h6>Battery</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Group-icon-3.png" alt="Paper Cups" />
+                    <h6>E-Waste</h6>
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              <div className="renio-grid" id="derktop-version">
+                <h5>Available Waste Streams</h5>
+                <div className="renio-grid-system">
+                  <div>
+                    <img src="/assets/Vector.webp" alt="Plastic Bottles" />
+                    <h6>Plastic Bottles</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Vector-2.webp" alt="Plastic Cups" />
+                    <h6>Plastic Cups</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Vector-3.webp" alt="Paper Cups" />
+                    <h6>Paper Cups</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Vector-4.webp" alt="Cans" />
+                    <h6>Cans</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Vector-5.webp" alt="Tetra Pak" />
+                    <h6>Tetra Pak</h6>
+                  </div>
+                  <div>
+                    <img src="/assets/Vector-6.webp" alt="Glass" />
+                    <h6>Glass</h6>
+                  </div>
+                </div>
+              </div>
+            )}
             <div className="renio-footer">
               <h5 className="text-center text-white mt-5 mb-3">Pricing</h5>
               <div className="renio-footer-div">

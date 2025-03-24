@@ -219,6 +219,15 @@
   line-height: 28px;
   color: black;
 }
+@media (min-width: 1440px){
+  .main-renie-banner {
+    top: 5%;
+}
+.main-renie-banner h1{
+  font-size: 60px;
+  width: 50%;
+}
+}
 
 @media (max-width: 1200px) {
   .main-renie-banner img {

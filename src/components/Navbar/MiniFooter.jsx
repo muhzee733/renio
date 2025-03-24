@@ -41,7 +41,7 @@ const MiniFooter = () => {
       <div ref={footerRef} className="mini-footer">
         <div className="mini-footer-wrapper">
           <p>Find out the cost of your waste today.</p>
-          <Button title="Book a FREE demo" className="btn-1" />
+          <Button title="Book a FREE demo" link='/contact' className="btn-1" />
         </div>
       </div>
     </footer>
