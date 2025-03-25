@@ -444,6 +444,23 @@ justify-content: center;
   .crafted-renie h2 {
     width: 50%;
   }
+  .crafted-renie h2 {
+    font-size: 40px;
+  }
+  .ProductRenie h2 {
+    font-size: 40px;
+}
+.power h2 {
+  color: #fff;
+  font-size: 40px;
+}
+.discover h2 {
+  font-size: 40px;
+}
+.meet-main-banner h2 {
+  color: #fff;
+  font-size: 40px;
+}
 }
 @media (max-width: 1200px) {
   .renie-main-content {

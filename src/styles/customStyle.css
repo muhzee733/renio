@@ -841,6 +841,18 @@ footer {
   #custom-slider .swiper-button-next {
     top: 90%;
   }
+  .custom-diagram{
+    width: 530px !important;
+  }
+  .how-it-work-main h2 {
+    font-size: 134px;
+}
+#how-it-works{
+  height: 130vh ;
+}
+.tool {
+  top: 10%;
+}
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .main-navbar {
@@ -1097,10 +1109,6 @@ footer {
   .main-navbar {
     width: 150px !important; /* Ensure navbar is smaller */
     height: 65px;
-  }
-
-  .main-navbar img {
-    display: block; /* Make logo visible */
   }
 
   .main-navbar .menu-image {
