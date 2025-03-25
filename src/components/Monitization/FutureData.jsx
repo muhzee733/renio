@@ -1,4 +1,5 @@
 import React from "react";
+import H2 from "../Typography/H2";
 
 const FutureData = () => {
   return (
@@ -7,7 +8,7 @@ const FutureData = () => {
         <div class="container-xl">
           <div class="row">
             <div class="col-lg-6">
-              <h2>The Future of Data Monetization is Here</h2>
+              <H2 title='The Future of Data Monetization is Here' />
             </div>
             <div class="col-lg-6">
               <p>

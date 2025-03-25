@@ -1,4 +1,6 @@
 import React from "react";
+import H1 from "../Typography/H1";
+import P from "../Typography/P";
 
 const Banner = () => {
   return (
@@ -9,8 +11,8 @@ const Banner = () => {
             <img src="/assets/time.webp" alt="time" />
           </div>
           <div class="col-lg-6 col-md-6 custom-data-column">
-            <h1>Unlock the Power of Data Monetization</h1>
-            <p>Transform Waste into a Data-Driven Revenue Stream</p>
+            <H1 title='Unlock the Power of Data Monetization' />
+            <P title='Transform Waste into a Data-Driven Revenue Stream' />
           </div>
           <div className="downarrow-image">
             <img src="/assets/downarrow.webp" alt="renie" />

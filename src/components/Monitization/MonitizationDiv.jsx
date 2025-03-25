@@ -1,4 +1,7 @@
 import React from "react";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
+import H1 from "../Typography/H1";
 
 const MonitizationDiv = () => {
   return (
@@ -8,16 +11,14 @@ const MonitizationDiv = () => {
           <div className="row">
             <div className="col-lg-6 monitization-custom-data">
               <div>
-                <h2>What is data monetization</h2>
-                <p>
-                  In today’s digital world, data is one of the most valuable
+                <H1 title='What is data monetization' />
+                <P title='In today’s digital world, data is one of the most valuable
                   assets. Data monetization is the process of converting raw
                   data into actionable insights that drive revenue and business
                   efficiency. At Renie, we take this concept a step further—our
                   innovative technology transforms waste disposal into a
                   data-driven income stream, helping businesses unlock new
-                  financial opportunities from everyday operations.
-                </p>
+                  financial opportunities from everyday operations.' />
               </div>
             </div>
             <div className="col-lg-6">

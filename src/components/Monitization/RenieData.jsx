@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
+import H1 from "../Typography/H1";
 
 const data = [
   {
@@ -70,13 +73,11 @@ function Section6() {
         >
           <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
             <div className="software-left-data text-center">
-              <h2>How Does Renie’s Data Monetization Work?</h2>
-              <p>
-                We redefine waste management by turning waste data into revenue.
+              <H2 title='How Does Renie’s Data Monetization Work?' />
+              <P  title='We redefine waste management by turning waste data into revenue.
                 Our Renie Bins collect and analyze waste-related data, allowing
                 businesses to benefit from sustainable waste practices while
-                generating income.
-              </p>
+                generating income.'/>
             </div>
           </div>
 
@@ -87,7 +88,7 @@ function Section6() {
                   key={item.id}
                   className="software-right-container software-right-data p-4 bg-white rounded shadow"
                 >
-                  <h1>{item.title1}</h1>
+                  <H1 title={item.title1}/>
                   <div className="m-data d-flex align-items-center gap-2">
                     <img
                       src={item.icon}

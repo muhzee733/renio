@@ -6,6 +6,10 @@
   );
   background-color: white;
 }
+.renie-bin-wrapper h2{
+  width: 40%;
+  margin: 0 auto;
+}
 .moni-wrapper {
   padding: 100px 0px;
 }
@@ -14,18 +18,13 @@
   margin: 0 auto;
   margin-top: 10%;
 }
-.moni-wrapper h2 {
+.moni-wrapper h1 {
   color: #e31662;
-  font-size: 60px;
   font-weight: 700;
   text-align: left;
-  line-height: 60px;
   margin-bottom: 10px;
 }
 .moni-wrapper p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
   text-align: left;
   padding-right: 15%;
 }
@@ -167,9 +166,9 @@
 }
 .software-left-data h2 {
   color: white;
-  font-size: 50px;
   font-weight: 900;
   text-align: left;
+  margin-bottom: 10px;
 }
 .software-left-data p {
   color: white;
@@ -197,7 +196,6 @@
   width: 558px;
 }
 .software-right-data h1 {
-  font-size: 100px;
   font-weight: 800;
   background: -webkit-linear-gradient(250deg, #ffffff 0%, #4765e6 100%);
   -webkit-background-clip: text;
@@ -263,6 +261,7 @@
   }
   .why-choose {
     height: 83vh;
+    padding: 0px 20px;
   }
   .why-choose h2 {
     font-size: 34px;
@@ -303,6 +302,9 @@
     width: 750px;
     margin-left: 5%;
   }
+  .renieeee {
+    min-height: 80vh;
+  }
   .software-right-data h6 {
     line-height: 30px;
   }
@@ -314,11 +316,17 @@
     margin-top: 10px;
     text-align: center;
   }
+  .renie-bin-wrapper h2 {
+    width: 60%;
+}
   .why-choose h2 {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 20px;
   }
+  .moni-blog .swiper-slide {
+    min-height: 320px !important;
+}
   .benefits h2 {
     font-size: 36px;
     line-height: 40px;
@@ -413,17 +421,23 @@
     flex-direction: column-reverse;
   }
   .data-banner h1 {
-    font-size: 34px !important;
+    margin-bottom: 10px;
   }
   .data-banner {
     min-height: 88vh;
     text-align: center;
   }
   .data-banner p {
-    font-size: 14px;
     width: 70%;
     margin: 0 auto;
   }
+  .moni-wrapper h1 {
+    text-align: center;
+}
+.software-right-data h1 {
+  font-size: 70px;
+  line-height: 90px;
+}
   .reee {
     padding: 50px 0px;
   }
@@ -498,9 +512,6 @@
     min-height: 80vh;
     display: flex;
     align-items: center;
-  }
-  .renieeee .renie-bin-wrapper h2 {
-    font-size: 28px;
   }
   .custom-cursure p {
     font-size: 13px;

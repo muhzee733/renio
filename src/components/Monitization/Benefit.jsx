@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Blog from "@/components/Blog/Blog";
 import { Pagination } from "swiper/modules";
+import H2 from "../Typography/H2";
 
 const blogData = [
   {
@@ -36,8 +37,7 @@ export default function App() {
           <div className="row">
             <div className="col-lg-12">
               <div className="renie-bin-wrapper">
-                <h2>Industries That Benefit</h2>
-                <h2>from Data Monetization</h2>
+                <H2 title='Industries That Benefit from Data Monetization' />
                 <div id="derktop-version">
                   <div className="blogs moni-blog">
                     <Swiper
