@@ -159,10 +159,12 @@
 .faqs h2 {
   font-size: 24px;
   font-weight: 400;
+  color: #000000;
 }
 .faqs h3 {
   font-size: 40px;
   font-weight: 600;
+  color: #000000;
 }
 .faqs {
   padding: 120px 0px;
