@@ -24,13 +24,10 @@ export default function BlogDetail() {
     </Head>
       <Navbar />
       <div className="container-xl mx-auto">
-        {/* Banner Section */}
         <div className="blog-banner">
           <h1 className="text-4xl font-bold">{blog.title}</h1>
           <p className="mt-2 text-gray-300">{blog.date}</p>
         </div>
-
-        {/* Blog Layout */}
         <div className="Media-Hub-detail mt-6 space-y-6">
           {blog.content.map((block, index) => {
             switch (block.type) {

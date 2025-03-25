@@ -265,8 +265,8 @@
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {
-    height: 100vh;
     background-size: 100% 50vh;
+    padding: 150px 0px;
   }
   .renie-box-wrapper h1 {
     font-size: 60px;

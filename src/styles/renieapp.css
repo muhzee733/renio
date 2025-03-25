@@ -1,6 +1,5 @@
 .rene-banner {
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  min-height: 100vh;
   width: 100%;
 }
 .animated-h2 {
@@ -110,7 +109,7 @@
   background-size: cover;
 }
 .easystep-wrapper {
-  padding: 120px 10px;
+  padding: 120px 10px 200px 10px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -135,7 +134,7 @@
 .vertical-box div {
   width: 150px;
   background-color: #e31662;
-  height: 50vh;
+  height: 65vh;
   position: absolute;
   right: 0;
   top: 12vh;
@@ -143,7 +142,7 @@
 .vertical-box-right div {
   width: 150px;
   background-color: #5c4099;
-  height: 50vh;
+  height: 65vh;
   position: absolute;
   left: 0;
   top: 12vh;
@@ -155,7 +154,7 @@
   top: 25rem;
 }
 .scan-title-2 {
-  top: 30rem !important;
+  top: 25rem !important;
   left: 25%;
 }
 .custom-scan-height {
@@ -206,7 +205,7 @@
   display: block;
 }
 .main-renie-banner img {
-  max-width: 65%;
+  max-width: 20%;
 }
 .animated-left-section div {
   width: 80%;
