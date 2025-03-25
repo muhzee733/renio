@@ -294,7 +294,7 @@
   }
   .renie-ads img {
     max-width: 70%;
-    transform: translate(10px, 70px);
+    transform: translate(10px, 0px);
   }
   .ads-delivery img {
     max-width: 60%;
