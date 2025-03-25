@@ -9,6 +9,7 @@ import "@/styles/reniehub.css"
 import "@/styles/renieadmin.css"
 import "@/styles/renie-ads.css"
 import "@/styles/mediahub.css"
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 import { ThemeProvider } from "next-themes";
 
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <Component {...pageProps} />
+      <WhatsAppButton />
     </ThemeProvider>
   );
 }
