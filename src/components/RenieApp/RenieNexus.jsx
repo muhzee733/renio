@@ -1,4 +1,6 @@
 import React from "react";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
 
 const RenieNexus = () => {
   return (
@@ -11,14 +13,17 @@ const RenieNexus = () => {
             </div>
             <div class="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">
-                <h2>What is the Renie <span style={{color: "#E21663"}}>Nexus?</span></h2>
-                <p>
-                  The Renie Nexus is your personal waste management companion,
+                <H2 title="What is the Renie" />
+                <div className="diff-color">
+                  <H2 title="Nexus?" />
+                </div>
+                <P
+                  title=" The Renie Nexus is your personal waste management companion,
                   designed to simplify recycling, promote sustainability, and
                   reward responsible behavior. With real-time tracking and data
                   insights, you’ll always know how your waste is being
-                  managed—helping you make greener choices every day.
-                </p>
+                  managed—helping you make greener choices every day."
+                />
                 <button>Explorer the Renie Nexus</button>
               </div>
             </div>

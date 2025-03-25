@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import H2 from "../Typography/H2";
+import H1 from "../Typography/H1";
+import P from "../Typography/P";
 
 const EasyStep = () => {
   const sectionRef = useRef(null);
@@ -11,9 +14,7 @@ const EasyStep = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2>
-                Get Started in <span style={{ color: "#E31662" }}>2</span> Easy Steps
-              </h2>
+              <H2 title=" Get Started in 2 Easy Steps" />
             </div>
           </div>
           <div className="row">
@@ -25,14 +26,18 @@ const EasyStep = () => {
             >
               <div className="left-track position-relative custom-scan-height">
                 <div className="scan-title">
-                  <h3>Scan & Track</h3>
-                  <p>Use the app to scan and monitor your waste disposal habits.</p>
+                  <H1 title="Scan & Track" />
+                  <P title="Use the app to scan and monitor your waste disposal habits." />
                 </div>
                 <div className="vertical-box">
                   <div></div>
                 </div>
               </div>
-              <img className="white-box" src="/assets/step-1.webp" alt="renie-box" />
+              <img
+                className="white-box"
+                src="/assets/step-1.webp"
+                alt="renie-box"
+              />
             </motion.div>
 
             <motion.div
@@ -43,14 +48,18 @@ const EasyStep = () => {
             >
               <div className="left-track position-relative custom-scan-height">
                 <div className="scan-title scan-title-2">
-                  <h3>Earn & Make an Impact</h3>
-                  <p>Get rewarded for recycling & be part of the sustainability movement!</p>
+                  <H1 title="Earn & Make an Impact" />
+                  <P title="Get rewarded for recycling & be part of the sustainability movement!" />
                 </div>
                 <div className="vertical-box-right">
                   <div></div>
                 </div>
               </div>
-              <img className="white-box white-box-2" src="/assets/step-2.webp" alt="renie-box" />
+              <img
+                className="white-box white-box-2"
+                src="/assets/step-2.webp"
+                alt="renie-box"
+              />
             </motion.div>
           </div>
         </div>

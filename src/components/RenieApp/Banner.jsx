@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import H1 from "../Typography/H1";
+import H4 from "../Typography/H4";
 
 const Banner = () => {
   useEffect(() => {
@@ -93,8 +95,8 @@ const Banner = () => {
         <div className="container-lg">
           <div className="main-renie-banner">
             <img src="/assets/app-1.webp" alt="renie app" />
-            <h1>Renie Nexus – Smart Waste, Smarter World</h1>
-            <h5>Track. Recycle. Reward.</h5>
+            <H1 title='Renie Nexus – Smart Waste, Smarter World' />
+            <H4 title='Track. Recycle. Reward.' />
           </div>
         </div>
       </div>

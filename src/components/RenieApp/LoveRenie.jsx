@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import H2 from "../Typography/H2";
+import H4 from "../Typography/H4";
 
 const LoveRenie = () => {
   const featureTexts = [
@@ -21,10 +23,10 @@ const LoveRenie = () => {
       <div className="container-xl">
         <div className="row text-center">
           <div className="col-12">
-            <h2>
-              Why You’ll Love <span style={{ color: "#e31662" }}>❤︎</span> Renie
-              Nexus
-            </h2>
+            <H2
+              title="Why You’ll Love ❤︎ Renie
+              Nexus"
+            />
           </div>
         </div>
         <div className="row mt-5 d-flex justify-content-center align-items-center custom-data-svg">
@@ -54,7 +56,7 @@ const LoveRenie = () => {
                   }}
                 />
               )}
-              <h3 className="custom-svg-heading">{text}</h3>
+              <H4 title={text} />
             </div>
           ))}
         </div>
