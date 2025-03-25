@@ -93,7 +93,7 @@ const Navbar = ({ white }) => {
   }, [isMobile]);
 
   const handleMouseEnter = () => {
-    if (window.scrollY > 1 || isMobile) {
+    if (window.scrollY > 1 && !isMobile) {
       gsap.to(navRef.current, {
         width: "100%",
         height: "70px",
@@ -109,7 +109,7 @@ const Navbar = ({ white }) => {
     }
   };
   const handleMouseLeave = () => {
-    if (window.scrollY > 1 || isMobile) {
+    if (window.scrollY > 1 && !isMobile) {
       gsap.to([logoRef.current, linksRef.current, buttonRef.current], {
         opacity: 0,
         display: "none",
