@@ -1,5 +1,6 @@
 import React from "react";
 import BrandSlider from "../BrandSlider";
+import H1 from "../Typography/H1";
 
 const Banner = () => {
   return (
@@ -11,7 +12,7 @@ const Banner = () => {
               <div class="col-lg-12">
                 <div className="renie-box-wrapper position-relative">
                   <div>
-                    <h1>Earn income while you make a traceable impact</h1>
+                    <H1 title='Earn income while you make a traceable impact' />
                     <p>
                       Our innovative platform makes it possible to generate a
                       passive income from data monetization of waste

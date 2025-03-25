@@ -1,3 +1,8 @@
+import H1 from "../Typography/H1";
+import H2 from "../Typography/H2";
+import H4 from "../Typography/H4";
+import P from "../Typography/P";
+
 const WasteManagement = () => {
   const features = [
     {
@@ -52,9 +57,7 @@ const WasteManagement = () => {
   return (
     <section className={`text-center py-5 management`}>
       <div className="container-xl">
-        <h2 className="fw-bold">
-          Unlock the Full Potential of Your Waste Management with Renie Hub
-        </h2>
+        <H1 title="Unlock the Full Potential of Your Waste Management with Renie Hub" />
         <p className="management-test">
           Energy, time, and resources lost in waste management? It’s time for a
           change.
@@ -71,19 +74,22 @@ const WasteManagement = () => {
                     className="mb-3"
                   />
                 </div>
-                <h5 className="fw-bold text-left managment-title">
-                  {feature.title}
-                </h5>
-                <p className="text-left">{feature.description}</p>
+                <div className="managment-title">
+                  <H4 title={feature.title} />
+                </div>
+                <div className="text-left">
+                  <P title={feature.description} />
+                </div>
               </div>
             </div>
           ))}
         </div>
-
-        <p className="mt-4 text-white managemnt-paragraph">
-          Renie Hub transforms waste management into an intelligent, efficient,
-          and eco-friendly system.
-        </p>
+        <div className="managemnt-paragraph">
+          <P
+            title="Renie Hub transforms waste management into an intelligent, efficient,
+          and eco-friendly system."
+          />
+        </div>
       </div>
     </section>
   );

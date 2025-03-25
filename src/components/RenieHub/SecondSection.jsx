@@ -1,4 +1,5 @@
 import React from "react";
+import P from "../Typography/P";
 
 const SecondSection = () => {
   return (
@@ -25,22 +26,22 @@ const SecondSection = () => {
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-1.webp" />
-                  <p>Tracks generated revenue streams</p>
+                  <P title="Tracks generated revenue streams" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-2.webp" />
-                  <p>Track waste from source to waste management facility</p>
+                  <P title="Track waste from source to waste management facility" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-3.webp" />
-                  <p>
-                    See real time verified data about waste diverted from
-                    landfills
-                  </p>
+                  <P
+                    title="See real time verified data about waste diverted from
+                    landfills"
+                  />
                 </div>
               </div>
             </div>

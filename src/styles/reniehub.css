@@ -1,7 +1,4 @@
 .renie-box-wrapper h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 40px;
   text-align: center;
   background: -webkit-linear-gradient(
     80deg,
@@ -77,8 +74,6 @@
   padding: 0px 100px;
 }
 .waste-div p {
-  font-size: 16px;
-  line-height: 18px;
   margin-top: 15px;
 }
 .waste-div img {
@@ -99,19 +94,14 @@
   background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 120px 0px;
 }
-.control-upper-section h2 {
-  font-size: 60px;
-  font-weight: 600;
+.control-upper-section h1 {
   text-align: center;
   color: white;
   margin-bottom: 15px;
 }
 .control-upper-section p {
-  font-size: 16px;
   color: white;
   text-align: center;
-  line-height: 1.6rem;
-  font-weight: 300;
 }
 .control-upper-section {
   width: 70%;
@@ -122,29 +112,21 @@
   margin-bottom: 100px;
 }
 .control-below-section h2 {
-  font-size: 36px;
+
   color: white;
-  font-weight: 600;
-  line-height: 40px;
   margin-bottom: 20px;
   padding-right: 100px;
 }
 .control-below-section p {
-  font-size: 16px;
   color: white;
-  font-weight: 300;
   padding-right: 100px;
 }
 .management {
   background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 200px 0px;
 }
-.management h2 {
+.management h1 {
   color: white;
-  font-size: 34px;
-  line-height: 46px;
-  width: 50%;
-  margin: 0 auto;
   padding-bottom: 15px;
 }
 .management-test {
@@ -154,7 +136,7 @@
   width: 100%;
   margin: 0 auto;
 }
-.managment-title {
+.managment-title h4 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -164,16 +146,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
-  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
 }
 .managemnt-paragraph {
-  font-size: 16px;
-  font-weight: 300;
   width: 40%;
   margin: 0 auto;
 }
-.car p {
-  font-size: 14px;
+.managemnt-paragraph .p-title {
+  color: white;
 }
 .faqs h2 {
   font-size: 24px;
@@ -205,12 +186,9 @@
 .designed .container {
   text-align: center;
 }
-.designed h2 {
-  font-size: 60px;
-  line-height: 76px;
+.designed h1 {
   color: white;
   text-align: center;
-  font-weight: 600;
   width: 90%;
   margin: 0 auto;
 }
@@ -268,23 +246,18 @@
     background-size: 100% 50vh;
     padding: 150px 0px;
   }
-  .renie-box-wrapper h1 {
+  /* .renie-box-wrapper h1 {
     font-size: 60px;
     font-weight: 700;
     line-height: 52px;
-  }
+  } */
   .control-below-section h2 {
-    font-size: 40px;
     color: #fff;
-    font-weight: 600;
-    line-height: 54px;
   }
   .management {
     padding: 200px 0px !important;
   }
   .management h2 {
-    font-size: 60px;
-    line-height: 70px;
     width: 90%;
   }
   .designed h2 {
@@ -292,11 +265,31 @@
     width: 74%;
   }
 }
+@media (max-width: 1440px) {
+  .reniehub-wrapper {
+    padding-top: 10%;
+  }
+  .renie-waste-box h2 {
+    font-size: 50px;
+    line-height: 64px;
+}
+}
 
 @media (max-width: 1200px) {
   .renie-box-wrapper h1 {
     width: 56%;
   }
+  .management-test {
+    font-size: 18px;
+}
+.renie-box-wrapper p {
+  font-size: 18px;
+  line-height: 30px;
+}
+  .management h1 {
+    width: 80%;
+    margin: 0 auto;
+}
   .renie-mobile-banner {
     position: absolute;
     right: -6%;
@@ -320,8 +313,6 @@
     font-size: 14px;
   }
   .control-below-section h2 {
-    font-size: 30px;
-    line-height: 35px;
     margin-bottom: 17px;
     padding-right: 55px;
   }
@@ -348,10 +339,10 @@
   }
   .reniehub-wrapper {
     background-size: 100% 42vh;
-    padding-top: 16%;
+    padding-top: 12%;
   }
   .renie-waste-box h2 {
-    width: 100%;
+    width: 70%;
   }
   .waste-div {
     padding: 0 15px;
@@ -361,36 +352,26 @@
     margin-bottom: 50px;
   }
   .control-below-section h2 {
-    font-size: 26px;
-    line-height: 30px;
     margin-bottom: 15px;
     padding-right: 0px;
   }
   .control-below-section {
-    flex-direction: column-reverse;
     margin-bottom: 50px;
   }
   .justify-content-center-md {
     justify-content: center !important;
     margin-bottom: 20px;
   }
-  .revolution {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-  }
+
   .revolution p {
     padding: 0px;
   }
-  .m-below-section {
-    flex-direction: column;
-  }
-  .m-below-section .col-lg-6 div {
+  /* .m-below-section .col-lg-6 div {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+  } */
   .control-below-section p {
     padding-right: 0px;
   }
@@ -424,6 +405,12 @@
     padding-top: 16%;
     padding-bottom: 10%;
   }
+  .control-below-section h2 {
+    text-align: left;
+}
+  .renie-waste-box h2 {
+    width: 90%;
+}
   .reniehub .brand-slider-container {
     bottom: -2%;
   }
@@ -451,6 +438,7 @@
     width: 100%;
     font-size: 12px;
     margin-bottom: 20px !important;
+    line-height: 18px !important;
   }
   .renie-waste-box h2 {
     font-size: 24px;
@@ -497,4 +485,22 @@
   .designed {
     padding: 50px 0;
   }
+  .control-below-section{
+    flex-direction: column-reverse;
+  }
+  .control-below-section .revolution{
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  .control-below-section h2 {
+    text-align: center;
+}
+.m-below-section{
+  flex-direction: unset !important;
+  text-align: center;
+}
+.management-test {
+  font-size: 14px;
+}
 }
