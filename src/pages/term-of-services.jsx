@@ -14,7 +14,7 @@ const TermOfServices = () => {
         />
       <Navbar />
       <div className="privacy-policy">
-        <div className="container">
+        <div className="container-xl">
           <h1>Terms of Service</h1>
         </div>
       </div>

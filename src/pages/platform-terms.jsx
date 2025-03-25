@@ -11,7 +11,7 @@ const PlatformTerms = () => {
       <Meta title="Platform Terms & Conditions Renie" description="Review the terms and conditions governing the use of Renie’s platform" />
       <Navbar />
       <div className="privacy-policy">
-        <div className="container">
+        <div className="container-xl">
           <h1>Platform Terms & Conditions</h1>
         </div>
       </div>

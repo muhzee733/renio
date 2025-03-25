@@ -38,7 +38,7 @@ const ContactUs = () => {
 
       {/* Contact Banner */}
       <div className="contact-banner text-center  bg-light">
-        <div className="container">
+        <div className="container-xl">
           <h1>Connect with an expert</h1>
         </div>
       </div>

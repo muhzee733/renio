@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
       <Navbar />
 
       <div className="privacy-policy">
-        <div className="container">
+        <div className="container-xl">
           <h1>Renie - Privacy Policy</h1>
         </div>
       </div>
