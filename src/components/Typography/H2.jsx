@@ -1,6 +1,6 @@
 import React from "react";
 
-const H2 = ({ title }) => {
+const H2 = ({ title, isHtml = false }) => {
   return (
     <>
       <style>
@@ -13,34 +13,42 @@ const H2 = ({ title }) => {
 
           @media (max-width: 1440px) {
             .h2-title {
-                font-size: 34px;
-                line-height: 40px;
-          }
+              font-size: 34px;
+              line-height: 40px;
+            }
           }
 
           @media (max-width: 1200px) {
-            .h2-title {
+             .h2-title {
               font-size: 50px;
+            }
+          }
+            @media (max-width: 992px) {
+            .h2-title {
+              font-size: 32px;
+              line-height: 36px;
             }
           }
 
           @media (max-width: 768px) {
             .h2-title {
               font-size: 26px;
-              line-height: 30px
+              line-height: 30px;
             }
           }
 
           @media (max-width: 480px) {
             .h2-title {
-              font-size: 32px;
+              font-size: 28px;
             }
           }
-
-          
         `}
       </style>
-      <h2 className="h2-title">{title}</h2>
+      {isHtml ? (
+        <h2 className="h2-title" dangerouslySetInnerHTML={{ __html: title }} />
+      ) : (
+        <h2 className="h2-title">{title}</h2>
+      )}
     </>
   );
 };

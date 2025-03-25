@@ -1,6 +1,8 @@
 "use client"; // Add this at the top if you're in an app directory
 
 import React from "react";
+import H4 from "../Typography/H4";
+import P from "../Typography/P";
 
 export default function AdsSection() {
   return (
@@ -16,13 +18,11 @@ export default function AdsSection() {
                 alt="Platform Icon"
                 className="mb-3 mx-auto"
               />
-              <h4>The Ads That Matter Platform</h4>
-              <p className="flex-grow-1">
-                Gain valuable insights into your campaign’s performance with a
+              <H4 title='The Ads That Matter Platform' />
+              <P title='Gain valuable insights into your campaign’s performance with a
                 dedicated advertising dashboard, allowing you to track
                 engagement, measure impact, and optimize your strategy in
-                real-time.
-              </p>
+                real-time.' />
             </div>
           </div>
           <div className="col-md-6 d-flex">
@@ -34,13 +34,11 @@ export default function AdsSection() {
                 alt="Sustainability Icon"
                 className="mb-3 mx-auto"
               />
-              <h4>Turn Ad Impressions into Real Sustainability Impact</h4>
-              <p className="flex-grow-1">
-                Your marketing spend now drives measurable environmental
+              <H4 title='Turn Ad Impressions into Real Sustainability Impact' />
+              <P title='Your marketing spend now drives measurable environmental
                 benefits—real, verifiable reductions in landfill waste and CO2
                 emissions. Track your impact live through your Ads That Matter
-                account.
-              </p>
+                account.' />
             </div>
           </div>
         </div>

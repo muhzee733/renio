@@ -1,4 +1,6 @@
 import React from "react";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
 
 const sections = [
   {
@@ -28,7 +30,6 @@ const sections = [
   },
 ];
 
-
 function App() {
   return (
     <section className="ads-delivery">
@@ -37,12 +38,9 @@ function App() {
           <div key={index} className="row align-items-center my-4">
             {index === 1 || index === 3 ? (
               <>
-                <div className="col-md-6 d-flex flex-column justify-content-end align-items-end">
-                  <h3
-                    className="fw-bold text-right"
-                    dangerouslySetInnerHTML={{ __html: section.title }}
-                  />
-                  <p>{section.text}</p>
+                <div className="col-md-6 d-flex flex-column justify-content-end align-items-end optimized-text optimized-text-right">
+                  <H2 title={section.title} isHtml={true} />
+                  <P title={section.text} />
                 </div>
                 <div className="col-md-6">
                   <img src={section.image} alt="Icon" className="img-fluid" />
@@ -50,12 +48,12 @@ function App() {
               </>
             ) : (
               <>
-                <div className={`col-md-6 d-flex justify-content-end`}>
+                <div className={`col-md-6 d-flex justify-content-end `}>
                   <img src={section.image} alt="Icon" className="img-fluid" />
                 </div>
-                <div className="col-md-6">
-                  <h3 className="fw-bold" dangerouslySetInnerHTML={{ __html: section.title }} /> 
-                  <p>{section.text}</p>
+                <div className="col-md-6 optimized-text optimized-text-left">
+                  <H2 title={section.title} isHtml={true} />
+                  <P title={section.text} />
                 </div>
               </>
             )}

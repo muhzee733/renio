@@ -8,9 +8,15 @@
 .adsmetter {
   padding: 150px 0px;
 }
+.optimized-text-right h2{
+  text-align: right;
+  width: 80%;
+}
+.optimized-text-left h2{
+  width: 80%;
+}
 .adsmetter h4 {
   color: white;
-  font-size: 24px;
   width: 60%;
   margin: 0 auto;
   font-weight: 600;
@@ -18,9 +24,6 @@
 }
 .adsmetter p {
   color: white;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
   margin: 0 auto;
 }
 .adsmetter img {
@@ -53,8 +56,7 @@
   background-repeat: no-repeat;
 }
 
-.renie-ads h2 {
-  font-size: 60px;
+.renie-ads h1 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -64,6 +66,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
+}
+.custom-padding p{
+  padding-right: 50px;
 }
 /* .custom-padding {
   padding-top: 10%;
@@ -77,6 +82,12 @@
   bottom: 11%;
   width: 50%;
 }
+.optimized-text h2{
+  font-weight: 800;
+}
+.custom-ads-text p{
+  color: white;
+}
 .ads-delivery h3 {
   font-size: 40px;
   line-height: 45px;
@@ -85,7 +96,6 @@
   text-transform: uppercase;
 }
 .ads-delivery p {
-  font-size: 16px;
   text-align: justify;
   width: 90%;
   margin-top: 10px;
@@ -158,9 +168,6 @@
   }
 }
 @media (max-width: 992px) {
-  .renie-ads {
-    min-height: 90vh;
-  }
   .adsmetter p {
     font-size: 14px;
   }
@@ -190,8 +197,17 @@
 }
 @media (max-width: 786px) {
   .renie-ads img {
-    max-width: 50%;
+    max-width: 30%;
+    margin-top: 50px;
   }
+  .JoinNow h2 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: 6px;
+}
+  .renie-ads {
+    padding: 100px 0;
+}
   .JoinNow {
     text-align: center;
   }
@@ -202,9 +218,6 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
-  }
-  .renie-ads {
-    min-height: 100vh;
   }
   .gradient-bg h3 {
     font-size: 16px;
@@ -250,12 +263,25 @@
     min-height: 100vh;
     background: none !important;
   }
+  .custom-padding div {
+    width: 100%;
+  }
+  .optimized-text-left h2 {
+    width: 100% !important;
+    text-align: center !important;
+}
+.optimized-text-right h2 {
+  text-align: center;
+  width: 100%;
+}
+  .ads-delivery {
+    padding: 50px 0;
+}
   .custom-padding p {
-    font-size: 10px;
     bottom: 4%;
     padding: 0px 10px;
     left: 0;
-    width: 50%;
+    width: 100%;
   }
   .custom-padding p {
     width: 100%;
@@ -268,7 +294,7 @@
   }
   .renie-ads img {
     max-width: 70%;
-    transform: translate(10px, 10px);
+    transform: translate(10px, 70px);
   }
   .ads-delivery img {
     max-width: 60%;
@@ -316,6 +342,11 @@
     margin: 30px 0px;
   }
   .renie-ads {
-    min-height: 83vh;
+    min-height: unset;
+    padding-top: 50px;
   }
+  .JoinNow h2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
 }

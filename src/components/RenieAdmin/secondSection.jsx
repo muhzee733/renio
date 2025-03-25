@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import P from "../Typography/P";
 
 const secondSection = () => {
   return (
@@ -9,12 +10,14 @@ const secondSection = () => {
           "-webkit-linear-gradient(80deg, #4765E6 0%, #5C4099 46%, #E31662 100%)",
       }}
     >
-      <div className="container">
-        <p className="feature-text">
-          Our powerful admin panel provides franchisees with the tools they need
+      <div className="container-xl">
+        <div class="feature-text">
+          <P
+            title=" Our powerful admin panel provides franchisees with the tools they need
           to efficiently manage operations, optimize resources, and drive
-          growth.
-        </p>
+          growth."
+          />
+        </div>
         <div className="row text-left feature-h4">
           <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-top justify-content-center">
             <div>
@@ -23,7 +26,9 @@ const secondSection = () => {
               </div>
               <div className="admin-icon">
                 <img src="/assets/renieadmin/icon-1.webp" alt="renie-icon" />
-                <h4>Seamless Partner <br /> Management</h4>
+                <h4>
+                  Seamless Partner <br /> Management
+                </h4>
               </div>
 
               <h5 className="pl-3">Get full revenue</h5>
@@ -40,7 +45,10 @@ const secondSection = () => {
               </div>
               <div className="admin-icon">
                 <img src="/assets/renieadmin/icon-2.webp" alt="renie-icon" />
-                <h4>Efficient Waste <br />Tracking</h4>
+                <h4>
+                  Efficient Waste <br />
+                  Tracking
+                </h4>
               </div>
 
               <h5 className="pl-3">Streamline waste management and tracking</h5>
@@ -57,7 +65,10 @@ const secondSection = () => {
               </div>
               <div className="admin-icon">
                 <img src="/assets/renieadmin/icon-3.webp" alt="renie-icon" />
-                <h4>Maximize <br />Revenue</h4>
+                <h4>
+                  Maximize <br />
+                  Revenue
+                </h4>
               </div>
 
               <h5 className="pl-3">Get full revenue</h5>
@@ -74,7 +85,10 @@ const secondSection = () => {
               </div>
               <div className="admin-icon">
                 <img src="/assets/renieadmin/icon-4.webp" alt="renie-icon" />
-                <h4>User Engagement & <br />Growth Insights</h4>
+                <h4>
+                  User Engagement & <br />
+                  Growth Insights
+                </h4>
               </div>
 
               <h5 className="pl-3">Track user engagement and growth</h5>

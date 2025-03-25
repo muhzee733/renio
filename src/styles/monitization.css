@@ -117,13 +117,12 @@
   display: flex;
   align-items: center;
 }
-.JoinNow h3 {
+.JoinNow h2 {
   color: white;
-  font-size: 40px;
   width: 70%;
+  font-weight: 400;
 }
 .JoinNow p {
-  font-size: 16px;
   color: white;
   font-weight: 300;
 }
@@ -324,9 +323,6 @@
     font-size: 36px;
     line-height: 40px;
     width: 100%;
-  }
-  .JoinNow h3 {
-    font-size: 22px;
   }
   .blogs .swiper {
     padding-bottom: 50px;
@@ -544,5 +540,8 @@
   }
   .benefits {
     min-height: 100vh;
+  }
+  .footer-left-section h6 {
+    font-size: 10px !important;
   }
 }

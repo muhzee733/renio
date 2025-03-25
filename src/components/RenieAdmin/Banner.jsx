@@ -1,4 +1,5 @@
 import React from "react";
+import P from "../Typography/P";
 
 const Banner = () => {
   return (
@@ -9,11 +10,9 @@ const Banner = () => {
             <div className="col-md-6 text-md-start renie-admin-left-box">
               <h2>ADMIN PANEL SUPPORT FOR</h2>
               <h1>FRANCHISEES</h1>
-              <p>
-                Effortlessly manage franchise operations with a centralized
+              <P title='Effortlessly manage franchise operations with a centralized
                 admin panel that streamlines communication, tracks performance,
-                and ensures seamless coordination across all locations.
-              </p>
+                and ensures seamless coordination across all locations.'/>
             </div>
             <div className="col-md-6 d-flex justify-content-end">
               <img

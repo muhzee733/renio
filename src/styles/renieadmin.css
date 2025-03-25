@@ -48,10 +48,8 @@
   color: #4765e6;
 }
 .renie-admin p {
-  font-size: 14px;
-  line-height: 1.4rem;
   font-weight: 400;
-  width: 70%;
+  width: 80%;
 }
 
 .renie-admin img {
@@ -63,8 +61,7 @@
 .features {
   padding: 100px 0px;
 }
-.feature-text {
-  font-size: 14px;
+.feature-text p{
   color: white;
   text-align: center;
   width: 50%;
@@ -100,7 +97,6 @@
   justify-content: center;
 }
 .dashboard-preview h2 {
-  font-size: 40px;
   font-weight: 700;
   width: 40%;
   margin: 0 auto;
@@ -172,8 +168,14 @@
 }
 @media (max-width: 786px) {
   .renie-admin {
-    min-height: 80vh;
+    min-height: 70vh;
   }
+  .feature-text p {
+    width: 100%;
+}
+  .feature-h4 p {
+    width: 90%;
+}
   .custom-ads-image{
     max-width: 15%;
   }
@@ -214,7 +216,7 @@
   }
   .feature-text {
     font-size: 14px;
-    width: 90%;
+    width: 100%;
   }
   .feature-h4 p {
     width: 100%;
@@ -225,24 +227,36 @@
   .feature-h4 {
     text-align: center !important;
   }
+  .feature-h4 {
+    margin-top: 0px !important;
+}
   .dashboard-preview {
     background-image: none;
 }
+.feature-h4 h5 {
+text-align: left;
+width: 70%;
+margin-bottom: 10px;
+}
   .feature-h4 h4 {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: left;
   }
   .feature-h4 p {
     margin: 0 auto;
+    text-align: left;
   }
+  .feature-h4 h4 {
+    font-size: 18px;
+}
   .admin-icon {
     display: flex;
     justify-content: center;
   }
   .admin-icon img {
-    margin-bottom: 20px;
-    max-width: 25%;
+    margin-bottom: 0px;
+    max-width: 20%;
   }
   .dashboard-preview {
     padding: 50px 0 0;

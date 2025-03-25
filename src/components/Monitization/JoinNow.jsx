@@ -1,4 +1,6 @@
 import React from "react";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
 
 const JoinNow = () => {
   return (
@@ -6,8 +8,8 @@ const JoinNow = () => {
       <div class="container-xl">
         <div class="row">
           <div class="col-lg-8">
-            <h3>Are you ready to turn waste into wealth?</h3>
-            <p>Join Renie’s data monetization revolution today!</p>
+            <H2 title="Are you ready to turn waste into wealth?" />
+            <P title="Join Renie’s data monetization revolution today!" />
           </div>
           <div class="col-lg-4 d-flex align-items-center justify-content-center">
             <button>Join Now</button>

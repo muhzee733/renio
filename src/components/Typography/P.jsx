@@ -17,12 +17,6 @@ const P = ({ title }) => {
             font-size: 14px;
           }
           }
-          @media (max-width: 992px) {
-            .p-title {
-              font-size: 12px;
-              line-height: 18px
-            }
-          }
 
         `}
       </style>
