@@ -197,7 +197,7 @@ const ContactUs = () => {
                   </div>
 
                   <div className="col-12">
-                    <button type="submit" className="btn btn-primary w-100">
+                    <button type="submit" className="submit btn-primary w-100">
                       Submit
                     </button>
                   </div>

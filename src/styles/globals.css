@@ -81,6 +81,12 @@ ul {
 .inner-contect svg{
   margin-top: 5px;
 }
+.submit{
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  color: white;
+  padding: 10px 0px;
+  border-radius: 3px;
+}
 .contact-data p{
   font-weight: 500;
   margin: 3px 0px;
