@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 function Section6() {
   const sectionRef = useRef();
@@ -71,36 +72,45 @@ function Section6() {
               }`}
             >
               <div className="software-right-container">
-                <img src="/assets/admin.webp" alt="Renie Admin" />
-                <span>Renie Admin</span>
-                <p>
-                  Renie Admin centralizes all management tasks, providing
-                  seamless control over operations, data, and user interactions.
-                </p>
+                <Link href="/renieadmin">
+                  <img src="/assets/admin.webp" alt="Renie Admin" />
+                  <span>Renie Admin</span>
+                  <p>
+                    Renie Admin centralizes all management tasks, providing
+                    seamless control over operations, data, and user
+                    interactions.
+                  </p>
+                </Link>
+              </div>{" "}
+              <div className="software-right-container">
+                <Link href="/reniehub">
+                  <img src="/assets/hub.webp" alt="Renie Hub" />
+                  <span>Renie Hub</span>
+                  <p>
+                    Our innovative platform makes it possible to generate a
+                    passive income from data monetization of plastic waste.
+                  </p>
+                </Link>
               </div>
               <div className="software-right-container">
-                <img src="/assets/hub.webp" alt="Renie Hub" />
-                <span>Renie Hub</span>
-                <p>
-                  Our innovative platform makes it possible to generate a
-                  passive income from data monetization of plastic waste.
-                </p>
+                <Link href="/renieapp">
+                  <img src="/assets/renie-hub-3.webp" alt="Renie Rewards" />
+                  <span>Renie Rewards</span>
+                  <p>
+                    Renie Nexus makes recycling easy with instant access and
+                    prize rewards, boosting sustainability.
+                  </p>
+                </Link>
               </div>
               <div className="software-right-container">
-                <img src="/assets/renie-hub-3.webp" alt="Renie Rewards" />
-                <span>Renie Rewards</span>
-                <p>
-                  Renie Nexus makes recycling easy with instant access and prize
-                  rewards, boosting sustainability.
-                </p>
-              </div>
-              <div className="software-right-container">
-                <img src="/assets/ads.webp" alt="Renie Ads" />
-                <span>Renie Ads</span>
-                <p>
-                  Our AI platform uses Renie Bin data to deliver targeted ads,
-                  driving eco-friendly engagement.
-                </p>
+                <Link href="/renieads">
+                  <img src="/assets/ads.webp" alt="Renie Ads" />
+                  <span>Renie Ads</span>
+                  <p>
+                    Our AI platform uses Renie Bin data to deliver targeted ads,
+                    driving eco-friendly engagement.
+                  </p>
+                </Link>
               </div>
             </div>
           </div>
