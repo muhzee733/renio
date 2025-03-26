@@ -6,6 +6,16 @@
   );
   background-color: white;
 }
+.right-elem .hide-img {
+  height: 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  scale: 0;
+}
+
 .renie-bin-wrapper h2{
   width: 40%;
   margin: 0 auto;
