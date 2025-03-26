@@ -156,7 +156,7 @@ const Navbar = ({ white }) => {
           <Image
             src="/assets/small.webp"
             alt="Menu Icon"
-            width={80}
+            width={50}
             height={50}
             style={{
               display: isMobile ? "block" : "none",
