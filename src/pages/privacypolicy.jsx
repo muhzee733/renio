@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
       <div className="privacy-body">
-        <div class="container">
+        <div class="container-xl">
           <p>Update version – September 23, 2022</p>
           <p>
             Please read this Privacy Policy (hereinafter referred to as “Privacy

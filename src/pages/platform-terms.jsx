@@ -16,7 +16,7 @@ const PlatformTerms = () => {
         </div>
       </div>
       <div className="privacy-body">
-        <div class="container">
+        <div class="container-xl">
           <b>Platform Terms & Conditions Update version – October 10, 2022</b>
           <br />
           <br />

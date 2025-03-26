@@ -829,7 +829,7 @@ footer {
   }
   .adsmetter p {
     width: 60%;
-}
+  }
   .new-section .swiper-wrapper .swiper-slide {
     height: 420px;
   }
@@ -841,18 +841,21 @@ footer {
   #custom-slider .swiper-button-next {
     top: 90%;
   }
-  .custom-diagram{
+  .custom-diagram {
     width: 530px !important;
   }
   .how-it-work-main h2 {
     font-size: 134px;
-}
-#how-it-works{
-  height: 130vh ;
-}
-.tool {
-  top: 10%;
-}
+  }
+  #how-it-works {
+    height: 130vh;
+  }
+  .tool {
+    top: 10%;
+  }
+  .renio-button {
+    margin-bottom: 20px !important;
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .main-navbar {
@@ -1574,7 +1577,7 @@ footer {
   .software-right-container.jsx-4e2e0dfc5cb858a2 img.jsx-4e2e0dfc5cb858a2 {
     max-width: 100%;
     height: 35vh !important;
-}
+  }
   .section-4-wrapper img {
     max-width: 80% !important;
   }
