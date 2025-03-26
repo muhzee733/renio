@@ -68,13 +68,31 @@ ul {
   height: 50px;
   font-family: var(--fontFamilyPoppins) !important;
 }
+.contact-left-data{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  border-radius: 8px;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.inner-contect svg{
+  margin-top: 5px;
+}
+.contact-data p{
+  font-weight: 500;
+  margin: 3px 0px;
+  font-size: 18px;
+}
 
 /* Base styles for the mini-footer */
 .mini-footer {
   width: 750px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
+  box-shadow: 0 0 3px #00000047;
   padding: 15px;
 }
 
@@ -160,18 +178,35 @@ ul {
   font-size: 40px;
   font-weight: 700;
 }
+.contact-footer{
+  padding: 100px 0px;
+  background: rgb(237 240 253);
+}
 .form-section {
-  padding: 150px 30%;
+  padding: 150px 0px;
 }
 .form-section input {
   border-radius: 3px !important;
   padding: 10px 20px;
+  height: 60px;
 }
 .form-section .form-select {
   border-radius: 3px !important;
   padding: 10px 20px;
+  height: 60px;
 }
 
+.contact-data h2{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
 /* For mobile (below 768px) */
 @media (max-width: 768px) {
   .mini-footer {
