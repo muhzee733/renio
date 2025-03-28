@@ -24,7 +24,13 @@ const RenieNexus = () => {
                   insights, you’ll always know how your waste is being
                   managed—helping you make greener choices every day."
                 />
-                <button>Explorer the Renie Nexus</button>
+                <a
+                  href="https://app.renie.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Explore the Renie Nexus</button>
+                </a>
               </div>
             </div>
           </div>
