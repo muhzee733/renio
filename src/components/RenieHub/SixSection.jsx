@@ -7,7 +7,13 @@ const SixSection = () => {
       <div class="designed">
         <div class="container">
           <H1 title='Designed by and for those who live as recyclers.' />
-          <button>Join Now</button>
+          <a
+              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Join Now</button>
+            </a>
         </div>
       </div>
     </>

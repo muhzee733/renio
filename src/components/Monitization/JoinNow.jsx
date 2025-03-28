@@ -12,7 +12,13 @@ const JoinNow = () => {
             <P title="Join Renie’s data monetization revolution today!" />
           </div>
           <div class="col-lg-4 d-flex align-items-center justify-content-center">
-            <button>Join Now</button>
+            <a
+              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Join Now</button>
+            </a>
           </div>
         </div>
       </div>

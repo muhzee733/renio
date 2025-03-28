@@ -1,37 +1,37 @@
 .main-navbar {
   background-color: white !important;
 }
-.renie-bin-custom{
-display: flex;
-align-items: center;
-justify-content: center;
+.renie-bin-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.renie-bin-custom div{
+.renie-bin-custom div {
   background-color: white;
   margin: 50px 10px;
   padding: 10px;
   border-radius: 6px;
 }
-.renie-bin-paragraph{
+.renie-bin-paragraph {
   margin-top: 70px !important;
 }
-.renie-bin-custom p{
+.renie-bin-custom p {
   color: black !important;
   font-size: 12px !important;
   font-weight: 400 !important;
 }
-.renie-bin-custom div{
+.renie-bin-custom div {
   text-align: center;
 }
-.renie-bin-custom div img{
+.renie-bin-custom div img {
   max-width: 60%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.reniebin-paragraph{
+.reniebin-paragraph {
   margin-top: 30px;
 }
-.reniebin-paragraph p{
+.reniebin-paragraph p {
   color: white;
   font-size: 16px;
   font-weight: 300;
@@ -46,7 +46,7 @@ justify-content: center;
   min-height: 100vh;
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
 }
-.canvas-container-1{
+.canvas-container-1 {
   display: flex;
   justify-content: center;
 }
@@ -204,8 +204,8 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.padding-top-100{
-  padding: 100px 0px
+.padding-top-100 {
+  padding: 100px 0px;
 }
 .power-wrapper {
   background: linear-gradient(150deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
@@ -413,7 +413,6 @@ justify-content: center;
   justify-content: center;
 } */
 
-
 .scroll-headings {
   position: absolute;
   top: 10%;
@@ -438,8 +437,6 @@ justify-content: center;
   text-align: right;
 }
 
-
-
 @media (min-width: 1024px) and (max-width: 1400px) {
   .crafted-renie h2 {
     width: 50%;
@@ -449,18 +446,18 @@ justify-content: center;
   }
   .ProductRenie h2 {
     font-size: 40px;
-}
-.power h2 {
-  color: #fff;
-  font-size: 40px;
-}
-.discover h2 {
-  font-size: 40px;
-}
-.meet-main-banner h2 {
-  color: #fff;
-  font-size: 40px;
-}
+  }
+  .power h2 {
+    color: #fff;
+    font-size: 40px;
+  }
+  .discover h2 {
+    font-size: 40px;
+  }
+  .meet-main-banner h2 {
+    color: #fff;
+    font-size: 40px;
+  }
 }
 @media (max-width: 1200px) {
   .renie-main-content {
@@ -469,7 +466,7 @@ justify-content: center;
   .meet-image canvas {
     width: 200px !important;
     height: 300px !important;
-}
+  }
   .MeetRenieBin {
     height: 100vh;
   }
@@ -482,7 +479,7 @@ justify-content: center;
   .renie-bin-custom div {
     margin: 10px;
     padding: 8px;
-}
+  }
 }
 @media (max-width: 992px) {
   .renie-main-content h1 {
@@ -603,24 +600,24 @@ justify-content: center;
   }
   .reniebin-paragraph p {
     font-size: 14px;
-}
+  }
   .renie-card iframe {
     width: 100%;
     margin: unset;
   }
   .renie-bin-custom div img {
     max-width: 50%;
-}
-  .renie-bin-custom{
+  }
+  .renie-bin-custom {
     flex-wrap: wrap;
   }
   .MeetRenieBin {
     height: 125vh;
-}
+  }
   .renie-bin-custom div {
     margin: 5px;
     padding: 5px;
-}
+  }
   .renie-card {
     padding: 20px 24px;
   }
@@ -632,15 +629,44 @@ justify-content: center;
   .renie-main-content {
     padding-top: 10%;
   }
-  .renie-bin-custom{
+  .swiper-slide div div {
+    display: flex;
+    justify-content: center;
+  }
+  .renie-bin-custom {
     display: none;
+  }
+  .MeetRenieBin {
+    height: 100vh;
+  }
+  .banner-svg-bin {
+    height: unset;
+  }
+  .RenieSection2-container {
+    height: unset;
+  }
+  .renie-card-parent .renie-card:nth-child(3) {
+    left: 60%;
+    transform: translateY(90%);
+  }
+  .RenieSection2 {
+    min-height: unset;
+  }
+  .reniebin-paragraph p {
+    width: 96%;
+  }
+  .RenieSection2 .banner-svg-renie {
+    height: 70vh;
+  }
+  .renie-bin-paragraph {
+    margin-top: 0px !important;
   }
   .renie-card p {
     margin-top: -32px !important;
   }
   .bin-canvas {
     scale: 1.3;
-}
+  }
   .ProductRenie h2 {
     font-size: 30px;
   }
@@ -700,13 +726,13 @@ justify-content: center;
   .meet-image canvas {
     width: 300px !important;
     height: 300px !important;
-}
-.model-title {
-  margin-top: 0px;
-  position: absolute;
-  bottom: 10%;
-  transform: translateX(100%);
-}
+  }
+  .model-title {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 10%;
+    transform: translateX(117%);
+  }
   .meet-mini-box {
     gap: 10px;
     flex-wrap: wrap;
@@ -730,7 +756,7 @@ justify-content: center;
   }
   .power p {
     font-size: 12px;
-    text-align: center
+    text-align: center;
   }
   .power-youtube iframe {
     width: 100%;
