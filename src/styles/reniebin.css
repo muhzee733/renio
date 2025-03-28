@@ -765,7 +765,7 @@
     display: none;
   }
   .crafted-renie h2 {
-    width: 90%;
+    width: 100%;
     font-size: 20px;
     text-align: center;
     line-height: 28px;
@@ -774,8 +774,19 @@
     padding: 50px 0px;
   }
   .crafted-card {
-    height: 363px;
+    height: 250px;
+    padding: 20px;
   }
+  .crafted-card h3 {
+    font-size: 20px;
+  }
+  .product-box-wrapper p {
+    font-size: 14px;
+    line-height: 24px;
+}
+  .product-box-wrapper h3 {
+    font-size: 20px;
+}
   .power-wrapper .row .row div {
     padding-right: 0px !important;
     margin-bottom: 10px;
@@ -802,9 +813,10 @@
   }
   .discover p {
     width: 80%;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center !important;
     margin: 0 auto;
+    padding: 5px 0px;
   }
 
   .custom-footer-section {
