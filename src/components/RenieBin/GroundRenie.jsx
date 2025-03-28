@@ -7,10 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
   const canvasRef = useRef(null);
   const h2Ref = useRef(null);
-  const h3Ref = useRef(null);
-  const h4Ref = useRef(null);
-  const h5Ref = useRef(null);
-  const h6Ref = useRef(null);
   const imagesRef = useRef([]);
   const animationRef = useRef({ frame: 20 });
 
@@ -19,12 +15,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
 
     const canvas = canvasRef.current;
     const h2 = h2Ref.current;
-    const h3 = h3Ref.current;
-    const h4 = h4Ref.current;
-    const h5 = h5Ref.current;
-    const h6 = h6Ref.current;
-
-    if (!canvas || !h2 || !h3 || !h4 || !h5 || !h6) return;
+    if (!canvas || !h2) return;
 
     const context = canvas.getContext("2d");
     canvas.width = 1158;
@@ -44,6 +35,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
 
     imagesRef.current[0].onload = render;
 
+    // Animate canvas scrolling
     gsap.to(animationRef.current, {
       frame: frameCount - 1,
       snap: "frame",
@@ -58,22 +50,14 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
       },
     });
 
+    // Pin the <h2> while scrolling
     gsap.to(h2, {
       scrollTrigger: {
         trigger: h2,
         start: "top 15%",
-        end: "+=13000",
+        end: `+=13000`, // Adjust this value based on how long you want the pin effect
         pin: true,
-        pinSpacing: false,
-      },
-    });
-    gsap.to(h3, {
-      scrollTrigger: {
-        trigger: h3,
-        start: "top 15%",
-        end: "+=13000",
-        pin: true,
-        pinSpacing: false,
+        pinSpacing: false, // Prevents adding extra space
       },
     });
 
@@ -88,21 +72,10 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="power">
+                  {/* Add ref to h2 */}
                   <h2 ref={h2Ref} className="build-pin pt-5 text-center">
                     Build from the ground up
                   </h2>
-                  <h3 ref={h3Ref} className="text-left">
-                    Text 1
-                  </h3>
-                  <h3 ref={h4Ref} className="text-left">
-                    Text 2
-                  </h3>
-                  <h3 ref={h5Ref} className="text-right">
-                    Text 3
-                  </h3>
-                  <h3 ref={h6Ref} className="text-right">
-                    Text 4
-                  </h3>
                   <div className="canvas-wrapper1">
                     <div className={containerClass}>
                       <canvas ref={canvasRef} />
