@@ -25,7 +25,7 @@ const ThirdSection = () => {
           in one place. Efficiently manage your franchise network with seamless
           coordination and real-time waste tracking.'/>
         <div className="d-flex justify-content-center mt-4">
-          <button className="btn btn-danger">Book for a Demo</button>
+          <button className="btn btn-danger">Book for a demo</button>
         </div>
       </div>
     </section>

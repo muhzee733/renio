@@ -12,7 +12,7 @@ const Green = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <H1 title=" Be Part of the Green Revolution!" />
+            <div className="mb-3"><H1 title=" Be part of the green revolution!" /></div>
             <P
               title="Every action counts. With the Renie Nexus, you’re not just
               disposing of waste—you’re contributing to a cleaner, smarter

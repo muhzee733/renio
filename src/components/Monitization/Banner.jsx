@@ -11,8 +11,8 @@ const Banner = () => {
             <img src="/assets/time.webp" alt="time" />
           </div>
           <div class="col-lg-6 col-md-6 custom-data-column">
-            <H1 title='Unlock the Power of Data Monetization' />
-            <P title='Transform Waste into a Data-Driven Revenue Stream' />
+            <H1 title='Unlock the power of data monetization' />
+            <P title='Transform waste into a data-driven revenue stream' />
           </div>
           <div className="downarrow-image">
             <img src="/assets/downarrow.webp" alt="renie" />

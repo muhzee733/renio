@@ -18,7 +18,7 @@ const RenieNexus = () => {
                   <H2 title="Nexus?" />
                 </div>
                 <P
-                  title=" The Renie Nexus is your personal waste management companion,
+                  title=" The renie nexus is your personal waste management companion,
                   designed to simplify recycling, promote sustainability, and
                   reward responsible behavior. With real-time tracking and data
                   insights, you’ll always know how your waste is being
