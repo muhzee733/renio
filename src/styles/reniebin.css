@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-.renie-main-content h1{
+.renie-main-content h1 {
   width: 70%;
   margin: 0 auto;
   padding-top: 20px;
@@ -159,12 +159,17 @@
   left: 60%;
   transform: translateY(50%);
 }
+#custom-popup {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+}
 .MeetRenieBin {
   background: linear-gradient(150deg, #4765e6 0%, #4765e6 10%, #283880 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px;
+  padding: 150px 0px;
 }
 .meet-main-banner h2 {
   color: white;
@@ -240,6 +245,12 @@
 }
 .power {
   width: 100%;
+}
+.meet-image h4 {
+  color: white;
+}
+.meet-image img {
+  height: 350px;
 }
 .power h2 {
   color: white;
@@ -799,10 +810,10 @@
   .product-box-wrapper p {
     font-size: 14px;
     line-height: 24px;
-}
+  }
   .product-box-wrapper h3 {
     font-size: 20px;
-}
+  }
   .power-wrapper .row .row div {
     padding-right: 0px !important;
     margin-bottom: 10px;
