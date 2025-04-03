@@ -23,6 +23,7 @@
   text-align: center;
   width: 45%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .reniehub .brand-slider-container {
   position: absolute;
@@ -248,14 +249,9 @@
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {
-    background-size: 100% 50vh;
-    padding: 150px 0px;
+    background-size: 100% 90vh;
+    padding: 200px 0px;
   }
-  /* .renie-box-wrapper h1 {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 52px;
-  } */
   .control-below-section h2 {
     color: #fff;
   }

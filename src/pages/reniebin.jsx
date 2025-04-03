@@ -20,7 +20,7 @@ const RenieBin = () => {
   const [isMobile, setIsMobile] = useState(false);
   const canvasRef = useRef(null);
   const imagesRef = useRef([]);
-  const frameCount = 120;
+  const frameCount = 117;
   const airpods = { frame: 0 };
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const RenieBin = () => {
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/assets/bin-5/Anim${(i + 1).toString().padStart(4, "0")}.webp`;
+      img.src = `/assets/binanimation/Anim${(i + 1).toString().padStart(4, "0")}.webp`;
       imagesRef.current.push(img);
     }
 
@@ -71,7 +71,7 @@ const RenieBin = () => {
     imagesRef.current[0].onload = render;
 
     // Set different animation ending positions based on screen size
-    const scrollEnd = isMobile ? window.innerHeight * 0.9 : 1150;
+    const scrollEnd = isMobile ? window.innerHeight * 0.9 : 950;
 
     gsap.to(airpods, {
       frame: frameCount - 1,

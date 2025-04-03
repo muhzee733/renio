@@ -8,10 +8,6 @@ const RenieSection = () => {
     <div className="RenieSection2">
       <div className="RenieSection2-container">
         <div className="banner-svg-bin">
-          {/* <object
-            src="/assets/Website-Wave.svg"
-            className="banner-svg-renie"
-          ></object> */}
           <DotLottieReact src="/assets/website-wave.json" loop autoplay />
         </div>
         <div className="renie-card-parent">
