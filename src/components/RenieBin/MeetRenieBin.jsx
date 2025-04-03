@@ -5,7 +5,9 @@ import H4 from "../Typography/H4";
 
 const Model = ({ path }) => {
   const { scene } = useGLTF(path);
-  return <primitive object={scene} position={[0, 0, 0]} rotation={[0, 0.6, 0]} />;
+  return (
+    <primitive object={scene} position={[0, 0, 0]} rotation={[0, 0.6, 0]} />
+  );
 };
 
 const MeetRenieBin = () => {
@@ -42,6 +44,41 @@ const MeetRenieBin = () => {
                   <H4 title={titles[index]} />
                 </div>
               ))}
+            </div>
+            <div className="reniebin-paragraph">
+              <p>
+                Renie Bins are equipped with special sensors that mimic a
+                vision-type experience, eliminating the need for expensive
+                processing power. This cutting-edge technology ensures the bins
+                remain as affordable as traditional, non-smart bins. Enjoy the
+                benefits of smart waste management without the high costs,
+              </p>
+              <div className="renie-bin-custom">
+                <div>
+                  <img src="/assets/Vector.webp" />
+                  <p>Plastic Bottles</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-2.webp" />
+                  <p>Plastic Cups</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-3.webp" />
+                  <p>Paper Cups</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-4.webp" />
+                  <p>Cans</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-5.webp" />
+                  <p>Tetra Pak</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-6.webp" />
+                  <p>Glass</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
