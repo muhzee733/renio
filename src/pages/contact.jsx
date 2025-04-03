@@ -52,9 +52,9 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-center">
+      <div className="container-xl">
+        <div className="row">
+          <div className="col-lg-4 d-flex align-items-center">
             <div className="contact-left-data">
               <div className="contact-data">
                 <H2 title="Renie HQ" />
@@ -81,8 +81,8 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
-            <div class="form-section">
+          <div className="col-lg-8">
+            <div className="form-section">
               <div className="container-xl">
                 <form className="row g-3" onSubmit={handleSubmit}>
                   <div className="col-md-6">

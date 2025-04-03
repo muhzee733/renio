@@ -35,7 +35,7 @@ const Section3 = () => {
   return (
     <div ref={triggerRef}>
       <div ref={sectionRef} className="scroll-section-inner">
-        <div class="scroll-section">
+        <div className="scroll-section">
           <Slide1
             img="/assets/RENIE_ONE.webp"
             title1="RENIE ONE"
@@ -45,7 +45,7 @@ const Section3 = () => {
             model= "/assets/onemodel.glb"
           />
         </div>
-        <div class="scroll-section bg-danger">
+        <div className="scroll-section bg-danger">
           <Slide1
             img="/assets/RENIE_TWO.webp"
             title1="RENIE Two"
@@ -55,7 +55,7 @@ const Section3 = () => {
             model= "/assets/twomodel.glb"
           />
         </div>
-        <div class="scroll-section bg-success">
+        <div className="scroll-section bg-success">
           <Slide1
             img="/assets/RENIE_MAXI.webp"
             title1="RENIE Maxi"
@@ -65,7 +65,7 @@ const Section3 = () => {
             model= "/assets/threemodel.glb"
           />
         </div>
-        <div class="scroll-section bg-dark">
+        <div className="scroll-section bg-dark">
           <Slide1
             img="/assets/RENIE_MINI.webp"
             title1="RENIE Mini"

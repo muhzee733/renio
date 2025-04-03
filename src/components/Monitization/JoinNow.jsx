@@ -5,13 +5,13 @@ import P from "../Typography/P";
 const JoinNow = () => {
   return (
     <div className="JoinNow">
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-lg-8">
+      <div className="container-xl">
+        <div className="row">
+          <div className="col-lg-8">
             <H2 title="Are you ready to turn waste into wealth?" />
             <P title="Join renie’s data monetization revolution today!" />
           </div>
-          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <div className="col-lg-4 d-flex align-items-center justify-content-center">
             <a
               href="/contact"
               target="_blank"

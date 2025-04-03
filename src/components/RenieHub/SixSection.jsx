@@ -4,8 +4,8 @@ import H1 from "../Typography/H1";
 const SixSection = () => {
   return (
     <>
-      <div class="designed">
-        <div class="container">
+      <div className="designed">
+        <div className="container">
           <H1 title='Designed by and for those who live as recyclers.' />
           <a
               href="/contact"

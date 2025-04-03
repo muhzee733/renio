@@ -19,7 +19,7 @@ const TermOfServices = () => {
         </div>
       </div>
       <div className="privacy-body">
-        <div class="container-xl">
+        <div className="container-xl">
           <b>Terms & Conditions of Use Update version – October 10, 2022</b>
           <br />
           <br />

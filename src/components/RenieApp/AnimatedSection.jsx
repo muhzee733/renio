@@ -6,17 +6,17 @@ import P from "../Typography/P";
 const AnimatedSection = () => {
   return (
     <div className="animatedsection">
-      <div class="animated-wrapper">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="animated-h2">
+      <div className="animated-wrapper">
+        <div className="container-xl">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="animated-h2">
                 <H1 title="consumers receive 0.05 AED or 5 fils per packaging they drop" />
               </div>
             </div>
           </div>
-          <div class="row custom-margin-top">
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
+          <div className="row custom-margin-top">
+            <div className="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div className="animated-left-section ">
                 <div className="d-flex align-items-center justify-content-end text-right gap-4">
                   <P
@@ -38,7 +38,7 @@ const AnimatedSection = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
+            <div className="col-lg-6 col-md-6 col-12">
               <div className="animated-main-image">
                 <img src="/assets/animated-4.webp" alt="renie" />
               </div>

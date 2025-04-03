@@ -6,9 +6,9 @@ import H1 from "../Typography/H1";
 const AdsSection = () => {
   return (
     <section className="renie-ads">
-      <div class="renie-ads-wrapper">
+      <div className="renie-ads-wrapper">
         <div className="container-xl">
-          <div class="row">
+          <div className="row">
             <div className="col-lg-7 custom-padding ">
               <div>
                 <H1 title="Ads that matter redefining advertising" />

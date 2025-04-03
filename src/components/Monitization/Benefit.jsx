@@ -32,7 +32,7 @@ const blogData = [
 export default function App() {
   return (
     <>
-      <div class="renieeee">
+      <div className="renieeee">
         <div className="container-xl">
           <div className="row">
             <div className="col-lg-12">

@@ -7,6 +7,21 @@
   height: 74px !important;
   background-color: transparent;
 }
+.qr-code h2{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.qr-code p{
+  width: 60%;
+  margin: 0 auto;
+}
 .renie-software-section {
   background-image: url("/assets/bg.webp");
   background-repeat: no-repeat;

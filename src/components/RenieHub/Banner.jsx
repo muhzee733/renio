@@ -6,11 +6,11 @@ import P from "../Typography/P";
 const Banner = () => {
   return (
     <>
-      <div class="reniehub position-relative">
-        <div class="reniehub-wrapper">
-          <div class="container-xl">
-            <div class="row">
-              <div class="col-lg-12">
+      <div className="reniehub position-relative">
+        <div className="reniehub-wrapper">
+          <div className="container-xl">
+            <div className="row">
+              <div className="col-lg-12">
                 <div className="renie-box-wrapper position-relative">
                   <div>
                     <H1 title='Earn income while you make a traceable impact' />

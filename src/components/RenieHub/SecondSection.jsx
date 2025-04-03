@@ -5,10 +5,10 @@ const SecondSection = () => {
   return (
     <>
       <div className="renie-waste">
-        <div class="renie-waste-wrapper">
-          <div class="container-xl">
-            <div class="row">
-              <div class="col-lg-12">
+        <div className="renie-waste-wrapper">
+          <div className="container-xl">
+            <div className="row">
+              <div className="col-lg-12">
                 <div className="renie-waste-box">
                   <h2>
                     A <span style={{ color: "#E31662" }}>centralized</span>
@@ -22,20 +22,20 @@ const SecondSection = () => {
                 </div>
               </div>
             </div>
-            <div class="row custom-disposal-row">
-              <div class="col-lg-4 col-md-4">
+            <div className="row custom-disposal-row">
+              <div className="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-1.webp" />
                   <P title="Tracks generated revenue streams" />
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div className="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-2.webp" />
                   <P title="Track waste from source to waste management facility" />
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div className="col-lg-4 col-md-4">
                 <div className="waste-div">
                   <img src="/assets/reniehub/icon-3.webp" />
                   <P

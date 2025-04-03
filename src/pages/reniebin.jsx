@@ -107,7 +107,7 @@ const RenieBin = () => {
       <GroundRenie
         imagePath="/assets/bin3/bin/M"
         frameCount={104}
-        containerClass="canvas-container-1"
+        containerclassName="canvas-container-1"
       />
       <CraftedRenie />
       <ProductRenie />

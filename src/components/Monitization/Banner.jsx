@@ -5,12 +5,12 @@ import P from "../Typography/P";
 const Banner = () => {
   return (
     <div className="data-banner">
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
+      <div className="container-xl">
+        <div className="row">
+          <div className="col-lg-6 col-md-6">
             <img src="/assets/time.webp" alt="time" />
           </div>
-          <div class="col-lg-6 col-md-6 custom-data-column">
+          <div className="col-lg-6 col-md-6 custom-data-column">
             <H1 title='Unlock the power of data monetization' />
             <P title='Transform waste into a data-driven revenue stream' />
           </div>

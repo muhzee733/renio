@@ -3,15 +3,21 @@ import H2 from "../Typography/H2";
 import P from "../Typography/P";
 
 const RenieNexus = () => {
+  const handleRedirect = () => {
+    const isMobile = window.innerWidth <= 768;
+    const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="renie-nexus">
-      <div class="renie-nexus-wrapper">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-lg-6">
+      <div className="renie-nexus-wrapper">
+        <div className="container-xl">
+          <div className="row">
+            <div className="col-lg-6">
               <img src="/assets/main-hand-mobile.webp" alt="renie-app" />
             </div>
-            <div class="col-lg-6 align-items-center d-flex">
+            <div className="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">
                 <H2 title="What is the Renie" />
                 <div className="diff-color">
@@ -24,13 +30,9 @@ const RenieNexus = () => {
                   insights, you’ll always know how your waste is being
                   managed—helping you make greener choices every day."
                 />
-                <a
-                  href="https://app.renie.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button>Explore the Renie Nexus</button>
-                </a>
+                <button onClick={handleRedirect}>
+                  Explore the Renie Nexus
+                </button>
               </div>
             </div>
           </div>

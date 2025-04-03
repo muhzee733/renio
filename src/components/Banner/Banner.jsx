@@ -23,7 +23,7 @@ const Banner = () => {
             </button>
           </div>
           <div className="col-lg-6 col-md-12">
-            <div class="box-inner">
+            <div className="box-inner">
               <div className="tool">
                 <span>Recycled waste items</span>
                 <div className="d-flex align-items-center gap-2">

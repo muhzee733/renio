@@ -7,10 +7,10 @@ const ThirdSection = () => {
   return (
     <>
       <div className="control">
-        <div class="controll-wrapper">
-          <div class="container-xl">
-            <div class="row">
-              <div class="col-lg-12">
+        <div className="controll-wrapper">
+          <div className="container-xl">
+            <div className="row">
+              <div className="col-lg-12">
                 <div className="control-upper-section">
                   <H1 title="First, you’ll need fulltransparency and control" />
                   <P
@@ -23,8 +23,8 @@ const ThirdSection = () => {
                 </div>
               </div>
             </div>
-            <div class="row control-below-section mb-100">
-              <div class="col-lg-6 col-md-6 d-flex align-items-center">
+            <div className="row control-below-section mb-100">
+              <div className="col-lg-6 col-md-6 d-flex align-items-center">
                 <div className="revolution">
                   <H2 title="Revolutionizing Waste Management with Smart Bin Control" />
                   <P
@@ -36,19 +36,19 @@ const ThirdSection = () => {
                   />
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="d-flex justify-content-end justify-content-center-md">
                   <img src="/assets/reniehub/imag.webp" />
                 </div>
               </div>
             </div>
-            <div class="row control-below-section m-below-section">
-              <div class="col-lg-6 col-md-6">
+            <div className="row control-below-section m-below-section">
+              <div className="col-lg-6 col-md-6">
                 <div>
                   <img src="/assets/reniehub/imag-2.webp" />
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 d-flex align-items-center">
+              <div className="col-lg-6 col-md-6 d-flex align-items-center">
                 <div className="track-data">
                   <H2 title="Track Impact and Waste" />
                   <P

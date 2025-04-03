@@ -11,7 +11,7 @@ const secondSection = () => {
       }}
     >
       <div className="container-xl">
-        <div class="feature-text">
+        <div className="feature-text">
           <P
             title=" Our powerful admin panel provides franchisees with the tools they need
           to efficiently manage operations, optimize resources, and drive

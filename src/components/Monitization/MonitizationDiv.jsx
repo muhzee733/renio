@@ -29,8 +29,8 @@ const MonitizationDiv = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 custom-renie-moni-image">
+          <div className="row">
+            <div className="col-lg-12 custom-renie-moni-image">
               <img src="/assets/renie-monitization.webp" alt="renie" />
             </div>
           </div>
