@@ -11,7 +11,7 @@ const AdsSection = () => {
           <div class="row">
             <div className="col-lg-7 custom-padding ">
               <div>
-                <H1 title="Ads That Matter Redefining Advertising" />
+                <H1 title="Ads that matter redefining advertising" />
                 <P
                   title="We enable impactful ads that empower both advertisers and
                   users with value-driven engagement. Through our innovative

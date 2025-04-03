@@ -18,7 +18,7 @@ export default function AdsSection() {
                 alt="Platform Icon"
                 className="mb-3 mx-auto"
               />
-              <H4 title='The Ads That Matter Platform' />
+              <H4 title='The ads that matter platform' />
               <P title='Gain valuable insights into your campaign’s performance with a
                 dedicated advertising dashboard, allowing you to track
                 engagement, measure impact, and optimize your strategy in
@@ -34,7 +34,7 @@ export default function AdsSection() {
                 alt="Sustainability Icon"
                 className="mb-3 mx-auto"
               />
-              <H4 title='Turn Ad Impressions into Real Sustainability Impact' />
+              <H4 title='Turn ads impressions into real sustainability impact' />
               <P title='Your marketing spend now drives measurable environmental
                 benefits—real, verifiable reductions in landfill waste and CO2
                 emissions. Track your impact live through your Ads That Matter

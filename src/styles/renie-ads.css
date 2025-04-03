@@ -66,6 +66,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
+  line-height: 78px;
 }
 .custom-padding p{
   padding-right: 50px;
