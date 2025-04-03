@@ -97,7 +97,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 Renie one
               </button>
               <button className={title1 === "RENIE Two" ? "active" : ""}>
-                Renie Two
+                Renie two
               </button>
               <button className={title1 === "RENIE Maxi" ? "active" : ""}>
                 Renie Maxi
@@ -216,18 +216,18 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                 Renie one
               </button>
               <button className={title1 === "RENIE Two" ? "active" : ""}>
-                Renie Two
+                Renie two
               </button>
               <button className={title1 === "RENIE Maxi" ? "active" : ""}>
-                Renie Maxi
+                Renie maxi
               </button>
               <button className={title1 === "RENIE Mini" ? "active" : ""}>
-                Renie Mini
+                Renie mini
               </button>
             </div>
             {title1 === "RENIE Mini" ? (
               <div className="renio-grid" id="derktop-version">
-                <h5>Available Waste Streams</h5>
+                <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
                     <img src="/assets/Group-icon-1.png" alt="Plastic Bottles" />
@@ -245,19 +245,19 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
               </div>
             ) : (
               <div className="renio-grid" id="derktop-version">
-                <h5>Available Waste Streams</h5>
+                <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
                     <img src="/assets/Vector.webp" alt="Plastic Bottles" />
-                    <h6>Plastic Bottles</h6>
+                    <h6>Plastic bottles</h6>
                   </div>
                   <div>
                     <img src="/assets/Vector-2.webp" alt="Plastic Cups" />
-                    <h6>Plastic Cups</h6>
+                    <h6>Plastic cups</h6>
                   </div>
                   <div>
                     <img src="/assets/Vector-3.webp" alt="Paper Cups" />
-                    <h6>Paper Cups</h6>
+                    <h6>Paper cups</h6>
                   </div>
                   <div>
                     <img src="/assets/Vector-4.webp" alt="Cans" />
@@ -265,7 +265,7 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
                   </div>
                   <div>
                     <img src="/assets/Vector-5.webp" alt="Tetra Pak" />
-                    <h6>Tetra Pak</h6>
+                    <h6>Carton</h6>
                   </div>
                   <div>
                     <img src="/assets/Vector-6.webp" alt="Glass" />
@@ -278,11 +278,11 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
               <h5 className="text-center text-white mt-5 mb-3">Pricing</h5>
               <div className="renio-footer-div">
                 <div>
-                  <h6 className="custom-heading">Standard Design</h6>
+                  <h6 className="custom-heading">Standard design</h6>
                   <h5 className="custom-price">{price1} AED</h5>
                 </div>
                 <div>
-                  <h6 className="custom-heading">Custom Design</h6>
+                  <h6 className="custom-heading">Custom design</h6>
                   <h5 className="custom-price">{price2} AED</h5>
                 </div>
               </div>

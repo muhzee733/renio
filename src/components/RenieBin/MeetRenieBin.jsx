@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls } from "@react-three/drei";
+import H2 from "../Typography/H2";
+import P from "../Typography/P";
 
 const Model = ({ path }) => {
   const { scene } = useGLTF(path);
@@ -25,8 +27,8 @@ const MeetRenieBin = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="meet-main-banner">
-              <h2>Meet Renie Bins</h2>
-              <p>Collect Multiple Waste Types in One Bin</p>
+              <H2 title={'Meet Renie Bins'} />
+              <P title={'Collect multiple waste types in one bin'} />
             </div>
             <div className="meet-image">
               <Swiper
@@ -77,15 +79,15 @@ const MeetRenieBin = () => {
               <div className="renie-bin-custom">
                 <div>
                   <img src="/assets/Vector.webp" />
-                  <p>Plastic Bottles</p>
+                  <p>Plastic bottles</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-2.webp" />
-                  <p>Plastic Cups</p>
+                  <p>Plastic bups</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-3.webp" />
-                  <p>Paper Cups</p>
+                  <p>Paper bups</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-4.webp" />
@@ -93,7 +95,7 @@ const MeetRenieBin = () => {
                 </div>
                 <div>
                   <img src="/assets/Vector-5.webp" />
-                  <p>Tetra Pak</p>
+                  <p>Carton</p>
                 </div>
                 <div>
                   <img src="/assets/Group-icon-1.png" />

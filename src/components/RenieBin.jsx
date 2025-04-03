@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Blog from "./Blog/Blog";
 import { Pagination, Autoplay } from "swiper/modules";
+import H2 from "./Typography/H2";
 
 const blogData = [
   {
@@ -38,10 +39,10 @@ export default function App() {
       <div className="row">
         <div className="col-lg-12">
           <div className="renie-bin-wrapper">
-            <h2>Renie bins are everywhere</h2>
-            <p className="desktop-paragraph">
-              Transforming waste for every space
-            </p>
+            <H2 title={"Renie bins are everywhere"} />
+            <div className="desktop-paragraph">
+              <H2 title={"Transforming waste for every space"} />
+            </div>
             <div id="derktop-version">
               <div className="blogs">
                 <Swiper

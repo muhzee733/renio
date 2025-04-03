@@ -10,10 +10,10 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
 
   const cardTexts = [
     {
-      title: "Step 1: Purchase Renie bins",
+      title: "Step 1: Purchase renie bins",
       desc: (
         <>
-          Renie Bins represent a revolutionary approach to waste management,
+          Renie bins represent a revolutionary approach to waste management,
           transforming how you handle recyclable waste. These intelligent bins
           are designed to segregate waste at the source, utilizing advanced
           recognition technology to ensure precise waste stream separation.
@@ -35,7 +35,7 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
       title: "Step 2: Sort recyclables",
       desc: (
         <>
-          Renie Bins represent a revolutionary approach to waste management,
+          Renie bins represent a revolutionary approach to waste management,
           transforming how you handle recyclable waste. These intelligent bins
           are designed to segregate waste at the source, utilizing advanced
           recognition technology to ensure precise waste stream separation.
@@ -46,7 +46,7 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
       title: "Step 3: Drop off at the recycling center",
       desc: (
         <>
-          Renie Bins represent a revolutionary approach to waste management,
+          Renie bins represent a revolutionary approach to waste management,
           transforming how you handle recyclable waste. These intelligent bins
           are designed to segregate waste at the source, utilizing advanced
           recognition technology to ensure precise waste stream separation.
@@ -57,7 +57,7 @@ const Slider = ({ handleStepButtonClick, nextStep }) => {
       title: "Step 4: Monitor waste reduction",
       desc: (
         <>
-          Renie Bins represent a revolutionary approach to waste management,
+          Renie bins represent a revolutionary approach to waste management,
           transforming how you handle recyclable waste. These intelligent bins
           are designed to segregate waste at the source, utilizing advanced
           recognition technology to ensure precise waste stream separation.

@@ -71,7 +71,7 @@ function Section6() {
                 isMobile ? "vertical-layout" : ""
               }`}
             >
-              <div className="software-right-container">
+              {/* <div className="software-right-container">
                 <Link href="/renieadmin">
                   <img src="/assets/admin.webp" alt="Renie Admin" />
                   <span>Renie Admin</span>
@@ -81,7 +81,7 @@ function Section6() {
                     interactions.
                   </p>
                 </Link>
-              </div>{" "}
+              </div> */}
               <div className="software-right-container">
                 <Link href="/reniehub">
                   <img src="/assets/hub.webp" alt="Renie Hub" />

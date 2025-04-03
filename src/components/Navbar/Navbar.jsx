@@ -125,7 +125,6 @@ const Navbar = ({ white }) => {
     }
   };
 
-
   return (
     <>
       <nav
@@ -174,7 +173,17 @@ const Navbar = ({ white }) => {
             </li>
           ))}
         </ul>
-        <button ref={buttonRef} className="btn" onClick={handleClick} style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center"}}>
+        <button
+          ref={buttonRef}
+          className="btn"
+          onClick={handleClick}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
           Connect with an expert
         </button>
         <Image

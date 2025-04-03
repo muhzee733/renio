@@ -18,20 +18,20 @@ const FlowDiagram = ({
   const buttons = [
     {
       step: 0,
-      label: "Waste Collection",
+      label: "Waste collection",
       image: "/assets/Waste_collection.webp",
     },
     {
       step: 0.35,
-      label: "Data Extraction",
+      label: "Data extraction",
       image: "/assets/Data_monetization.webp",
     },
     {
       step: 0.65,
-      label: "Data Monetization",
+      label: "Data monetization",
       image: "/assets/Money.webp",
     },
-    { step: 1, label: "You Payout", image: "/assets/Money.webp" },
+    { step: 1, label: "You payout", image: "/assets/Money.webp" },
   ];
 
   useEffect(() => {
@@ -90,7 +90,7 @@ const FlowDiagram = ({
   };
 
   return (
-    <div>
+    <>
       <div
         className="custom-diagram"
         style={{ position: "relative", width: "600px", margin: "auto" }}
@@ -148,7 +148,7 @@ const FlowDiagram = ({
                   : index === 2
                   ? "300px"
                   : "20px",
-              bottom: index === 3 ? "20px" : "auto",
+              bottom: index === 3 ? "10px" : "auto",
               backgroundColor:
                 highlightedButton === button.label ? "#e31662" : "#ffffff",
               color: highlightedButton === button.label ? "#ffffff" : "black",
@@ -181,13 +181,13 @@ const FlowDiagram = ({
           </button>
         ))}
       </div>
-      <div className="idea">
+      <div className="idea mb-3">
         <span style={{ marginRight: "5px" }}>
           <img src="/assets/icon.webp" />
         </span>
         NO INTERRUPTION TO YOUR CURRENT WASTE MANAGEMENT PROCESS
       </div>
-    </div>
+    </>
   );
 };
 

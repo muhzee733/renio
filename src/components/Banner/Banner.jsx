@@ -18,12 +18,14 @@ const Banner = () => {
             <h1>
               into <span className="purple">revenue</span>
             </h1>
-            <button className="btn-2" onClick={scrollToSection}>How it works</button>
+            <button className="btn-2" onClick={scrollToSection}>
+              How it works
+            </button>
           </div>
           <div className="col-lg-6 col-md-12">
             <div class="box-inner">
               <div className="tool">
-                <span>Recycled Waste Items</span>
+                <span>Recycled waste items</span>
                 <div className="d-flex align-items-center gap-2">
                   <span style={{ color: "#5C4099" }}>432</span>
                   <img src="/assets/arrow-1.webp" alt="arrow" />
@@ -40,16 +42,20 @@ const Banner = () => {
                 className="banner-svg"
               ></iframe> */}
               <object
-  data="/assets/Waste_income.svg"
-  className="banner-svg"
-  type="image/svg+xml"
-></object>
-
+                data="/assets/Waste_income.svg"
+                className="banner-svg"
+                type="image/svg+xml"
+              ></object>
             </div>
           </div>
         </div>
         <BrandSlider />
-        <DotLottieReact src="/assets/downarrow.json" loop autoplay className="lottie-animation" />
+        <DotLottieReact
+          src="/assets/downarrow.json"
+          loop
+          autoplay
+          className="lottie-animation"
+        />
       </div>
     </div>
   );

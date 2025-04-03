@@ -6,13 +6,13 @@ const allLogos = [
   "/assets/ajmanmuncipality-logo.webp",
   "/assets/adea-logo.webp",
   "/assets/ajmantourism-logo.webp",
-  "/assets/dubailholding-logo.webp",
   "/assets/dubaimuncipality-logo.webp",
   "/assets/majidalfuttaim-logo.webp",
   "/assets/nakheel-logo.webp",
   "/assets/nfpc-logo.webp",
   "/assets/tetrapak-logo.webp",
   "/assets/uber-logo.webp",
+    "/assets/dubailholding-logo.webp",
   "/assets/universityofsharjah-logo.webp",
 ];
 
@@ -99,7 +99,7 @@ const BrandSlider = () => {
 
   return (
     <div className="brand-slider-container">
-      <h3>Trusted by Industry Leaders</h3>
+      <h3>Trusted by industry leaders</h3>
       <div className="brand-slider">
         {visibleLogos.map((logo, index) => (
           <div key={index} className="brands__item">
