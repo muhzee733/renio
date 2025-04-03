@@ -161,6 +161,7 @@
 }
 #custom-popup {
   position: absolute;
+  transform: translateX(100%);
   background: white;
   border-radius: 8px;
 }

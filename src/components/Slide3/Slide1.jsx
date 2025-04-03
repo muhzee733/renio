@@ -2,75 +2,18 @@ import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { gsap } from "gsap";
 import { useGLTF, OrbitControls } from "@react-three/drei";
+import { useState } from "react";
 
-const Slide1 = ({ title1, title2, price1, price2 }) => {
-  const iconRef = useRef(null);
-  function Model() {
-    const { scene } = useGLTF("/assets/test.glb");
-    return (
-      <primitive
-        object={scene}
-        position={[-7, 0, 0]}
-        rotation={[0, (Math.PI / 180) * 50, 0]}
-      />
-    );
-  }
-  function ModelTwo() {
-    const { scene } = useGLTF("/assets/two-way.glb");
-    return (
-      <primitive
-        object={scene}
-        position={[-7, 0, 0]}
-        rotation={[0, (Math.PI / 180) * 50, 0]}
-      />
-    );
-  }
-  function ModelThree() {
-    const { scene } = useGLTF("/assets/threee-way.glb");
-    return (
-      <primitive
-        object={scene}
-        position={[-7, 0, 0]}
-        rotation={[0, (Math.PI / 180) * 50, 0]}
-      />
-    );
-  }
-  function ModelFour() {
-    const { scene } = useGLTF("/assets/four-way.glb");
-    return (
-      <primitive
-        object={scene}
-        position={[-3, 0, 0]}
-        rotation={[0, (Math.PI / 180) * 50, 0]}
-      />
-    );
-  }
+const Model = ({ path }) => {
+  const { scene } = useGLTF(path);
+  return (
+    <primitive object={scene} position={[0, 0, 0]} rotation={[0, 0.6, 0]} />
+  );
+};
 
-  const handleMouseEnter = (e) => {
-    gsap.to(iconRef.current, {
-      opacity: 1,
-      scale: 1,
-      duration: 0.3,
-      x: e.nativeEvent.offsetX - 20,
-      y: e.nativeEvent.offsetY - 20,
-    });
-  };
-
-  const handleMouseMove = (e) => {
-    gsap.to(iconRef.current, {
-      x: e.nativeEvent.offsetX - 20,
-      y: e.nativeEvent.offsetY - 20,
-      duration: 0.1,
-    });
-  };
-
-  const handleMouseLeave = () => {
-    gsap.to(iconRef.current, {
-      opacity: 0,
-      scale: 0.5,
-      duration: 0.3,
-    });
-  };
+const Slide1 = ({ title1, title2, price1, price2, model }) => {
+  const [selectedSection, setSelectedSection] = useState(null);
+  const [selectedModel, setSelectedModel] = useState(null);
 
   return (
     <div
@@ -108,102 +51,47 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
             </div>
             <div className="left-box">
               <h2>{title1}</h2>
-              <img
-                className="threed-image"
-                src="/assets/360-icon.webp"
-                alt="360"
-                style={{
-                  cursor: "pointer",
-                  position: "absolute",
-                  bottom: "-80px",
-                  left: "0",
-                }}
-              />
-              <div
-                className="image-container"
-                onMouseEnter={handleMouseEnter}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                style={{ position: "relative", display: "inline-block" }}
-              >
+              <div className="image-container">
                 {title1 === "RENIE ONE" ? (
                   <>
-                    <Canvas style={{ height: "500px", width: "500px" }}>
-                      <ambientLight intensity={1.2} />
-                      <directionalLight position={[1, 1, 1]} intensity={1.5} />
-                      <Model />
-                      <OrbitControls
-                        enableZoom={false}
-                        minDistance={30}
-                        maxDistance={3}
-                      />
-                    </Canvas>
+                    <img
+                      onClick={() => setSelectedModel(model)}
+                      src="/assets/2.png"
+                    />
                   </>
                 ) : (
                   ""
                 )}
                 {title1 === "RENIE Two" ? (
                   <>
-                    <Canvas style={{ height: "500px", width: "500px" }}>
-                      <ambientLight intensity={1.2} />
-                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                      <ModelTwo />
-                      <OrbitControls
-                        enableZoom={false}
-                        minDistance={30}
-                        maxDistance={3}
-                      />
-                    </Canvas>
+                    <img
+                      onClick={() => setSelectedModel(model)}
+                      src="/assets/5.png"
+                    />
                   </>
                 ) : (
                   ""
                 )}
                 {title1 === "RENIE Maxi" ? (
                   <>
-                    <Canvas style={{ height: "500px", width: "500px" }}>
-                      <ambientLight intensity={1.2} />
-                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                      <ModelThree />
-                      <OrbitControls
-                        enableZoom={false}
-                        minDistance={40}
-                        maxDistance={3}
-                      />
-                    </Canvas>
+                    <img
+                      onClick={() => setSelectedModel(model)}
+                      src="/assets/3.png"
+                    />
                   </>
                 ) : (
                   ""
                 )}
                 {title1 === "RENIE Mini" ? (
                   <>
-                    <Canvas style={{ height: "500px", width: "500px" }}>
-                      <ambientLight intensity={1.2} />
-                      <directionalLight position={[2, 2, 2]} intensity={1.5} />
-                      <ModelFour />
-                      <OrbitControls
-                        enableZoom={false}
-                        minDistance={25}
-                        maxDistance={3}
-                      />
-                    </Canvas>
+                    <img
+                      onClick={() => setSelectedModel(model)}
+                      src="/assets/4.png"
+                    />
                   </>
                 ) : (
                   ""
                 )}
-                <img
-                  ref={iconRef}
-                  className="threed-image"
-                  src="/assets/360-icon.webp"
-                  alt="360"
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    opacity: 0,
-                    transform: "scale(0.5)",
-                    pointerEvents: "none",
-                  }}
-                />
               </div>
             </div>
           </div>
@@ -290,6 +178,38 @@ const Slide1 = ({ title1, title2, price1, price2 }) => {
           </div>
         </div>
       </div>
+      {selectedModel && (
+        <div className="model-popup" id="custom-popup">
+          <div className="model-popup-content">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedModel(null);
+              }}
+              className="close-btn"
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "10px",
+                color: "black",
+                border: "none",
+                cursor: "pointer",
+                padding: "5px 10px",
+                fontSize: "16px",
+                zIndex: "999",
+              }}
+            >
+              ✖
+            </button>
+            <Canvas style={{ height: "500px", width: "500px" }}>
+              <ambientLight intensity={1.2} />
+              <directionalLight position={[2, 2, 2]} intensity={2} />
+              <Model path={selectedModel} />
+              <OrbitControls enableZoom={true}  minDistance={30} />
+            </Canvas>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
