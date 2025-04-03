@@ -96,8 +96,9 @@ p {
 }
 .brand-slider-container h3 {
   font-family: var(--fontFamilyPoppins);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
+
   color: var(--secondary);
   margin-bottom: 30px;
 }

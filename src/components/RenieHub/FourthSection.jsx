@@ -67,7 +67,7 @@ const WasteManagement = () => {
           {features.map((feature, index) => (
             <div key={index} className="col-md-3 col-sm-6 p-2">
               <div className="car h-100 shadow-sm p-4 bg-white rounded-4">
-                <div className="">
+                <div className="box-img">
                   <img
                     src={feature.icon}
                     alt={feature.title}

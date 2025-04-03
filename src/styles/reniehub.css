@@ -17,12 +17,11 @@
   background-color: white;
 }
 .renie-box-wrapper p {
-  font-size: 24px;
-  line-height: 36px;
+  line-height: 26px;
   color: black;
   font-weight: 400;
   text-align: center;
-  width: 65%;
+  width: 45%;
   margin: 0 auto;
 }
 .reniehub .brand-slider-container {
@@ -182,7 +181,7 @@
 }
 
 .designed {
-  background: linear-gradient(100deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  background: linear-gradient(159deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   padding: 100px 0px;
 }
 .designed .container {
@@ -242,6 +241,10 @@
 .accordion-body.open {
   display: block;
 }
+.car .box-img{
+  height: 90px;
+}
+
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {

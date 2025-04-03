@@ -14,6 +14,7 @@ import PowerRenie from "@/components/RenieBin/PowerRenie";
 import ProductRenie from "@/components/RenieBin/ProductRenie";
 import RenieSection from "@/components/RenieBin/RenieSection2";
 import Meta from "@/components/Meta";
+import MiniFooter from "@/components/Navbar/MiniFooter";
 
 const RenieBin = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -102,7 +103,7 @@ const RenieBin = () => {
       <Banner canvasRef={canvasRef} />
       <RenieSection />
       <MeetRenieBin />
-      <PowerRenie />
+      {/* <PowerRenie /> */}
       <GroundRenie
         imagePath="/assets/bin3/bin/M"
         frameCount={104}
@@ -111,6 +112,7 @@ const RenieBin = () => {
       <CraftedRenie />
       <ProductRenie />
       <Discover />
+      <MiniFooter />
       <Footer />
     </>
   );

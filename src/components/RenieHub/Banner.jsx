@@ -1,6 +1,7 @@
 import React from "react";
 import BrandSlider from "../BrandSlider";
 import H1 from "../Typography/H1";
+import P from "../Typography/P";
 
 const Banner = () => {
   return (
@@ -13,10 +14,8 @@ const Banner = () => {
                 <div className="renie-box-wrapper position-relative">
                   <div>
                     <H1 title='Earn income while you make a traceable impact' />
-                    <p>
-                      Our innovative platform makes it possible to generate a
-                      passive income from data monetization of waste
-                    </p>
+                    <P title='Our innovative platform makes it possible to generate a
+                      passive income from data monetization of waste' />
                   </div>
                   <div className="d-flex justify-content-center">
                     <img

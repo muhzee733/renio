@@ -17,14 +17,14 @@ const CraftedRenie = () => {
                 <div className="col-lg-6 col-md-6">
                   <Link href="/monitization">
                     <div className="crafted-card">
-                      <h3>Data Monitization Technology</h3>
+                      <h3>Data monitization technology</h3>
                     </div>
                   </Link>
                 </div>
                 <div className="col-lg-6 col-md-6 custom-boxes">
                   <div className="crafted-card-1">
-                    <h3>100% Up time </h3>
-                    <h3>Power Backup & Connectivity</h3>
+                    <h3>100% up time </h3>
+                    <h3>Power backup & connectivity</h3>
                     <ul>
                       <li>Wifi</li>
                       <li>5G</li>
@@ -34,7 +34,7 @@ const CraftedRenie = () => {
                     <img src="/assets/card-bg-light.webp" />
                   </div>
                   <div className="crafted-card-1">
-                    <h3>Customize Designs</h3>
+                    <h3>Customize designs</h3>
                   </div>
                 </div>
               </div>

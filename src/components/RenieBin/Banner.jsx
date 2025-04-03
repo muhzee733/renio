@@ -1,4 +1,5 @@
 import React from "react";
+import H1 from "../Typography/H1";
 
 const Banner = ({ canvasRef }) => {
   return (
@@ -8,10 +9,7 @@ const Banner = ({ canvasRef }) => {
           <div className="row">
             <div className="col-lg-12">
               <div className="renie-main-content">
-                <h1>
-                  Your waste <br /> supercharged with data
-                </h1>
-                <p>Renie Bins turn waste into a valuable asset for your business</p>
+                <H1 title='The smart bin that monetizes your waste' />
                 <div className="canvas-container">
                   <canvas ref={canvasRef} className="bin-canvas"></canvas>
                 </div>

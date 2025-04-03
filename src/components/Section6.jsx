@@ -105,7 +105,7 @@ function Section6() {
               <div className="software-right-container">
                 <Link href="/renieads">
                   <img src="/assets/ads.webp" alt="Renie Ads" />
-                  <span>Renie Ads</span>
+                  <span>Ads That Matter</span>
                   <p>
                     Our AI platform uses Renie Bin data to deliver targeted ads,
                     driving eco-friendly engagement.

@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: center;
 }
+.renie-main-content h1{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 .renie-bin-custom div {
   background-color: white;
   margin: 50px 10px;

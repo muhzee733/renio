@@ -1,4 +1,5 @@
 import React from "react";
+import H2 from "../Typography/H2";
 
 const ProductRenie = () => {
   return (
@@ -6,14 +7,14 @@ const ProductRenie = () => {
       <div className="power-wrapper  padding-top-100">
         <div className="container-xl">
           <div className="row">
-            <h2>Product Specifications</h2>
+            <H2 title='Product specifications' />
           </div>
           <div className="row custom-row">
             <div className="col-lg-4 col-md-4">
               <div className="product-box-wrapper">
                 <img src="/assets/icon-1.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Barcode Reader: </h3>
+                  <h3>Barcode reader: </h3>
                   <p>
                     High performance barcode scanner for efficient waste item
                     identification.
@@ -25,7 +26,7 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/icon-2.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Movement Lids: </h3>
+                  <h3>Movement lids: </h3>
                   <p>
                     Responsive movement lid that automatically opens upon
                     successful waste item recognition.
@@ -52,7 +53,7 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/icon-4.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Power Supply: </h3>
+                  <h3>Power supply: </h3>
                   <p>1. Input: DC 5V <br /> 2. Current: 5A</p>
                 </div>
               </div>
@@ -61,7 +62,7 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/new-icon.png" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Material Composition: </h3>
+                  <h3>Material composition: </h3>
                   <p>MDF-PETG-ABS</p>
                 </div>
               </div>
@@ -70,7 +71,7 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/icon-5.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Fullness Indicator: </h3>
+                  <h3>Fullness indicator: </h3>
                   <p>
                     Provides real-time feedback on the bin's capacity,
                     facilitating timely emptying and maintenance.

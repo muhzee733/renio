@@ -8,7 +8,6 @@ import FifthSection from "@/components/RenieHub/FifthSection";
 import SixSection from "@/components/RenieHub/SixSection";
 import Footer from "@/components/Navbar/Footer";
 import MiniFooter from "@/components/Navbar/MiniFooter";
-import Head from "next/head";
 import Meta from "@/components/Meta";
 
 const reniehub = () => {
