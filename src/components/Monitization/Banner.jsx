@@ -1,10 +1,7 @@
 import React from "react";
 import H1 from "../Typography/H1";
-import P from "../Typography/P";
-import { useRouter } from "next/router";
 
 const Banner = () => {
-  const router = useRouter();
   return (
     <div className="data-banner">
       <div className="container-xl">
@@ -14,13 +11,11 @@ const Banner = () => {
           </div>
           <div className="col-lg-6 col-md-6 custom-data-column">
             <H1 title="Data transforms your trash into cash." />
-            {/* <P title='Transform waste into a data-driven revenue stream' /> */}
-            <button
-              className="btn mt-4"
-              onClick={() => router.push("/contact")}
-            >
-              Explore More
-            </button>
+            <div class="designe">
+              <a href="/contact" rel="noopener noreferrer">
+                <button>Contact us</button>
+              </a>
+            </div>
           </div>
           <div className="downarrow-image">
             <img src="/assets/downarrow.webp" alt="renie" />

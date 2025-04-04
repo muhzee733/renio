@@ -48,6 +48,11 @@
 }
 .scan-title h1 {
   color: white;
+  width: 80%;
+}
+.scan-title-3 h1{
+  width: 40%;
+  margin-bottom: 10px;
 }
 .main-renie-banner img {
   max-width: 100%;

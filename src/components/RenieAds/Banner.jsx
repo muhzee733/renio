@@ -18,6 +18,11 @@ const AdsSection = () => {
                   AI-powered platform, we redefine the future of advertising
                   where creativity and purpose come together."
                 />
+                <div class="designe">
+                  <a href="/contact" rel="noopener noreferrer">
+                    <button>Contact us</button>
+                  </a>
+                </div>
                 <div className="custom-ads-text">
                   <P
                     title="Our AI-powered platform uses real-time data from Renie Bins to serve ads that resonate with users, driving engagement through

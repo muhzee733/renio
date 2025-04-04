@@ -15,7 +15,7 @@ const CraftedRenie = () => {
               </div>
               <div className="row">
                 <div className="col-lg-6 col-md-6">
-                  <Link href="/monitization">
+                  <Link href="/monetization">
                     <div className="crafted-card">
                       <h3>Data monitization technology</h3>
                     </div>

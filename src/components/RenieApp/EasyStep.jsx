@@ -11,7 +11,7 @@ const EasyStep = () => {
   return (
     <div className="easystep" ref={sectionRef}>
       <div className="easystep-wrapper">
-        <div className="container">
+        <div className="container-xl">
           <div className="row">
             <div className="col-lg-12">
               <H2 title=" Get Started in 2 Easy Steps" />
@@ -25,9 +25,10 @@ const EasyStep = () => {
               transition={{ duration: 1.5, ease: "easeOut" }}
             >
               <div className="left-track position-relative custom-scan-height">
-                <div className="scan-title">
-                  <H1 title="Scan & Track" />
-                  <P title="Use the app to scan and monitor your waste disposal habits." />
+                <div className="scan-title scan-title-3">
+                  <H1 title="Connect. Scan. Dispose" />
+                  <P title="Users can simply open their camera, scan the QR code to connect to the bin, scan the waste, and drop it in." />
+                  <img src="/assets/no-download.webp" width="30%" className="mt-4"/>
                 </div>
                 <div className="vertical-box">
                   <div></div>

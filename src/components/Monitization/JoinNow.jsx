@@ -8,8 +8,7 @@ const JoinNow = () => {
       <div className="container-xl">
         <div className="row">
           <div className="col-lg-8">
-            <H2 title="Are you ready to turn waste into wealth?" />
-            {/* <P title="Join renie’s data monetization revolution today!" /> */}
+            <H2 title="Ready to turn every bin into a branding opportunity?" />
           </div>
           <div className="col-lg-4 d-flex align-items-center justify-content-center">
             <a

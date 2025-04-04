@@ -7,12 +7,23 @@ import P from "../Typography/P";
 gsap.registerPlugin(ScrollTrigger);
 
 const Green = () => {
+  const handleClick = (e) => {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      e.preventDefault();
+      window.location.href = "https://app.renie.io/";
+    }
+  };
+
   return (
     <div className="green">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="mb-3"><H1 title=" Be part of the green revolution!" /></div>
+            <div className="mb-3">
+              <H1 title=" Be part of the green revolution!" />
+            </div>
             <P
               title="Every action counts. With the Renie Nexus, you’re not just
               disposing of waste—you’re contributing to a cleaner, smarter
@@ -28,9 +39,10 @@ const Green = () => {
               }}
             >
               <a
-                href="https://app.renie.io/"
+                href="/qrcode"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleClick}
               >
                 <button>Explore the Renie Nexus</button>
               </a>
