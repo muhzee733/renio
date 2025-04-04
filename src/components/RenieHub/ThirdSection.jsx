@@ -12,7 +12,7 @@ const ThirdSection = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="control-upper-section">
-                  <H1 title="First, you’ll need fulltransparency and control" />
+                  <H1 title="First, you’ll need full transparency and control" />
                   <P
                     title="We will first set you up on the Renie Hub where you can
                     monitor every step related to the Renie Bins you are
@@ -38,14 +38,14 @@ const ThirdSection = () => {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="d-flex justify-content-end justify-content-center-md">
-                  <img src="/assets/reniehub/imag.webp" />
+                  <img src="/assets/reniehub/imag-2.webp" />
                 </div>
               </div>
             </div>
             <div className="row control-below-section m-below-section">
               <div className="col-lg-6 col-md-6">
                 <div>
-                  <img src="/assets/reniehub/imag-2.webp" />
+                  <img src="/assets/reniehub/imag.webp" />
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 d-flex align-items-center">

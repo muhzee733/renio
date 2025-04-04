@@ -43,7 +43,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
       scrollTrigger: {
         trigger: `.${containerClass}`,
         start: "bottom bottom",
-        end: "+=13000",
+        end: "+=5000",
         scrub: 1,
         pin: `.${containerClass}`,
         onUpdate: render,
@@ -55,7 +55,7 @@ const ScrollCanvas = ({ imagePath, frameCount, containerClass }) => {
       scrollTrigger: {
         trigger: h2,
         start: "top 15%",
-        end: `+=13000`, // Adjust this value based on how long you want the pin effect
+        end: `+=5000`, // Adjust this value based on how long you want the pin effect
         pin: true,
         pinSpacing: false, // Prevents adding extra space
       },

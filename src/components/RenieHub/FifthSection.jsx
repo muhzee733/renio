@@ -1,5 +1,6 @@
 import { useState } from "react";
 import H2 from "../Typography/H2";
+import { HiArrowSmallDown } from "react-icons/hi2";
 
 const FaqAccordion = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -45,7 +46,7 @@ const FaqAccordion = () => {
     <section className="faqs">
       <div className="container-xl">
         <h2 className="text-center mb-3">FAQ</h2>
-        <H2 title='Answers' />
+        <H2 title="Answers" />
         <div className="accordion mt-5">
           {faqs.map((faq, index) => (
             <div className="accordion-items" key={index}>
@@ -54,8 +55,9 @@ const FaqAccordion = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <h4>{faq.question}</h4>
-                <span>
-                  <img src="/assets/reniehub/down-arrow.webp" alt="faqs" />
+                <span className="text-dark bg-white p-2 rounded-3">
+                  <HiArrowSmallDown />
+                  {/* <img src="/assets/reniehub/down-arrow.webp" alt="faqs" /> */}
                 </span>
               </div>
               <div

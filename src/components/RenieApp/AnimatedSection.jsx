@@ -11,7 +11,7 @@ const AnimatedSection = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="animated-h2">
-                <H1 title="consumers receive 0.05 AED 5 fils per packaging they drop" />
+                <H1 title="consumers receive 0.05 AED per packaging they drop" />
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ const AnimatedSection = () => {
                   <img src="/assets/animated-1.webp" alt="renie" />
                 </div>
                 <div className="d-flex align-items-center justify-content-end text-right gap-4">
-                  <P title="Users can redeem currency directly in the Renie App" />
+                  <P title="Users can redeem currency directly in the Renie Nexus" />
                   <img src="/assets/animated-2.webp" alt="renie" />
                 </div>
                 <div className="d-flex align-items-center justify-content-end text-right gap-4">

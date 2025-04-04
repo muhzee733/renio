@@ -17,7 +17,7 @@ const MeetRenieBin = () => {
     "/assets/3.png",
     "/assets/4.png",
   ];
-  const titles = ["RENIE ONE", "RENIE TWO", "RENIE MAXI", "RENIE MINI"];
+  const titles = ["Renie One", "Renie Two", "Renie Maxi", "Renie Mini"];
   const models = [
     "/assets/test.glb",
     "/assets/two-way.glb",
@@ -32,7 +32,7 @@ const MeetRenieBin = () => {
       <div className="container-xl">
         <div className="row text-center">
           <div className="col-lg-12">
-          <div className="meet-main-banner">
+            <div className="meet-main-banner">
               <h2>Meet Renie Bins</h2>
               <p>A range of Renie smart bins to fit every need</p>
             </div>
@@ -60,15 +60,15 @@ const MeetRenieBin = () => {
               <div className="renie-bin-custom">
                 <div>
                   <img src="/assets/Vector.webp" />
-                  <p>Plastic Bottles</p>
+                  <p>Plastic bottles</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-2.webp" />
-                  <p>Plastic Cups</p>
+                  <p>Plastic cups</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-3.webp" />
-                  <p>Paper Cups</p>
+                  <p>Paper cups</p>
                 </div>
                 <div>
                   <img src="/assets/Vector-4.webp" />
@@ -77,6 +77,10 @@ const MeetRenieBin = () => {
                 <div>
                   <img src="/assets/Vector-5.webp" />
                   <p>Carton</p>
+                </div>
+                <div>
+                  <img src="/assets/Vector-6.webp" />
+                  <p>Glass</p>
                 </div>
                 <div>
                   <img src="/assets/Group-icon-1.png" />

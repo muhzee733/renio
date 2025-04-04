@@ -27,7 +27,7 @@ const CraftedRenie = () => {
                     <h3>Power backup & connectivity</h3>
                     <ul>
                       <li>Wifi</li>
-                      <li>5G</li>
+                      <li>2.5G</li>
                       <li>Battery</li>
                       <li>DC Power</li>
                     </ul>
