@@ -5,14 +5,18 @@
 }
 .slide-1 h2 {
   font-family: var(--font-family);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 800;
   color: white;
+  padding-bottom: 20px;
 }
 .renio-one {
   background: linear-gradient(90deg, #5c4099 0%, #952e82 100%);
   display: flex;
   align-items: center;
+}
+.image-container img{
+  cursor: pointer;
 }
 .renio-two {
   background: linear-gradient(90deg, #4765e6 0%, #5c4099 100%);
@@ -34,6 +38,13 @@
 }
 .left-box img {
   max-width: 80%;
+}
+.left-box h4{
+  font-size: 30px;
+  padding-right: 100px;
+  color: white;
+  font-weight: 800;
+  text-transform: capitalize;
 }
 .renio-button {
   position: relative;

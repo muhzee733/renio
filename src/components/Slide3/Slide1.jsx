@@ -18,41 +18,44 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
   return (
     <div
       className={
-        title1 === "RENIE ONE"
+        title1 === "Renie one"
           ? "slide-1 renio-one"
-          : title1 === "RENIE Two"
+          : title1 === "Renie two"
           ? "slide-1 renio-two"
-          : title1 === "RENIE Maxi"
+          : title1 === "Renie maxi"
           ? "slide-1 renio-Maxi"
-          : title1 === "RENIE Mini"
+          : title1 === "Renie mini"
           ? "slide-1 renio-Mini"
           : "slide-1"
       }
     >
       <div className="container-xl">
-        <div className="row" style={{ alignItems: "center" }}>
+        <h2 className="text-center" id="derktop-version">
+          {title2}
+        </h2>
+        <div className="row">
           <div className="col-lg-6 col-md-6">
             <h2 className="text-center" id="mobile-version">
               {title2}
             </h2>
             <div className="renio-button" id="mobile-version">
-              <button className={title1 === "RENIE ONE" ? "active" : ""}>
+              <button className={title1 === "Renie one" ? "active" : ""}>
                 Renie one
               </button>
-              <button className={title1 === "RENIE Two" ? "active" : ""}>
+              <button className={title1 === "Renie two" ? "active" : ""}>
                 Renie two
               </button>
-              <button className={title1 === "RENIE Maxi" ? "active" : ""}>
+              <button className={title1 === "Renie maxi" ? "active" : ""}>
                 Renie Maxi
               </button>
-              <button className={title1 === "RENIE Mini" ? "active" : ""}>
+              <button className={title1 === "Renie mini" ? "active" : ""}>
                 Renie Mini
               </button>
             </div>
             <div className="left-box">
-              <h2>{title1}</h2>
+              <h4 className="text-center">{title1}</h4>
               <div className="image-container">
-                {title1 === "RENIE ONE" ? (
+                {title1 === "Renie one" ? (
                   <>
                     <img
                       onClick={() => setSelectedModel(model)}
@@ -62,7 +65,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 ) : (
                   ""
                 )}
-                {title1 === "RENIE Two" ? (
+                {title1 === "Renie two" ? (
                   <>
                     <img
                       onClick={() => setSelectedModel(model)}
@@ -72,7 +75,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 ) : (
                   ""
                 )}
-                {title1 === "RENIE Maxi" ? (
+                {title1 === "Renie maxi" ? (
                   <>
                     <img
                       onClick={() => setSelectedModel(model)}
@@ -82,38 +85,40 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 ) : (
                   ""
                 )}
-                {title1 === "RENIE Mini" ? (
+                {title1 === "Renie mini" ? (
                   <>
                     <img
                       onClick={() => setSelectedModel(model)}
-                      src="/assets/4.png"
+                      src="/assets/4-bin.webp"
                     />
                   </>
                 ) : (
                   ""
                 )}
+                <img
+                  className="threed-image"
+                  src="/assets/360-icon.webp"
+                  alt="360"
+                />
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-6">
-            <h2 className="text-right" id="derktop-version">
-              {title2}
-            </h2>
             <div className="renio-button" id="derktop-version">
-              <button className={title1 === "RENIE ONE" ? "active" : ""}>
-                Renie one
+              <button className={title1 === "Renie one" ? "active" : ""}>
+                Renie One
               </button>
-              <button className={title1 === "RENIE Two" ? "active" : ""}>
-                Renie two
+              <button className={title1 === "Renie two" ? "active" : ""}>
+                Renie Two
               </button>
-              <button className={title1 === "RENIE Maxi" ? "active" : ""}>
-                Renie maxi
+              <button className={title1 === "Renie maxi" ? "active" : ""}>
+                Renie Maxi
               </button>
-              <button className={title1 === "RENIE Mini" ? "active" : ""}>
-                Renie mini
+              <button className={title1 === "Renie mini" ? "active" : ""}>
+                Renie Mini
               </button>
             </div>
-            {title1 === "RENIE Mini" ? (
+            {title1 === "Renie mini" ? (
               <div className="renio-grid" id="derktop-version">
                 <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
@@ -205,7 +210,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
               <ambientLight intensity={1.2} />
               <directionalLight position={[2, 2, 2]} intensity={2} />
               <Model path={selectedModel} />
-              <OrbitControls enableZoom={true}  minDistance={30} />
+              <OrbitControls enableZoom={true} minDistance={30} />
             </Canvas>
           </div>
         </div>
