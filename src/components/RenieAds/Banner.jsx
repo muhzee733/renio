@@ -30,6 +30,7 @@ const AdsSection = () => {
                   interactions, we deliver ads that are not only relevant but
                   also impactful."
                   />
+
                 </div>
               </div>
             </div>

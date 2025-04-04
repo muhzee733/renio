@@ -71,7 +71,7 @@ const Model = () => {
 const MonitizationSection = () => {
   return (
     <div className="monitization">
-      <Meta title="Renie Monitization" description="Renie Monitization" />
+      <Meta title="Renie Monetization" description="Renie Monetization" />
       <div
         style={{
           position: "fixed",

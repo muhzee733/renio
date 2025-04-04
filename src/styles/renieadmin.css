@@ -7,26 +7,26 @@
   background-repeat: no-repeat;
   background-position: top right;
 }
-.dashboard-preview{
-  background-image: url('/assets/renieadmin/Layer_1.webp');
+.dashboard-preview {
+  background-image: url("/assets/renieadmin/Layer_1.webp");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto;
 }
-.custom-ads-image{
+.custom-ads-image {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.admin-icon{
+.admin-icon {
   display: flex;
   gap: 20px;
   padding-left: 20px;
 }
-.admin-icon img{
+.admin-icon img {
   max-width: 30%;
 }
-.renie-admin-img{
+.renie-admin-img {
   margin-bottom: -108px;
 }
 .renie-admin h1 {
@@ -61,7 +61,7 @@
 .features {
   padding: 100px 0px;
 }
-.feature-text p{
+.feature-text p {
   color: white;
   text-align: center;
   width: 50%;
@@ -110,10 +110,29 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.custom-section-renie {
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  padding-bottom: 100px;
+  margin-top: -2px;
+}
 
 .dashboard-preview p {
   width: 60%;
   margin: 0 auto;
+}
+.renie-future-section h4 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+.renie-boxes h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.renie-future-section p {
+  color: white !important;
+  margin-top: 10px;
 }
 
 .renie-admin figure {
@@ -121,10 +140,11 @@
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 1536px){
+
+@media (min-width: 1536px) {
   .custom-ads-image {
     transform: translateX(-70%);
-}
+  }
 }
 
 @media (max-width: 1200px) {
@@ -145,7 +165,7 @@
   .renie-admin h2 {
     font-size: 26px;
   }
-  .custom-ads-image{
+  .custom-ads-image {
     max-width: 15%;
   }
   .renie-admin h1 {
@@ -172,11 +192,11 @@
   }
   .feature-text p {
     width: 100%;
-}
+  }
   .feature-h4 p {
     width: 90%;
-}
-  .custom-ads-image{
+  }
+  .custom-ads-image {
     max-width: 15%;
   }
   .renie-admin h2 {
@@ -198,7 +218,7 @@
   .renie-admin h2 {
     font-size: 16px;
   }
-  .renie-admin{
+  .renie-admin {
     background-image: none;
     background-color: white !important;
   }
@@ -220,24 +240,24 @@
   }
   .feature-h4 p {
     width: 100%;
-}
-.renie-admin-img{
-  margin-top: 50px;
-}
+  }
+  .renie-admin-img {
+    margin-top: 50px;
+  }
   .feature-h4 {
     text-align: center !important;
   }
   .feature-h4 {
     margin-top: 0px !important;
-}
+  }
   .dashboard-preview {
     background-image: none;
-}
-.feature-h4 h5 {
-text-align: left;
-width: 70%;
-margin-bottom: 10px;
-}
+  }
+  .feature-h4 h5 {
+    text-align: left;
+    width: 70%;
+    margin-bottom: 10px;
+  }
   .feature-h4 h4 {
     width: 70%;
     margin: 0 auto;
@@ -249,7 +269,7 @@ margin-bottom: 10px;
   }
   .feature-h4 h4 {
     font-size: 18px;
-}
+  }
   .admin-icon {
     display: flex;
     justify-content: center;
@@ -271,5 +291,5 @@ margin-bottom: 10px;
   }
   .features {
     padding: 50px 0;
-}
+  }
 }
