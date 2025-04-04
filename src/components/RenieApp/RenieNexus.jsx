@@ -1,6 +1,7 @@
 import React from "react";
 import H2 from "../Typography/H2";
 import P from "../Typography/P";
+import H1 from "../Typography/H1";
 
 const RenieNexus = () => {
   const handleRedirect = () => {
@@ -19,16 +20,12 @@ const RenieNexus = () => {
             </div>
             <div className="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">
-                <H2 title="What is the Renie" />
+                <H1 title="What is Renie" />
                 <div className="diff-color">
-                  <H2 title="Nexus?" />
+                  <H1 title="Nexus?" />
                 </div>
                 <P
-                  title=" The renie nexus is your personal waste management companion,
-                  designed to simplify recycling, promote sustainability, and
-                  reward responsible behavior. With real-time tracking and data
-                  insights, you’ll always know how your waste is being
-                  managed—helping you make greener choices every day."
+                  title=" Renie Nexus is your personal waste management companion that transforms how you recycle while rewarding users for their responsible behavior. This innovative incentive program is entirely self-subsidized— user’s participation generates valuable waste management data that Renie monetizes, allowing us to offer you direct rewards for sustainable choices. With real-time tracking and actionable insights, you'll see exactly how your waste is being managed while earning benefits from the very data you help create, making green choices financially rewarding every day."
                 />
                 <button onClick={handleRedirect}>
                   Explore the Renie Nexus

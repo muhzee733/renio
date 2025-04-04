@@ -23,7 +23,7 @@ const CraftedRenie = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 custom-boxes">
                   <div className="crafted-card-1">
-                    <h3>100% up time </h3>
+                    <h3><span style={{color: "#02FE39"}}>100%</span> up time </h3>
                     <h3>Power backup & connectivity</h3>
                     <ul>
                       <li>Wifi</li>

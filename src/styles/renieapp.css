@@ -53,7 +53,7 @@
   max-width: 100%;
   height: auto;
 }
-.diff-color h2 {
+.diff-color h1 {
   color: #e21663 !important;
 }
 .main-renie-banner h1 {
@@ -67,10 +67,10 @@
 .renie-nexus {
   background-color: white;
 }
-.main-renie-nexus h2 {
+.main-renie-nexus h1 {
   color: #4765e6;
   font-weight: 800;
-  width: 70%;
+  width: 90%;
 }
 .main-renie-nexus p {
   color: black;
@@ -97,7 +97,7 @@
   color: white;
   font-size: 60px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
 }
 .races {
   width: fit-content;

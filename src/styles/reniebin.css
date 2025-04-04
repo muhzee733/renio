@@ -164,6 +164,13 @@
   transform: translateX(100%);
   background: white;
   border-radius: 8px;
+  z-index: 99;
+}
+#custom-popup-2 {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  z-index: 99;
 }
 .MeetRenieBin {
   background: linear-gradient(150deg, #4765e6 0%, #4765e6 10%, #283880 100%);
@@ -190,7 +197,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 0px 20px;
+  padding: 30px 20px;
 }
 .meet-image img {
   max-width: 100%;

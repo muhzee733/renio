@@ -9,14 +9,14 @@ const data = [
   {
     id: 1,
     title1: "Step 1",
-    title2: "Smart Waste Collection",
+    title2: "Waste Collection",
     para: "Our intelligent Renie Bins are equipped with advanced sensors that collect valuable data from disposed items. Data points include material types, brand recognition, and consumer behavior insights.",
     icon: "/assets/cup-icon.webp",
   },
   {
     id: 2,
     title1: "Step 2",
-    title2: "Data Extraction & Analysis",
+    title2: "Data Extraction",
     para: "The collected waste data is processed through our AI-powered platform. Our system extracts key insights, such as consumer preferences, recycling trends, and product lifecycle data.",
     icon: "/assets/monitize.webp",
   },
@@ -73,7 +73,7 @@ function Section6() {
         >
           <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
             <div className="software-left-data text-center">
-              <H2 title='How Does Renie’s Data Monetization Work?' />
+              <H2 title='How do we transform trash into cash?' />
               <P  title='We redefine waste management by turning waste data into revenue.
                 Our Renie Bins collect and analyze waste-related data, allowing
                 businesses to benefit from sustainable waste practices while

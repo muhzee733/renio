@@ -32,6 +32,10 @@ const MeetRenieBin = () => {
       <div className="container-xl">
         <div className="row text-center">
           <div className="col-lg-12">
+          <div className="meet-main-banner">
+              <h2>Meet Renie Bins</h2>
+              <p>A range of Renie smart bins to fit every need</p>
+            </div>
             <div className="meet-image d-flex justify-content-center align-items-center gap-4 flex-wrap">
               {images.map((img, index) => (
                 <div
@@ -72,11 +76,19 @@ const MeetRenieBin = () => {
                 </div>
                 <div>
                   <img src="/assets/Vector-5.webp" />
-                  <p>Tetra Pak</p>
+                  <p>Carton</p>
                 </div>
                 <div>
-                  <img src="/assets/Vector-6.webp" />
-                  <p>Glass</p>
+                  <img src="/assets/Group-icon-1.png" />
+                  <p>Vape</p>
+                </div>
+                <div>
+                  <img src="/assets/Group-icon-2.png" />
+                  <p>Battery</p>
+                </div>
+                <div>
+                  <img src="/assets/Group-icon-3.png" />
+                  <p>E-Waste</p>
                 </div>
               </div>
             </div>
@@ -85,7 +97,7 @@ const MeetRenieBin = () => {
       </div>
 
       {selectedModel && (
-        <div className="model-popup" id="custom-popup">
+        <div className="model-popup" id="custom-popup-2">
           <div className="model-popup-content">
             <button
               onClick={(e) => {

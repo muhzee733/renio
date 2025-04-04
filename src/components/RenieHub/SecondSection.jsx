@@ -11,7 +11,7 @@ const SecondSection = () => {
               <div className="col-lg-12">
                 <div className="renie-waste-box">
                   <h2>
-                    A <span style={{ color: "#E31662" }}>centralized</span>
+                    A <span style={{ color: "#E31662" }}>centralized </span>
                     waste management system compiles{" "}
                     <span className="all-waste-data">all waste data</span>,
                     <span style={{ color: "#4765E6" }}>

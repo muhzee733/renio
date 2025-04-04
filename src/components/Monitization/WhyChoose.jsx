@@ -52,16 +52,16 @@ const DataMonetizationSection = () => {
         <div className="row">
           <div className="col-lg-4 col-md-12 p-0">
             <h2>
-              Why Choose <br /> Renie for Data <br /> Monetization?
+              Why Choose <br /> Renie?
             </h2>
           </div>
           <div className="col-lg-8 col-md-12">
             <div className="row custom-rows">
               {[
                 {
-                  title: "Turn Waste into Revenue",
+                  title: "From trash to cash",
                   description:
-                    "Traditional waste management costs money, but Renie helps businesses earn from their waste by transforming disposal into a monetizable data asset.",
+                    "Traditional waste management costs money, but Renie helps businesses earn from their waste by transforming trash into cash.",
                   img: "/assets/cusure.webp",
                 },
                 {

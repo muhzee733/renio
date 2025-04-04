@@ -25,7 +25,7 @@ const LoveRenie = () => {
                 style={{ width: "100%", height: "300px", marginBottom: "20px" }}
               />
             </div>
-            <H4 title="No vouchers or discounts—just real, valuable rewards!" />
+            <H4 title="No registration & downloads needed." />
           </div>
 
           {/* Feature 2 (SVG) */}
@@ -51,7 +51,7 @@ const LoveRenie = () => {
                 style={{ width: "100%", height: "300px", marginBottom: "20px" }}
               />
             </div>
-            <H4 title="No registration & downloads needed." />
+            <H4 title="No vouchers or discounts—just real, valuable rewards!" />
           </div>
 
           {/* Feature 4 */}

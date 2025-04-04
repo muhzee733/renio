@@ -9,7 +9,7 @@ const JoinNow = () => {
         <div className="row">
           <div className="col-lg-8">
             <H2 title="Are you ready to turn waste into wealth?" />
-            <P title="Join renie’s data monetization revolution today!" />
+            {/* <P title="Join renie’s data monetization revolution today!" /> */}
           </div>
           <div className="col-lg-4 d-flex align-items-center justify-content-center">
             <a

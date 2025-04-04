@@ -11,7 +11,7 @@ const AnimatedSection = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="animated-h2">
-                <H1 title="consumers receive 0.05 AED or 5 fils per packaging they drop" />
+                <H1 title="consumers receive 0.05 AED 5 fils per packaging they drop" />
               </div>
             </div>
           </div>

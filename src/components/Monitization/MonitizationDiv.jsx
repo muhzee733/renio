@@ -11,14 +11,10 @@ const MonitizationDiv = () => {
           <div className="row">
             <div className="col-lg-6 monitization-custom-data">
               <div>
-                <H1 title='What is data monetization' />
-                <P title='In today’s digital world, data is one of the most valuable
-                  assets. Data monetization is the process of converting raw
-                  data into actionable insights that drive revenue and business
-                  efficiency. At Renie, we take this concept a step further—our
-                  innovative technology transforms waste disposal into a
-                  data-driven income stream, helping businesses unlock new
-                  financial opportunities from everyday operations.' />
+                <H1 title='Why do we use data out of waste ? ' />
+                <P title={`Waste itself isn't valuable enough to motivate everyone in the supply chain to recyle more. At Renie, we found that data extracted from waste can be monetized and it provides enough value to incentivize all participants. That's why we see waste as data—and as we know, data is one of the most valuable assets in today's world. `} />
+                <br />
+                <P title={`This approach enables companies to recycle more materials, as the added value from data motivates greater participation across the entire recycling chain.`} />
               </div>
             </div>
             <div className="col-lg-6">
