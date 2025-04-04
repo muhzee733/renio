@@ -46,6 +46,9 @@ ul {
   padding-left: unset !important;
   margin-bottom: 0px !important;
 }
+h4{
+  color: #000000;
+}
 .btn {
   border-radius: 5px !important;
   background: linear-gradient(360deg, #ff136b 0%, #b40d1a 100%) !important;

@@ -36,8 +36,8 @@ export default function App() {
         <div className="container-xl">
           <div className="row">
             <div className="col-lg-12">
-              <div className="renie-bin-wrapper">
-                <H2 title='Industries That Benefit from Data Monetization' />
+              <div className="renie-bin-wrapper custom-heading-mone">
+                <H2 title='Industries that benefit from data monetization' />
                 <div id="derktop-version">
                   <div className="blogs moni-blog">
                     <Swiper

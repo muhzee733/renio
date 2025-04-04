@@ -157,6 +157,10 @@
   display: flex;
   position: relative;
 }
+.custom-heading-mone h2{
+  width: 50%;
+  margin: 0 auto;
+}
 .data-banner .container-xl{
   display: flex;
   align-items: center
