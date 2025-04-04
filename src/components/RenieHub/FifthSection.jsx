@@ -1,33 +1,34 @@
 import { useState } from "react";
+import H2 from "../Typography/H2";
 
 const FaqAccordion = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const faqs = [
     {
-      question: "How does the admin panel support franchisees?",
+      question: "What is Renie Hub?",
       answer:
-        "The admin panel provides real-time data, analytics, and management tools to streamline franchise operations.",
+        "Renie Hub is a centralized platform designed for providers of Renie Smart Bins. It allows users to monitor their bins, track waste collection, view environmental impact, and manage earnings—all in one place.",
     },
     {
-      question: "Can multiple franchisees access the panel?",
+      question: "Who can use Renie Hub?",
       answer:
-        "Yes, each franchisee gets a secure login to manage their operations while the admin has full oversight.",
+        "Renie Hub is designed for corporate clients and partners (providers) who own or manage Renie Smart Bins. If you're a provider, this is your go-to dashboard for tracking activity, performance, and sustainability outcomes in real time.",
     },
     {
-      question: "Does it integrate with third-party software?",
+      question: "Can I generate reports through Renie Hub?",
       answer:
-        "Yes, the system supports integrations with popular accounting, CRM, and inventory management tools.",
+        "Absolutely! Renie Hub includes built-in tools that let you generate detailed reports on bin usage, collection patterns, and more. Need something specific? We can also help you create custom reports—subject to approval—to meet your business goals.",
     },
     {
-      question: "Is training provided for using the panel?",
+      question: "Can I track earnings and request payouts?",
       answer:
-        "Absolutely! We offer detailed documentation, video tutorials, and live training sessions.",
+        "Yes! Renie Hub allows you to monitor your earnings based on the waste collected. When you're ready, you can easily submit a payout request directly through the platform.",
     },
     {
-      question: "How secure is the data?",
+      question: "Can I trace where the waste goes after collection?",
       answer:
-        "We use industry-standard encryption and regular security updates to ensure data safety.",
+        "Yes. With Renie Hub’s Waste Bag Journey feature, you can trace each waste bag from the bin all the way to the recycling facility. It’s designed to give you complete transparency and confidence in how your waste is being handled.",
     },
   ];
 
@@ -44,7 +45,7 @@ const FaqAccordion = () => {
     <section className="faqs">
       <div className="container-xl">
         <h2 className="text-center mb-3">FAQ</h2>
-        <h3 className="text-center">Answers</h3>
+        <H2 title='Answers' />
         <div className="accordion mt-5">
           {faqs.map((faq, index) => (
             <div className="accordion-items" key={index}>
@@ -53,7 +54,9 @@ const FaqAccordion = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <h4>{faq.question}</h4>
-                <span><img src="/assets/reniehub/down-arrow.webp" alt="faqs"/></span>
+                <span>
+                  <img src="/assets/reniehub/down-arrow.webp" alt="faqs" />
+                </span>
               </div>
               <div
                 className={`accordion-body ${

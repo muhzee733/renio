@@ -54,7 +54,7 @@
   background-size: auto;
 }
 .renie-waste-wrapper {
-  padding: 200px 0px;
+  padding: 100px 0px;
 }
 .renie-waste-box {
   margin-bottom: 8%;
@@ -157,21 +157,20 @@
   color: white;
 }
 .faqs h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #000000;
-}
-.faqs h3 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #000000;
+  font-weight: 700;
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 .faqs {
   padding: 120px 0px;
 }
-/* .faqs .accordion-item{
-  border: 1px solid black !important;
-} */
 
 .faqs .accordion-button {
   font-weight: 500 !important;
@@ -221,19 +220,20 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  padding: 10px 0px 20px 0px;
-  background-color: white;
+  padding: 20px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(159deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   font-weight: bold;
-  border-bottom: 1px solid #000000;
 }
 .accordion-header h4 {
   font-weight: 500 !important;
-  color: #000000;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
 }
 
 .accordion-body {
-  padding: 20px 0px 20px 0px;
+  padding: 20px;
   display: none;
   background-color: white;
   transition: max-height 0.3s ease, opacity 0.3s ease;
@@ -256,7 +256,7 @@
     color: #fff;
   }
   .management {
-    padding: 200px 0px !important;
+    padding: 100px 0px !important;
   }
   .management h2 {
     width: 90%;
