@@ -62,31 +62,31 @@ const DataMonetizationSection = () => {
                   title: "From trash to cash",
                   description:
                     "Traditional waste management costs money, but Renie helps businesses earn from their waste by transforming trash into cash.",
-                  img: "/assets/cusure.webp",
+                  img: "/assets/from-trash.webp",
                 },
                 {
                   title: "Sustainability Meets Profitability",
                   description:
                     "Our model supports zero-waste initiatives and circular economy efforts, aligning businesses with sustainable practices while generating revenue.",
-                  img: "/assets/cusure.webp",
+                  img: "/assets/meets.webp",
                 },
                 {
                   title: "Real-Time Data Insights",
                   description:
                     "Businesses gain access to valuable insights on consumer behavior, waste patterns, and sustainability performance, helping them make data-driven decisions.",
-                  img: "/assets/cusure.webp",
+                  img: "/assets/real-time.webp",
                 },
                 {
                   title: "Seamless Integration",
                   description:
                     "Our smart Renie bins integrate with existing waste management systems, making it effortless for companies to start monetizing their waste data.",
-                  img: "/assets/cusure.webp",
+                  img: "/assets/seamless.webp",
                 },
                 {
                   title: "A Competitive Edge",
                   description:
                     "By leveraging waste data, brands can refine product development, improve marketing strategies, and create eco-friendly innovations.",
-                  img: "/assets/cusure.webp",
+                  img: "/assets/competitive.webp",
                 },
               ].map((item, index) => (
                 <div
