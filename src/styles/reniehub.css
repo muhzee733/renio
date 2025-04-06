@@ -112,7 +112,6 @@
   margin-bottom: 100px;
 }
 .control-below-section h2 {
-
   color: white;
   margin-bottom: 20px;
   padding-right: 100px;
@@ -200,6 +199,7 @@
   border-radius: 6px;
   font-size: 14px;
   margin-top: 20px;
+  border: 0;
 }
 
 .faqs {
@@ -242,10 +242,9 @@
 .accordion-body.open {
   display: block;
 }
-.car .box-img{
+.car .box-img {
   height: 90px;
 }
-
 
 @media (min-width: 1441px) {
   .reniehub-wrapper {
@@ -273,7 +272,7 @@
   .renie-waste-box h2 {
     font-size: 50px;
     line-height: 64px;
-}
+  }
 }
 
 @media (max-width: 1200px) {
@@ -282,15 +281,15 @@
   }
   .management-test {
     font-size: 18px;
-}
-.renie-box-wrapper p {
-  font-size: 18px;
-  line-height: 30px;
-}
+  }
+  .renie-box-wrapper p {
+    font-size: 18px;
+    line-height: 30px;
+  }
   .management h1 {
     width: 80%;
     margin: 0 auto;
-}
+  }
   .renie-mobile-banner {
     position: absolute;
     right: -6%;
@@ -316,6 +315,7 @@
   .control-below-section h2 {
     margin-bottom: 17px;
     padding-right: 55px;
+    font-size: 30px !important;
   }
   .management h2 {
     font-size: 28px;
@@ -334,6 +334,9 @@
 @media (max-width: 992px) {
   .renie-box-wrapper h1 {
     width: 75%;
+  }
+  .managment-title h4 {
+    text-align: center;
   }
   .renie-box-wrapper p {
     width: 60%;
@@ -406,12 +409,29 @@
     padding-top: 16%;
     padding-bottom: 10%;
   }
+  .renie-box-wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .control-below-section img {
+    max-width: 90%;
+  }
+  .car {
+    padding: 10px !important;
+  }
+  .car p {
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  .renie-box-wrapper img {
+    max-width: 80%;
+  }
   .control-below-section h2 {
     text-align: left;
-}
+  }
   .renie-waste-box h2 {
     width: 90%;
-}
+  }
   .reniehub .brand-slider-container {
     bottom: -2%;
   }
@@ -456,8 +476,8 @@
     font-size: 28px;
   }
   .control-below-section h2 {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 20px !important;
+    line-height: 30px;
   }
   .control-below-section img {
     max-width: 80%;
@@ -473,6 +493,10 @@
   .management-test {
     width: 90%;
   }
+  .accordion-header h4 {
+    line-height: 16px;
+    font-size: 12px;
+  }
   .managemnt-paragraph {
     width: 80%;
   }
@@ -486,22 +510,21 @@
   .designed {
     padding: 50px 0;
   }
-  .control-below-section{
+  .control-below-section {
     flex-direction: column-reverse;
   }
-  .control-below-section .revolution{
+  .control-below-section .revolution {
     text-align: center;
     margin: 0 auto;
-
   }
   .control-below-section h2 {
     text-align: center;
-}
-.m-below-section{
-  flex-direction: unset !important;
-  text-align: center;
-}
-.management-test {
-  font-size: 14px;
-}
+  }
+  .m-below-section {
+    flex-direction: unset !important;
+    text-align: center;
+  }
+  .management-test {
+    font-size: 14px;
+  }
 }

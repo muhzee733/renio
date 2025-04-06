@@ -155,7 +155,7 @@ const Navbar = () => {
             src="/assets/small.webp"
             alt="Menu Icon"
             width={50}
-            height={50}
+            height={40}
             style={{
               display: isMobile ? "block" : "none",
               cursor: "pointer",
@@ -188,9 +188,9 @@ const Navbar = () => {
         <Image
           ref={menuImageRef}
           src="/assets/small.webp"
-          alt="Menu Icon"
+          alt="logo"
           width={50}
-          height={40}
+          height={50}
           style={{
             position: "absolute",
             left: "50%",
@@ -201,9 +201,9 @@ const Navbar = () => {
         />
         <Image
           src="/assets/small.webp"
-          alt="Menu Icon"
-          width={40}
-          height={40}
+          alt="mobile logo"
+          width={45}
+          height={50}
           className="custom-small-image"
           onClick={handleLogoClick}
           style={{

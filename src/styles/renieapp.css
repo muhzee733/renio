@@ -19,6 +19,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.main-renie-banner h4{
+  color: white  !important;
+}
 .custom-margin-top {
   margin-top: 40px;
 }
@@ -90,6 +93,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 10px;
+  border: 0;
 }
 .renie-love {
   background: linear-gradient(120deg, #4765e6 0%, #4765e6 46%, #283880 100%);
@@ -217,6 +221,7 @@
   border-radius: 8px;
   text-align: center;
   display: block;
+  border: 0;
 }
 .main-renie-banner img {
   max-width: 20%;
@@ -250,10 +255,10 @@
 }
 @media (max-width: 1200px) {
   .main-renie-banner img {
-    max-width: 40%;
+    max-width: 26%;
   }
   .main-renie-banner {
-    top: 4%;
+    top: 3%;
   }
   .animated-h2 {
     font-size: 40px;
@@ -275,7 +280,7 @@
   }
   .left-track p {
     font-size: 13px;
-    width: 80%;
+    width: 70%;
     margin-top: 10px;
   }
   .green h2 {
@@ -317,9 +322,17 @@
   .easystep-wrapper {
     padding: 50px 0px;
   }
+  .easystep-wrapper {
+    padding: 100px 20px;
+    height: 140vh;
+}
   .custom-scan-height {
     min-height: 40vh;
   }
+  .animated-main-image img{
+    max-width: 80%;
+  }
+
   .vertical-box div {
     width: 100px;
   }
@@ -382,6 +395,19 @@
   .main-renie-banner {
     top: 3%;
   }
+  .renie-banner .banner-svg-bin{
+    min-height: 100vh;
+  }
+  .main-renie-nexus h1 {
+    width: 100%;
+    font-size: 30px !important;
+  }
+  .scan-title-3 h1{
+    width: 48% !important;
+  }
+  .easystep-wrapper{
+    padding: 40px 20px;
+  }
   .animatedsection {
     min-height: 100vh;
     padding: 50px 0px;
@@ -391,6 +417,9 @@
   }
   .renie-nexus-wrapper .row {
     flex-direction: column-reverse;
+  }
+  .left-track p {
+    width: 65% !important;
   }
   .renie-love h2 {
     font-size: 28px;
@@ -435,9 +464,11 @@
     top: 8vh;
   }
   .white-box {
-    top: 10rem;
-    right: 14rem;
-    max-width: 34% !important;
+    display: none;
+  }
+  .easystep-wrapper {
+    height: 110vh;
+    padding: 50px 0px;
   }
   .vertical-box div {
     height: 30vh;
@@ -451,7 +482,7 @@
   }
   .scan-title-2 {
     left: 33%;
-    top: 1rem !important;
+    top: 4rem !important;
   }
   .white-box-2 {
     top: 48% !important;

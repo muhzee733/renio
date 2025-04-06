@@ -38,14 +38,14 @@ const ThirdSection = () => {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="d-flex justify-content-end justify-content-center-md">
-                  <img src="/assets/reniehub/imag-2.webp" />
+                  <img src="/assets/reniehub/imag-2.webp" width={500}/>
                 </div>
               </div>
             </div>
             <div className="row control-below-section m-below-section">
               <div className="col-lg-6 col-md-6">
                 <div>
-                  <img src="/assets/reniehub/imag.webp" />
+                  <img src="/assets/reniehub/imag.webp" width={500}/>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 d-flex align-items-center">

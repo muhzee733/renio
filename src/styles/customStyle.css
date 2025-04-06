@@ -1393,7 +1393,9 @@ footer {
   .custom-logo-image {
     display: none !important;
   }
-
+  #how-it-works {
+    height: 100vh;
+  }
   .blogs .swiper {
     padding: 30px !important;
   }
@@ -1657,8 +1659,11 @@ footer {
     line-height: 12px;
   }
   .section-2 {
-    min-height: 126vh !important;
+    min-height: 115vh !important;
     padding: 0px 15px;
+  }
+  .scroll-section-inner .slide-1{
+    min-height: 100vh;
   }
   .main-slider h4 {
     font-size: 34px !important;

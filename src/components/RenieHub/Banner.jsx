@@ -22,6 +22,7 @@ const Banner = () => {
                       src="/assets/hub.webp"
                       alt="renie-hub"
                       className="mb-5"
+                      width={1000}
                     />
                     {/* <img
                       src="/assets/reniehub/renie-mobile.webp"
