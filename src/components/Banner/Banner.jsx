@@ -50,12 +50,12 @@ const Banner = () => {
           </div>
         </div>
         <BrandSlider />
-        <DotLottieReact
+        {/* <DotLottieReact
           src="/assets/downarrow.json"
           loop
           autoplay
           className="lottie-animation"
-        />
+        /> */}
       </div>
     </div>
   );

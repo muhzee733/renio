@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Navbar = ({ white }) => {
+const Navbar = () => {
   const navRef = useRef(null);
   const menuImageRef = useRef(null);
   const logoRef = useRef(null);
@@ -134,7 +134,6 @@ const Navbar = ({ white }) => {
         className="main-navbar container-xl"
         style={{
           display: "flex !important",
-          backgroundColor: white ? "white" : "",
         }}
       >
         <Link href="/" passHref>
