@@ -22,7 +22,7 @@ const Renieads = () => {
         <div className="container-xl">
           <div class="row">
             <div class="col-md-6">
-              <figure className="d-flex justify-content-center">
+              <figure className="d-flex justify-content-center renie-ads-image">
                 <img src="/assets/renieads/renie-ads.webp" alt="mobile-image" />
               </figure>
             </div>

@@ -19,8 +19,8 @@
   margin: 0 auto;
   text-align: center;
 }
-.main-renie-banner h4{
-  color: white  !important;
+.main-renie-banner h4 {
+  color: white !important;
 }
 .custom-margin-top {
   margin-top: 40px;
@@ -53,7 +53,7 @@
   color: white;
   width: 80%;
 }
-.scan-title-3 h1{
+.scan-title-3 h1 {
   width: 40%;
   margin-bottom: 10px;
 }
@@ -252,6 +252,17 @@
   .easystep-wrapper {
     padding: 120px 10px 330px;
   }
+  .scan-title-2 {
+    left: 34%;
+  }
+  .renie-ads h1 {
+    line-height: 54px !important;
+  }
+  .optimized-text h2 {
+    width: 70%;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 @media (max-width: 1200px) {
   .main-renie-banner img {
@@ -292,6 +303,15 @@
     font-size: 36px;
     line-height: 40px;
   }
+  .renie-ads {
+    padding: 120px 20px !important;
+  }
+  .renie-future-section h4 {
+    font-size: 40px !important;
+  }
+  .renie-boxes h6 {
+    font-size: 20px !important;
+  }
   .animated-h2 {
     font-size: 30px;
   }
@@ -325,11 +345,11 @@
   .easystep-wrapper {
     padding: 100px 20px;
     height: 140vh;
-}
+  }
   .custom-scan-height {
     min-height: 40vh;
   }
-  .animated-main-image img{
+  .animated-main-image img {
     max-width: 80%;
   }
 
@@ -354,6 +374,9 @@
   .main-renie-banner {
     top: 4%;
   }
+  .renie-future-section h4 {
+    font-size: 30px !important;
+}
   .renie-nexus-wrapper img {
     max-width: 100%;
     margin: 0 auto;
@@ -392,20 +415,24 @@
     font-size: 32px;
     line-height: 38px;
   }
+  .renie-ads h1{
+    font-size: 27px;
+    line-height: 40px !important;
+  }
   .main-renie-banner {
     top: 3%;
   }
-  .renie-banner .banner-svg-bin{
+  .renie-banner .banner-svg-bin {
     min-height: 100vh;
   }
   .main-renie-nexus h1 {
     width: 100%;
     font-size: 30px !important;
   }
-  .scan-title-3 h1{
+  .scan-title-3 h1 {
     width: 48% !important;
   }
-  .easystep-wrapper{
+  .easystep-wrapper {
     padding: 40px 20px;
   }
   .animatedsection {

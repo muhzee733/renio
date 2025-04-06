@@ -142,6 +142,7 @@
   padding: 16px 80px;
   border-radius: 30px;
   font-size: 16px;
+  border: 0;
 }
 .monitization-custom-data{
   display: flex;
