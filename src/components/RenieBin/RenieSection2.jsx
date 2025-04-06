@@ -13,7 +13,10 @@ const RenieSection = () => {
         </div>
         <div className="renie-card-parent">
           <div className="renie-card">
-            <div style={{ width: "160px", height: "150px", marginLeft: "5px" }}>
+            <div
+              className="renie-card-inner"
+              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
+            >
               <DotLottieReact
                 src="/assets/json/barcode.json"
                 loop
@@ -26,7 +29,10 @@ const RenieSection = () => {
             </p>
           </div>
           <div className="renie-card">
-            <div style={{ width: "160px", height: "150px", marginLeft: "5px" }}>
+            <div
+              className="renie-card-inner"
+              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
+            >
               <DotLottieReact
                 src="/assets/json/led.json"
                 loop
@@ -40,7 +46,10 @@ const RenieSection = () => {
             </p>
           </div>
           <div className="renie-card">
-            <div style={{ width: "160px", height: "150px", marginLeft: "5px" }}>
+            <div
+              className="renie-card-inner"
+              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
+            >
               <DotLottieReact
                 src="/assets/json/light.json"
                 loop

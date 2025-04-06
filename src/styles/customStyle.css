@@ -1143,7 +1143,7 @@ footer {
   }
 
   .main-navbar {
-    width: 150px !important; /* Ensure navbar is smaller */
+    width: 90px !important; /* Ensure navbar is smaller */
     height: 65px;
   }
 
@@ -1168,10 +1168,6 @@ footer {
   .renio-grid-system div {
     width: 30% !important;
     min-height: 76px !important;
-  }
-  .main-navbar {
-    width: 150px !important;
-    background-color: white !important;
   }
   .main-slider .row > div {
     width: 100%;

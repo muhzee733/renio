@@ -21,7 +21,7 @@ const H1 = ({ title }) => {
           @media (max-width: 1200px) {
             .h1-title {
             font-size: 40px;
-            line-height: 45px;
+            line-height: 60px;
           }
           }
           @media (max-width: 992px) {

@@ -36,7 +36,7 @@ const MeetRenieBin = () => {
               <h2>Meet Renie Bins</h2>
               <p>A range of Renie smart bins to fit every need</p>
             </div>
-            <div className="meet-image d-flex justify-content-center align-items-center gap-4 flex-wrap">
+            <div className="meet-image d-flex justify-content-center align-items-center gap-4">
               {images.map((img, index) => (
                 <div
                   key={index}
@@ -123,7 +123,7 @@ const MeetRenieBin = () => {
             >
               ✖
             </button>
-            <Canvas style={{ height: "500px", width: "500px" }}>
+            <Canvas style={{ height: "500px", width: "500px" }} className="custom-canvas">
               <ambientLight intensity={1.2} />
               <directionalLight position={[2, 2, 2]} intensity={2} />
               <Model path={selectedModel} />

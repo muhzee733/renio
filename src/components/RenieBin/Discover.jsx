@@ -24,7 +24,7 @@ const Discover = () => {
           </div>
           <div className="col-lg-4 col-md-4">
             <div className="discover-image">
-              <img src="/assets/discover.webp" />
+              <img src="/assets/discover.webp" width={300}/>
             </div>
           </div>
         </div>
