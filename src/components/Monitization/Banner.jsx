@@ -7,7 +7,9 @@ const Banner = () => {
       <div className="container-xl">
         <div className="row">
           <div className="col-lg-6 col-md-6">
-            <img src="/assets/time.webp" alt="time" />
+            <figure className="monetization-inage">
+              <img src="/assets/time.webp" alt="time" />
+            </figure>
           </div>
           <div className="col-lg-6 col-md-6 custom-data-column">
             <H1 title="Data transforms your trash into cash." />

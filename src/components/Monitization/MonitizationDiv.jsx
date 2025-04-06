@@ -19,9 +19,11 @@ const MonitizationDiv = () => {
             </div>
             <div className="col-lg-6">
               <div className="text-center">
-                <video width="100%" height="30vh" loop muted autoPlay>
-                  <source src="/assets/money1.mp4" type="video/mp4" />
-                </video>
+              <video width="100%"  loop muted autoPlay playsInline>
+  <source src="https://raw.githubusercontent.com/muhzee733/renio/main/public/assets/money1.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
               </div>
             </div>
           </div>

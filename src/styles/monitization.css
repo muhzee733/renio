@@ -439,6 +439,9 @@
   .data-banner h1 {
     margin-bottom: 10px;
   }
+  .monetization-inage img{
+    max-width: 80%;
+  }
   .data-banner {
     min-height: 88vh;
     text-align: center;
@@ -518,7 +521,7 @@
     margin-bottom: 14px;
   }
   .why-choose {
-    height: 136vh;
+    height: 160vh;
     padding: 0 20px;
   }
   .mobile-nav {
