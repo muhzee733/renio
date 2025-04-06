@@ -14,44 +14,51 @@ export default function BlogDetail() {
   const blog = blogData.find((b) => b.slug === slug);
 
   if (!blog) {
-    return <h1 className="text-center text-xl">Blog Not Found</h1>;
+    return (
+      <div className="text-center mt-5">
+        <h1 className="h4 text-danger">Blog Not Found</h1>
+      </div>
+    );
   }
 
   return (
     <>
-    <Head>
-      <title>{blog.title}</title>
-    </Head>
+      <Head>
+        <title>{blog.title}</title>
+      </Head>
+
       <Navbar />
-      <div className="container-xl mx-auto">
-        <div className="blog-banner">
+      <div className="blog-banner">
           <h1 className="text-4xl font-bold">{blog.title}</h1>
-          <p className="mt-2 text-gray-300">{blog.date}</p>
+          <p className="mt-2 text-gray-300 text-white">{blog.date}</p>
         </div>
-        <div className="Media-Hub-detail mt-6 space-y-6">
+
+      <div className="container-xl mt-5">
+
+        <div className="mb-5">
           {blog.content.map((block, index) => {
             switch (block.type) {
               case "heading":
                 return (
-                  <h2 key={index} className="text-2xl font-semibold">
+                  <h2 key={index} className="h4 fw-semibold mb-3">
                     {block.text}
                   </h2>
                 );
               case "text":
                 return (
-                  <p key={index} className="text-lg text-gray-700">
+                  <p key={index} className="text-secondary fs-5 mb-4 blog-text">
                     {block.text}
                   </p>
                 );
               case "image":
                 return (
-                  <div key={index} className="mt-6">
+                  <div key={index} className="my-4">
                     <Image
                       src={block.src}
                       alt={block.alt}
                       width={1000}
                       height={400}
-                      className="rounded-lg w-full"
+                      className="img-fluid rounded"
                     />
                   </div>
                 );
@@ -61,6 +68,7 @@ export default function BlogDetail() {
           })}
         </div>
       </div>
+
       <Footer />
       <MiniFooter />
     </>

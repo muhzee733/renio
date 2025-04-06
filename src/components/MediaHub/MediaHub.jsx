@@ -3,6 +3,11 @@ import Image from "next/image";
 import blogData from "@/pages/blogData.json";
 import Head from "next/head";
 
+const truncateText = (text, maxLength) => {
+  if (!text) return "";
+  return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+};
+
 const MediaHub = () => {
   return (
     <>
@@ -10,45 +15,40 @@ const MediaHub = () => {
         <title>Renie Media Hub</title>
       </Head>
 
-      <div className="container-xl mt-5 bg-white">
-        {/* Blog Grid Layout */}
-        <div className="Media-Hub grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="container mt-5 bg-white">
+        <div className="row">
           {blogData.map((blog) => (
-            <div
-              key={blog.id}
-              className=" w-full bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
-            >
-              {/* Featured Image */}
-              <Link href={`/mediahub/${blog.slug}`}>
-                <Image
-                  className="rounded-t-lg object-cover w-full h-48"
-                  src={blog.featured}
-                  alt={blog.title}
-                  width={400}
-                  height={300}
-                />
-              </Link>
-
-              <div className="p-6 blog-data">
-                {/* Blog Title */}
+            <div key={blog.id} className="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+              <div className="card h-100 shadow-sm border-0">
                 <Link href={`/mediahub/${blog.slug}`}>
-                  <h2 className="font-semibold text-gray-800">
-                    {blog.title}
-                  </h2>
+                  <Image
+                    className="card-img-top"
+                    src={blog.featured}
+                    alt={blog.title}
+                    width={400}
+                    height={300}
+                    style={{ objectFit: "cover", height: "200px" }}
+                  />
                 </Link>
 
-                {/* Blog Small Description with 3-line truncation */}
-                <p className="text-gray-600 mt-2 line-clamp-3">
-                  {blog.small_desc}
-                </p>
+                <div className="card-body d-flex flex-column">
+                  <Link href={`/mediahub/${blog.slug}`}>
+                    <h5 className="card-title text-dark">
+                      {truncateText(blog.title, 40)}
+                    </h5>
+                  </Link>
 
-                {/* Read More Link */}
-                <Link
-                  href={`/mediahub/${blog.slug}`}
-                  className="inline-block mt-4 text-blue-500 hover:text-blue-700"
-                >
-                  Read More →
-                </Link>
+                  <p className="card-text text-muted">
+                    {truncateText(blog.small_desc, 100)}
+                  </p>
+
+                  <Link
+                    href={`/mediahub/${blog.slug}`}
+                    className="mt-auto text-primary text-decoration-none"
+                  >
+                    Read More →
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

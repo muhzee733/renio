@@ -10,10 +10,10 @@ import Head from "next/head";
 const Mediahub = () => {
   return (
     <>
-     <Meta
-          title="Media Hub"
-          description="The latest news and updates from Renie"
-        />
+      <Meta
+        title="Media Hub"
+        description="The latest news and updates from Renie"
+      />
       <Navbar />
       <Banner />
       <MediaHub />
