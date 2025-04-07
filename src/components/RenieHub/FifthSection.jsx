@@ -1,6 +1,7 @@
 import { useState } from "react";
 import H2 from "../Typography/H2";
 import { HiArrowSmallDown } from "react-icons/hi2";
+import P from "../Typography/P";
 
 const FaqAccordion = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -65,7 +66,7 @@ const FaqAccordion = () => {
                   openIndex === index ? "open" : ""
                 }`}
               >
-                <p>{faq.answer}</p>
+                <P title={faq.answer} />
               </div>
             </div>
           ))}
