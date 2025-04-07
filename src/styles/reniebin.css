@@ -689,6 +689,13 @@
   .renie-main-content {
     padding-top: 33%;
   }
+  .custom-3d-model{
+    width: 330px !important;
+    height: 330px !important;
+  }
+  #custom-popup{
+    transform: translateX(5%);
+  }
   .swiper-slide div div {
     display: flex;
     justify-content: center;
@@ -712,7 +719,7 @@
     height: 67vh;
   }
   .RenieSection2-container {
-    height: 67vh;
+    height: unset;
   }
   .renie-card-parent .renie-card:nth-child(3) {
     left: 60%;

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Head from "next/head";
 
 import Footer from "@/components/Navbar/Footer";
 import Navbar from "@/components/Navbar/Navbar";
@@ -24,10 +23,10 @@ const RenieBin = () => {
   const airpods = { frame: 0 };
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 992);
+    setIsMobile(window.innerWidth < 500);
 
     window.addEventListener("resize", () => {
-      setIsMobile(window.innerWidth < 992);
+      setIsMobile(window.innerWidth < 500);
     });
 
     return () => window.removeEventListener("resize", () => {});
@@ -71,7 +70,7 @@ const RenieBin = () => {
     imagesRef.current[0].onload = render;
 
     // Set different animation ending positions based on screen size
-    const scrollEnd = isMobile ? window.innerHeight * 0.9 : 950;
+    const scrollEnd = isMobile ? window.innerHeight * 0.3 : 950;
 
     gsap.to(airpods, {
       frame: frameCount - 1,

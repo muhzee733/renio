@@ -206,7 +206,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
             >
               ✖
             </button>
-            <Canvas style={{ height: "500px", width: "500px" }}>
+            <Canvas style={{ height: "500px", width: "500px" }} className="custom-3d-model">
               <ambientLight intensity={1.2} />
               <directionalLight position={[2, 2, 2]} intensity={2} />
               <Model path={selectedModel} />
