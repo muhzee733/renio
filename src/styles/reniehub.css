@@ -135,6 +135,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.text-left p{
+  text-align: left;
+}
 .managment-title h4 {
   background: -webkit-linear-gradient(
     80deg,
@@ -244,6 +247,7 @@
 }
 .car .box-img {
   height: 90px;
+  text-align: left;
 }
 
 @media (min-width: 1441px) {
