@@ -137,28 +137,28 @@ const Navbar = () => {
         }}
       >
         <Link href="/" passHref>
-          <Image
+          <img
             ref={logoRef}
             src="/assets/logo.webp"
             alt="Renie Logo"
             width={140}
-            height={50}
             style={{
               display: isMobile ? "none" : "block",
               cursor: "pointer",
+              height: "auto",
             }}
           />
         </Link>
 
         <Link className="mobile-menu" href="/" passHref>
-          <Image
+          <img
             src="/assets/small.webp"
-            alt="Menu Icon"
             width={50}
-            height={40}
+            alt="Menu Icon"
             style={{
               display: isMobile ? "block" : "none",
               cursor: "pointer",
+              height: "auto",
             }}
           />
         </Link>
@@ -185,13 +185,13 @@ const Navbar = () => {
         >
           Connect with an expert
         </button>
-        <Image
+        <img
           ref={menuImageRef}
           src="/assets/small.webp"
           alt="logo"
           width={50}
-          height={50}
           style={{
+            height: "auto",
             position: "absolute",
             left: "50%",
             top: "50%",
@@ -199,28 +199,25 @@ const Navbar = () => {
             opacity: 0,
           }}
         />
-        <Image
+
+        <img
           src="/assets/small.webp"
           alt="mobile logo"
           width={45}
-          height={50}
-          className="custom-small-image"
-          onClick={handleLogoClick}
           style={{
+            height: "auto",
             position: "absolute",
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -50%)",
           }}
+          className="custom-small-image"
+          onClick={handleLogoClick}
         />
+
         <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <Link href="/">
-            <Image
-              src="/assets/logo.webp"
-              alt="Renie Logo"
-              width={100}
-              height={50}
-            />
+          <img src="/assets/logo.webp" width={100} alt="renie logo"/>
           </Link>
           <button onClick={handleLogoClick} className="close-btn">
             ✖

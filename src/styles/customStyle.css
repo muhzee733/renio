@@ -1398,6 +1398,10 @@ footer {
   .mini-footer-wrapper {
     flex-direction: column;
   }
+  .scroll-section .slide-1 h2 {
+    padding-top: 0px;
+    font-size: 28px !important;
+}
   .main-navbar {
     height: 55px;
   }
@@ -1767,7 +1771,7 @@ footer {
     font-size: 14px !important;
   }
   .new-section {
-    min-height: 90vh !important;
+    min-height: 78vh !important;
   }
   .custom-flex {
     flex-direction: column;
