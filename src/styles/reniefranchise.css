@@ -1,0 +1,138 @@
+.renie-franchises,
+.how-it-work {
+  background: url("/assets/json/renie-franchise.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.renie-franchises h1 {
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.renie-franchises figure {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+}
+.feature-text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.feature-text p {
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.feature-title-bold p {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.feature-h4 h4 {
+  font-size: 28px;
+  text-align: left;
+  width: 60%;
+  font-weight: 600;
+  margin: 10px 0px;
+  color: white;
+}
+.feature-h4 p {
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  width: 80%;
+}
+.feature-h4 h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.admin-icon {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+.admin-icon img {
+  max-width: 30%;
+}
+
+.how-it-work .will-work {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.will-work h1 {
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.franchise-benefits {
+  background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+  padding: 100px 0px;
+}
+.franchise-benefits .benefits-franch h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+.franchise-benefits .benefits-franch p {
+  color: white;
+}
+.franchise-benefits .benefits-franch {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.title-desc p,
+.title-desc h4 {
+  color: white;
+}
+.next-step {
+  background-color: white;
+  padding: 100px 0px;
+  text-align: center;
+}
+.next-step h1 {
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+.next-step p {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}

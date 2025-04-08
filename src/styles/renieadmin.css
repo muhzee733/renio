@@ -18,14 +18,7 @@
   bottom: 0;
   right: 0;
 }
-.admin-icon {
-  display: flex;
-  gap: 20px;
-  padding-left: 20px;
-}
-.admin-icon img {
-  max-width: 30%;
-}
+
 .renie-admin-img {
   margin-bottom: -108px;
 }
@@ -61,33 +54,10 @@
 .features {
   padding: 100px 0px;
 }
-.feature-text p {
-  color: white;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
 .feature-h4 {
   margin-top: 40px;
 }
-.feature-h4 h4 {
-  font-size: 28px;
-  text-align: left;
-  width: 60%;
-  font-weight: 600;
-  margin: 10px 0px;
-}
-.feature-h4 p {
-  color: white;
-  font-size: 12px;
-  margin-top: 15px;
-  width: 80%;
-}
-.feature-h4 h5 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 20px;
-}
+
 .dashboard-preview {
   padding: 100px 0px 0px 0px;
 }

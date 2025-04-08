@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import P from "../Typography/P";
+import H1 from "../Typography/H1";
 
 const secondSection = () => {
   return (
@@ -7,16 +8,16 @@ const secondSection = () => {
       className="features text-white"
       style={{
         background:
-          "-webkit-linear-gradient(80deg, #4765E6 0%, #5C4099 46%, #E31662 100%)",
+          "-webkit-linear-gradient(0deg, #4765E6 0%, #5C4099 46%, #E31662 100%)",
       }}
     >
       <div className="container-xl">
         <div className="feature-text">
-          <P
-            title=" Our powerful admin panel provides franchisees with the tools they need
-          to efficiently manage operations, optimize resources, and drive
-          growth."
-          />
+          <H1 title={"Why Choose Us"} />
+          <P title="Renie.io offers a unique and profitable franchise model that provides you with the tools, support, and resources you need to succeed. Our proven track record and strong brand presence make us the ideal choice for entrepreneurs looking to invest in a business with high growth potential." />
+        </div>
+        <div className="feature-title-bold">
+          <P title="Our powerful admin panel provides franchisees with the tools they need to efficiently manage operations, optimize resources, and drive growth." />
         </div>
         <div className="row text-left feature-h4">
           <div className="col-lg-6 col-md-6 col-lg-3 d-flex align-items-top justify-content-center">
@@ -31,7 +32,9 @@ const secondSection = () => {
                 </h4>
               </div>
 
-              <h5 className="pl-3">Get full revenue</h5>
+              <h5 className="pl-3">
+                Manage relations with WMCs, areas and bins providers
+              </h5>
               <p className="pl-3">
                 Gain full control over revenue streams with <br /> transparent
                 financial tracking and automated <br /> reporting.
