@@ -194,6 +194,9 @@
   font-weight: 600;
   text-align: center;
 }
+.MeetRenieBin .swiper-wrapper .swiper-slide:nth-child(4) img{
+  width: 70%;
+}
 .meet-main-banner p {
   color: white;
   font-size: 24px;
@@ -763,6 +766,12 @@
     margin-bottom: 38px !important;
     margin-left: 7% !important;
 }
+.reniebin-paragraph p {
+  font-size: 12px !important;
+}
+.image-container h4{
+  font-size: 20px;
+}
   .renie-main-content h1 {
     font-size: 24px;
   }
@@ -803,11 +812,11 @@
     margin: 20px 0px;
     text-align: center;
   }
-  .meet-image .swiper-slide {
+  /* .meet-image .swiper-slide {
     justify-content: center;
     display: flex;
     flex-direction: column;
-  }
+  } */
   .meet-image canvas {
     width: 300px !important;
     height: 300px !important;

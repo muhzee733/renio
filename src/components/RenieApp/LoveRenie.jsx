@@ -16,7 +16,7 @@ const LoveRenie = () => {
 
         <div className="row mt-5 d-flex justify-content-center align-items-stretch text-center custom-data-svg">
           {/* Feature 1 */}
-          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
+          <div className="col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-center">
             <div className="media-container">
               <DotLottieReact
                 src="/assets/animate-svg-1.json"
@@ -29,7 +29,7 @@ const LoveRenie = () => {
           </div>
 
           {/* Feature 2 (SVG) */}
-          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
+          <div className="col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-center">
             <div className="media-container">
               <object
                 data="/assets/animate-svg-2.svg"
@@ -42,7 +42,7 @@ const LoveRenie = () => {
           </div>
 
           {/* Feature 3 */}
-          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
+          <div className="col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-center">
             <div className="media-container">
               <DotLottieReact
                 src="/assets/animate-svg-3.json"
@@ -55,7 +55,7 @@ const LoveRenie = () => {
           </div>
 
           {/* Feature 4 */}
-          <div className="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
+          <div className="col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-center">
             <div className="media-container">
               <DotLottieReact
                 src="/assets/animate-svg-2.json"

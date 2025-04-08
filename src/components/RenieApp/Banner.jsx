@@ -49,6 +49,9 @@ const Banner = () => {
             <H4 title="Track. Recycle. Reward." />
           </div>
         </div>
+        <figure className="my-down-arrow">
+          <img src="/assets/downarrow.webp" width={150} alt="down arrow"/>
+        </figure>
       </div>
     </div>
   );

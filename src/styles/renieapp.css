@@ -19,6 +19,11 @@
   margin: 0 auto;
   text-align: center;
 }
+.my-down-arrow {
+display: flex;
+justify-content: end;
+transform: translate(-50px, -20px);
+}
 .main-renie-banner h4 {
   color: white !important;
 }
@@ -376,7 +381,7 @@
   }
   .renie-future-section h4 {
     font-size: 30px !important;
-}
+  }
   .renie-nexus-wrapper img {
     max-width: 100%;
     margin: 0 auto;
@@ -415,9 +420,12 @@
     font-size: 32px;
     line-height: 38px;
   }
-  .renie-ads h1{
+  .renie-ads h1 {
     font-size: 27px;
     line-height: 40px !important;
+  }
+  .white-box {
+    max-width: 30%;
   }
   .main-renie-banner {
     top: 3%;
@@ -490,9 +498,6 @@
   .scan-title {
     top: 8vh;
   }
-  .white-box {
-    display: none;
-  }
   .easystep-wrapper {
     height: 110vh;
     padding: 50px 0px;
@@ -507,14 +512,27 @@
     left: 10px;
     top: 4vh;
   }
+  .media-container div canvas {
+    width: 90% !important;
+  }
   .scan-title-2 {
     left: 33%;
     top: 4rem !important;
   }
   .white-box-2 {
-    top: 48% !important;
-    left: 14rem !important;
+    top: 66% !important;
+    left: 3rem !important;
   }
+  .white-box {
+    right: 20%;
+    top: 15rem;
+  }
+  .my-down-arrow{
+    display: none;
+  }
+  /* .my-down-arrow img{
+    max-width: 25%;
+  } */
   .custom-scan-height {
     min-height: 44vh !important;
   }

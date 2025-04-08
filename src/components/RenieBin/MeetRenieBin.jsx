@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import H4 from "../Typography/H4";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Model = ({ path }) => {
   const { scene } = useGLTF(path);
@@ -36,19 +40,37 @@ const MeetRenieBin = () => {
               <h2>Meet Renie Bins</h2>
               <p>A range of Renie smart bins to fit every need</p>
             </div>
-            <div className="meet-image d-flex justify-content-center align-items-center gap-4">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={20}
+              navigation
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 4,
+                },
+              }}
+              className="meet-image"
+            >
               {images.map((img, index) => (
-                <div
-                  key={index}
-                  className="image-container text-center"
-                  onClick={() => setSelectedModel(models[index])}
-                  style={{ cursor: "pointer" }}
-                >
-                  <img src={img} alt={titles[index]} className="static-image" />
-                  <H4 title={titles[index]} />
-                </div>
+                <SwiperSlide key={index}>
+                  <div
+                    className="image-container text-center"
+                    onClick={() => setSelectedModel(models[index])}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img
+                      src={img}
+                      alt={titles[index]}
+                      className="static-image"
+                    />
+                    <H4 title={titles[index]} />
+                  </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
             <div className="reniebin-paragraph">
               <p>
                 Renie Bins are equipped with special sensors that mimic a
@@ -123,7 +145,10 @@ const MeetRenieBin = () => {
             >
               ✖
             </button>
-            <Canvas style={{ height: "500px", width: "500px" }} className="custom-canvas">
+            <Canvas
+              style={{ height: "500px", width: "500px" }}
+              className="custom-canvas"
+            >
               <ambientLight intensity={1.2} />
               <directionalLight position={[2, 2, 2]} intensity={2} />
               <Model path={selectedModel} />
