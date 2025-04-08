@@ -1,6 +1,7 @@
 import React from "react";
 import BrandSlider from "../BrandSlider";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import MovingSlider from "../MovingSlider";
 
 const Banner = () => {
   const scrollToSection = () => {
@@ -50,12 +51,6 @@ const Banner = () => {
           </div>
         </div>
         <BrandSlider />
-        {/* <DotLottieReact
-          src="/assets/downarrow.json"
-          loop
-          autoplay
-          className="lottie-animation"
-        /> */}
       </div>
     </div>
   );
