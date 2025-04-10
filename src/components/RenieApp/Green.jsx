@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import H1 from "../Typography/H1";
@@ -7,9 +7,16 @@ import P from "../Typography/P";
 gsap.registerPlugin(ScrollTrigger);
 
 const Green = () => {
-  const handleClick = (e) => {
-    const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    // Check if window is defined (i.e., running on the client side)
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
+
+  const handleClick = (e) => {
     if (isMobile) {
       e.preventDefault();
       window.location.href = "https://app.renie.io/";
@@ -25,10 +32,7 @@ const Green = () => {
               <H1 title=" Be part of the green revolution!" />
             </div>
             <P
-              title="Every action counts. With the Renie Nexus, you’re not just
-              disposing of waste—you’re contributing to a cleaner, smarter
-              planet. Join thousands of eco-conscious users and make
-              sustainability effortless!"
+              title="Every action counts. With the Renie Nexus, you’re not just disposing of waste—you’re contributing to a cleaner, smarter planet. Join thousands of eco-conscious users and make sustainability effortless!"
             />
             <div
               style={{
