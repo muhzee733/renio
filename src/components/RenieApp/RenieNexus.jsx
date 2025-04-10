@@ -26,7 +26,11 @@ const RenieNexus = () => {
           <div className="row">
             <div className="col-lg-6">
               <figure className="renie-nexus-image">
-                <img src="/assets/main-hand-mobile.webp" alt="renie-app" />
+                <img
+                  src="/assets/main-hand-mobile.webp"
+                  alt="renie-app"
+                  onError={(e) => (e.target.style.display = "none")}
+                />
               </figure>
             </div>
             <div className="col-lg-6 align-items-center d-flex">
