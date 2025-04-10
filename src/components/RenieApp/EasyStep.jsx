@@ -12,11 +12,7 @@ const EasyStep = () => {
     <div className="easystep" ref={sectionRef}>
       <div className="easystep-wrapper">
         <div className="container-xl">
-          <div className="row">
-            <div className="col-lg-12">
-              <H2 title=" Get Started in 2 Easy Steps" />
-            </div>
-          </div>
+          <H2 title=" Get Started in 2 Easy Steps" />
           <div className="row">
             <motion.div
               className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-left-column"
@@ -24,21 +20,24 @@ const EasyStep = () => {
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut" }}
             >
-              <div className="left-track position-relative custom-scan-height">
+              <div className="left-track  custom-scan-height">
                 <div className="scan-title scan-title-3">
                   <H1 title="Connect. Scan. Dispose" />
                   <P title="Users can simply open their camera, scan the QR code to connect to the bin, scan the waste, and drop it in." />
-                  <img src="/assets/no-download.webp" width="30%" className="mt-4"/>
-                </div>
-                <div className="vertical-box">
-                  <div></div>
+                  <img
+                    src="/assets/no-download.webp"
+                    width="40%"
+                    className="mt-4"
+                  />
+                  <figure className="renie-user">
+                    <img
+                      src="/assets/step-1.webp"
+                      alt="renie-box"
+                      width={180}
+                    />
+                  </figure>
                 </div>
               </div>
-              <img
-                className="white-box"
-                src="/assets/step-1.webp"
-                alt="renie-box"
-              />
             </motion.div>
 
             <motion.div
@@ -47,20 +46,21 @@ const EasyStep = () => {
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             >
-              <div className="left-track position-relative custom-scan-height">
+              <div className="left-track  custom-scan-height">
                 <div className="scan-title scan-title-2">
+                  <img
+                    className="white-bo"
+                    src="/assets/step-2.webp"
+                    alt="renie-box"
+                    width={180}
+                  />
                   <H1 title="Earn & Make an Impact" />
                   <P title="Get rewarded for recycling & be part of the sustainability movement!" />
                 </div>
-                <div className="vertical-box-right">
+                {/* <div className="vertical-box-right">
                   <div></div>
-                </div>
+                </div> */}
               </div>
-              <img
-                className="white-box white-box-2"
-                src="/assets/step-2.webp"
-                alt="renie-box"
-              />
             </motion.div>
           </div>
         </div>

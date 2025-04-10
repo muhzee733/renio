@@ -16,7 +16,7 @@ const RenieNexus = () => {
         <div className="container-xl">
           <div className="row">
             <div className="col-lg-6">
-              <img src="/assets/main-hand-mobile.webp" alt="renie-app" />
+              <figure className="renie-nexus-image"><img src="/assets/main-hand-mobile.webp" alt="renie-app" /></figure>
             </div>
             <div className="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">
