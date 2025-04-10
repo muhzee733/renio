@@ -22,7 +22,7 @@ const RenieApp = () => {
       <Banner />
       <RenieNexus />
       <LoveRenie />
-      {/* <EasyStep /> */}
+      <EasyStep />
       <AnimatedSection />
       <Green />
       <Footer />

@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import H2 from "../Typography/H2";
 import P from "../Typography/P";
 import H1 from "../Typography/H1";
 
 const RenieNexus = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if window is defined (i.e., running in the client-side)
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
+
   const handleRedirect = () => {
-    const isMobile = window.innerWidth <= 768;
     const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
     window.open(url, "_blank");
   };
