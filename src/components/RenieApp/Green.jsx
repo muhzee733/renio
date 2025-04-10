@@ -10,14 +10,13 @@ const Green = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if window is defined (i.e., running on the client side)
     if (typeof window !== "undefined") {
       setIsMobile(window.innerWidth <= 768);
     }
   }, []);
 
   const handleClick = (e) => {
-    if (isMobile) {
+    if (typeof window !== "undefined" && isMobile) {
       e.preventDefault();
       window.location.href = "https://app.renie.io/";
     }

@@ -7,15 +7,16 @@ const RenieNexus = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if window is defined (i.e., running in the client-side)
     if (typeof window !== "undefined") {
       setIsMobile(window.innerWidth <= 768);
     }
   }, []);
 
   const handleRedirect = () => {
-    const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
-    window.open(url, "_blank");
+    if (typeof window !== "undefined") {
+      const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
+      window.open(url, "_blank");
+    }
   };
 
   return (
@@ -24,7 +25,9 @@ const RenieNexus = () => {
         <div className="container-xl">
           <div className="row">
             <div className="col-lg-6">
-              <figure className="renie-nexus-image"><img src="/assets/main-hand-mobile.webp" alt="renie-app" /></figure>
+              <figure className="renie-nexus-image">
+                <img src="/assets/main-hand-mobile.webp" alt="renie-app" />
+              </figure>
             </div>
             <div className="col-lg-6 align-items-center d-flex">
               <div className="main-renie-nexus">
