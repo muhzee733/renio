@@ -6,8 +6,9 @@ const Footer = () => {
     { name: "Renie Bin", path: "/reniebin" },
     { name: "Renie Hub", path: "/reniehub" },
     { name: "Renie App", path: "/renieapp" },
-    { name: "Ads that Matter", path: "/renieads" },
     { name: "Media Hub", path: "/mediahub" },
+    { name: "Ads that Matter", path: "/renieads" },
+    { name: "Renie Franchise", path: "/reniefranchise" }
   ];
 
   return (

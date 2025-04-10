@@ -36,7 +36,7 @@ const Renieads = () => {
                 />
                 <div className="renie-boxes">
                   <div className="d-flex align-items-center gap-4 mt-5">
-                    <img src="/assets/json/ai-icon.png" />
+                    <img src="/assets/json/ai-icon.png" alt="ai-icon"/>
                     <div>
                       <h6>AI-Powered Ads, Delivered to the Right Audience</h6>
                       <P

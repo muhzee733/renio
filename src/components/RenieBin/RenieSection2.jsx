@@ -1,8 +1,26 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import React from "react";
 
+// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
+
+// Simulated API data
+const renieData = [
+  {
+    title: "Smart Barcode Reader",
+    animation: "/assets/json/barcode.json",
+  },
+  {
+    title: "LID Automation",
+    animation: "/assets/json/led.json",
+  },
+  {
+    title: "Smart Light Indication",
+    animation: "/assets/json/light.json",
+  },
+];
 
 const RenieSection = () => {
   return (
@@ -11,57 +29,23 @@ const RenieSection = () => {
         <div className="banner-svg-bin">
           <DotLottieReact src="/assets/website-wave.json" loop autoplay />
         </div>
+
         <div className="renie-card-parent">
-          <div className="renie-card">
+          {renieData.map((item, index) => (
             <div
-              className="renie-card-inner"
-              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
+              key={index}
+              className={`renie-card renie-card-${
+                index + 1
+              } d-flex flex-column justify-content-center`}
             >
-              <DotLottieReact
-                src="/assets/json/barcode.json"
-                loop
-                autoplay
-                style={{ width: "100%", height: "100%" }}
-              />
+              <div className="renie-card-inner">
+                <DotLottieReact src={item.animation} loop autoplay className="custom-lotti"/>
+              </div>
+              <p className="text-dark mt-4 fw-semibold text-center">
+                {item.title}
+              </p>
             </div>
-            <p className="text-dark mt-3 fw-semibold">
-              Smart <br /> Barcode Reader
-            </p>
-          </div>
-          <div className="renie-card">
-            <div
-              className="renie-card-inner"
-              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
-            >
-              <DotLottieReact
-                src="/assets/json/led.json"
-                loop
-                autoplay
-                style={{ width: "100%", height: "100%" }}
-              />
-            </div>
-            <p className="text-dark mt-4 ">
-              LID <br />
-              Automation
-            </p>
-          </div>
-          <div className="renie-card">
-            <div
-              className="renie-card-inner"
-              style={{ width: "160px", height: "150px", marginLeft: "5px" }}
-            >
-              <DotLottieReact
-                src="/assets/json/light.json"
-                loop
-                autoplay
-                style={{ width: "100%", height: "100%" }}
-              />
-            </div>
-            <p className="text-dark mt-4 ">
-              Smart Light <br />
-              Indication
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>
