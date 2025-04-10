@@ -5,7 +5,7 @@ const Footer = () => {
   const navLinks = [
     { name: "Renie Bin", path: "/reniebin" },
     { name: "Renie Hub", path: "/reniehub" },
-    { name: "Renie App", path: "/renieapp" },
+    { name: "Renie Nexus", path: "/renieapp" },
     { name: "Media Hub", path: "/mediahub" },
     { name: "Ads that Matter", path: "/renieads" },
     { name: "Renie Franchise", path: "/reniefranchise" }

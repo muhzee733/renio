@@ -135,7 +135,7 @@
   width: 100%;
   margin: 0 auto;
 }
-.text-left p{
+.text-left p {
   text-align: left;
 }
 .managment-title h4 {
@@ -530,5 +530,17 @@
   }
   .management-test {
     font-size: 14px;
+  }
+  .car .box-img {
+    text-align: center !important;
+  }
+  .car p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .media-container div canvas {
+    width: 100% !important;
   }
 }

@@ -71,17 +71,6 @@ function Section6() {
                 isMobile ? "vertical-layout" : ""
               }`}
             >
-              {/* <div className="software-right-container">
-                <Link href="/renieadmin">
-                  <img src="/assets/admin.webp" alt="Renie Admin" />
-                  <span>Renie Admin</span>
-                  <p>
-                    Renie Admin centralizes all management tasks, providing
-                    seamless control over operations, data, and user
-                    interactions.
-                  </p>
-                </Link>
-              </div> */}
               <div className="software-right-container">
                 <Link href="/reniehub">
                   <img src="/assets/hub.webp" alt="Renie Hub" />
@@ -109,6 +98,17 @@ function Section6() {
                   <p>
                     Our AI platform uses Renie Bin data to deliver targeted ads,
                     driving eco-friendly engagement.
+                  </p>
+                </Link>
+              </div>
+              <div className="software-right-container">
+                <Link href="/reniefranchise">
+                  <img src="/assets/json/franch.png" alt="Renie Admin" style={{width: "400px", display: "block", margin: "0 auto", paddingBottom: "20px"}}/>
+                  <span>Renie Franchise</span>
+                  <p>
+                    Renie Admin centralizes all management tasks, providing
+                    seamless control over operations, data, and user
+                    interactions.
                   </p>
                 </Link>
               </div>

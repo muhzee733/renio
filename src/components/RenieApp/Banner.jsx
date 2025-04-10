@@ -30,15 +30,14 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="rene-banner">
+    <div className="rene-banner position-relative">
       <div className="renie-banner">
         <div className="banner-svg-bin">
-          {/* ✅ Lottie animation replaces the SVG iframe */}
           <DotLottieReact
             src="/assets/website-wave.json"
             loop
             autoplay
-            style={{ width: "100%", height: "100%" }} // Adjust width & height
+            style={{ width: "100%", height: "100%" }} 
           />
         </div>
 
@@ -50,7 +49,7 @@ const Banner = () => {
           </div>
         </div>
         <figure className="my-down-arrow">
-          <img src="/assets/downarrow.webp" width={150} alt="down arrow"/>
+          <img src="/assets/downarrow.webp" width={120} alt="down arrow"/>
         </figure>
       </div>
     </div>

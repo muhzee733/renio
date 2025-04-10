@@ -20,9 +20,12 @@
   text-align: center;
 }
 .my-down-arrow {
-display: flex;
-justify-content: end;
-transform: translate(-50px, -20px);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
 }
 .main-renie-banner h4 {
   color: white !important;
@@ -39,8 +42,9 @@ transform: translate(-50px, -20px);
   color: white;
   width: 100%;
   position: absolute;
-  top: 2%;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .custom-data-svg h4 {
   color: white !important;
@@ -242,9 +246,9 @@ transform: translate(-50px, -20px);
   color: black;
 }
 @media (min-width: 1440px) {
-  .main-renie-banner {
+  /* .main-renie-banner {
     top: 4%;
-  }
+  } */
   .main-renie-banner h1 {
     width: 50%;
     margin-top: 30px;
@@ -527,7 +531,7 @@ transform: translate(-50px, -20px);
     right: 20%;
     top: 15rem;
   }
-  .my-down-arrow{
+  .my-down-arrow {
     display: none;
   }
   /* .my-down-arrow img{
