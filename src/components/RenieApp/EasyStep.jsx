@@ -15,7 +15,7 @@ const EasyStep = () => {
           <H2 title=" Get Started in 2 Easy Steps" />
           <div className="row">
             <motion.div
-              className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-left-column"
+              className="col-lg-6 col-md-6 animated-left-column"
               initial={{ x: -200, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut" }}
@@ -33,7 +33,7 @@ const EasyStep = () => {
                     <img
                       src="/assets/step-1.webp"
                       alt="renie-box"
-                      width={180}
+                      width={200}
                     />
                   </figure>
                 </div>
@@ -41,15 +41,14 @@ const EasyStep = () => {
             </motion.div>
 
             <motion.div
-              className="col-lg-6 col-md-6 col-12 p-0 position-relative animated-right-column"
+              className="col-lg-6 col-md-6 animated-right-column"
               initial={{ x: 200, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             >
-              <div className="left-track  custom-scan-height">
+              <div className="right-track  custom-scan-height">
                 <div className="scan-title scan-title-2">
                   <img
-                    className="white-bo"
                     src="/assets/step-2.webp"
                     alt="renie-box"
                     width={180}
@@ -57,9 +56,6 @@ const EasyStep = () => {
                   <H1 title="Earn & Make an Impact" />
                   <P title="Get rewarded for recycling & be part of the sustainability movement!" />
                 </div>
-                {/* <div className="vertical-box-right">
-                  <div></div>
-                </div> */}
               </div>
             </motion.div>
           </div>
