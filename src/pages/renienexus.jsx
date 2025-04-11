@@ -24,8 +24,8 @@ const RenieNexus = () => {
       {/* <EasyStep />
       <AnimatedSection />
       <Green /> */}
-      <Footer />
-      <MiniFooter />
+      {/* <Footer />
+      <MiniFooter /> */}
     </>
   );
 };
