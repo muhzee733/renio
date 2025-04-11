@@ -26,7 +26,7 @@ const RenieNexus = () => {
       <Green />
       <Footer />
       <MiniFooter /> */}
-      <h2>Hello</h2>
+
     </>
   );
 };
