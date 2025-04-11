@@ -1,6 +1,7 @@
 import Meta from "@/components/Meta";
 import Navbar from "@/components/Navbar/Navbar";
 import Banner from "@/components/RenieApp/Banner";
+import RenieNexusApp from "@/components/RenieApp/RenieNexusApp";
 import React from "react";
 
 const RenieNexus = () => {
@@ -12,7 +13,7 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
-
+      <RenieNexusApp />
     </>
   );
 };
