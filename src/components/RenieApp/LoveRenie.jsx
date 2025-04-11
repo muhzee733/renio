@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
 import Lottie from "react-lottie";
-import H2 from "../Typography/H2";
-import H4 from "../Typography/H4";
+import H2 from "@/components/Typography/H2";
+import H4 from "@/components/Typography/H4";
+import animation1 from "@/animations/animate-svg-1.json";
+import animation3 from "@/animations/animate-svg-2.json";
+import animation4 from "@/animations/animate-svg-3.json";
 
-// Import animation JSONs
-import animation1 from "../../../public/assets/animate-svg-1.json";
-import animation2 from "../../../public/assets/animate-svg-2.json";
-import animation3 from "../../../public/assets/animate-svg-3.json";
 
 const cardData = [
   {
@@ -27,7 +26,7 @@ const cardData = [
   },
   {
     type: "lottie",
-    animation: animation2,
+    animation: animation4,
     title: "Track Every Bottle, Measure Your Impact",
   },
 ];
@@ -49,8 +48,7 @@ const LoveRenie = () => {
               className="col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-4"
             >
               <div>
-                <div
-                  className="media-container">
+                <div className="media-container">
                   {card.type === "lottie" ? (
                     <Lottie
                       options={{
