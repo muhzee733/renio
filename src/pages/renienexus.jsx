@@ -17,7 +17,7 @@ const RenieNexus = () => {
         title="Renie App: Track Your Recycling Impact Anytime, Anywhere"
         description="Download the Renie App to easily track your recycling impact, find nearby bins, and earn rewards for your sustainable efforts."
       />
-      <Navbar />
+      {/* <Navbar />
       <Banner />
       <RenieNexusApp />
       <LoveRenie />
@@ -25,7 +25,8 @@ const RenieNexus = () => {
       <AnimatedSection />
       <Green />
       <Footer />
-      <MiniFooter />
+      <MiniFooter /> */}
+      <h2>Hello</h2>
     </>
   );
 };
