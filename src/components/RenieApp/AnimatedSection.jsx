@@ -1,5 +1,4 @@
 import React from "react";
-import H2 from "../Typography/H2";
 import H1 from "../Typography/H1";
 import P from "../Typography/P";
 

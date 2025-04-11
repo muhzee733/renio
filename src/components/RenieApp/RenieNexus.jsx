@@ -5,18 +5,18 @@ import H1 from "@/components/Typography/H1";
 const RenieNexus = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth <= 768);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   }
+  // }, []);
 
-  const handleRedirect = () => {
-    if (typeof window !== "undefined") {
-      const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
-      window.open(url, "_blank");
-    }
-  };
+  // const handleRedirect = () => {
+  //   if (typeof window !== "undefined") {
+  //     const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
+  //     window.open(url, "_blank");
+  //   }
+  // };
 
   return (
     <div className="renie-nexus">
@@ -39,9 +39,7 @@ const RenieNexus = () => {
                   <H1 title="Nexus?" />
                 </span>
                 <P title=" Renie Nexus is your personal waste management companion that transforms how you recycle while rewarding users for their responsible behavior. This innovative incentive program is entirely self-subsidized— user’s participation generates valuable waste management data that Renie monetizes, allowing us to offer you direct rewards for sustainable choices. With real-time tracking and actionable insights, you'll see exactly how your waste is being managed while earning benefits from the very data you help create, making green choices financially rewarding every day." />
-                <button onClick={handleRedirect}>
-                  Explore the Renie Nexus
-                </button>
+                <button>Explore the Renie Nexus</button>
               </div>
             </div>
           </div>
