@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import H1 from "../Typography/H1";
 import P from "../Typography/P";

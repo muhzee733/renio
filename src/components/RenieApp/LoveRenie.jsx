@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Lottie from "react-lottie";
 import H2 from "@/components/Typography/H2";

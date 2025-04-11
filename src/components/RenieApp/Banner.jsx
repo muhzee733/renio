@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import H1 from "../Typography/H1";
@@ -6,7 +8,6 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Banner = () => {
   useEffect(() => {
-    // Image animation (zoom in and out)
     gsap.to(".rene-banner img", {
       scale: 1.1,
       repeat: -1,
@@ -14,8 +15,6 @@ const Banner = () => {
       duration: 4,
       ease: "power1.inOut",
     });
-
-    // Text animation (fade in and move up)
     gsap.fromTo(
       ".main-renie-banner h1",
       { opacity: 0, y: 50 },
