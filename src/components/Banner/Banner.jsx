@@ -4,14 +4,14 @@ import React from "react";
 import BrandSlider from "../BrandSlider";
 
 const Banner = () => {
-  const scrollToSection = () => {
-    if (typeof window !== "undefined") {
-      const section = document.getElementById("how-it-works");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
+  // const scrollToSection = () => {
+  //   if (typeof window !== "undefined") {
+  //     const section = document.getElementById("how-it-works");
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }
+  // };
 
   return (
     <div className="main-banner">
@@ -22,7 +22,7 @@ const Banner = () => {
             <h1>
               into <span className="purple">revenue</span>
             </h1>
-            <button className="btn-2" onClick={scrollToSection}>
+            <button className="btn-2">
               How it works
             </button>
           </div>

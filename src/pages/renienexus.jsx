@@ -18,12 +18,12 @@ const RenieNexus = () => {
         description="Download the Renie App to easily track your recycling impact, find nearby bins, and earn rewards for your sustainable efforts."
       />
       <Navbar />
-      {/* <Banner />
+      <Banner />
       <RenieNexusApp />
       <LoveRenie />
       <EasyStep />
       <AnimatedSection />
-      <Green /> */}
+      <Green />
       <Footer />
       <MiniFooter />
     </>
