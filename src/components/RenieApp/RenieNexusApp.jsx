@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import P from "@/components/Typography/P";
 import H1 from "@/components/Typography/H1";
 
-const RenieNexus = () => {
+const RenieNexusApp = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     setIsMobile(window.innerWidth <= 768);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
 
-  // const handleRedirect = () => {
-  //   if (typeof window !== "undefined") {
-  //     const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
-  //     window.open(url, "_blank");
-  //   }
-  // };
+  const handleRedirect = () => {
+    if (typeof window !== "undefined") {
+      const url = isMobile ? "https://app.renie.io/auth" : "/qrcode";
+      window.open(url, "_blank");
+    }
+  };
 
   return (
     <div className="renie-nexus">
@@ -49,4 +49,4 @@ const RenieNexus = () => {
   );
 };
 
-export default RenieNexus;
+export default RenieNexusApp;

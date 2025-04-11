@@ -7,20 +7,20 @@ import P from "../Typography/P";
 gsap.registerPlugin(ScrollTrigger);
 
 const Green = () => {
-  // const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     setIsMobile(window.innerWidth <= 768);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
 
-  // const handleClick = (e) => {
-  //   if (typeof window !== "undefined" && isMobile) {
-  //     e.preventDefault();
-  //     window.location.href = "https://app.renie.io/";
-  //   }
-  // };
+  const handleClick = (e) => {
+    if (typeof window !== "undefined" && isMobile) {
+      e.preventDefault();
+      window.location.href = "https://app.renie.io/";
+    }
+  };
 
   return (
     <div className="green">

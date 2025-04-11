@@ -1,18 +1,21 @@
+"use client";
+
 import React from "react";
 import BrandSlider from "../BrandSlider";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import MovingSlider from "../MovingSlider";
 
 const Banner = () => {
   const scrollToSection = () => {
-    const section = document.getElementById("how-it-works");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (typeof window !== "undefined") {
+      const section = document.getElementById("how-it-works");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
+
   return (
     <div className="main-banner">
-      <div className="container-xl ">
+      <div className="container-xl">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12 custom-text">
             <h1>Turn your waste</h1>
@@ -33,15 +36,7 @@ const Banner = () => {
                 </div>
               </div>
               <img src="/assets/bin.webp" alt="banner" className="banner-img" />
-              <img
-                src="/assets/mobile.webp"
-                alt="mobile"
-                className="mobile-img"
-              />
-              {/* <iframe
-                src="/assets/Waste_income.svg"
-                className="banner-svg"
-              ></iframe> */}
+              <img src="/assets/mobile.webp" alt="mobile" className="mobile-img" />
               <object
                 data="/assets/Waste_income.svg"
                 className="banner-svg"
