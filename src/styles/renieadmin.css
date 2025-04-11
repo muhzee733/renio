@@ -153,12 +153,29 @@
     width: 80%;
   }
   .feature-h4 h4 {
-    width: 60%;
+    width: 60% !important;
+    font-size: 20px !important;
+  }
+  .feature-title-bold p {
+    padding-top: 50px !important;
+  }
+  .feature-h4 {
+    padding: 0px 30px;
+  }
+  .renie-admin-img img {
+    max-width: 90%;
   }
 }
 @media (max-width: 786px) {
   .renie-admin {
     min-height: 70vh;
+  }
+  .feature-h4 p {
+    width: 100% !important;
+  }
+  .feature-h4 h4 {
+    width: 60% !important;
+    font-size: 16px !important;
   }
   .feature-text p {
     width: 100%;
@@ -185,12 +202,45 @@
     min-height: 90vh;
     padding-top: 142px !important;
   }
+  .renie-franchises,
+  .how-it-work {
+    padding: 50px 0px;
+  }
+  .renie-franchises p {
+    text-align: center;
+  }
+  .renie-franchises,
+  .how-it-work {
+    padding: 140px 0 !important;
+  }
+  .renie-franchises figure img {
+    max-width: 80%;
+  }
+  .contact-form {
+    margin-top: 20px;
+  }
+  .contact-form .submit-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .feature-text p {
+    width: 100% !important;
+  }
+  .feature-title-bold p {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    width: 100% !important;
+  }
   .renie-admin h2 {
     font-size: 16px;
   }
   .renie-admin {
     background-image: none;
     background-color: white !important;
+  }
+  .renie-franchises h1 {
+    font-size: 22px !important;
+    text-align: center;
   }
   .renie-admin h1 {
     font-size: 40px;
@@ -262,4 +312,26 @@
   .features {
     padding: 50px 0;
   }
+  .renie-admin-img img {
+    max-width: 100%;
+  }
+  .renie-franchises,
+  .how-it-work {
+    padding: 50px 0px !important;
+  }
+  .how-it-work .will-work {
+    width: 100% !important;
+  }
+  .franchise-benefits .benefits-franch {
+    width: 100% !important;
+  }
+  .franchise-benefits {
+    padding: 50px 0 !important;
+  }
+  .next-step {
+    padding: 50px 0 !important;
+  }
+  .next-step h1 {
+    margin-bottom: 10px !important;
+}
 }

@@ -41,7 +41,7 @@ const secondSection = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-lg-3 mb-5">
+          <div className="col-lg-6 col-md-6 col-lg-3 mb-0 mb-lg-5">
             <div>
               <div className="renie-admin-img">
                 <img src="/assets/renieadmin/group-2.webp" alt="renie-admin" />

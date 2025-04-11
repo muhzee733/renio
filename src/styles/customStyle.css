@@ -1151,11 +1151,6 @@ footer {
   }
 }
 @media (max-width: 992px) {
-  .navbar-links,
-  .btn {
-    display: none !important; /* Hide the links and button */
-  }
-
   .main-navbar {
     width: 90px !important; /* Ensure navbar is smaller */
     height: 65px;

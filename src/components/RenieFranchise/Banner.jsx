@@ -55,7 +55,7 @@ const Banner = () => {
                   placeholder="Your Message"
                 ></textarea>
               </div>
-              <div className="form-group">
+              <div className="form-group submit-btn">
                 <button type="submit" className="btn btn-primary w-100">
                   Submit
                 </button>
