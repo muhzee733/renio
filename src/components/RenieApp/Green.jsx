@@ -4,13 +4,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import H1 from "../Typography/H1";
 import P from "../Typography/P";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Green = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger);
       setIsMobile(window.innerWidth <= 768);
     }
   }, []);
@@ -45,7 +44,7 @@ const Green = () => {
                 href="/qrcode"
                 target="_blank"
                 rel="noopener noreferrer"
-                // onClick={handleClick}
+                onClick={handleClick}
               >
                 <button>Explore the Renie Nexus</button>
               </a>
