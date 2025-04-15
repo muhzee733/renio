@@ -8,6 +8,7 @@ import Green from "@/components/RenieApp/Green";
 import AnimatedSection from "@/components/RenieApp/AnimatedSection";
 import EasyStep from "@/components/RenieApp/EasyStep";
 import LoveRenie from "@/components/RenieApp/LoveRenie";
+import RenieNexusApp from "@/components/RenieApp/RenieNexusApp";
 
 const RenieNexus = () => {
   return (
@@ -18,7 +19,8 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
-      <LoveRenie />
+      {/* <RenieNexusApp /> */}
+      {/* <LoveRenie /> */}
       <EasyStep />
       <AnimatedSection />
       <Green />
