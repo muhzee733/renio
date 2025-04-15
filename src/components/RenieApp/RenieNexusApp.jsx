@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useState, useEffect } from "react";
 import P from "@/components/Typography/P";
 import H1 from "@/components/Typography/H1";
