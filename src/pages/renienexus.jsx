@@ -2,6 +2,8 @@ import Meta from "@/components/Meta";
 import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
 import Banner from "@/components/RenieApp/Banner";
+import Footer from "@/components/Navbar/Footer";
+import MiniFooter from "@/components/Navbar/MiniFooter";
 
 const RenieNexus = () => {
   return (
@@ -12,6 +14,8 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
+      <Footer />
+      <MiniFooter />
     </>
   );
 };
