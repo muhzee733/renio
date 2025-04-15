@@ -19,7 +19,7 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
-      {/* <RenieNexusApp /> */}
+      <RenieNexusApp />
       {/* <LoveRenie /> */}
       {/* <EasyStep />
       <AnimatedSection />
