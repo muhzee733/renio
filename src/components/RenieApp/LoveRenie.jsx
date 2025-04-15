@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import H2 from "@/components/Typography/H2";
 import H4 from "@/components/Typography/H4";
 import animation1 from "@/animations/animate-svg-1.json";
