@@ -7,6 +7,7 @@ import MiniFooter from "@/components/Navbar/MiniFooter";
 import Green from "@/components/RenieApp/Green";
 import AnimatedSection from "@/components/RenieApp/AnimatedSection";
 import EasyStep from "@/components/RenieApp/EasyStep";
+import LoveRenie from "@/components/RenieApp/LoveRenie";
 
 const RenieNexus = () => {
   return (
@@ -17,6 +18,7 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
+      <LoveRenie />
       <EasyStep />
       <AnimatedSection />
       <Green />
