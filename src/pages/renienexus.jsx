@@ -1,9 +1,17 @@
-import React from 'react'
+import Meta from "@/components/Meta";
+import Navbar from "@/components/Navbar/Navbar";
+import React from "react";
 
 const RenieNexus = () => {
   return (
-    <div>RenieNexus</div>
-  )
-}
+    <>
+      <Meta
+        title="Renie App: Track Your Recycling Impact Anytime, Anywhere"
+        description="Download the Renie App to easily track your recycling impact, find nearby bins, and earn rewards for your sustainable efforts."
+      />
+      <Navbar />
+    </>
+  );
+};
 
-export default RenieNexus
+export default RenieNexus;
