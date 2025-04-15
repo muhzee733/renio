@@ -6,7 +6,6 @@ import animation1 from "@/animations/animate-svg-1.json";
 import animation3 from "@/animations/animate-svg-2.json";
 import animation4 from "@/animations/animate-svg-3.json";
 
-
 const cardData = [
   {
     type: "lottie",
@@ -62,16 +61,26 @@ const LoveRenie = () => {
                       width={300}
                     />
                   ) : (
-                    <object
-                      data={card.src}
-                      type="image/svg+xml"
+                    // <object
+                    //   data={card.src}
+                    //   type="image/svg+xml"
+                    //   className="svg-image"
+                    //   style={{
+                    //     maxHeight: "100%",
+                    //     width: "100%",
+                    //     marginBottom: "0",
+                    //   }}
+                    // ></object>
+                    <img
+                      src={card.src}
+                      alt="Renie Visual"
                       className="svg-image"
                       style={{
                         maxHeight: "100%",
                         width: "100%",
                         marginBottom: "0",
                       }}
-                    ></object>
+                    />
                   )}
                 </div>
                 <H4 title={card.title} />
