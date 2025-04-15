@@ -19,13 +19,13 @@ const RenieNexus = () => {
       />
       <Navbar />
       <Banner />
-      {/* <RenieNexusApp /> */}
-      {/* <LoveRenie /> */}
-      {/* <EasyStep />
+      <RenieNexusApp />
+      <LoveRenie />
+      <EasyStep />
       <AnimatedSection />
-      <Green /> */}
-      {/* <Footer />
-      <MiniFooter /> */}
+      <Green />
+      <Footer />
+      <MiniFooter />
     </>
   );
 };
