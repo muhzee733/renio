@@ -216,7 +216,7 @@ const Navbar = () => {
 
         <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <Link href="/">
-          <img src="/assets/logo.webp" width={100} alt="renie logo"/>
+            <img src="/assets/logo.webp" width={100} alt="renie logo" />
           </Link>
           <button onClick={handleLogoClick} className="close-btn">
             ✖
@@ -228,7 +228,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="mobile-btn">Connect with an expert</button>
+          <button onClick={handleClick} className="mobile-btn">
+            Connect with an expert
+          </button>
         </div>
       </nav>
     </>
