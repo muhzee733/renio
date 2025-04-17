@@ -12,6 +12,7 @@ const Banner = () => {
       yoyo: true,
       duration: 4,
       ease: "power1.inOut",
+      paused: false,
     });
     gsap.fromTo(
       ".main-renie-banner h1",
@@ -20,7 +21,7 @@ const Banner = () => {
     );
 
     gsap.fromTo(
-      ".main-renie-banner h5",
+      ".main-renie-banner h4",
       { opacity: 0, y: 50 },
       { opacity: 1, y: 0, duration: 2, ease: "power3.out", delay: 1.5 }
     );

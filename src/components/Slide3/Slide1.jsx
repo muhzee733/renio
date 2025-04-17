@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { gsap } from "gsap";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { useState } from "react";
 
@@ -12,7 +11,6 @@ const Model = ({ path }) => {
 };
 
 const Slide1 = ({ title1, title2, price1, price2, model }) => {
-  const [selectedSection, setSelectedSection] = useState(null);
   const [selectedModel, setSelectedModel] = useState(null);
 
   return (

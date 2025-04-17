@@ -1,19 +1,8 @@
-"use client";
-
 import React from "react";
 import BrandSlider from "../BrandSlider";
 
 const Banner = () => {
-  const scrollToSection = () => {
-    if (typeof window !== "undefined") {
-      const section = document.getElementById("how-it-works");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-
-  return (
+   return (
     <div className="main-banner">
       <div className="container-xl">
         <div className="row align-items-center">

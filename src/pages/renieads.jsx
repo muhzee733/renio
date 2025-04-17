@@ -20,13 +20,13 @@ const Renieads = () => {
       <RenieAds />
       <section className="custom-section-renie">
         <div className="container-xl">
-          <div class="row">
-            <div class="col-md-6">
+          <div className="row">
+            <div className="col-md-6">
               <figure className="d-flex justify-content-center renie-ads-image">
                 <img src="/assets/renieads/renie-ads.webp" alt="mobile-image" />
               </figure>
             </div>
-            <div class="col-md-6">
+            <div className="col-md-6">
               <div className="renie-future-section">
                 <h4>The Smart Network Behind Smart Ads</h4>
                 <P
@@ -36,7 +36,7 @@ const Renieads = () => {
                 />
                 <div className="renie-boxes">
                   <div className="d-flex align-items-center gap-4 mt-5">
-                    <img src="/assets/json/ai-icon.png" alt="ai-icon"/>
+                    <img src="/assets/json/ai-icon.png" alt="ai-icon" />
                     <div>
                       <h6>AI-Powered Ads, Delivered to the Right Audience</h6>
                       <P

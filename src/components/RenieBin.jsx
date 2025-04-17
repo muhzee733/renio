@@ -55,7 +55,7 @@ export default function App() {
                     delay: 3000,
                     disableOnInteraction: false,
                   }}
-                  loop={true}
+                  loop={false}
                 >
                   <SwiperSlide>
                     <Blog
@@ -93,8 +93,10 @@ export default function App() {
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={50}
+                  loop={true}
                   pagination={{ clickable: true }}
                   modules={[Pagination]}
+
                 >
                   <SwiperSlide>
                     <Blog

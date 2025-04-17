@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar/Navbar";
 import MediaHub from "@/components/MediaHub/MediaHub";
 import React from "react";
 import Meta from "@/components/Meta";
-import Head from "next/head";
 
 const Mediahub = () => {
   return (

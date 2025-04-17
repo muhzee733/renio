@@ -7,10 +7,12 @@ import React from "react";
 import HowItWork from "@/components/RenieFranchise/HowItWork";
 import Benefits from "@/components/RenieFranchise/Benefits";
 import NextStep from "@/components/RenieFranchise/NextStep";
+import Meta from "@/components/Meta";
 
 const RenieFranchise = () => {
   return (
     <>
+      <Meta />
       <Navbar />
       <Banner />
       <SecondSection />

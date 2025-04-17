@@ -18,7 +18,7 @@ const AdsSection = () => {
                   AI-powered platform, we redefine the future of advertising
                   where creativity and purpose come together."
                 />
-                <div class="designe">
+                <div className="designe">
                   <a href="/contact" rel="noopener noreferrer">
                     <button>Contact us</button>
                   </a>

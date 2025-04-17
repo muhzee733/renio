@@ -20,12 +20,12 @@ const cardData = [
   },
   {
     type: "lottie",
-    animation: animation3,
+    animation: animation4,
     title: "No vouchers or discounts—just real, valuable rewards!",
   },
   {
     type: "lottie",
-    animation: animation4,
+    animation: animation3,
     title: "Track Every Bottle, Measure Your Impact",
   },
 ];

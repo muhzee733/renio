@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
           <div className="col-lg-6 col-md-6 custom-data-column">
             <H1 title="Data transforms your trash into cash." />
-            <div class="designe">
+            <div className="designe">
               <a href="/contact" rel="noopener noreferrer">
                 <button>Contact us</button>
               </a>

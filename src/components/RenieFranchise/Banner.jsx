@@ -5,7 +5,7 @@ import P from "../Typography/P";
 
 const Banner = () => {
   return (
-    <div className="renie-franchises position-relative">
+    <div className="renie-franchises position-relative renie-franchises-mobile">
       <Helmet>
         <title>Renie Franchise</title>
         <meta name="description" content="Partner with Renie for a successful franchise opportunity. Join a growing network and build the future together." />

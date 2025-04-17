@@ -12,7 +12,6 @@ import JoinNow from "@/components/Monitization/JoinNow";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 import Footer from "@/components/Navbar/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import Head from "next/head";
 import Meta from "@/components/Meta";
 
 const Model = () => {
