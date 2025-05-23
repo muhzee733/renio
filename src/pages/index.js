@@ -64,7 +64,7 @@ export default function Home() {
       <section className=" section-8">
         <Footer />
       </section>
-      <MiniFooter />
+      {/* <MiniFooter /> */}
     </>
   );
 }
