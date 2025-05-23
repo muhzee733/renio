@@ -1637,6 +1637,37 @@ footer {
   .recycleSection-2 {
     padding: 0;
 }
+.recycleSection h2 {
+  text-align: center;
+}
+.recycleSection h4 {
+  text-align: center;
+  font-size: 16px ;
+}
+.recycleSection p {
+  text-align: center;
+}
+.recycleSection ul li, .recycleSection-2 ul li {
+  font-size: 16px !important;
+  text-align: center;
+}
+.recycleSection-2 h1 {
+  text-align: center;
+}
+.recycleSection-2 button{
+  text-align: center;
+  width: 100% !important;
+}
+
+.recycleSection-2 h4 {
+text-align: center;
+}
+.recycleSection-2 p {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
 .renie-bin-wrapper .p-title {
   width: 100%;
   font-size: 14px !important;
