@@ -117,7 +117,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
               </button>
             </div>
             {title1 === "Renie mini" ? (
-              <div className="renio-grid" id="derktop-version">
+              <div className="renio-grid" id="derktop-versio">
                 <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
@@ -135,7 +135,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 </div>
               </div>
             ) : (
-              <div className="renio-grid" id="derktop-version">
+              <div className="renio-grid" id="derktop-versio">
                 <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
@@ -165,7 +165,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 </div>
               </div>
             )}
-            <div className="renio-footer">
+            {/* <div className="renio-footer">
               <h5 className="text-center text-white mt-5 mb-3">Pricing</h5>
               <div className="renio-footer-div">
                 <div>
@@ -177,7 +177,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                   <h5 className="custom-price">{price2} AED</h5>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
