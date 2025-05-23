@@ -1,5 +1,7 @@
 import React from "react";
 import BrandSlider from "../BrandSlider";
+import P from "../Typography/P";
+import MovingSlider from "../MovingSlider";
 
 const Banner = () => {
    return (
@@ -7,12 +9,14 @@ const Banner = () => {
       <div className="container-xl">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12 custom-text">
-            <h1>Turn your waste</h1>
+            <h1>TURN WASTE </h1>
             <h1>
-              into <span className="purple">revenue</span>
+            INTO <span className="purple">REVENUE</span>
             </h1>
+            <p>Through AI-powered Renie Bins and our digital platform, we track every drop,
+            verify its impact, and reward your organization up to $500 per ton recycled.</p>
             <button className="btn-2">
-              How it works
+            Explore the Full demo
             </button>
           </div>
           <div className="col-lg-6 col-md-12">
@@ -34,7 +38,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <BrandSlider />
+        {/* <BrandSlider /> */}
+        <MovingSlider />
       </div>
     </div>
   );

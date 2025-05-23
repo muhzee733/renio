@@ -12,12 +12,12 @@ const allLogos = [
   "/assets/nfpc-logo.webp",
   "/assets/tetrapak-logo.webp",
   "/assets/uber-logo.webp",
-    "/assets/dubailholding-logo.webp",
+  "/assets/dubailholding-logo.webp",
   "/assets/universityofsharjah-logo.webp",
 ];
 
 const BrandSlider = () => {
-  const [visibleLogos, setVisibleLogos] = useState(allLogos.slice(0, 5));
+  const [visibleLogos, setVisibleLogos] = useState(allLogos.slice(0, 8));
   const [loaded, setLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const logoRefs = useRef([]);
@@ -94,7 +94,7 @@ const BrandSlider = () => {
   }, [loaded, visibleLogos]);
 
   useEffect(() => {
-    setVisibleLogos(isMobile ? allLogos.slice(0, 3) : allLogos.slice(0, 5));
+    setVisibleLogos(isMobile ? allLogos.slice(0, 3) : allLogos.slice(0, 8));
   }, [isMobile]);
 
   return (

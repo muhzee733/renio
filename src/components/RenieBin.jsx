@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import Blog from "./Blog/Blog";
 import { Pagination, Autoplay } from "swiper/modules";
 import H2 from "./Typography/H2";
+import P from "./Typography/P";
 
 const blogData = [
   {
@@ -39,9 +40,9 @@ export default function App() {
       <div className="row">
         <div className="col-lg-12">
           <div className="renie-bin-wrapper">
-            <H2 title={"Renie bins are everywhere"} />
+            <H2 title={"Who is it for"} />
             <div className="desktop-paragraph">
-              <H2 title={"Transforming waste for every space"} />
+              <P title={"Renie bins are transforming waste everywhere”so in the flow you have the Heading. Transform waste into revenue ——> how it works —> who is it for"} />
             </div>
             <div id="derktop-version">
               <div className="blogs">

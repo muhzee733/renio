@@ -18,7 +18,7 @@ const MovingSlider = () => {
   return (
     <div className="slider-wrapper container">
       <div id="moving-div">
-        <div id="blur-left"></div>
+        {/* <div id="blur-left"></div> */}
         <div className="move">
           {allLogos.map((logo, index) => (
             <img key={`logo-1-${index}`} src={logo} alt={`logo-${index}`} />
@@ -30,20 +30,19 @@ const MovingSlider = () => {
           ))}
         </div>
 
-        <div id="blur-right"></div>
+        {/* <div id="blur-right"></div> */}
       </div>
 
       <style jsx>{`
         .slider-wrapper {
           position: relative;
-          height: 150px;
         }
 
         #moving-div {
           position: absolute;
-          bottom: 3%;
+          top: 0%;
           white-space: nowrap;
-          padding: 1.2vw;
+          padding: 3.2vw;
           overflow: hidden;
           width: 100%;
         }

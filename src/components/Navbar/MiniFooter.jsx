@@ -14,7 +14,25 @@ const MiniFooter = () => {
     const handleScroll = () => {
       const bannerHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
+      const scrollSection = document.getElementById('scroll-section-outer');
 
+      // Check if scroll-section-outer is in view
+      if (scrollSection) {
+        const sectionRect = scrollSection.getBoundingClientRect();
+        const isSectionInView = sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0;
+
+        if (isSectionInView) {
+          gsap.to(footerRef.current, {
+            y: 100,
+            opacity: 0,
+            duration: 0.1,
+            ease: "power2.out",
+          });
+          return;
+        }
+      }
+
+      // Original scroll behavior
       if (scrollPosition > bannerHeight * 0.2) {
         gsap.to(footerRef.current, {
           y: 0,

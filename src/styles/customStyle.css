@@ -262,15 +262,13 @@ footer {
 .purple {
   color: #e31662;
 }
+.custom-text p{
+  font-size: 20px;
+}
 .btn-2,
 .btn-3 {
   border-radius: 100px !important;
-  background: linear-gradient(
-    90deg,
-    #4765e6 0%,
-    #5c4099 46%,
-    #e31662 100%
-  ) !important;
+  background-color: #E31662;
   color: var(--accent) !important;
   font-size: 16px !important;
   font-weight: 600 !important;
@@ -455,6 +453,58 @@ footer {
   font-weight: 900;
   font-size: 26px;
 }
+.recycleSection{
+  background: -webkit-linear-gradient(
+    230deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  padding: 120px 0px;
+}
+.recycleSection-2{
+  padding: 80px 0px;
+}
+.recycleSection-2 h1{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+.recycleSection-2 h4{
+  color: black;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+.recycleSection-2 p{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px !important;
+}
+.recycleSection h2{
+  font-size: 50px;
+  font-weight: 800;
+}
+.recycleSection h4{
+  color: white;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+.recycleSection-2 button{
+  margin-top: 30px !important;
+}
+.recycleSection ul li, .recycleSection-2 ul li{
+  list-style: unset !important;
+}
+.recycleSection p{
+  color: white;
+  margin-bottom: 20px !important;
+}
 .section-1,
 .section-2 {
   background-color: var(--primary);
@@ -535,6 +585,10 @@ footer {
 .new-section .swiper-wrapper .swiper-slide {
   height: 380px;
 }
+.renie-bin-wrapper .p-title{
+  width: 70%;
+  margin: 0 auto;
+}
 
 .renie-bin-wrapper h2 {
   font-weight: 900;
@@ -543,8 +597,8 @@ footer {
   margin-bottom: -3px;
 }
 .renie-bin-wrapper p {
-  font-size: 46px;
   font-weight: 600;
+  padding-top: 10px;
   text-align: center;
   color: white;
 }
@@ -747,6 +801,7 @@ footer {
 }
 .brands__item {
   overflow: hidden;
+  text-align: left;
 }
 
 .brand-slider {
@@ -754,7 +809,6 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  gap: 20px;
 }
 .brand-slider-container h3 {
   text-align: left;
@@ -831,6 +885,7 @@ footer {
 .custom-logo-image {
   display: block;
 }
+
 @media (min-width: 501px) {
   .derktop-version {
     display: block !important;
@@ -878,11 +933,24 @@ footer {
     font-size: 134px;
   }
   #how-it-works {
-    height: 130vh;
+    height: 90vh;
   }
   .tool {
     top: 10%;
   }
+  .recycleSection-2 h1 {
+    line-height: 47px;
+}
+.recycleSection-2 {
+  padding: 60px 0;
+}
+.renie-bin-wrapper .p-title {
+  font-size: 20px;
+}
+  
+  .recycleSection h2 {
+    font-size: 40px;
+}
   .renio-button {
     margin-bottom: 20px !important;
   }
@@ -891,7 +959,7 @@ footer {
   }
   .scroll-section .slide-1 h2 {
     font-size: 46px !important;
-    padding-top: 250px;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -1019,6 +1087,9 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
   }
+  .recycleSection h4 {
+    font-size: 18px;
+}
   .software-right-container.jsx-61b0980993655515 img.jsx-61b0980993655515 {
     height: auto !important;
   }
@@ -1026,6 +1097,9 @@ footer {
     height: 467px;
     top: 200px !important;
   }
+  .new-section {
+    min-height: 70vh;
+}
   .software-left img {
     margin-right: 10px;
     max-width: 23%;
@@ -1165,12 +1239,18 @@ footer {
   .footer-upper-section {
     flex-direction: column;
   }
+  .recycle-content{
+    padding: 30px;
+  }
   .software-right-container.jsx-61b0980993655515 {
     height: 440px !important;
   }
   .footer-wrapper {
     padding: 0px;
   }
+  .recycleSection h2 {
+    font-size: 30px;
+}
   .new-section {
     min-height: 62vh;
   }
@@ -1393,6 +1473,16 @@ footer {
   .mini-footer-wrapper {
     flex-direction: column;
   }
+  .custom-text p {
+    font-size: 16px;
+}
+.recycleSection {
+  padding: 50px 0;
+}
+.recycleSection-2 h1 {
+  font-size: 30px;
+  line-height: 34px;
+}
   .scroll-section .slide-1 h2 {
     padding-top: 0px;
     font-size: 28px !important;
@@ -1538,12 +1628,25 @@ footer {
     height: 380px !important;
     padding: 20px !important;
   }
+  .new-section-2{
+    padding: 30px;
+  }
   .idea {
     display: none;
   }
+  .recycleSection-2 {
+    padding: 0;
+}
+.renie-bin-wrapper .p-title {
+  width: 100%;
+  font-size: 14px !important;
+}
   .tool span {
     font-size: 12px !important;
   }
+  .renie-bin-wrapper .p-title {
+    font-size: 16px;
+}
   .mini-footer-wrapper p {
     font-size: 14px;
     line-height: 24px !important;

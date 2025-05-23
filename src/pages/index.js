@@ -10,6 +10,7 @@ import Section6 from "@/components/Section6";
 import RenieBin from "@/components/RenieBin";
 import Meta from "@/components/Meta";
 import AnimatedSection from "@/components/RenieApp/AnimatedSection";
+import RecycleSection from "@/components/RecycleSection";
 
 export default function Home() {
   return (
@@ -25,12 +26,17 @@ export default function Home() {
       <section className="section section-1">
         <Banner />
       </section>
+      <RecycleSection />
 
       <section id="how-it-works" className="section section-2">
         <HowItWork />
       </section>
 
-      <section className=" scroll-section-outer">
+      <section className="new-section">
+        <RenieBin />
+      </section>
+
+      <section className=" scroll-section-outer" id="scroll-section-outer">
         <Section3 />
       </section>
 
@@ -54,10 +60,6 @@ export default function Home() {
         <Section6 />
       </section>
       <AnimatedSection />
-
-      <section className="new-section">
-        <RenieBin />
-      </section>
 
       <section className=" section-8">
         <Footer />
