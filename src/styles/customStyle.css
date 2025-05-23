@@ -1656,7 +1656,14 @@ footer {
 }
 .recycleSection-2 button{
   text-align: center;
-  width: 100% !important;
+}
+.recycle-button{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.desktop-nav-links{
+  display: none !important;
 }
 
 .recycleSection-2 h4 {

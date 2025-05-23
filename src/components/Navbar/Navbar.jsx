@@ -161,7 +161,7 @@ const Navbar = () => {
             }}
           />
         </Link>
-        <ul ref={linksRef} className="d-flex gap-4 navbar-links flex-nowrap">
+        <ul ref={linksRef} className="d-flex gap-4 navbar-links flex-nowrap desktop-nav-links">
           {navLinks.map((link, index) => (
             <li
               key={index}
@@ -173,7 +173,7 @@ const Navbar = () => {
         </ul>
         <button
           ref={buttonRef}
-          className="btn"
+          className="btn desktop-nav-links"
           onClick={handleClick}
           style={{
             display: "flex",

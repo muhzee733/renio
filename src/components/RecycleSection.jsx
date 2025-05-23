@@ -69,9 +69,11 @@ const RecycleSection = () => {
                   <li>$500/ton reward potential</li>
                   <li>ESG reports, ready to export</li>
                 </ul>
-                <button className="btn btn-danger mt-2">
-                  Explore the Full demo
-                </button>
+                <div className="recycle-button">
+                  <button className="btn-2">
+                    Explore the Full demo
+                  </button>
+                </div>
               </div>
             </div>
           </div>
