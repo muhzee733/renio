@@ -40,18 +40,6 @@ export default function Home() {
         <Section3 />
       </section>
 
-      {/* <section className="section section-4">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/aAoVks4P7dU"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </section> */}
-
       <section>
         <Section5 />
       </section>

@@ -22,9 +22,17 @@ const Section3 = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2000 top",
+          end: "+=300%",
           scrub: 1,
           pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+          snap: {
+            snapTo: 1 / 3, // Since we have 4 sections, we need 3 transitions
+            duration: { min: 0.2, max: 0.3 },
+            delay: 0,
+            ease: "power1.inOut"
+          }
         },
       }
     );
@@ -32,8 +40,9 @@ const Section3 = () => {
       pin.kill();
     };
   }, []);
+
   return (
-    <div ref={triggerRef}>
+    <div ref={triggerRef} className="scroll-section-outer">
       <div ref={sectionRef} className="scroll-section-inner">
         <div className="scroll-section">
           <Slide1
@@ -42,7 +51,7 @@ const Section3 = () => {
             title2="Meet Renie Bins"
             price1={750}
             price2={1000}
-            model= "/assets/test.glb"
+            model="/assets/test.glb"
           />
         </div>
         <div className="scroll-section bg-danger">
@@ -52,7 +61,7 @@ const Section3 = () => {
             title2="Meet Renie Bins"
             price1={1400}
             price2={1900}
-            model= "/assets/two-way.glb"
+            model="/assets/two-way.glb"
           />
         </div>
         <div className="scroll-section bg-success">
@@ -62,7 +71,7 @@ const Section3 = () => {
             title2="Meet Renie Bins"
             price1={1990}
             price2={2540}
-            model= "/assets/threee-way.glb"
+            model="/assets/threee-way.glb"
           />
         </div>
         <div className="scroll-section bg-dark">
@@ -72,7 +81,7 @@ const Section3 = () => {
             title2="Meet Renie Bins"
             price1={750}
             price2={1000}
-            model= "/assets/four-way.glb"
+            model="/assets/four-way.glb"
           />
         </div>
       </div>

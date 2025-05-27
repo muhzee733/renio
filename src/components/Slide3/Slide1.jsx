@@ -165,19 +165,6 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                 </div>
               </div>
             )}
-            {/* <div className="renio-footer">
-              <h5 className="text-center text-white mt-5 mb-3">Pricing</h5>
-              <div className="renio-footer-div">
-                <div>
-                  <h6 className="custom-heading">Standard design</h6>
-                  <h5 className="custom-price">{price1} AED</h5>
-                </div>
-                <div>
-                  <h6 className="custom-heading">Custom design</h6>
-                  <h5 className="custom-price">{price2} AED</h5>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
