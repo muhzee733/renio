@@ -1830,7 +1830,10 @@ text-align: center;
     margin-left: 140px !important;
   }
   .left-box img {
-    max-width: 80% !important;
+    max-width: 90% !important;
+  }
+  .threed-image{
+    display: none;
   }
   .slide-1 {
     height: unset !important;
@@ -1952,4 +1955,11 @@ text-align: center;
   .main-banner {
     height: 100vh !important;
   }
+  .swiper-next,
+.swiper-prev {
+  bottom: 2%;
+}
+.none-on-mobile{
+  display: none !important;
+}
 }

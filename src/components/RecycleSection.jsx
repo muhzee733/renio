@@ -60,8 +60,8 @@ const RecycleSection = () => {
               <div class="new-section-2">
                 <H1 title="Meet the Recycling System That Pays You Back" />
                 <H4
-                  title="For every ton collected and confirmed, Renie unlocks real
-              financial rewards — powered by data, not guesswork."
+                  title="For every ton collected and recycled, Renie unlocks real
+              financial rewards powered by data, not guesswork."
                 />
                 <P title="With Renie, recycling becomes traceable and profitable" />
                 <ul className="text-dark ps-3">

@@ -42,7 +42,7 @@ export default function App() {
           <div className="renie-bin-wrapper">
             <H2 title={"Who is it for"} />
             <div className="desktop-paragraph">
-              <P title={"Renie bins are transforming waste everywhere”so in the flow you have the Heading. Transform waste into revenue ——> how it works —> who is it for"} />
+              <P title={"Renie bins are transforming waste everywhere"} />
             </div>
             <div id="derktop-version">
               <div className="blogs">
@@ -94,7 +94,7 @@ export default function App() {
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={50}
-                  loop={true}
+                  loop={false}
                   pagination={{ clickable: true }}
                   modules={[Pagination]}
 
@@ -122,30 +122,9 @@ export default function App() {
                   </SwiperSlide>
                   <SwiperSlide>
                     <Blog
-                      h3={blogData[0].h3}
-                      img={blogData[0].img}
-                      p={blogData[0].p}
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Blog
-                      h3={blogData[2].h3}
-                      img={blogData[2].img}
-                      p={blogData[2].p}
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Blog
                       h3={blogData[1].h3}
                       img={blogData[1].img}
                       p={blogData[1].p}
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Blog
-                      h3={blogData[3].h3}
-                      img={blogData[3].img}
-                      p={blogData[3].p}
                     />
                   </SwiperSlide>
                 </Swiper>

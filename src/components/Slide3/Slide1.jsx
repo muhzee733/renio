@@ -36,7 +36,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
             <h2 className="text-center" id="mobile-version">
               {title2}
             </h2>
-            <div className="renio-button" id="mobile-version">
+            <div className="renio-button none-on-mobile" id="mobile-version">
               <button className={title1 === "Renie one" ? "active" : ""}>
                 Renie one
               </button>
