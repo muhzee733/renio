@@ -10,11 +10,12 @@ import CraftedRenie from "@/components/RenieBin/CraftedRenie";
 import Discover from "@/components/RenieBin/Discover";
 import GroundRenie from "@/components/RenieBin/GroundRenie";
 import MeetRenieBin from "@/components/RenieBin/MeetRenieBin";
-import PowerRenie from "@/components/RenieBin/PowerRenie";
 import ProductRenie from "@/components/RenieBin/ProductRenie";
 import RenieSection from "@/components/RenieBin/RenieSection2";
 import Meta from "@/components/Meta";
-import MiniFooter from "@/components/Navbar/MiniFooter";
+import RenieLicensee from "@/components/RenieLicensee";
+import CustomizeBin from "@/components/RenieBin/CustomizeBin";
+import CustomWasterBin from "@/components/RenieBin/CustomWasterBin";
 
 const RenieBin = () => {
 
@@ -29,7 +30,8 @@ const RenieBin = () => {
       <Banner />
       <RenieSection />
       <MeetRenieBin />
-      {/* <PowerRenie /> */}
+      <CustomizeBin />
+      <CustomWasterBin />
       <GroundRenie
         imagePath="/assets/bin3/bin/M"
         frameCount={104}
@@ -37,8 +39,7 @@ const RenieBin = () => {
       />
       <CraftedRenie />
       <ProductRenie />
-      <Discover />
-      {/* <MiniFooter /> */}
+      <RenieLicensee />
       <Footer />
     </>
   );

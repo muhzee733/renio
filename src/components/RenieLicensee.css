@@ -1,14 +1,51 @@
 .renie-licensee-section {
   width: 100vw;
-  min-height: 100vh;
   background: linear-gradient(120deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 120px 0px;
+}
+.renie-licensee{
+  width: 100vw;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0px;
 }
 
+.renie-licensee .desc{
+  color: black !important;
+}
+.renie-licensee .features-lit h3{
+  color: rgba(227, 22, 98, 1) !important;
+  font-weight: 600;
+}
+.renie-licensee .features-lit ul li{
+  list-style-type: circle;
+}
+.renie-licensee .cta-area h4{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.renie-licensee h2{
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .renie-licensee-container {
   display: flex;
   flex-direction: row;
@@ -29,10 +66,24 @@
 }
 
 .renie-licensee-left h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 0.5rem;
+}
+.custom-design h1:nth-child(1){
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.custom-design h1:nth-child(2){
+color: #e31662 !important;
+margin-bottom: 20px;
 }
 .renie-licensee-left .highlight {
   display: inline-block;

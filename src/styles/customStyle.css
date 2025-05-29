@@ -172,6 +172,68 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+.renie-license-section {
+  min-height: 100vh;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  background: url("/assets/reniehub/bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+.custom-form  label{
+  font-size: 14px;
+}
+.custom-form input{
+  border-radius: 5px;
+  border: 1px solid rgba(161, 162, 164, 1);
+  padding: 15px 20px;
+}
+
+.custom-form button{
+  background: linear-gradient(90deg, #4765E6 0%, #5C4099 46%, #E31662 100%);
+  border: 0;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 14px !important;
+  margin-top: 20px;
+}
+.custom-form .form-check-input{
+  padding: 10px !important;
+  margin-right: 10px;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 991px) {
+  .renie-license-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: unset;
+  }
+}
+
+.renie-license-section h1 {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: var(--fontFamilyPoppins);
+}
+.license-description {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px !important;
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .start-price {
   position: absolute;
   top: 20%;
@@ -1098,11 +1160,19 @@ footer {
   .renio-button {
     margin-bottom: 27px !important;
   }
+  .renie-license-section .container-xl{
+    padding: 0px 50px;
+  }
+
+
 }
 @media (max-width: 1024px) {
   .userfull-links ul li {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+  .renie-license-section .container-xl{
+    padding: 0px 50px;
   }
   .recycleSection h4 {
     font-size: 18px;
@@ -1256,6 +1326,13 @@ footer {
   .footer-upper-section {
     flex-direction: column;
   }
+  .license-description {
+    font-size: 14px;
+    margin-bottom: 10px !important;
+}
+  .renie-license-section h1 {
+    font-size: 46px;
+}
   .recycle-content {
     padding: 30px;
   }
@@ -1493,12 +1570,28 @@ footer {
   .custom-text p {
     font-size: 16px;
   }
+  .renie-license-section h1 {
+    text-align: center;
+    font-size: 40px;
+}
+  .custom-form input{
+    padding: 8px 12px;
+}
+.license-description {
+        text-align: center;
+    }
   .recycleSection {
     padding: 50px 0;
   }
   .recycleSection-2 h1 {
     font-size: 30px;
     line-height: 34px;
+  }
+  .renie-license-section {
+    padding-top: 66px;
+  }
+  .license-description-container{
+    text-align: center;
   }
   .scroll-section .slide-1 h2 {
     padding-top: 0px;
