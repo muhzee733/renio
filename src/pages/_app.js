@@ -10,6 +10,7 @@ import "@/styles/renieadmin.css";
 import "@/styles/renie-ads.css";
 import "@/styles/mediahub.css";
 import "@/styles/reniefranchise.css";
+import "@/styles/RenieLicensee.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 import { ThemeProvider } from "next-themes";

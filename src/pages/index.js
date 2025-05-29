@@ -1,15 +1,12 @@
-import Head from "next/head";
 import Footer from "@/components/Navbar/Footer";
 import Banner from "@/components/Banner/Banner";
 import HowItWork from "@/components/HowItWorks/HowItWork";
-import MiniFooter from "@/components/Navbar/MiniFooter";
 import Navbar from "@/components/Navbar/Navbar";
 import Section3 from "@/components/Section3";
 import Section5 from "@/components/Section5";
 import Section6 from "@/components/Section6";
 import RenieBin from "@/components/RenieBin";
 import Meta from "@/components/Meta";
-import AnimatedSection from "@/components/RenieApp/AnimatedSection";
 import RecycleSection from "@/components/RecycleSection";
 import RenieLicensee from "@/components/RenieLicensee";
 

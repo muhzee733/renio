@@ -1,5 +1,4 @@
 import React from 'react';
-import './RenieLicensee.css';
 import H1 from './Typography/H1';
 import H4 from './Typography/H4';
 
@@ -45,7 +44,7 @@ const RenieLicensee = () => {
           </div>
           <div className="cta-area">
             <H4 title={'Ready to lead the circular economy in your region?'} />
-            <button className="btn-2">LEARN MORE</button>
+            <button className="">LEARN MORE</button>
           </div>
         </div>
         <div className="renie-licensee-right">

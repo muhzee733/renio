@@ -6,6 +6,10 @@ import React from "react";
 const RenieLicense = () => {
   return (
     <>
+    <Meta
+        title="Transform your waste into income"
+        description="Discover Renie’s solutions to transform your waste into income by recycling and sustainable waste management. Help us divert waste from landfills."
+      />
       <Navbar />
       <div className="renie-license-section">
         <div className="container-xl">
