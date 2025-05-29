@@ -2,6 +2,7 @@ import Footer from "@/components/Navbar/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import P from "@/components/Typography/P";
 import React from "react";
+import Meta from "@/components/Meta";
 
 const RenieLicense = () => {
   return (
