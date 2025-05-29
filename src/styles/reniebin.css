@@ -747,7 +747,8 @@
     flex-wrap: wrap;
 }
 .renie-bin-custom div {
-        width: 24%;
+        width: 30%;
+        padding: 8px;
     }
   .MeetRenieBin {
     height: unset;

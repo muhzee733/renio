@@ -1619,9 +1619,6 @@ footer {
     font-size: 54px !important;
     line-height: 48px !important;
   }
-  .section-1 {
-    height: 120vh;
-  }
   .section-2 {
     align-items: self-start;
     min-height: 110vh !important;
@@ -1769,10 +1766,13 @@ footer {
   }
   .box-img,
   .dashboard-img {
-    width: 68% !important;
+    width: 116% !important;
   }
   .customize-bin-left-h1 h1 {
     font-size: 40px !important;
+  }
+  .box-img{
+    scale: 1 !important;
   }
   .customize-bin-left-bg-h1 h1 {
     font-size: 36px !important;
@@ -1787,11 +1787,11 @@ footer {
     padding: 50px 0;
   }
   .recycleSection-2 h1 {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 32px !important;
   }
   .renie-license-section {
-    padding-top: 66px;
+    padding-top: 124px;
   }
   .license-description-container {
     text-align: center;
@@ -1810,7 +1810,7 @@ footer {
     display: none !important;
   }
   #how-it-works {
-    height: 160vh;
+    height: 130vh;
   }
   .blogs .swiper {
     padding: 30px !important;
@@ -1965,8 +1965,8 @@ footer {
   }
   .recycleSection ul li,
   .recycleSection-2 ul li {
-    font-size: 16px !important;
-    text-align: center;
+    font-size: 14px !important;
+    text-align: left;
   }
   .recycleSection-2 h1 {
     text-align: center;
@@ -2186,9 +2186,9 @@ footer {
     width: 100px !important;
     justify-content: center;
   }
-  .section-1 {
-    height: 100vh;
-  }
+  .section-1, .section-2 {
+    min-height: 107vh;
+}
   #derktop-version {
     display: none !important;
   }
@@ -2273,7 +2273,10 @@ footer {
     background-size: cover;
   }
   .main-banner {
-    height: 115vh !important;
+    height: 94vh !important;
+  }
+  .custom-text p{
+    max-width: 90%;
   }
   .swiper-next,
   .swiper-prev {
@@ -2290,8 +2293,8 @@ footer {
     max-width: 90% !important;
   }
   .recycleSection h2 {
-    font-size: 30px !important;
-    line-height: 40px !important;
+    font-size: 28px !important;
+    line-height: 36px !important;
   }
   .recycleSection-2 .img-fluid {
     max-width: 98%;
@@ -2304,6 +2307,9 @@ footer {
     line-height: 28px;
   }
   .scroll-section {
-    height: 159vh;
+    height: 100vh !important;
+  }
+  .renio-grid{
+    display: none !important;
   }
 }
