@@ -6,6 +6,7 @@ import Blog from "./Blog/Blog";
 import { Pagination, Autoplay } from "swiper/modules";
 import H2 from "./Typography/H2";
 import P from "./Typography/P";
+import H1 from "./Typography/H1";
 
 const blogData = [
   {
@@ -40,7 +41,7 @@ export default function App() {
       <div className="row">
         <div className="col-lg-12">
           <div className="renie-bin-wrapper">
-            <H2 title={"Who is it for"} />
+            <div className="text-white text-center"><H1 title={"Who is it for"} /></div>
             <div className="desktop-paragraph">
               <P title={"Renie bins are transforming waste everywhere"} />
             </div>

@@ -43,6 +43,7 @@ const Slider = ({
               <div className="col-lg-4 col-md-12 col-sm-12">
                 <div className="custom-image">
                   <img src={img} alt="mobile-1" />
+                  <h4>{title2}</h4>
                 </div>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12">
@@ -64,9 +65,9 @@ const Slider = ({
           <div className="container">
             <div className="row align-items-center pt-5 mb-2">
               <h2 className="text-center">{title1}</h2>
-              <h4 className="text-center">{title2}</h4>
               <div className="custom-image text-center">
                 <img src={img} alt="mobile-1" />
+                <h4>{title2}</h4>
               </div>
               <h6 className="text-center">{h6}</h6>
               <p className="text-center">{p}</p>

@@ -41,8 +41,8 @@ p {
   text-align: center !important;
 }
 #custom-slider .swiper-button-prev {
-  left: 45% !important;
-  top: 87% !important;
+  left: 44% !important;
+  top: 90% !important;
 }
 .renio-grid-system img {
   max-width: 58%;
@@ -149,6 +149,12 @@ footer {
   overflow: hidden !important;
 }
 
+.top-renie-bin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* How It Work start */
 
 .how-it-work-main h2 {
@@ -166,6 +172,13 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+.start-price {
+  position: absolute;
+  top: 20%;
+}
+.start-price img {
+  max-width: 50%;
+}
 /* How It Work End */
 
 .main-navbar {
@@ -262,20 +275,20 @@ footer {
 .purple {
   color: #e31662;
 }
-.custom-text p{
+.custom-text p {
   font-size: 20px;
 }
 .btn-2,
 .btn-3 {
   border-radius: 100px !important;
-  background-color: #E31662;
+  background-color: #e31662;
   color: var(--accent) !important;
   font-size: 16px !important;
   font-weight: 600 !important;
   border: none !important;
   width: 220px !important;
   height: 50px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: var(--fontFamilyPoppins) !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 }
@@ -330,7 +343,7 @@ footer {
 }
 .new-section {
   background: linear-gradient(50deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
-  min-height: 100vh;
+  padding: 100px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,8 +382,8 @@ footer {
   margin: 5px;
   position: absolute;
   z-index: 999;
-  right: 8%;
-  bottom: 6%;
+  right: 9%;
+  bottom: 2%;
   color: black;
   background-color: white !important;
 }
@@ -453,7 +466,7 @@ footer {
   font-weight: 900;
   font-size: 26px;
 }
-.recycleSection{
+.recycleSection {
   background: -webkit-linear-gradient(
     230deg,
     #4765e6 0%,
@@ -462,10 +475,10 @@ footer {
   );
   padding: 120px 0px;
 }
-.recycleSection-2{
+.recycleSection-2 {
   padding: 80px 0px;
 }
-.recycleSection-2 h1{
+.recycleSection-2 h1 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -476,32 +489,37 @@ footer {
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
-.recycleSection-2 h4{
+.recycleSection-2 h4 {
   color: black;
   font-weight: 400;
   margin: 30px 0px;
 }
-.recycleSection-2 p{
+.recycleSection-2 p {
   color: black;
   font-size: 20px;
   margin-bottom: 20px !important;
 }
-.recycleSection h2{
+.recycleSection h2 {
   font-size: 50px;
   font-weight: 800;
+  line-height: 53px !important;
 }
-.recycleSection h4{
+.recycleSection h4 {
   color: white;
   font-weight: 400;
   margin: 30px 0px;
 }
-.recycleSection-2 button{
+.recycleSection-2 h1 {
+  line-height: 60px !important;
+}
+.recycleSection-2 button {
   margin-top: 30px !important;
 }
-.recycleSection ul li, .recycleSection-2 ul li{
+.recycleSection ul li,
+.recycleSection-2 ul li {
   list-style: unset !important;
 }
-.recycleSection p{
+.recycleSection p {
   color: white;
   margin-bottom: 20px !important;
 }
@@ -585,7 +603,7 @@ footer {
 .new-section .swiper-wrapper .swiper-slide {
   height: 380px;
 }
-.renie-bin-wrapper .p-title{
+.renie-bin-wrapper .p-title {
   width: 70%;
   margin: 0 auto;
 }
@@ -760,7 +778,7 @@ footer {
   color: black;
 }
 .software-left p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 .expanded-button {
@@ -933,24 +951,24 @@ footer {
     font-size: 134px;
   }
   #how-it-works {
-    height: 90vh;
+    height: 100vh;
   }
   .tool {
     top: 10%;
   }
   .recycleSection-2 h1 {
     line-height: 47px;
-}
-.recycleSection-2 {
-  padding: 60px 0;
-}
-.renie-bin-wrapper .p-title {
-  font-size: 20px;
-}
-  
+  }
+  .recycleSection-2 {
+    padding: 60px 0;
+  }
+  .renie-bin-wrapper .p-title {
+    font-size: 20px;
+  }
+
   .recycleSection h2 {
     font-size: 40px;
-}
+  }
   .renio-button {
     margin-bottom: 20px !important;
   }
@@ -959,7 +977,6 @@ footer {
   }
   .scroll-section .slide-1 h2 {
     font-size: 46px !important;
-    padding-top: 50px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -1089,7 +1106,7 @@ footer {
   }
   .recycleSection h4 {
     font-size: 18px;
-}
+  }
   .software-right-container.jsx-61b0980993655515 img.jsx-61b0980993655515 {
     height: auto !important;
   }
@@ -1099,7 +1116,7 @@ footer {
   }
   .new-section {
     min-height: 70vh;
-}
+  }
   .software-left img {
     margin-right: 10px;
     max-width: 23%;
@@ -1239,7 +1256,7 @@ footer {
   .footer-upper-section {
     flex-direction: column;
   }
-  .recycle-content{
+  .recycle-content {
     padding: 30px;
   }
   .software-right-container.jsx-61b0980993655515 {
@@ -1250,7 +1267,7 @@ footer {
   }
   .recycleSection h2 {
     font-size: 30px;
-}
+  }
   .new-section {
     min-height: 62vh;
   }
@@ -1475,18 +1492,18 @@ footer {
   }
   .custom-text p {
     font-size: 16px;
-}
-.recycleSection {
-  padding: 50px 0;
-}
-.recycleSection-2 h1 {
-  font-size: 30px;
-  line-height: 34px;
-}
+  }
+  .recycleSection {
+    padding: 50px 0;
+  }
+  .recycleSection-2 h1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
   .scroll-section .slide-1 h2 {
     padding-top: 0px;
     font-size: 28px !important;
-}
+  }
   .main-navbar {
     height: 55px;
   }
@@ -1628,7 +1645,7 @@ footer {
     height: 380px !important;
     padding: 20px !important;
   }
-  .new-section-2{
+  .new-section-2 {
     padding: 30px;
   }
   .idea {
@@ -1636,58 +1653,59 @@ footer {
   }
   .recycleSection-2 {
     padding: 0;
-}
-.recycleSection h2 {
-  text-align: center;
-}
-.recycleSection h4 {
-  text-align: center;
-  font-size: 16px ;
-}
-.recycleSection p {
-  text-align: center;
-}
-.recycleSection ul li, .recycleSection-2 ul li {
-  font-size: 16px !important;
-  text-align: center;
-}
-.recycleSection-2 h1 {
-  text-align: center;
-}
-.recycleSection-2 button{
-  text-align: center;
-}
-.recycle-button{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.recycle-button button{
-  width: 215px !important;
-}
-.desktop-nav-links{
-  display: none !important;
-}
+  }
+  .recycleSection h2 {
+    text-align: center;
+  }
+  .recycleSection h4 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .recycleSection p {
+    text-align: center;
+  }
+  .recycleSection ul li,
+  .recycleSection-2 ul li {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .recycleSection-2 h1 {
+    text-align: center;
+  }
+  .recycleSection-2 button {
+    text-align: center;
+  }
+  .recycle-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .recycle-button button {
+    width: 215px !important;
+  }
+  .desktop-nav-links {
+    display: none !important;
+  }
 
-.recycleSection-2 h4 {
-text-align: center;
-}
-.recycleSection-2 p {
-  color: #000;
-  font-size: 16px;
-  text-align: center;
-}
+  .recycleSection-2 h4 {
+    text-align: center;
+  }
+  .recycleSection-2 p {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+  }
 
-.renie-bin-wrapper .p-title {
-  width: 100%;
-  font-size: 14px !important;
-}
+  .renie-bin-wrapper .p-title {
+    width: 100%;
+    font-size: 14px !important;
+  }
   .tool span {
     font-size: 12px !important;
   }
   .renie-bin-wrapper .p-title {
     font-size: 16px;
-}
+  }
   .mini-footer-wrapper p {
     font-size: 14px;
     line-height: 24px !important;
@@ -1835,7 +1853,7 @@ text-align: center;
   .left-box img {
     max-width: 90% !important;
   }
-  .threed-image{
+  .threed-image {
     display: none;
   }
   .slide-1 {
@@ -1959,10 +1977,10 @@ text-align: center;
     height: 100vh !important;
   }
   .swiper-next,
-.swiper-prev {
-  bottom: 2%;
-}
-.none-on-mobile{
-  display: none !important;
-}
+  .swiper-prev {
+    bottom: 2%;
+  }
+  .none-on-mobile {
+    display: none !important;
+  }
 }

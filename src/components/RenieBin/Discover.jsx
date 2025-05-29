@@ -9,7 +9,7 @@ const Discover = () => {
           <div className="col-lg-8 col-md-8 align-items-center d-flex">
             <div className="discover-section">
               <h2>
-                Discover <br /> our Renie Nexus
+              Become a licensee
               </h2>
               <p>
                 Step into the future of auscultation with our cutting-edge

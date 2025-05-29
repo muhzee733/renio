@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import H2 from "../Typography/H2";
 
 const Model = ({ path }) => {
   const { scene } = useGLTF(path);
@@ -32,13 +33,16 @@ const MeetRenieBin = () => {
   const [selectedModel, setSelectedModel] = useState(null);
 
   return (
-    <div className="MeetRenieBin">
+    <div className="MeetRenieBin position-relative">
       <div className="container-xl">
         <div className="row text-center">
           <div className="col-lg-12">
             <div className="meet-main-banner">
               <h2>Meet Renie Bins</h2>
               <p>A range of Renie smart bins to fit every need</p>
+              <figure className="start-price">
+                <img src="/assets/renie-update/start-price.png" alt="Renie Bin" />
+              </figure>
             </div>
             <Swiper
               modules={[Navigation]}
@@ -79,6 +83,7 @@ const MeetRenieBin = () => {
                 remain as affordable as traditional, non-smart bins. Enjoy the
                 benefits of smart waste management without the high costs,
               </p>
+              <div className="mt-4"><H2 title={'Choose Your Waste Stream'} /></div>
               <div className="renie-bin-custom">
                 <div>
                   <img src="/assets/Vector.webp" />

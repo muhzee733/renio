@@ -48,7 +48,7 @@ const ContactUs = () => {
       {/* Contact Banner */}
       <div className="contact-banner text-center  bg-light">
         <div className="container-xl">
-          <H1 title="Connect with an expert" />
+          <H1 title="Explore the full demo" />
         </div>
       </div>
 

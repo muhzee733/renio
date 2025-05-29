@@ -28,9 +28,6 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
       }
     >
       <div className="container-xl">
-        <h2 className="text-center" id="derktop-version">
-          {title2}
-        </h2>
         <div className="row">
           <div className="col-lg-6 col-md-6">
             <h2 className="text-center" id="mobile-version">
@@ -101,23 +98,12 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6">
-            <div className="renio-button" id="derktop-version">
-              <button className={title1 === "Renie one" ? "active" : ""}>
-                Renie One
-              </button>
-              <button className={title1 === "Renie two" ? "active" : ""}>
-                Renie Two
-              </button>
-              <button className={title1 === "Renie maxi" ? "active" : ""}>
-                Renie Maxi
-              </button>
-              <button className={title1 === "Renie mini" ? "active" : ""}>
-                Renie Mini
-              </button>
-            </div>
+          <div className="col-lg-6 col-md-6 d-flex align-items-top">
             {title1 === "Renie mini" ? (
               <div className="renio-grid" id="derktop-versio">
+                <h2 className="text-center" id="derktop-version">
+                  {title2}
+                </h2>
                 <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
@@ -133,9 +119,15 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                     <h6>E-Waste</h6>
                   </div>
                 </div>
+                <div className="d-flex justify-content-center">
+                  <button className="btn-2">Explore the full demo </button>
+                </div>
               </div>
             ) : (
               <div className="renio-grid" id="derktop-versio">
+                <h2 className="text-center" id="derktop-version">
+                  {title2}
+                </h2>
                 <h5>Available waste streams</h5>
                 <div className="renio-grid-system">
                   <div>
@@ -162,6 +154,9 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                     <img src="/assets/Vector-6.webp" alt="Glass" />
                     <h6>Glass</h6>
                   </div>
+                </div>
+                <div className="d-flex justify-content-center">
+                  <button className="btn-2">Explore the full demo </button>
                 </div>
               </div>
             )}
@@ -191,7 +186,10 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
             >
               ✖
             </button>
-            <Canvas style={{ height: "500px", width: "500px" }} className="custom-3d-model">
+            <Canvas
+              style={{ height: "500px", width: "500px" }}
+              className="custom-3d-model"
+            >
               <ambientLight intensity={1.2} />
               <directionalLight position={[2, 2, 2]} intensity={2} />
               <Model path={selectedModel} />

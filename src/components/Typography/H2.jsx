@@ -9,6 +9,7 @@ const H2 = ({ title, isHtml = false }) => {
             font-size: 40px;
             font-weight: 600;
             line-height: 54px;
+            color: white;
           }
 
           @media (max-width: 1440px) {

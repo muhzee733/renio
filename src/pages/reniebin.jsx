@@ -17,81 +17,7 @@ import Meta from "@/components/Meta";
 import MiniFooter from "@/components/Navbar/MiniFooter";
 
 const RenieBin = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const canvasRef = useRef(null);
-  const imagesRef = useRef([]);
-  const frameCount = 117;
-  const airpods = { frame: 0 };
 
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 500);
-
-    window.addEventListener("resize", () => {
-      setIsMobile(window.innerWidth < 500);
-    });
-
-    return () => window.removeEventListener("resize", () => {});
-  }, []);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    if (typeof window === "undefined") return;
-
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const context = canvas.getContext("2d");
-
-    // Function to set canvas size dynamically
-    const setCanvasSize = () => {
-      const aspectRatio = 1158 / 651;
-      let width = isMobile ? window.innerWidth * 0.9 : 1158;
-      let height = width / aspectRatio;
-
-      canvas.width = width;
-      canvas.height = height;
-    };
-
-    setCanvasSize();
-    window.addEventListener("resize", setCanvasSize);
-
-    for (let i = 0; i < frameCount; i++) {
-      const img = new Image();
-      img.src = `/assets/binanimation/Anim${(i + 1).toString().padStart(4, "0")}.webp`;
-      imagesRef.current.push(img);
-    }
-
-    const render = () => {
-      if (!context || imagesRef.current.length === 0) return;
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      const img = imagesRef.current[airpods.frame];
-
-      context.drawImage(img, 0, 0, canvas.width, canvas.height);
-    };
-
-    imagesRef.current[0].onload = render;
-
-    // Set different animation ending positions based on screen size
-    const scrollEnd = isMobile ? window.innerHeight * 0.3 : 950;
-
-    gsap.to(airpods, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".reniebin-wrapper",
-        start: "top top",
-        end: `+=${scrollEnd}`,
-        scrub: 0.5,
-        pin: ".canvas-container",
-        onUpdate: render,
-      },
-    });
-
-    return () => {
-      window.removeEventListener("resize", setCanvasSize);
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, [isMobile]);
 
   return (
     <>
@@ -100,7 +26,7 @@ const RenieBin = () => {
         description="Renie Bin, the smart solution for efficient waste segregation and recycling. Track your impact and earn from deposited waste."
       />
       <Navbar white={true} />
-      <Banner canvasRef={canvasRef} />
+      <Banner />
       <RenieSection />
       <MeetRenieBin />
       {/* <PowerRenie /> */}
@@ -112,7 +38,7 @@ const RenieBin = () => {
       <CraftedRenie />
       <ProductRenie />
       <Discover />
-      <MiniFooter />
+      {/* <MiniFooter /> */}
       <Footer />
     </>
   );

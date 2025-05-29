@@ -62,6 +62,9 @@ function Section6() {
               <h2>Renie</h2>
               <h6>Software</h6>
               <p>Where everything comes together</p>
+              <div className="recycle-button">
+                <button className="btn-2">Explore the Full demo</button>
+              </div>
             </div>
           </div>
           <div className="col-md-6 overflow-hidden position-relative">
@@ -76,8 +79,10 @@ function Section6() {
                   <img src="/assets/hub.webp" alt="Renie Hub" />
                   <span>Renie Hub</span>
                   <p>
-                    Our innovative platform makes it possible to generate a
-                    passive income from data monetization of plastic waste.
+                    Renie Hub is your client-facing portal to track recycling
+                    activity, view real-time data from your smart bins, and
+                    download ESG reports. It also allows you to request payouts
+                    for the monetized data your waste has generated
                   </p>
                 </Link>
               </div>
@@ -103,7 +108,16 @@ function Section6() {
               </div>
               <div className="software-right-container">
                 <Link href="/reniefranchise">
-                  <img src="/assets/json/franch.png" alt="Renie Admin" style={{width: "400px", display: "block", margin: "0 auto", paddingBottom: "20px"}}/>
+                  <img
+                    src="/assets/json/franch.png"
+                    alt="Renie Admin"
+                    style={{
+                      width: "400px",
+                      display: "block",
+                      margin: "0 auto",
+                      paddingBottom: "20px",
+                    }}
+                  />
                   <span>Renie Franchise</span>
                   <p>
                     Renie Admin centralizes all management tasks, providing

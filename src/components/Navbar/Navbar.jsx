@@ -182,7 +182,7 @@ const Navbar = () => {
             textAlign: "center",
           }}
         >
-          Connect with an expert
+          Explore the full demo
         </button>
         <img
           ref={menuImageRef}
@@ -229,7 +229,7 @@ const Navbar = () => {
             ))}
           </ul>
           <button onClick={handleClick} className="mobile-btn">
-            Connect with an expert
+          Explore the full demo
           </button>
         </div>
       </nav>

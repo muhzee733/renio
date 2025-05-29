@@ -49,8 +49,6 @@ const Section3 = () => {
             img="/assets/RENIE_ONE.webp"
             title1="Renie one"
             title2="Meet Renie Bins"
-            price1={750}
-            price2={1000}
             model="/assets/test.glb"
           />
         </div>
@@ -59,8 +57,6 @@ const Section3 = () => {
             img="/assets/RENIE_TWO.webp"
             title1="Renie two"
             title2="Meet Renie Bins"
-            price1={1400}
-            price2={1900}
             model="/assets/two-way.glb"
           />
         </div>
@@ -69,8 +65,6 @@ const Section3 = () => {
             img="/assets/RENIE_MAXI.webp"
             title1="Renie maxi"
             title2="Meet Renie Bins"
-            price1={1990}
-            price2={2540}
             model="/assets/threee-way.glb"
           />
         </div>
@@ -79,8 +73,6 @@ const Section3 = () => {
             img="/assets/RENIE_MINI.webp"
             title1="Renie mini"
             title2="Meet Renie Bins"
-            price1={750}
-            price2={1000}
             model="/assets/four-way.glb"
           />
         </div>

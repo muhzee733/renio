@@ -11,6 +11,7 @@ import RenieBin from "@/components/RenieBin";
 import Meta from "@/components/Meta";
 import AnimatedSection from "@/components/RenieApp/AnimatedSection";
 import RecycleSection from "@/components/RecycleSection";
+import RenieLicensee from "@/components/RenieLicensee";
 
 export default function Home() {
   return (
@@ -47,7 +48,8 @@ export default function Home() {
       <section className="renie-software-section">
         <Section6 />
       </section>
-      <AnimatedSection />
+
+      <RenieLicensee />
 
       <section className=" section-8">
         <Footer />

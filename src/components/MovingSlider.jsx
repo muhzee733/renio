@@ -1,17 +1,12 @@
 import React from "react";
 
 const allLogos = [
-  "/assets/ajmanmuncipality-logo.webp",
-  "/assets/adea-logo.webp",
-  "/assets/ajmantourism-logo.webp",
-  "/assets/dubaimuncipality-logo.webp",
-  "/assets/majidalfuttaim-logo.webp",
-  "/assets/nakheel-logo.webp",
-  "/assets/nfpc-logo.webp",
-  "/assets/tetrapak-logo.webp",
-  "/assets/uber-logo.webp",
-  "/assets/dubailholding-logo.webp",
-  "/assets/universityofsharjah-logo.webp",
+  "/assets/renie-update/avarda.webp",
+  "/assets/renie-update/beeah.webp",
+  "/assets/renie-update/iot2.webp",
+  "/assets/renie-update/roshn.webp",
+  "/assets/renie-update/sharaf-dg.webp",
+  "/assets/renie-update/sirc.webp"
 ];
 
 const MovingSlider = () => {

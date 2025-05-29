@@ -29,7 +29,7 @@ const RecycleSection = () => {
                 />
                 <P
                   title={
-                    "Despite growing ESG pressure and public commitments, most organizations:"
+                    "Despite growing ESG pressure and public commitments, most organizations"
                   }
                 />
                 <ul
@@ -39,7 +39,7 @@ const RecycleSection = () => {
                   <li>Can't verify if waste was truly recovered</li>
                   <li>Can't track impact or CO₂ savings</li>
                   <li>Can't ensure if it's done by the right thing</li>
-                  <li>And worst of all: can't monetize any of it</li>
+                  <li>And worst of all can't monetize any of it</li>
                 </ul>
               </div>
             </div>

@@ -11,7 +11,8 @@ const Banner = ({ canvasRef }) => {
               <div className="renie-main-content">
                 <H1 title='The smart bin that monetizes your waste' />
                 <div className="canvas-container">
-                  <canvas ref={canvasRef} className="bin-canvas"></canvas>
+                  {/* <canvas ref={canvasRef} className="bin-canvas"></canvas> */}
+                  <img src="/assets/bin.webp" alt="Renie Bin" />
                 </div>
                 <div className="banner-boxes">
                   <div className="d-flex align-items-center gap-3">

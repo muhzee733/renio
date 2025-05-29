@@ -29,6 +29,9 @@ const RenieSection = () => {
         <div className="banner-svg-bin">
           <DotLottieReact src="/assets/website-wave.json" loop autoplay />
         </div>
+        <div className="top-renie-bin">
+          <img src="/assets/renie-bin.png" alt="Renie Bin" />
+        </div>
 
         <div className="renie-card-parent">
           {renieData.map((item, index) => (
@@ -39,7 +42,12 @@ const RenieSection = () => {
               } d-flex flex-column justify-content-center`}
             >
               <div className="renie-card-inner">
-                <DotLottieReact src={item.animation} loop autoplay className="custom-lotti"/>
+                <DotLottieReact
+                  src={item.animation}
+                  loop
+                  autoplay
+                  className="custom-lotti"
+                />
               </div>
               <p className="text-dark mt-4 fw-semibold text-center">
                 {item.title}

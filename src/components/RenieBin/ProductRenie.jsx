@@ -26,10 +26,9 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/icon-2.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Movement lids: </h3>
+                  <h3>Selective lid: </h3>
                   <p>
-                    Responsive movement lid that automatically opens upon
-                    successful waste item recognition.
+                  Opens only for correct material, ensuring clean, accurate waste collection.
                   </p>
                 </div>
               </div>
