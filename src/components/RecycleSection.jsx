@@ -70,9 +70,7 @@ const RecycleSection = () => {
                   <li>ESG reports, ready to export</li>
                 </ul>
                 <div className="recycle-button">
-                  <button className="btn-2">
-                    Explore the Full demo
-                  </button>
+                <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
                 </div>
               </div>
             </div>

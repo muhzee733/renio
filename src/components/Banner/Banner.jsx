@@ -1,6 +1,4 @@
 import React from "react";
-import BrandSlider from "../BrandSlider";
-import P from "../Typography/P";
 import MovingSlider from "../MovingSlider";
 
 const Banner = () => {
@@ -18,7 +16,7 @@ const Banner = () => {
               tracks every drop, verifies impact, monetizes data, and rewards
               your organization up to $500 per ton recycled.
             </p>
-            <button className="btn-2">Explore the Full demo</button>
+            <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
           </div>
           <div className="col-lg-6 col-md-12">
             <div className="box-inner">

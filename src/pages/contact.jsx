@@ -48,7 +48,7 @@ const ContactUs = () => {
       {/* Contact Banner */}
       <div className="contact-banner text-center  bg-light">
         <div className="container-xl">
-          <H1 title="Explore the full demo" />
+        <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
         </div>
       </div>
 

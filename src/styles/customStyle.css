@@ -175,12 +175,12 @@ footer {
 .renie-license-section {
   min-height: 100vh;
   display: flex;
-  margin-top: 50px;
   align-items: center;
   background: url("/assets/reniehub/bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 150px 0px;
 }
 
 .custom-form label {
@@ -2283,7 +2283,7 @@ footer {
     display: none !important;
   }
   .renie-licensee-section {
-    padding: 50px 20px !important;
+    padding: 00px 20px !important;
   }
   .recycle-content {
     padding: 0px;

@@ -120,7 +120,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <button className="btn-2">Explore the full demo </button>
+                <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
                 </div>
               </div>
             ) : (
@@ -156,7 +156,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <button className="btn-2">Explore the full demo </button>
+                <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
                 </div>
               </div>
             )}

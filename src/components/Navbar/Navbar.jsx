@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: "Media Hub", path: "/mediahub" },
   ];
   const handleClick = () => {
-    router.push("/contact");
+    router.push("/renielicense");
   };
 
   useEffect(() => {

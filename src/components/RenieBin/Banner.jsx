@@ -17,7 +17,7 @@ const Banner = ({ canvasRef }) => {
                     "Renie Bins are smart, low-cost devices that capture recyclables, extract data, and connect directly to our digital platforms for real-time tracking, ESG reporting, and monetization"
                   }
                 />
-                <button className="btn-2">Explore the full demo</button>
+                <button className="btn-2" onClick={() => window.location.href = '/renielicense'}>Explore the Full demo</button>
                 <div className="canvas-container">
                   <img src="/assets/bin.webp" alt="Renie Bin" />
                 </div>
