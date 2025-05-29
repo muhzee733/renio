@@ -741,9 +741,14 @@
     display: flex;
     justify-content: center;
   }
-  .renie-bin-custom {
-    display: none;
-  }
+  .renie-bin-custom
+ {
+
+    flex-wrap: wrap;
+}
+.renie-bin-custom div {
+        width: 24%;
+    }
   .MeetRenieBin {
     height: unset;
   }
