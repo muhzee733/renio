@@ -185,6 +185,7 @@ footer {
 
 .custom-form label {
   font-size: 14px;
+  color: #000;
 }
 .custom-form input {
   border-radius: 5px;
@@ -1431,7 +1432,7 @@ footer {
     width: 80% !important;
   }
   .main-banner {
-    padding-top: 146px;
+    padding-top: 60px;
   }
   .customize-bin-left-bg {
     align-items: unset !important;
@@ -1736,7 +1737,7 @@ footer {
     left: 69% !important;
   }
   .start-price {
-    top: 50%;
+    top: 46%;
     left: 0%;
     transform: translate(-20%, -150%);
   }

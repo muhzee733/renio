@@ -41,7 +41,7 @@ export default function App() {
       <div className="row">
         <div className="col-lg-12">
           <div className="renie-bin-wrapper">
-            <div className="text-white text-center"><H1 title={"Who is it for"} /></div>
+            <div className="text-white text-center"><H1 title={"Who is it for?"} /></div>
             <div className="desktop-paragraph">
               <P title={"Renie bins are transforming waste everywhere"} />
             </div>

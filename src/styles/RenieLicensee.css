@@ -25,6 +25,7 @@
 }
 .renie-licensee .features-lit ul li{
   list-style-type: circle;
+  color: black !important;
 }
 .renie-licensee .cta-area h4{
   background: -webkit-linear-gradient(

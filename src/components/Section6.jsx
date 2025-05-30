@@ -106,26 +106,6 @@ function Section6() {
                   </p>
                 </Link>
               </div>
-              <div className="software-right-container">
-                <Link href="/reniefranchise">
-                  <img
-                    src="/assets/json/franch.png"
-                    alt="Renie Admin"
-                    style={{
-                      width: "400px",
-                      display: "block",
-                      margin: "0 auto",
-                      paddingBottom: "20px",
-                    }}
-                  />
-                  <span>Renie Franchise</span>
-                  <p>
-                    Renie Admin centralizes all management tasks, providing
-                    seamless control over operations, data, and user
-                    interactions.
-                  </p>
-                </Link>
-              </div>
             </div>
           </div>
         </section>
