@@ -828,7 +828,7 @@
   }
   .renie-card {
     gap: 10px;
-    height: 30vh;
+    height: 17vh;
   }
   .meet-main-banner h2 {
     font-size: 26px;
@@ -963,7 +963,7 @@
     font-size: 12px;
   }
   .banner-boxes {
-    gap: 10px;
+    display: none;
   }
   .banner-boxes div {
     width: 30%;

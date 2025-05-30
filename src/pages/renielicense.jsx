@@ -43,7 +43,7 @@ const RenieLicense = () => {
                 style={{ maxWidth: "480px"}}
               >
                 <iframe
-                  src="https://www.youtube.com/embed/EaG8gPWMBhU"
+                  src="https://www.youtube.com/embed/V6DJggEMPl8"
                   title="YouTube video"
                   allowFullScreen
                   style={{ borderRadius: "12px", border: "2px solid #fff" }}

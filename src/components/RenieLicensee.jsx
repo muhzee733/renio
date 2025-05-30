@@ -47,11 +47,11 @@ const RenieLicensee = () => {
                 ))}
               </ul>
             </div>
-            <div className="cta-area">
+            <div className="cta-area d-none d-md-block">
               <H4
                 title={"Ready to lead the circular economy in your region?"}
               />
-              <button className="btn-2">LEARN MORE</button>
+              <button className="btn-2 d-block text-center" onClick={() => window.location.href = '/renielicense'}>LEARN MORE</button>
             </div>
           </div>
           <div className="renie-licensee-right">
@@ -61,6 +61,12 @@ const RenieLicensee = () => {
                 alt="Recycle & Earn Box"
                 className="box-img"
               />
+            </div>
+            <div className="cta-area d-md-none">
+              <H4
+                title={"Ready to lead the circular economy in your region?"}
+              />
+              <button className="btn-2">LEARN MORE</button>
             </div>
           </div>
         </div>

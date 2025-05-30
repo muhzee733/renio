@@ -302,7 +302,7 @@ footer {
 }
 
 .section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -987,10 +987,6 @@ footer {
   .new-section .swiper-wrapper .swiper-slide {
     height: 420px;
   }
-  .section-1,
-  .section-2 {
-    min-height: 130vh;
-  }
 }
 @media (max-width: 1439px) {
   .main-slider img {
@@ -1435,7 +1431,7 @@ footer {
     width: 80% !important;
   }
   .main-banner {
-    padding-top: 200px;
+    padding-top: 146px;
   }
   .customize-bin-left-bg {
     align-items: unset !important;
@@ -1717,7 +1713,7 @@ footer {
     flex-direction: column;
   }
   .custom-text p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .reniebin-wrapper .renie-main-content h1 {
     width: 100%;
@@ -1771,17 +1767,32 @@ footer {
   .customize-bin-left-h1 h1 {
     font-size: 40px !important;
   }
-  .box-img{
+  .box-img {
     scale: 1 !important;
   }
   .customize-bin-left-bg-h1 h1 {
     font-size: 36px !important;
+  }
+  .renie-licensee-container .container-xl {
+    flex-direction: column-reverse !important;
+  }
+  .renie-licensee-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .custom-form input {
     padding: 8px 12px;
   }
   .license-description {
     text-align: center;
+  }
+  .cta-area h4{
+    text-align: center;
+  }
+  .cta-area button{
+    display: block;
+    margin: 0 auto;
   }
   .recycleSection {
     padding: 50px 0;
@@ -1848,9 +1859,6 @@ footer {
   .swiper-button-prev,
   .swiper-button-next {
     padding: 13px 23px !important;
-  }
-  .main-slider {
-    height: 100vh !important;
   }
   .blogs {
     margin-top: 0px;
@@ -2186,9 +2194,10 @@ footer {
     width: 100px !important;
     justify-content: center;
   }
-  .section-1, .section-2 {
+  .section-1,
+  .section-2 {
     min-height: 107vh;
-}
+  }
   #derktop-version {
     display: none !important;
   }
@@ -2275,7 +2284,7 @@ footer {
   .main-banner {
     height: 94vh !important;
   }
-  .custom-text p{
+  .custom-text p {
     max-width: 90%;
   }
   .swiper-next,
@@ -2309,7 +2318,7 @@ footer {
   .scroll-section {
     height: 100vh !important;
   }
-  .renio-grid{
+  .renio-grid {
     display: none !important;
   }
 }

@@ -76,6 +76,7 @@ const Slide1 = ({ title1, title2, price1, price2, model }) => {
                       onClick={() => setSelectedModel(model)}
                       src="/assets/3.png"
                     />
+                    <button className="btn-2" onClick={() => window.location.href = '/reniebin'}>Discover renie bins</button>
                   </>
                 ) : (
                   ""

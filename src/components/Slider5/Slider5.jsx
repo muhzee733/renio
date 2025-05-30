@@ -8,7 +8,7 @@ const Slider = ({
   img2,
   h6,
   p,
-  customClass = "", // default prop using ES6 default parameter
+  customClass = "",
 }) => {
   const [isMobile, setIsMobile] = useState(false);
 
