@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 120px 0px;
 }
-.renie-licensee{
+.renie-licensee {
   width: 100vw;
   background: white;
   display: flex;
@@ -16,18 +16,18 @@
   padding: 120px 0px;
 }
 
-.renie-licensee .desc{
+.renie-licensee .desc {
   color: black !important;
 }
-.renie-licensee .features-lit h3{
+.renie-licensee .features-lit h3 {
   color: rgba(227, 22, 98, 1) !important;
   font-weight: 600;
 }
-.renie-licensee .features-lit ul li{
+.renie-licensee .features-lit ul li {
   list-style-type: circle;
   color: black !important;
 }
-.renie-licensee .cta-area h4{
+.renie-licensee .cta-area h4 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -37,7 +37,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.renie-licensee h2{
+.renie-licensee h2 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -71,7 +71,7 @@
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
-.custom-design h1:nth-child(1){
+.custom-design h1:nth-child(1) {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -81,9 +81,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.custom-design h1:nth-child(2){
-color: #e31662 !important;
-margin-bottom: 20px;
+.custom-design h1:nth-child(2) {
+  color: #e31662 !important;
+  margin-bottom: 20px;
 }
 .renie-licensee-left .highlight {
   display: inline-block;
@@ -145,7 +145,7 @@ margin-bottom: 20px;
   position: relative;
   width: 48%;
 }
-.renie-licensee-container .container-xl{
+.renie-licensee-container .container-xl {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,6 +185,31 @@ margin-bottom: 20px;
   bottom: 10px;
   z-index: 4;
 }
+
+.when-you-get {
+  padding: 100px 0px;
+}
+.when-get-top {
+  margin-bottom: 50px;
+}
+.when-get-top h1 {
+  background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.when-get-top p {
+  color: #000;
+  font-weight: 500;
+}
+.when-you-get h5 {
+  color: rgba(71, 101, 230, 1) !important;
+  font-size: 22px;
+}
 @media (max-width: 1024px) {
   .renie-licensee-container {
     flex-direction: column;
@@ -201,7 +226,8 @@ margin-bottom: 20px;
     width: 320px;
     height: 320px;
   }
-  .box-img, .dashboard-img {
+  .box-img,
+  .dashboard-img {
     width: 240px;
   }
   .floating-icon {
@@ -211,8 +237,25 @@ margin-bottom: 20px;
     width: 60px;
   }
 }
+@media screen and (max-width: 768px) {
+  .license .license-img img {
+    max-width: 62% !important;
+  }
+  .why-renie {
+    padding: 50px 0;
+  }
+  .why-renie p {
+    padding: 0 5px !important;
+  }
+  .when-you-get {
+    padding: 50px 0;
+  }
+  .main-image img {
+    max-width: 80%;
+  }
+}
 @media (max-width: 600px) {
-  .renie-licensee-container .container-xl{
+  .renie-licensee-container .container-xl {
     flex-direction: column;
     padding: 20px 0;
     gap: 30px;
@@ -226,14 +269,14 @@ margin-bottom: 20px;
   .main-box {
     width: 70%;
   }
-  .features-list img
- {
+  .features-list img {
     width: 20%;
-}
-.features-list ul li span{
-  text-align: left !important;
-}
-  .box-img, .dashboard-img {
+  }
+  .features-list ul li span {
+    text-align: left !important;
+  }
+  .box-img,
+  .dashboard-img {
     width: 120px;
   }
   .floating-icon {
@@ -249,4 +292,48 @@ margin-bottom: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
   }
-} 
+  .license h1 {
+    font-size: 30px !important;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .license p {
+    text-align: center;
+  }
+  .why-renie,
+  .role-licensee {
+    padding: 40px 0 !important;
+  }
+  .role {
+    margin-top: 10px !important;
+  }
+  .role .col-sm-6 {
+    margin-top: 25px !important;
+  }
+
+  .renie-bin-paragraph {
+    font-size: 13px !important;
+    display: none;
+  }
+  .renie-bin-custo {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    gap: 20px;
+  }
+  .renie-bin-custo img {
+    max-width: 50% !important;
+  }
+  .renie-bin-custo div {
+    width: 28% !important;
+  }
+  .when-you-get h5, .when-you-get ul {
+    text-align: center !important;
+  }
+  .img-center{
+    text-align: center !important;
+    margin-top: 10px;
+  }
+  .main-image img {
+    max-width: 95% !important;
+}
+}

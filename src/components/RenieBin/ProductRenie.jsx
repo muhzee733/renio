@@ -70,7 +70,7 @@ const ProductRenie = () => {
               <div className="product-box-wrapper">
                 <img src="/assets/icon-5.webp" alt="icon-1" />
                 <div className="product-box">
-                  <h3>Fullness indicator: </h3>
+                  <h3>Fill level sensor: </h3>
                   <p>
                     Provides real-time feedback on the bin's capacity,
                     facilitating timely emptying and maintenance.

@@ -1,0 +1,89 @@
+.license{
+  padding: 120px 0px;
+  background: url('/assets/renieads/bg.webp');
+  background-position: center center;
+  background-size: cover;
+}
+.license .license-img img{
+  max-width: 90%;
+}
+
+.license h1{
+    background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-renie{
+  padding: 100px 0px;
+}
+
+.why-renie h1{
+      background: -webkit-linear-gradient(
+    80deg,
+    #4765e6 0%,
+    #5c4099 46%,
+    #e31662 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-renie .renie-paragraph p{
+  font-weight: 600;
+}
+.renie-paragraph{
+  margin-bottom: 50px;
+}
+.why-renie p{
+  padding: 0px 50px;
+}
+.role-licensee{
+  padding: 100px 0px;
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 46%, #e31662 100%);
+}
+.role-licensee p{
+  font-weight: 600;
+  color: white;
+}
+.role{
+  margin-top: 30px;
+}
+.role p{
+  font-size: 18px;
+}
+
+.what-is-renie-bin .renie-bin-paragraph{
+  font-size: 18px !important;
+  margin-top: 10px !important;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.renie-bin-custo{
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1.5px solid red;
+}
+.renie-bin-custo img{
+  max-width: 70%;
+}
+.renie-bin-custo p{
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+.reniebin-paragraph{
+  margin-top: 70px;
+}

@@ -27,7 +27,7 @@
   padding: 10px;
   border-radius: 6px;
 }
-.renie-main-content p{
+.renie-main-content p {
   font-weight: 400 !important;
   text-align: center;
   max-width: 90%;
@@ -76,14 +76,13 @@
   justify-content: end;
   margin-top: 10px !important;
 }
-.moving-logos{
+.moving-logos {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 .moving-logos #moving-div {
   padding: 1.2vw !important;
-
 }
 .reniebin-wrapper .bin-image {
   max-width: 38%;
@@ -141,20 +140,24 @@
   min-height: 100vh;
   width: 100%;
 }
-.customize-bin-carousel-bg{
-  background: linear-gradient(82.92deg, #4765E6 5.52%, #5C4099 46.44%, #E31662 94.48%);
-
+.customize-bin-carousel-bg {
+  background: linear-gradient(
+    82.92deg,
+    #4765e6 5.52%,
+    #5c4099 46.44%,
+    #e31662 94.48%
+  );
 }
-.customize-bin-left-h1{
+.customize-bin-left-h1 {
   color: #e31662;
 }
-.customized-bin{
-  background: url('/assets/bg.webp');
+.customized-bin {
+  background: url("/assets/bg.webp");
   background-size: auto;
   background-position: left center;
   background-repeat: no-repeat;
 }
-.customize-bin-left-bg-h1{
+.customize-bin-left-bg-h1 {
   background: -webkit-linear-gradient(
     80deg,
     #4765e6 0%,
@@ -164,7 +167,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.customized-bin{
+.customized-bin {
   padding: 100px 0px;
 }
 .RenieSection2 .banner-svg-renie {
@@ -667,7 +670,7 @@
     width: 63%;
   }
   .footer-section {
-    height: 56vh;
+    height: 36vh;
   }
   .newsletter input::placeholder {
     font-size: 10px;
@@ -741,15 +744,13 @@
     display: flex;
     justify-content: center;
   }
-  .renie-bin-custom
- {
-
+  .renie-bin-custom {
     flex-wrap: wrap;
-}
-.renie-bin-custom div {
-        width: 30%;
-        padding: 8px;
-    }
+  }
+  .renie-bin-custom div {
+    width: 30%;
+    padding: 8px;
+  }
   .MeetRenieBin {
     height: unset;
   }
