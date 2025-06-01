@@ -28,14 +28,14 @@ const license = () => {
         <img src="/assets/renie-update/group.png" alt="Renie License" />
       </figure>
 
-      <div className="text-center d-none d-md-block">
+      {/* <div className="text-center d-none d-md-block">
         <button
           className="btn-2 mt-5 text-center"
           onClick={() => (window.location.href = "/renielicense")}
         >
           Explore the Full demo
         </button>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
