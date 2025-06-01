@@ -57,7 +57,7 @@ function SixthSection() {
               <h5 className="text-uppercase fw-bold text-right">
                 Full Software Suites Access
               </h5>
-              <ul className="text-right">
+              <ul className="text-right text-dark">
                 <li>Renie Admin: Bin & region management</li>
                 <li>Renie Hub: ESG dashboard</li>
                 <li>Renie Rewards: White-labeled app</li>
