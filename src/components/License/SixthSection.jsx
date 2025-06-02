@@ -28,7 +28,7 @@ function SixthSection() {
               <h5 className="text-uppercase fw-bold ">
                 Renie Hardware
               </h5>
-              <ul>
+              <ul className="text-dark">
                 <li>Smart Bins (150/300/500 units)</li>
                 <li>Built-in sensors & IoT connectivity</li>
                 <li>Plug-and-play installation</li>
@@ -90,7 +90,7 @@ function SixthSection() {
               <h5 className="text-uppercase fw-bold">
                 Training & Onboarding
               </h5>
-              <ul>
+              <ul className="text-dark">
                 <li>Staff training session</li>
                 <li>Partner onboarding toolkit</li>
                 <li>Technical documentation</li>
@@ -119,7 +119,7 @@ function SixthSection() {
               <h5 className="text-uppercase text-right fw-bold">
                 Support & SLA
               </h5>
-              <ul className="text-right">
+              <ul className="text-right text-dark">
                 <li>SLA-based technical support</li>
                 <li>Partner Success team access</li>
                 <li>System updates & feature releases</li>
